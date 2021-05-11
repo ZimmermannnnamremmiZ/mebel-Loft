@@ -53,35 +53,56 @@
         <p class="navigation__end">Контакты</p>
       </section>
       <section class="contacts">
-        <div class="contacts__title">
-          Свяжитесь с нами
-        </div>
-        <form class="contacts__form" action="#" method="POST">
-          <div class="contacts__form-nameMailLabels">
-            <div class="contacts__form-nameLable">
-              Ваше имя
-            </div>
-            <div class="contacts__form-emailLable">
-              Ваш e-mail
-            </div>
+        <div class="contacts__leftSideArea">
+          <div class="contacts__title">
+            Свяжитесь с нами
           </div>
-            <input type="text" class="contacts__form-nameInput">
-            <input type="text" class="contacts__form-emailInput">
-            <div class="contacts__form-messageLable">
-              Сообщение
+          <form class="contacts__form" action="#" method="POST">
+            <div class="contacts__form-nameMailLabels">
+              <div class="contacts__form-nameLable">
+                Ваше имя
+              </div>
+              <div class="contacts__form-emailLable">
+                Ваш e-mail
+              </div>
             </div>
-            <textarea type="text" class="contacts__form-messageInput"></textarea>
-            <div class="contacts__form-fileAndSubmit">
-              <div class="contacts__form-fileButton">
-                <input id="file" class="contacts__form-fileButtonInput" type="file" name="uploadFile"/>
-                <label class="contacts__form-fileButtonLable" for="file">
-                    <i class="contacts__form-fileButtonIcon"></i>
-                    <span class="contacts__form-fileButtonText">Прикрепить файл</span>
-                </label>
-            </div>
-              <input class="contacts__form-submit" type="submit" value="Отправить">
-            </div>
-        </form>
+              <input type="text" class="contacts__form-nameInput">
+              <input type="text" class="contacts__form-emailInput">
+              <div class="contacts__form-messageLable">
+                Сообщение
+              </div>
+              <textarea type="text" class="contacts__form-messageInput"></textarea>
+              <div class="contacts__form-fileAndSubmit">
+                <div class="contacts__form-fileButton">
+                  <input id="file" class="contacts__form-fileButtonInput" type="file" name="uploadFile"/>
+                  <label class="contacts__form-fileButtonLable" for="file">
+                      <i class="contacts__form-fileButtonIcon"></i>
+                      <span class="contacts__form-fileButtonText">Прикрепить файл</span>
+                  </label>
+              </div>
+                <input class="contacts__form-submit" type="submit" value="Отправить">
+              </div>
+          </form>
+        </div>
+        <div class="contacts__rightSideArea">
+          <div class="contacts__phoneAndMail">
+            <img class="contacts__phone--img" src="/images/phone_in_footer.svg" alt="empty">
+            <a class="contacts__phone" href="tel:89648999119">8 (964) 89 99 119</a>
+            <img class="contacts__mail--img" src="/images/mail.svg" alt="empty">
+            <a class="contacts__mail">mebel_loft_anapa@mail.ru</a>
+          </div>
+          <div class="contacts__instagram">
+            <img class="contacts__instagram--img" src="/images/inst.svg" alt="empty">
+            <a class="contacts__instagramText" href="#">INSTAGRAM</a>
+          </div>
+          <div class="contacts__address">
+            Адрес: г. Анапа, Анапское шоссе, 30 Ж/К Черное море
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="map__title">Адрес нашей компании</div>
+        <iframe class="map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A28aaf99b6c2226fc98b2c93140ff49f41ddb264d5ea9c6ec609ae974159dd938&amp;source=constructor" width="1140" height="400" frameborder="0"></iframe>
       </section>
       <footer class="footer">
         <div class="footer__navigation-leftSide">

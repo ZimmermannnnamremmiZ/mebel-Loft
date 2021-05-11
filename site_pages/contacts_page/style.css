@@ -242,151 +242,8 @@ body {
   padding-top: 28px;
 }
 
-.slider__box{
-  width: 1140px;
-  height: 450px;
-  position: relative;
-  margin-left: 140px;
-  margin-top: 30px;
-}
-/* Картинка масштабируется по отношению к родительскому элементу */
-.slider__box .item img {
-  object-fit: cover;
-  width: 100%;
-}
-/* Кнопки вперед и назад */
-.slider__box .previous, .slider .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-.slider__box .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* При наведении на кнопки добавляем фон кнопок */
-.slider__box.previous:hover,
-.slider__box .next:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.slider__box-img {
-  background-size: cover;
-}
-
-.slider__title {
-  position: absolute;
-  width: 216px;
-  height: 106px;
-  margin-top: -350px;
-  margin-left: 120px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 105.3%;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #3C3C3C;
-}
-
-.slider__text {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 140.8%;
-  letter-spacing: 0.02em;
-  color: #343434;
-  margin-top: -229px;
-  margin-left: 120px;
-}
-
-.slider__button {
-  Width: 163px;
-  Height: 45px;
-  background: rgba(255, 255, 255, 1);
-  border-radius: 0px;
-  margin-left: 120px;
-  margin-top: 20px;
-}
-
-.slider__button-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  color: #414141;
-  text-transform: uppercase;
-}
-
-.bestsellers__head-text {
-  margin-left: 140px;
-  margin-top: 30px;
-}
-
-.bestsellers__box {
-  margin-left: 140px;
-  padding-top: 35px;
-  display: flex;
-  align-content: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1140px;
-  height: 2812px;
-}
-
-.bestsellers__box-item {
-  width: 263px;
-  height: 488px;
-}
-
-.bestsellers__item-img {
-  margin-bottom: 150px;
-  margin-left: 32px;
-}
-
-.bestsellers__item-name {
-  margin-left: 20px;
-  margin-top: -73px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: bold;
-}
-
-.bestsellers__item-category {
-  margin-left: 20px;
-  margin-top: 6px;
-  font-size: 11px;
-  line-height: 13px;
-}
-
-.bestsellers__item-price {
-  margin-left: 20px;
-  margin-top: 9px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-
-
-.bestsellers__item-loverIcon {
-  margin-left: 230px;
-  margin-top: 21px;
-}
-
 footer {
+  display: flex;
   position: absolute;
   margin-left: 0;
   margin-right: 0;
@@ -394,6 +251,7 @@ footer {
   height: 234px;
   box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
   margin-top: 500px;
+  justify-content: space-between;
 }
 
 .footer__navigation {
@@ -415,4 +273,98 @@ footer {
 .footer__navigation-itemText{
   font-size: 14px;
   line-height: 126.69%;
+  text-decoration: none;
+  color: #3C3C3C;
+}
+
+.footer__navigation-item2 {
+  display: flex;
+  margin-top: 34px;
+}
+
+.footer__navigation-stock {
+
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 126.69%;
+  color: #D74444;
+}
+
+.footer__navigation-newItems {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 126.69%;
+  margin-left: 30px;
+}
+
+.footer__navigation-rightSide {
+  text-align: right;
+}
+
+.footer__contacts-logo {
+  width: 60px;
+  height: 49px;
+  padding-right: 128px;
+  padding-top: 49px;
+}
+
+.footer__navigation-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 126.69%;
+}
+
+.footer__contacts-adres {
+  font-size: 14px;
+  line-height: 126.69%;
+  padding-right: 128px;
+  padding-top: 20px;
+  color: #414141;
+}
+
+.footer__contacts-contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 128px;
+  padding-top: 35px;
+  align-items: center;
+}
+
+.footer__contacts-phoneImg {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.footer__contacts-phoneText {
+  font-size: 14px;
+  line-height: 126.69%;
+  color: #414141;
+  margin-right: 30px;
+}
+
+.footer__contacts-instagramImg {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.footer__contacts-instagramText {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 126.69%;
+  color: #414141;
+  margin-right: 30px;
+}
+
+.footer__contacts-mailImg {
+  width: 16.33px;
+  height: 14px;
+  margin-right: 10.67px;
+}
+
+.footer__contacts-mailText {
+  font-size: 14px;
+  line-height: 126.69%;
+  color: #414141;
 }

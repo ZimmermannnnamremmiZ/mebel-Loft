@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url("fonts/Roboto-Regular.ttf") format('truetype'),
-       url("fonts/RobotoCondensed-Regular.ttf") format('truetype')
+  src: url("/fonts/Roboto-Regular.ttf") format('truetype'),
+       url("/fonts/RobotoCondensed-Regular.ttf") format('truetype')
 }
 
 * {
@@ -242,6 +242,164 @@ body {
   padding-top: 28px;
 }
 
+.navigation {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 140px;
+}
+.navigation__start {
+  font-size: 12px;
+  line-height: 14px;
+  color: #969696;
+}
+.navigation__simbol {
+  font-size: 12px;
+  line-height: 14px;
+  color: #575757;
+  margin-left: 10px;
+}
+.navigation__end {
+  font-size: 12px;
+  line-height: 14px;
+  color: #969696;
+  margin-left: 10px;
+}
+
+.contacts__title {
+  color: #414141;
+  margin-left: 140px;
+  margin-top: 40px;
+}
+
+.contacts__form {
+  width: 467px;
+  height: 288px;
+  margin-left: 140px;
+  margin-top: 35px;
+}
+
+.contacts__form-nameMailLabels{
+  display: flex;
+}
+
+.contacts__form-nameLable {
+  font-size: 12px;
+  line-height: 14px;
+  color: #969696;
+}
+
+.contacts__form-emailLable {
+  font-size: 12px;
+  line-height: 14px;
+  color: #969696;
+  margin-left: 161px;
+}
+
+.contacts__form-nameMailInputs {
+  display: flex;
+}
+
+.contacts__form-nameInput {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  width: 207px;
+  height: 38px;
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #3C3C3C;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.07);
+}
+
+.contacts__form-emailInput {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  width: 240px;
+  height: 38px;
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 5px;
+  color: #3C3C3C;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.07);
+}
+
+.contacts__form-messageLable {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #969696;
+}
+
+.contacts__form-messageInput {
+  height: 142px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #3C3C3C;
+  resize: none
+}
+
+.contacts__form-fileButton {
+  padding-top: 13px;
+  padding-left: 20px;
+}
+
+.contacts__form-fileButtonInput {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 100%;
+
+}
+
+.contacts__form-fileButtonText{
+  font-size: 13px;
+  line-height: 15px;
+  color: #414141;
+}
+
+.contacts__form-fileButtonInput:focus ~ .contacts__form-fileButtonLable{
+  color: #6979F8;
+}
+.contacts__form-fileButtonInput:focus ~ .contacts__form-fileButtonLable .contacts__form-fileButtonIcon {
+  border-color: #3444c3;
+}
+
+.contacts__form-fileAndSubmit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__form-fileButton {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #414141;
+  width: 149px;
+  height: 40px;
+  margin-left: 178px;
+  margin-top: 20px;
+}
+
+
+.contacts__form-submit {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  width: 106px;
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
+  background-color: #245462;
+  color: #fff
+}
+
 footer {
   display: flex;
   position: absolute;
@@ -295,6 +453,7 @@ footer {
   font-size: 14px;
   line-height: 126.69%;
   margin-left: 30px;
+  color: #414141;
 }
 
 .footer__navigation-rightSide {

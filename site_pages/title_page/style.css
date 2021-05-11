@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url("fonts/Roboto-Regular.ttf") format('truetype'),
-       url("fonts/RobotoCondensed-Regular.ttf") format('truetype')
+  src: url("/fonts/Roboto-Regular.ttf") format('truetype'),
+       url("/fonts/RobotoCondensed-Regular.ttf") format('truetype')
 }
 
 * {
@@ -439,6 +439,7 @@ footer {
   font-size: 14px;
   line-height: 126.69%;
   margin-left: 30px;
+  color: #414141;
 }
 
 .footer__navigation-rightSide {

@@ -8,54 +8,80 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
   <body>
     <div class="container">
       <header class="header">
-        <div class="container">
           <div class="header__sections">
             <a class="header__sections-main mt-10" href="/site_pages/title_page/index.html">Главная</a>
             <a class="header__sections-about mt-10" href="#">О нас</a>
-            <a class="header__sections-contacts mt-10" href="contacts.html">Контакты</a>
-            <img class="header__phone-icon mt-10" src="images/phone.svg">
+            <a class="header__sections-contacts mt-10" href="index.html">Контакты</a>
+            <img class="header__phone-icon mt-10" src="/images/phone.svg">
             <a class="header__sections-phone mt-10" href="href=" tel:89648999119">8 (964) 89 99 119</a>
-            <img class="header__delivery-icon" src="images/delivery-icon.svg">
+            <img class="header__delivery-icon" src="/images/delivery-icon.svg">
             <a class="header__sections-delivery mt-10" href="#">Доставка</a>
           </div>
           <div class="header__searchLine">
-            <img class="header__logo" src="images/LOGO.svg" alt="logo">
+            <img class="header__logo" src="/images/LOGO.svg" alt="logo">
             <input class="header__searchLine-input">
-            <img class="header__searchLine-icon" src="images/search-icon.svg" alt="search">
+            <img class="header__searchLine-icon" src="/images/search-icon.svg" alt="search">
             <div class="header__searchLine-text">Поиск</div>
             </input>
-            <img class="header__searchLine-wishlist" src="images/wishlist-icon.svg" alt="search">
-            <img class="header__searchLine-bag" src="images/bag.svg" alt="search">
-            <img class="header__searchLine-profile" src="images/profile-icon.svg" alt="search">
+            <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
+            <img class="header__searchLine-bag" src="/images/bag.svg" alt="search">
+            <img class="header__searchLine-profile" src="/images/profile-icon.svg" alt="search">
           </div>
           <div class="header__menu">
-            <img class="header__menu-kitchen-icon" src="images/kitchen-icon.svg" alt="search">
+            <img class="header__menu-kitchen-icon" src="/images/kitchen-icon.svg" alt="search">
             <h2 class="header__menu-kitchen-text">Кухни</h2>
-            <img class="header__menu-bedroom-icon" src="images/bedroom-icon.svg" alt="search">
+            <img class="header__menu-bedroom-icon" src="/images/bedroom-icon.svg" alt="search">
             <h2 class="header__menu-bedroom-text">Спальни</h2>
-            <img class="header__menu-livingroom-icon" src="images/livingroom-icon.svg" alt="search">
+            <img class="header__menu-livingroom-icon" src="/images/livingroom-icon.svg" alt="search">
             <h2 class="header__menu-livingroom-text">Гостинные</h2>
-            <img class="header__menu-closet-icon" src="images/closet-icon.svg" alt="search">
+            <img class="header__menu-closet-icon" src="/images/closet-icon.svg" alt="search">
             <h2 class="header__menu-closet-text">Прихожие</h2>
-            <img class="header__menu-office-icon" src="images/office-icon.svg" alt="search">
+            <img class="header__menu-office-icon" src="/images/office-icon.svg" alt="search">
             <h2 class="header__menu-office-text">Офисная мебель</h2>
-            <img class="header__menu-childrensroom-icon" src="images/childrensroom-icon.svg" alt="search">
+            <img class="header__menu-childrensroom-icon" src="/images/childrensroom-icon.svg" alt="search">
             <h2 class="header__menu-childrensroom-text">Детская</h2>
             <h6 class="header__menu-stock-text">Акция</h6>
-            <img class="header__menu-etc-icon" src="images/etc.svg" alt="search">
+            <img class="header__menu-etc-icon" src="/images/etc.svg" alt="search">
           </div>
-        </div>
       </header>
       <section class="navigation">
         <p class="navigation__start">Главная</p>
-        <p class="navigation__simbol/">/</p>
+        <p class="navigation__simbol">/</p>
         <p class="navigation__end">Контакты</p>
+      </section>
+      <section class="contacts">
+        <div class="contacts__title">
+          Свяжитесь с нами
+        </div>
+        <form class="contacts__form" action="#" method="POST">
+          <div class="contacts__form-nameMailLabels">
+            <div class="contacts__form-nameLable">
+              Ваше имя
+            </div>
+            <div class="contacts__form-emailLable">
+              Ваш e-mail
+            </div>
+          </div>
+            <input type="text" class="contacts__form-nameInput">
+            <input type="text" class="contacts__form-emailInput">
+            <div class="contacts__form-messageLable">
+              Сообщение
+            </div>
+            <textarea type="text" class="contacts__form-messageInput"></textarea>
+            <div class="contacts__form-fileAndSubmit">
+              <div class="contacts__form-fileButton">
+                <input id="file" class="contacts__form-fileButtonInput" type="file" name="uploadFile"/>
+                <label class="contacts__form-fileButtonLable" for="file">
+                    <i class="contacts__form-fileButtonIcon"></i>
+                    <span class="contacts__form-fileButtonText">Прикрепить файл</span>
+                </label>
+            </div>
+              <input class="contacts__form-submit" type="submit" value="Отправить">
+            </div>
+        </form>
       </section>
       <footer class="footer">
         <div class="footer__navigation-leftSide">
@@ -82,21 +108,21 @@
         </div>
         <div class="footer__navigation-rightSide">
           <div class="footer__contacts">
-            <img class="footer__contacts-logo" src="images/LM.svg" alt="empty">
+            <img class="footer__contacts-logo" src="/images/LM.svg" alt="empty">
           </div>
           <div class="footer__contacts-adres">
             г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
           </div>
           <div class="footer__contacts-contacts">
-            <img class='footer__contacts-phoneImg' src="images/phone_in_footer.svg" alt="empty">
+            <img class='footer__contacts-phoneImg' src="/images/phone_in_footer.svg" alt="empty">
             <p class="footer__contacts-phoneText">
               8 (964) 89 99 119
             </p>
-            <img class='footer__contacts-instagramImg' src="images/inst.svg" alt="empty">
+            <img class='footer__contacts-instagramImg' src="/images/inst.svg" alt="empty">
             <p class="footer__contacts-instagramText">
               INSTAGRAM
             </p>
-            <img class='footer__contacts-mailImg' src="images/mail.svg" alt="empty">
+            <img class='footer__contacts-mailImg' src="/images/mail.svg" alt="empty">
             <p class="footer__contacts-mailText">
               mebel_loft_anapa@mail.ru
             </p>
@@ -106,6 +132,4 @@
     </div>
     <script src="script.js"></script>
   </body>
-</body>
-
 </html>

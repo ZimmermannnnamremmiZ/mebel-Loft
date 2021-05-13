@@ -26,26 +26,24 @@ body {
   margin: 0 auto;
 }
 
-.mt-10 {
-  margin-top: 10px;
-}
 
 .header__sections {
   display: flex;
-  height: 38px;
-  background-color: #313131;
-  font-weight: 400;
+  flex-wrap: wrap;
+  height: 115px;
   font-size: 14px;
   line-height: 16.41px;
 }
 
 .header__sections a {
-  color: #fff;
+  color: #414141;
   text-decoration: none;
+  margin-top: 59px;
 }
 
 .header__sections-main {
-  margin-left: 140px;
+  margin-left: 34.04px;
+
 }
 
 .header__sections-about {
@@ -57,7 +55,8 @@ body {
 }
 
 .header__phone-icon{
-  margin-left: 652px;
+  margin-left: 32px;
+  margin-top: 58px;
   width: 17px;
   height: 17px;
 }
@@ -70,7 +69,7 @@ body {
   margin-left: 30px;
   width: 29px;
   height: 16.92px;
-  margin-top: 10.46px;
+  margin-top: 59.46px;
 }
 
 
@@ -83,55 +82,58 @@ body {
 }
 
 .header__logo {
-  margin-top: 32px;
+  margin-top: 56px;
   margin-left: 140px;
   height: 25px;
   width: 112.96px;
 }
 
 .header__searchLine-input {
-  position: relative;
   border: 1px solid #E5E5E5;
-  width: 839px;
-  height: 50px;
-  margin-left: 30.04px;
-  margin-top: 20px;
+  width: 280px;
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 46px;
 }
 
 .header__searchLine-icon {
   position: absolute;
   width: 14px;
   height: 14px;
-  margin-left: 306px;
-  margin-top: 38px;
+  margin-left: 554px;
+  margin-top: 59px;
 }
 
 .header__searchLine-text {
   position: absolute;
-  margin-left: 340px;
-  margin-top: 37px;
+  color: #414141;
+  margin-left: 582px;
+  margin-top: 59px;
 }
 
 .header__searchLine-wishlist {
-  position: absolute;
-  margin-left: 1167px;
-  margin-top: 37px;
+  margin-left: 40px;
+  margin-top: 58px;
   width: 19.83px;
   height: 17px;
 }
 
 .header__searchLine-bag {
-  position: absolute;
-  margin-left: 1217px;
-  margin-top: 36px;
+  margin-left: 30.17px;
+  margin-top: 58px;
   width: 15.13px;
   height: 18px;
 }
 
-.header__searchLine-profile {
+.header__searchLine-alarm {
   position: absolute;
-  margin-left: 1266px;
-  margin-top: 36px;
+  margin-left: 1225px;
+  margin-top: 59px;
+}
+
+.header__searchLine-profile {
+  margin-left: 33.87px;
+  margin-top: 59px;
   width: 12.87px;
   height: 18px;
 }
@@ -344,12 +346,22 @@ body {
   font-size: 12px;
   line-height: 14px;
   color: #3C3C3C;
-  resize: none
+  resize: none;
+  box-shadow: inset 1px 1px 5px rgb(0 0 0 / 7%);
 }
 
 .contacts__form-fileButton {
   padding-top: 13px;
   padding-left: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #414141;
+  width: 149px;
+  margin-left: 178px;
+  margin-top: 20px;
 }
 
 .contacts__form-fileButtonInput {
@@ -357,7 +369,6 @@ body {
   opacity: 0;
   top: 0;
   right: 100%;
-
 }
 
 .contacts__form-fileButtonText{
@@ -377,19 +388,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-.contacts__form-fileButton {
-  font-family: Roboto;
-  font-style: normal;
-  font-size: 13px;
-  line-height: 15px;
-  color: #414141;
-  width: 149px;
-  height: 40px;
-  margin-left: 178px;
-  margin-top: 20px;
-}
-
 
 .contacts__form-submit {
   font-family: Roboto;
@@ -556,7 +554,7 @@ footer {
 }
 
 .footer__navigation-title {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 14px;
   line-height: 126.69%;
 }

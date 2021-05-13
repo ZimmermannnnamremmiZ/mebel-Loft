@@ -14,6 +14,10 @@
     background:transparent;
 }
 
+.display-none {
+  display: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -379,6 +383,75 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+}
+
+.toBasket  {
+
+}
+
+.toBasket__sizesLable {
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #414141;
+}
+
+.toBasket__sizes {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 8px;
+  font-size: 9px;
+  line-height: 11px;
+  color: #C4C4C4;
+}
+
+.toBasket__depth-text {
+  margin-left: 37px;
+}
+
+.toBasket__height-text {
+  margin-left: 37px;
+}
+
+.toBasket__x {
+  display: flex;
+  margin-left: 75px;
+  width: 7px;
+  height: 14px;
+}
+
+.toBasket__x-svg2 {
+  margin-left: 72px;
+}
+
+.toBasket__num {
+  display: flex;
+  font-size: 9px;
+  line-height: 11px;
+  color: #414141;
+  margin-left: 20px;
+  margin-top: -6px;
+}
+
+.toBasket__depth-num {
+  margin-left: 50px;
+}
+
+.toBasket__height-num {
+  margin-left: 52px;
+}
+
+.sizes__button {
+  width: 223px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 17px;
+  background: #245462;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
 }
 
 

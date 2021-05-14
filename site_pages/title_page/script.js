@@ -39,20 +39,6 @@ function showSlides(n) {
 }
 
 
-// let toBasketBox = document.querySelector('.toBasket');
-// let bestsellerBoxItem = document.querySelectorAll('.bestsellers__box-item');
-// bestsellerBoxItem.forEach((el) => {
-//     el.addEventListener('click', (item) => {
-//         if (item.target.querySelector('.toBasket').classList.contains('display-none')) {
-//             item.target.querySelector('.toBasket').classList.remove('display-none');
-//           } else {
-//             item.target.querySelector('.toBasket').classList.add('display-none');
-//           }
-//           });
-// })
-
-
-
 // слушатель для скрытия и показа блока с доп. информацией и добавления товара в корзину
 document.addEventListener('click', function(event) {
     let id = event.target.dataset.toggleId;

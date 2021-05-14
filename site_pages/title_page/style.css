@@ -94,11 +94,11 @@ body {
 }
 
 .header__searchLine-input {
-  position: relative;
+  position: absolute;
   border: 1px solid #E5E5E5;
   width: 839px;
   height: 50px;
-  margin-left: 30.04px;
+  margin-left: 291.04px;
   margin-top: 20px;
 }
 
@@ -117,8 +117,7 @@ body {
 }
 
 .header__searchLine-wishlist {
-  position: absolute;
-  margin-left: 1167px;
+  margin-left: 911px;
   margin-top: 37px;
   width: 19.83px;
   height: 17px;
@@ -149,23 +148,36 @@ body {
   margin-top: 20px;
 }
 
+.header__menu-cell {
+  display: flex;
+  text-align: center;
+}
+
+.header__menu-cell:hover {
+  background-color: #245462;
+  color: #fff;
+}
+
 .header__menu-kitchen-icon {
   width: 23px;
   height: 23px;
-  padding-left: 40px;
   padding-top: 23px;
+  padding-left: 25px;
 }
+
 .header__menu-kitchen-text {
-  padding-left: 10px;
   padding-top: 25px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
+  padding-left: 10px;
+  padding-right: 25px;
+
 }
 .header__menu-bedroom-icon {
   width: 28px;
   height: 22.22px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 24px;
 }
 .header__menu-bedroom-text {
@@ -173,12 +185,13 @@ body {
   font-size: 16px;
   line-height: 18.75px;
   padding-left: 10px;
+  padding-right: 25px;
   padding-top: 25px;
 }
 .header__menu-livingroom-icon {
   width: 30px;
   height: 22.03px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 24px;
 }
 .header__menu-livingroom-text {
@@ -190,11 +203,12 @@ body {
   line-height: 18.75px;
   padding-left: 10px;
   padding-top: 25px;
+  padding-right: 25px;
 }
 .header__menu-closet-icon {
   width: 21.91px;
   height: 22px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 24px;
 }
 .header__menu-closet-text {
@@ -203,11 +217,12 @@ body {
   line-height: 18.75px;
   padding-left: 10.04px;
   padding-top: 25px;
+  padding-right: 25px;
 }
 .header__menu-office-icon {
   width: 22px;
   height: 22px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 24px;
 }
 .header__menu-office-text {
@@ -216,11 +231,12 @@ body {
   line-height: 18.75px;
   padding-left: 10px;
   padding-top: 25px;
+  padding-right: 25px;
 }
 .header__menu-childrensroom-icon {
   width: 22px;
   height: 22px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 24px;
 }
 .header__menu-childrensroom-text {
@@ -229,21 +245,81 @@ body {
   line-height: 18.75px;
   padding-left: 10px;
   padding-top: 25px;
+  padding-right: 25px;
 }
 .header__menu-stock-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
   color: #D74444;
-  padding-left: 50.04px;
+  padding-left: 25px;
   padding-top: 25px;
+  padding-right: 25px;
 }
+
+.header__menu-stock-text:hover {
+  color: #fff;
+}
+
 
 .header__menu-etc-icon {
   width: 4.27px;
   height: 14px;
-  padding-left: 47px;
+  padding-left: 25px;
   padding-top: 28px;
+  padding-right: 25px;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #fff;
+  z-index: 99;
+  width: 189px;
+  height: 432px;
+  text-align: start;
+  padding-left: 15px;
+  margin-top: 70px;
+}
+
+
+.kitchen:hover .dropdown__kitchen {
+  display: flex;
+}
+
+.bedroom:hover .dropdown__bedroom {
+  display: flex;
+}
+
+.livingroom:hover .dropdown__livingroom {
+  display: flex;
+}
+
+.closet:hover .dropdown__closet {
+  display: flex;
+}
+
+.office:hover .dropdown__office {
+  display: flex;
+}
+
+.menu-stock:hover .dropdown__menu-stock {
+  display: flex;
+  width: 151px;
+  height: 189px;
+}
+
+.childrensroom:hover .dropdown__childrensroom {
+  display: flex;
+}
+
+.dropdown a {
+  margin-top: 25px;
+  text-decoration: none;
+  color: #414141;
 }
 
 .slider__box{
@@ -338,6 +414,26 @@ body {
   margin-top: 30px;
 }
 
+.bestsellers__discount {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-left: 743px;
+  margin-top: 54px;
+}
+
+.bestsellers__discount-logo {
+  width:17px;
+  height: 17px;
+}
+
+.bestsellers__discount-num {
+  margin-left: 7px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
 .bestsellers__box {
   margin-left: 140px;
   padding-top: 35px;
@@ -359,6 +455,7 @@ body {
 .bestsellers__item-img {
   margin-bottom: 150px;
   margin-left: 32px;
+  margin-top: 38px;
 }
 
 .bestsellers__item-name {
@@ -379,14 +476,10 @@ body {
 
 .bestsellers__item-price {
   margin-left: 20px;
-  margin-top: 9px;
-  font-weight: 500;
+  margin-top: 15px;
+  font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-}
-
-.toBasket  {
-
 }
 
 .toBasket__sizesLable {

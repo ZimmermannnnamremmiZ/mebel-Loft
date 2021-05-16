@@ -47,4 +47,15 @@ document.addEventListener('click', function(event) {
     let elem = document.getElementById(id);
 
     elem.hidden = !elem.hidden;
+    elem.parentElement.classList.toggle('box_withShadow');
+
   });
+
+
+
+let search = document.getElementById('search');
+search.addEventListener('click', () => {if (search.textContent.length !== 0) {
+    search.style.backgroundImage = 'none'
+} else {
+    search.style.backgroundImage = 'url(/images/search-icon.svg)'
+}})

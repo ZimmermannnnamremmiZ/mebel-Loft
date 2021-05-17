@@ -106,13 +106,9 @@ body {
   margin-top: 20px;
 }
 
-/* .header__searchLine-input::after {
-  content: url('/images/search-icon.svg');
-
-} */
 
 input#search {
-
+  background-image: url(/images/search-icon.svg);
   background-repeat: no-repeat;
   background-position: 15px 17px;
   text-indent: 35px;
@@ -133,6 +129,9 @@ input#search {
   margin-top: 36px;
   width: 15.13px;
   height: 18px;
+  background-image: url(/images/bag.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header__searchLine-profile {
@@ -550,7 +549,7 @@ input#search {
   margin-left: 52px;
 }
 
-.sizes__button {
+.toBascet__add {
   width: 223px;
   height: 40px;
   margin-left: 20px;

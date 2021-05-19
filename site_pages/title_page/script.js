@@ -102,7 +102,7 @@ document.addEventListener('click', function(event) {
 
 // Реализация корзины
 var d = document,
-    itemBox = d.querySelectorAll('.item_box'); // блок каждого товара
+    itemBox = d.querySelectorAll('.bestsellers__box-item'); // блок каждого товара
 
 function addEvent(elem, type, handler){
   if(elem.addEventListener){
@@ -128,14 +128,16 @@ function setCartData(e){
 function addToCart(e){
   this.disabled = true; // блокируем кнопку на время операции с корзиной
   var cartData = getCartData() || {}, // получаем данные корзины или создаём новый объект, если данных еще нет
-      parentBox = this.parentNode, // родительский элемент кнопки "Добавить в корзину"
+      parentBox = this.parentNode.parentNode, // родительский элемент кнопки "Добавить в корзину"
       itemId = this.getAttribute('data-id'), // ID товара
-      itemTitle = parentBox.querySelector('.item_title').innerHTML, // название товара
-      itemPrice = parentBox.querySelector('.item_price').innerHTML; // стоимость товара
+      itemImg = parentBox.querySelector('.bestsellers__item-img').getAttribute('src'),
+      itemTitle = parentBox.querySelector('.bestsellers__item-name').innerHTML, // название товара
+      itemPrice = parentBox.querySelector('.bestsellers__item-price').innerHTML; // стоимость товара
+
   if(cartData.hasOwnProperty(itemId)){ // если такой товар уже в корзине, то добавляем +1 к его количеству
-    cartData[itemId][2] += 1;
+    cartData[itemId][3] += 1;
   } else { // если товара в корзине еще нет, то добавляем в объект
-    cartData[itemId] = [itemTitle, itemPrice, 1];
+    cartData[itemId] = ["<img src='" + itemImg + "')>", itemTitle, itemPrice, 1];
   }
   if(!setCartData(cartData)){ // Обновляем данные в LocalStorage
     this.disabled = false; // разблокируем кнопку после обновления LS
@@ -144,5 +146,5 @@ function addToCart(e){
 }
 // Устанавливаем обработчик события на каждую кнопку "Добавить в корзину"
 for(var i = 0; i < itemBox.length; i++){
-  addEvent(itemBox[i].querySelector('.add_item'), 'click', addToCart);
+  addEvent(itemBox[i].querySelector('.toBascet__add'), 'click', addToCart);
 }

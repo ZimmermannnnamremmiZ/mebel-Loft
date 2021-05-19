@@ -67,15 +67,15 @@ function openCart(e){
       totalItems = '';
   // если что-то в корзине уже есть, начинаем формировать данные для вывода
   if(cartData !== null){
-    totalItems = '<table class="shopping_list"><tr><th>Наименование</th><th>Цена</th><th>Кол-во</th></tr>';
-    for(var items in cartData){
-      totalItems += '<tr>';
-      for(var i = 0; i < cartData[items].length; i++){
-        totalItems += '<td>' + cartData[items][i] + '</td>';
+    totalItems = '<div class="shopping_list">';
+    for(let items in cartData){
+      totalItems += '<div>';
+      for(let i = 0; i < cartData[items].length; i++){
+        totalItems += `<div class='${i}'>` + cartData[items][i] + '</div>'
       }
-      totalItems += '</tr>';
+      totalItems += '</div>';
     }
-    totalItems += '</table>';
+    totalItems += '</div>';
     cartCont.innerHTML = totalItems;
   } else {
     // если в корзине пусто, то сигнализируем об этом

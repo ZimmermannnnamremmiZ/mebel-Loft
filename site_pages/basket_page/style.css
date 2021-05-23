@@ -1,2 +1,93 @@
 @import url(/site_pages/contacts_page/style.css);
 
+.shopping__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.shoping__item {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "img a a b b b h"
+    "img c d i f g h";
+  width: 1140px;
+  height: 120px;
+  margin-left: 130px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+}
+
+.shoping__img {
+  width: 100px;
+  height: 75px;
+}
+
+.item_element0 {
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
+}
+
+.item_element1 {
+  grid-area: a;
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #414141;
+}
+
+.item_element2 {
+  grid-area: b;
+  justify-self: end;
+  padding-top: 25px;
+  margin-right: -100px;
+  font-weight: bold;
+}
+
+.item_element3 {
+  grid-area: c;
+  justify-self: end;
+  font-size: 12px;
+  line-height: 14px;
+  padding-left: 130px;
+}
+
+.item_element4 {
+  grid-area: d;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 10px;
+}
+
+.item_element5 {
+  grid-area: i;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.item_element6 {
+  grid-area: f;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.item_element7 {
+  grid-area: g;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.item_element8 {
+  grid-area: h;
+  justify-self: end;
+  background-image: url('/images/basket_page/Vector.svg');
+  background-repeat: no-repeat;
+  background-color: #F9F9F9;
+  background-position: center;
+  width: 57px;
+  height: 120px;
+}
+

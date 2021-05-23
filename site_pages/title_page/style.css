@@ -134,6 +134,12 @@ input#search {
   background-size: contain;
 }
 
+.header__searchLine-alarm {
+  position: absolute;
+  margin-left: 1227px;
+  margin-top: 38px;
+}
+
 .header__searchLine-profile {
   position: absolute;
   margin-left: 1266px;

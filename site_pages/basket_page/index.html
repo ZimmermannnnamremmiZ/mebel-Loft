@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <body>
     <div class="container">
       <header class="header">
           <div class="header__sections">
@@ -25,7 +24,7 @@
             <a class="header__sections-delivery" href="#">Доставка</a>
             <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
             <img class="header__searchLine-bag" src="/images/bag.svg" alt="search">
-            <img class="header__searchLine-alarm" src="/images/оповещение.svg">
+            <img id="dota" class="header__searchLine-alarm" src="/images/оповещение.svg" hidden>
             <img class="header__searchLine-profile" src="/images/profile-icon.svg">
           </div>
 
@@ -51,9 +50,8 @@
         <p class="navigation__simbol">/</p>
         <p class="navigation__end">Корзина</p>
       </section>
-      <button id="checkout">Оформить заказ</button>
-      <button id="clear_cart">Очистить корзину</button>
       <div id="cart_content"></div>
+    </div>
       <script src="script.js"></script>
 </body>
 </html>

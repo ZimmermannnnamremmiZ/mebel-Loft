@@ -86,6 +86,7 @@ function addToCart(e){
       itemWidth = this.parentNode.querySelector('.toBasket__width-num').innerHTML;
       itemDepth = this.parentNode.querySelector('.toBasket__depth-num').innerHTML;
       itemHeight = this.parentNode.querySelector('.toBasket__num').querySelector('.toBasket__height-num').innerHTML;
+      
 
   if(cartData.hasOwnProperty(itemId)){ // если такой товар уже в корзине, то добавляем +1 к его количеству
     cartData[itemId][4] += 1;

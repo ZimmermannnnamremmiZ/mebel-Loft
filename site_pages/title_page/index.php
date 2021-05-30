@@ -14,7 +14,7 @@
     <header class="header">
       <div class="container">
         <div class="header__sections">
-          <a class="header__sections-main mt-10" href="index.html">Главная</a>
+          <a class="header__sections-main mt-10" href="index.php">Главная</a>
           <a class="header__sections-about mt-10" href="#">О нас</a>
           <a class="header__sections-contacts mt-10" href="/site_pages/contacts_page/index.html">Контакты</a>
           <img class="header__phone-icon mt-10" src="/images/title_images/phone.svg">
@@ -183,37 +183,52 @@
         <div class="bestsellers__discount-num">-25%</div>
       </div>
       <div class="bestsellers__box">
-         <div class="bestsellers__box-item" data-toggle-id="hidde__toBasket1">
-          <img class="bestsellers__item-loverIcon" src="/images/список желаемого.svg" alt="empty">
-          <img class="bestsellers__item-img" src="/images/image 2.png" alt="empty" data-toggle-id="hidde__toBasket1">
-          <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket1">
-            Валенсия Beige
+        <?php
+          $dbUser = 'root';
+          $dbName = 'мебель loft';
+          $dbPass = 'root';
+          $mysqli = new mysqli('localhost', $dbUser, $dbPass, $dbName);
+          $query = 'set names utf8';
+          $mysqli->query($query);
+          $query = 'select * from products';
+          $results = $mysqli->query($query);
+          while($row = $results->fetch_assoc()){
+            echo '
+            <div class="bestsellers__box-item" data-toggle-id="hidde__toBasket'.$row["id"].'">
+            <img class="bestsellers__item-loverIcon" src="/images/список желаемого.svg" alt="empty">
+            <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
+            <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
+              '.$row["name"].'
+            </div>
+            <div class="bestsellers__item-category" data-toggle-id="hidde__toBasket'.$row["id"].'">
+            '.$row["category"].'
+            </div>
+            <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket'.$row["id"].'">
+            '.$row["price"].'₽
+            </div>
+            <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
+              <div class="toBasket__sizesLable">Размеры</div>
+                <div class="toBasket__sizes">
+                  <div class="toBasket__width-text">ШИРИНА</div>
+                  <div class="toBasket__depth-text">ГЛУБИНА</div>
+                  <div class="toBasket__height-text">ВЫСОТА</div>
+                </div>
+                <div class="toBasket__x">
+                  <img class="toBasket__x-svg1" src="/images/title_images/×.svg" alt="empty">
+                  <img class="toBasket__x-svg2" src="/images/title_images/×.svg" alt="empty">
+                </div>
+                <div class="toBasket__num">
+                  <div class="toBasket__width-num">'.$row["width"].' СМ</div>
+                  <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
+                  <div class="toBasket__height-num">'.$row["height"].' СМ</div>
+                </div>
+                <button class="toBascet__add" data-id="'.$row["id"].'">Добавить в корзину</button>
+            </div>
           </div>
-          <div class="bestsellers__item-category" data-toggle-id="hidde__toBasket1">
-            Барные стулья
-          </div>
-          <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket1">
-            2 300₽
-          </div>
-          <div class="toBasket" id="hidde__toBasket1" hidden>
-            <div class="toBasket__sizesLable">Размеры</div>
-              <div class="toBasket__sizes">
-                <div class="toBasket__width-text">ШИРИНА</div>
-                <div class="toBasket__depth-text">ГЛУБИНА</div>
-                <div class="toBasket__height-text">ВЫСОТА</div>
-              </div>
-              <div class="toBasket__x">
-                <img class="toBasket__x-svg1" src="/images/title_images/×.svg" alt="empty">
-                <img class="toBasket__x-svg2" src="/images/title_images/×.svg" alt="empty">
-              </div>
-              <div class="toBasket__num">
-                <div class="toBasket__width-num">43 СМ</div>
-                <div class="toBasket__depth-num">43 СМ</div>
-                <div class="toBasket__height-num">77 СМ</div>
-              </div>
-              <button class="toBascet__add" data-id="1">Добавить в корзину</button>
-          </div>
-        </div>
+            ';
+          }
+        ?>
+
         <!--<div class="bestsellers__box-item" data-toggle-id="hidde__toBasket2">
           <img class="bestsellers__item-loverIcon" src="/images/список желаемого.svg" alt="empty">
           <img class="bestsellers__item-img" src="/images/image 2-1.png" alt="empty" data-toggle-id="hidde__toBasket2">

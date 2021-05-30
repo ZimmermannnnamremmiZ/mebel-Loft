@@ -24,13 +24,13 @@
   height: 75px;
 }
 
-.item_element0 {
+.shoping__img {
   grid-area: img;
   justify-self: center;
   align-self: center;
 }
 
-.item_element1 {
+.item_title {
   grid-area: a;
   padding-top: 25px;
   font-weight: bold;
@@ -39,7 +39,7 @@
   color: #414141;
 }
 
-.item_element2 {
+.item_price {
   grid-area: b;
   justify-self: end;
   padding-top: 25px;
@@ -47,7 +47,7 @@
   font-weight: bold;
 }
 
-.item_element3 {
+.item_textQuantity {
   grid-area: c;
   justify-self: end;
   font-size: 12px;
@@ -55,32 +55,32 @@
   padding-left: 130px;
 }
 
-.item_element4 {
+.item_quantity {
   grid-area: d;
   font-size: 12px;
   line-height: 14px;
   margin-left: 10px;
 }
 
-.item_element5 {
+.item_width {
   grid-area: i;
   font-size: 12px;
   line-height: 14px;
 }
 
-.item_element6 {
+.item_depth {
   grid-area: f;
   font-size: 12px;
   line-height: 14px;
 }
 
-.item_element7 {
+.item_height {
   grid-area: g;
   font-size: 12px;
   line-height: 14px;
 }
 
-.item_element8 {
+.item_delete {
   grid-area: h;
   justify-self: end;
   background-image: url('/images/basket_page/Vector.svg');

@@ -5,9 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onLoad="showMyCart()">
     <div class="container">
       <header class="header">
           <div class="header__sections">
@@ -50,8 +52,22 @@
         <p class="navigation__simbol">/</p>
         <p class="navigation__end">Корзина</p>
       </section>
-      <div id="cart_content"></div>
+      <div class="in-check" id="in-check">
+        <div class="shopping__list">
+          <div class="shoping__item">
+            <img class='shoping__img' src='itemImg'>
+            <div class="item_title"></div>
+            <div class="item_price"></div>
+            <div class="item_textQuantity">Количество:</div>
+            <div class="item_quantity"></div>
+            <div class="item_width"></div>
+            <div class="item_depth"></div>
+            <div class="item_height"></div>
+            <button id="delete" class="item_delete"></button>
+          </div>
+        </div>
+      </div>
     </div>
-      <script src="script.js"></script>
+
 </body>
 </html>

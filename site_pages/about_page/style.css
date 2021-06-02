@@ -51,6 +51,7 @@
 }
 .benefits {
     margin-left: 140px;
+    margin-right: 128px;
 }
 .benefits__title {
     margin-top: 100px;
@@ -90,4 +91,51 @@
     font-size: 14px;
     line-height: 20px;
     color: #686868;
+}
+.advantages {
+    margin-top: 95px;
+    background-color: #D7E8ED;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 80px;
+}
+
+.advantages__item-title {
+    padding-top: 65px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #414141;
+    margin-bottom: 15px;
+}
+
+.advantages__item-line {
+    margin-top: 10px;
+    background-color: #245462;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    
+}
+.advantages__item-text {
+    width: 540px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #686868;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.advantages2 {
+    margin-top: 70px;
+}
+.advantages2__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages2__item {
+    width: 545px;
+    height: 141px;
 }

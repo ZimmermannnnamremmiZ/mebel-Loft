@@ -1,0 +1,93 @@
+@import url(/site_pages/contacts_page/style.css);
+
+.about {
+    display: flex;
+    margin-left: 238px;
+}
+.about__textBlock-head {
+    position: relative;
+    margin-top: 119px;
+    color:#245462;
+}
+.about__textBlock-head::before {
+    content: '';
+    background-color: #245462;
+    width: 208px;
+    height: 1px;
+    position: absolute;
+    margin-left: -220px;
+    margin-top: 8px;
+}
+.about__textBlock-title {
+    width: 421px;
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #414141;
+}
+.about__textBlock-text {
+    width: 421px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #686868;
+}
+.about__pictureBlock {
+    display: flex;
+}
+.about__pictureBlock-img {
+    margin-top: 107px;
+    margin-left: 48px;
+    position: relative;
+    z-index: 100;
+}
+
+.about__pictureBlock-coloredBlock {
+    background-color: #D7E8ED;
+    width: 422px;
+    height: 500px;
+    position: absolute;
+    margin-left: 329px;
+}
+.benefits {
+    margin-left: 140px;
+}
+.benefits__title {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.015em;
+    color: #414141;
+    padding-bottom: 10px;
+}
+
+.benefits__box {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.benefits__item {
+    display: flex;
+    width: 538px;
+}
+
+.benefits__item-textBox {
+    margin-left: 30px;
+}
+
+.benefits__item-title {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    color: #414141;
+}
+
+.benefits__item-text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #686868;
+}

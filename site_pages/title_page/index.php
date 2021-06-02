@@ -15,7 +15,7 @@
       <div class="container">
         <div class="header__sections">
           <a class="header__sections-main mt-10" href="index.php">Главная</a>
-          <a class="header__sections-about mt-10" href="#">О нас</a>
+          <a class="header__sections-about mt-10" href="/site_pages/about_page/index.html">О нас</a>
           <a class="header__sections-contacts mt-10" href="/site_pages/contacts_page/index.html">Контакты</a>
           <img class="header__phone-icon mt-10" src="/images/title_images/phone.svg">
           <a class="header__sections-phone mt-10" href="href=" tel:89648999119">8 (964) 89 99 119</a>

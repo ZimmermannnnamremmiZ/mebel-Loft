@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="/site_pages/basket_page/myCart.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -222,7 +224,7 @@
                   <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
                   <div class="toBasket__height-num">'.$row["height"].' СМ</div>
                 </div>
-                <button class="toBascet__add" data-id="'.$row["id"].'">Добавить в корзину</button>
+                <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].')">Добавить в корзину</button>
             </div>
           </div>
             ';

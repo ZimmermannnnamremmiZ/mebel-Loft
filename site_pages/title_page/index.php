@@ -28,7 +28,7 @@
           <img class="header__logo" src="/images/LOGO.svg" alt="logo">
           <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
           <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
-          <a class="header__searchLine-bag" href="/site_pages/basket_page/index.html" alt="search"></a>
+          <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
           <img id="dota" class="header__searchLine-alarm" src="/images/оповещение.svg" hidden>
           <img class="header__searchLine-profile" src="/images/profile-icon.svg" alt="search">
         </div>

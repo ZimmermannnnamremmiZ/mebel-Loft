@@ -52,13 +52,13 @@ if ($action == 'show') {
 };
 
 
-    echo '
-    <div class="totalSumBox">
-    <div class="totalSumBox__text">Итоговая стоимость:</div>
-    <div class="totalSumBox__totalSum">'.$total.'₽</div>
-    <input class="totalSumBox__checkout" type="button" value="Оформить заказ">
-    </div>
-    ';
+echo '
+<div class="totalSumBox">
+<div class="totalSumBox__text">Итоговая стоимость:</div>
+<div class="totalSumBox__totalSum">'.$total.'₽</div>
+<input class="totalSumBox__checkout" type="button" value="Оформить заказ">
+</div>
+';
 
     // склонения для числовых значений
     function num_word($value, $words, $show = true)
@@ -79,8 +79,6 @@ if ($action == 'show') {
 
         return $out;
     };
-
-    $ALLZ = num_word($quantityAll, array('предмет', 'предмета', 'предметов'));
 
     echo '
     <div class="totalQuantity">

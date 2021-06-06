@@ -92,7 +92,8 @@
 }
 
 .in-check {
-  margin: 40px auto;
+  margin: 10px auto;
+
 }
 
 .totalSumBox {
@@ -128,21 +129,31 @@
 }
 
 .totalQuantity {
-  position: relative;
+  position: absolute;
+  margin-top: -20px;
   display: flex;
-  justify-content: space-between;
+  font-size: 16px;
+  line-height: 19px;
+  color: #414141;
+  font-weight: bold;
 }
 
 .totalQuantity__text {
-  margin-left: 130px;
+  margin-left: 194px;
   font-size: 16px;
   line-height: 19px;
   color: #414141;
 }
 
 .totalQuantity__num {
-  margin-right: 130px;
+  margin-left: 940px;
   font-size: 16px;
   line-height: 19px;
   color: #414141;
+}
+
+.in-checkz {
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
 }

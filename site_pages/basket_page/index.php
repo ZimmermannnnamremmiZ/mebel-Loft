@@ -52,7 +52,7 @@
         <p class="navigation__simbol">/</p>
         <p class="navigation__end">Корзина</p>
       </section>
-      <div class="in-check" id="in-check">
+      <div class="in-checkz" id="in-check">
         <div class="shopping__list">
           <div class="shoping__item">
             <img class="shoping__img" src="itemImg">

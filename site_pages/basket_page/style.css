@@ -92,5 +92,57 @@
 }
 
 .in-check {
-  margin: 0 auto;
+  margin: 40px auto;
+}
+
+.totalSumBox {
+  display: flex;
+}
+
+.totalSumBox__text {
+  margin-left: 835px;
+  margin-top: 53px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #414141;
+}
+
+.totalSumBox__totalSum {
+  margin-left: 15px;
+  margin-top: 51px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #414141;
+}
+
+.totalSumBox__checkout {
+  margin-left: 25px;
+  margin-top: 40px;
+  background-color: #245462;
+  width: 202px;
+  height: 40px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.totalQuantity {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalQuantity__text {
+  margin-left: 130px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #414141;
+}
+
+.totalQuantity__num {
+  margin-right: 130px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #414141;
 }

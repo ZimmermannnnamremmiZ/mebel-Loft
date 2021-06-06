@@ -55,7 +55,7 @@
       <div class="in-check" id="in-check">
         <div class="shopping__list">
           <div class="shoping__item">
-            <img class=""shoping__img" src="itemImg">
+            <img class="shoping__img" src="itemImg">
             <div class="item_title"></div>
             <div class="item_price"></div>
             <div class="item_textQuantity">Количество:</div>

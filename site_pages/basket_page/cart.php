@@ -4,7 +4,7 @@ session_start();
 $mysqli = new mysqli('localhost', 'root', 'root', 'мебель loft');
 $query = 'set names utf8';
 $mysqli->query($query);
-$total = 0; 
+$total = 0;
 
 $action = $_POST["action"];
 if ($action == 'show') {
@@ -29,7 +29,7 @@ if ($action == 'show') {
             array_push($priceA, $pushA);
             $bT = implode(",", $priceA);
             $total += $bT;
-
+            $quantityAll += $num;
             echo'
             <div class="in-check" id="in-check">
                 <div class="shopping__list">
@@ -45,43 +45,49 @@ if ($action == 'show') {
                         <button class="item_delete" id="delete" onClick="delFromCart('.$row["id"].')"></button>
                     </div>
                 </div>
-                <div class="total">'.$total.'</div>
             </div>
             ';
         }
     }
 };
 
-foreach($cart as $total) {
-    $totalSum += $total;
+
     echo '
-    <div class="totalSum">'.$totalSum.'</div>
+    <div class="totalSumBox">
+    <div class="totalSumBox__text">Итоговая стоимость:</div>
+    <div class="totalSumBox__totalSum">'.$total.'₽</div>
+    <input class="totalSumBox__checkout" type="button" value="Оформить заказ">
+    </div>
     ';
-}
-// for ($i = 0; $i < count($cart); $i++) {
-//     $idProduct = $cart[$i]["idProduct"];   // ???
-//     $query = 'select * from products where id = '.$cart[$i]["idProduct"].'';
-//     $results = $mysqli->query($query);
-//     while($row = $results->fetch_assoc()){
-//         echo '
-//         <div class="in-check" id="in-check">
-//             <div class="shopping__list">
-//                 <div class="shoping__item">
-//                     <img class="shoping__img" src="'.$row["image"].'">
-//                     <div class="item_title">'.$row["name"].'</div>
-//                     <div class="item_price">'.$row["price"].'₽</div>
-//                     <div class="item_textQuantity">Количество:</div>
-//                     <div class="item_quantity">:)</div>
-//                     <div class="item_width">'.$row["width"].' СМ</div>
-//                     <div class="item_depth">'.$row["depth"].' СМ</div>
-//                     <div class="item_height">'.$row["height"].' СМ</div>
-//                     <button class="item_delete" id="delete" onClick="delFromCart('.$row["id"].')"></button>
-//                 </div>
-//             </div>
-//         </div>
-//         ';
-//     }
-//     };
+
+    // склонения для числовых значений
+    function num_word($value, $words, $show = true)
+    {
+        $num = $value % 100;
+        if ($num > 19) {
+            $num = $num % 10;
+        }
+
+        $out = ($show) ?  $value . ' ' : '';
+        switch ($num) {
+            case 1:  $out .= $words[0]; break;
+            case 2:
+            case 3:
+            case 4:  $out .= $words[1]; break;
+            default: $out .= $words[2]; break;
+        }
+
+        return $out;
+    };
+
+    $ALLZ = num_word($quantityAll, array('предмет', 'предмета', 'предметов'));
+
+    echo '
+    <div class="totalQuantity">
+    <div class="totalQuantity__text">Ваша корзина</div>
+    <div class="totalQuantity__num">'.num_word($quantityAll, array('предмет', 'предмета', 'предметов')).'</div>
+    </div>
+    ';
 
 
 #####################################

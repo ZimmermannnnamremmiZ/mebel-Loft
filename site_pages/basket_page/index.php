@@ -68,7 +68,54 @@
         </div>
         <div class="total"></div>
       </div>
-    </div>
+
     <div class="totalSum"></div>
+    <footer class="footer footer-bottom">
+        <div class="footer__navigation-leftSide">
+          <div class="footer__navigation">
+            <p class="footer__navigation-title">
+              НАВИГАЦИЯ
+            </p>
+            <div class="footer__navigation-item">
+              <a class="footer__navigation-itemText" href="#">Кухни</a>
+              <a class="footer__navigation-itemText" href="#">Прихожие</a>
+              <a class="footer__navigation-itemText" href="#">Шкафы</a>
+              <a class="footer__navigation-itemText" href="#">Спальни</a>
+              <a class="footer__navigation-itemText" href="#">Офисная мебель</a>
+              <a class="footer__navigation-itemText" href="#">Матрасы</a>
+              <a class="footer__navigation-itemText" href="#">Гостинные</a>
+              <a class="footer__navigation-itemText" href="#">Детская</a>
+              <a class="footer__navigation-itemText" href="#">Мягкая мебель</a>
+            </div>
+            <div class="footer__navigation-item2">
+              <a class="footer__navigation-stock" href="#">Акция</a>
+              <a class="footer__navigation-newItems" href="#">Новинки</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__navigation-rightSide">
+          <div class="footer__contacts">
+            <img class="footer__contacts-logo" src="/images/LM.svg" alt="empty">
+          </div>
+          <div class="footer__contacts-adres">
+            г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
+          </div>
+          <div class="footer__contacts-contacts">
+            <img class='footer__contacts-phoneImg' src="/images/phone_in_footer.svg" alt="empty">
+            <p class="footer__contacts-phoneText">
+              8 (964) 89 99 119
+            </p>
+            <img class='footer__contacts-instagramImg' src="/images/inst.svg" alt="empty">
+            <p class="footer__contacts-instagramText">
+              INSTAGRAM
+            </p>
+            <img class='footer__contacts-mailImg' src="/images/mail.svg" alt="empty">
+            <p class="footer__contacts-mailText">
+              mebel_loft_anapa@mail.ru
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
 </body>
 </html>

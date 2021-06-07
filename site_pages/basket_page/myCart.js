@@ -11,6 +11,8 @@ function addToCart(id) {
         },
         success: function (response) {
             alert('Товар был добавлен в корзину');
+            const dot = document.querySelector('.header__searchLine-alarm1');
+            dot.style.display = "block";
         }
     });
 }

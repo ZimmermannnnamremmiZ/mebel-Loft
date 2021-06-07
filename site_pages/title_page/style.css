@@ -34,11 +34,9 @@ body {
   margin: 0 auto;
 }
 
-.mt-10 {
-  margin-top: 10px;
-}
 
 .header__sections {
+  margin: 10px;
   display: flex;
   height: 38px;
   background-color: #313131;
@@ -53,24 +51,29 @@ body {
 }
 
 .header__sections-main {
+  margin-top: 10px;
   margin-left: 140px;
 }
 
 .header__sections-about {
+  margin-top: 10px;
   margin-left: 30px;
 }
 
 .header__sections-contacts {
+  margin-top: 10px;
   margin-left: 30px;
 }
 
 .header__phone-icon{
+  margin-top: 10px;
   margin-left: 652px;
   width: 17px;
   height: 17px;
 }
 
 .header__sections-phone {
+  margin-top: 10px;
   margin-left: 11px;
 }
 
@@ -83,6 +86,7 @@ body {
 
 
 .header__sections-delivery {
+  margin-top: 10px;
   margin-left: 10px;
 }
 
@@ -134,10 +138,18 @@ input#search {
   background-size: contain;
 }
 
-.header__searchLine-alarm {
+.header__searchLine-alarm1 {
+  display: none;
   position: absolute;
+  margin-top: 86px;
+  margin-left: 1217px;
+  z-index: 100;
+}
+.header__searchLine-alarm2 {
+  position: absolute;
+  margin-top: 86px;
   margin-left: 1227px;
-  margin-top: 38px;
+  z-index: 100;
 }
 
 .header__searchLine-profile {
@@ -352,7 +364,6 @@ input#search {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
   font-weight: bold;
   font-size: 16px;
   transition: 0.6s ease;
@@ -362,9 +373,19 @@ input#search {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
+.previous {
+  background: rgba(157, 157, 157, 0.28);
+  color: #fff;
+}
+
+.next {
+  background: #fff;
+  color: #C4C4C4;
+}
 /* При наведении на кнопки добавляем фон кнопок */
-.slider__box.previous:hover,
-.slider__box .next:hover {
+.previous:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 

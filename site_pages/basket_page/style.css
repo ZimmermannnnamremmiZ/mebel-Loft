@@ -1,5 +1,14 @@
 @import url(/site_pages/contacts_page/style.css);
 
+.header__searchLine-bag {
+  
+}
+
+.header__searchLine-alarm {
+  position: absolute;
+  margin-top: -249px;
+}
+
 .shopping__list {
   display: flex;
   flex-direction: column;
@@ -14,7 +23,7 @@
     "img c d i f g h";
   width: 1140px;
   height: 120px;
-  margin-left: 130px;
+  margin-left: 25px;
   margin-top: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
 }
@@ -129,9 +138,12 @@
 }
 
 .totalQuantity {
+  margin-left: 130px;
+  width: 1180px;
   position: absolute;
   margin-top: -20px;
   display: flex;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 19px;
   color: #414141;
@@ -139,14 +151,13 @@
 }
 
 .totalQuantity__text {
-  margin-left: 194px;
+  margin-left: 10px;
   font-size: 16px;
   line-height: 19px;
   color: #414141;
 }
 
 .totalQuantity__num {
-  margin-left: 940px;
   font-size: 16px;
   line-height: 19px;
   color: #414141;
@@ -156,4 +167,14 @@
   display: flex;
   margin-top: 60px;
   flex-direction: column;
+  min-height: 800px;
+}
+
+footer {
+  display: flex;
+  position: relative;
+  width: 1400px;
+  height: 234px;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
+
 }

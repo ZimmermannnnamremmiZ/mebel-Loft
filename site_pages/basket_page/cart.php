@@ -30,6 +30,8 @@ if ($action == 'show') {
             $bT = implode(",", $priceA);
             $total += $bT;
             $quantityAll += $num;
+
+
             echo'
             <div class="in-check" id="in-check">
                 <div class="shopping__list">
@@ -50,7 +52,6 @@ if ($action == 'show') {
         }
     }
 };
-
 
 echo '
 <div class="totalSumBox">
@@ -88,6 +89,12 @@ echo '
     ';
 
 
+    // при наличии товара в корзине, возле неё появится точка
+    if($quantityAll > 0){
+                echo '
+                <img class="header__searchLine-alarm" src="/images/оповещение.svg">
+                ';
+                };
 #####################################
 if ($action == 'add') {
     // Считываем уже имеющуюся корзину

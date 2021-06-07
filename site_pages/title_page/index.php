@@ -1,8 +1,7 @@
 <?php
   session_start();
   $cart = $_SESSION['cart'];
-  $id = $_POST['id'];
-  if(count($cart) > 0){
+  if(count((is_countable($cart)?$cart:[])) > 0){
     echo '
     <div class="container">
     <img class="header__searchLine-alarm2" src="/images/оповещение.svg">

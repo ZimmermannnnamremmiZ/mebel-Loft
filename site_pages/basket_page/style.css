@@ -1,9 +1,5 @@
 @import url(/site_pages/contacts_page/style.css);
 
-.header__searchLine-bag {
-  
-}
-
 .header__searchLine-alarm {
   position: absolute;
   margin-top: -249px;

@@ -41,9 +41,12 @@ if ($action == 'show') {
                         <div class="item_price">'.$row["price"].'₽</div>
                         <div class="item_textQuantity">Количество:</div>
                         <div class="item_quantity">'.$num.'</div>
-                        <div class="item_width">Ширина: '.$row["width"].' СМ</div>
-                        <div class="item_depth">Глубина: '.$row["depth"].' СМ</div>
-                        <div class="item_height">Высота: '.$row["height"].' СМ</div>
+                        <div class="item_size">Размер(Ш×Д×В):</div>
+                        <div class="item_width">'.$row["width"].' СМ</div>
+                        <div class="item_x"></div>
+                        <div class="item_depth">'.$row["depth"].' СМ</div>
+                        <div class="item_x2"></div>
+                        <div class="item_height">'.$row["height"].' СМ</div>
                         <button class="item_delete" id="delete" onClick="delFromCart('.$row["id"].')"></button>
                     </div>
                 </div>

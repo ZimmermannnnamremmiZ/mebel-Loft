@@ -12,11 +12,11 @@
 
 .shoping__item {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 50% 50%;
   grid-template-areas:
-    "img a a b b b h"
-    "img c d i f g h";
+    "img a a a b b b b b h"
+    "img c d r i x f z g h";
   width: 1140px;
   height: 120px;
   margin-left: 25px;
@@ -48,7 +48,7 @@
   grid-area: b;
   justify-self: end;
   padding-top: 25px;
-  margin-right: -100px;
+  margin-right: -35px;
   font-weight: bold;
 }
 
@@ -69,20 +69,59 @@
 
 .item_width {
   grid-area: i;
+  margin-left: -73px;
+  margin-top: 1px;
   font-size: 12px;
   line-height: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9E9E9E;
 }
 
 .item_depth {
   grid-area: f;
+  margin-left: -226px;
+  margin-top: 1px;
   font-size: 12px;
   line-height: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9E9E9E;
 }
 
 .item_height {
   grid-area: g;
+  margin-left: -376px;
+  margin-top: 1px;
   font-size: 12px;
   line-height: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9E9E9E;
+}
+
+.item_size {
+  grid-area: r;
+  margin-left: -70px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #414141;
+}
+
+.item_x {
+  grid-area: x;
+  margin-left: -135px;
+  margin-top: 5px;
+  background-image: url('/images/basket_page/×.svg');
+  background-repeat: no-repeat;
+}
+
+.item_x2 {
+  grid-area: z;
+  background-image: url('/images/basket_page/×.svg');
+  background-repeat: no-repeat;
+  margin-left: -286px;
+  margin-top: 5px;
 }
 
 .item_delete {

@@ -25,6 +25,7 @@
 }
 
 .shoping__img {
+  margin-left: 10px;
   width: 100px;
   height: 75px;
 }
@@ -137,7 +138,6 @@
 
 .in-check {
   margin: 10px auto;
-
 }
 
 .totalSumBox {

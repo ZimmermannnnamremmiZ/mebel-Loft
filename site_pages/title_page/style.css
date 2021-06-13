@@ -154,10 +154,13 @@ input#search {
 
 .header__searchLine-profile {
   position: absolute;
+  background-image: url("/images/profile-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   margin-left: 1266px;
   margin-top: 36px;
-  width: 12.87px;
-  height: 18px;
+  width: 14.87px;
+  height: 19px;
 }
 
 .header__menu {

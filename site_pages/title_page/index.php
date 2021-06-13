@@ -42,7 +42,13 @@
           <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
           <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
           <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
-          <img class="header__searchLine-profile" src="/images/profile-icon.svg" alt="search">
+          <?php
+            if ( !isset($_SESSION['logged_user']) ) {
+              echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
+            } else {
+              echo '<a class="header__searchLine-profile" href="/site_pages/about_page/index.html"></a>';
+            }
+          ?>
         </div>
         <div class="header__menu">
           <div class="header__menu-cell kitchen">

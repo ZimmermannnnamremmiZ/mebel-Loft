@@ -9,12 +9,12 @@ $total = 0;
 $action = $_POST["action"];
 if ($action == 'show') {
     if (!(isset($_SESSION['cart']))){
-        echo 'У вас нет заказов';
+        echo '<div class="in-check">У вас нет заказов</div>';
         exit;
     };
     $cart = $_SESSION['cart'];
     if(count($cart) == 0) {
-        echo 'У вас нет заказов';
+        echo '<div class="in-check">У вас нет заказов</div>';
         exit;
     }
 

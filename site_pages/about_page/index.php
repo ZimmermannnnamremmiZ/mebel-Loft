@@ -1,3 +1,15 @@
+<?php
+  session_start();
+  $cart = $_SESSION['cart'];
+  if(count((is_countable($cart)?$cart:[])) > 0){
+    echo '
+    <div class="container">
+    <img class="header__searchLine-alarm2" src="/images/оповещение.svg">
+    </div>
+    ';
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,18 +26,15 @@
                 <div class="header__sections">
                     <img class="header__logo" src="/images/LOGO.svg" alt="logo">
                     <a class="header__sections-main" href="/site_pages/title_page/index.php">Главная</a>
-                    <a class="header__sections-about" href="#">О нас</a>
-                    <a class="header__sections-contacts" href="index.html">Контакты</a>
-                    <img class="header__searchLine-icon" src="/images/search-icon.svg" alt="search">
-                    <div class="header__searchLine-text">Поиск</div>
-                    <input class="header__searchLine-input">
+                    <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
+                    <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
+                    <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
                     <img class="header__phone-icon" src="/images/phone.svg">
                     <a class="header__sections-phone" href="href=" tel:89648999119">8 (964) 89 99 119</a>
                     <img class="header__delivery-icon" src="/images/delivery-icon.svg">
                     <a class="header__sections-delivery" href="#">Доставка</a>
                     <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
-                    <img class="header__searchLine-bag" src="/images/bag.svg" alt="search">
-                    <img class="header__searchLine-alarm" src="/images/оповещение.svg">
+                    <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
                     <img class="header__searchLine-profile" src="/images/profile-icon.svg">
                 </div>
             </header>
@@ -45,7 +54,7 @@
                         <img class="about__pictureBlock-img" src="/images/about_images/image 1.png" alt="empty">
                         <div class="about__pictureBlock-coloredBlock"></div>
                     </div>
-                </section>    
+                </section>
                 <section class="benefits">
                     <div class="benefits__title">
                         Покупайте с выгодой!
@@ -99,7 +108,7 @@
                                     </div>
                                 </div>
                             </div>
-                    </div>       
+                    </div>
                 </section>
                 <section class="advantages">
                     <div class="advantages__item">
@@ -198,9 +207,9 @@
                                 Каждый пятый покупатель заказывает у нас<br>повторно!
                             </div>
                             <div class="advantages2__item-text">
-                                И мы благодарим всех, кто воспользовался нашим уникальным предложением, заказал мебель быстро и недорого и порекомендовал 
+                                И мы благодарим всех, кто воспользовался нашим уникальным предложением, заказал мебель быстро и недорого и порекомендовал
                                 друзьям и
-                                знакомым.          
+                                знакомым.
                             </div>
                         </div>
                     </div>
@@ -224,7 +233,7 @@
                                 <b>Силы.</b><br>
                                 Закупим оптом или закажем на фабрике, избавив от длительных
                                 обсуждений заказа с исполнителем. Курируем все этапы работы над
-                                заказом. 
+                                заказом.
                             </div>
                         </div>
                         <div class="weHelp__item">

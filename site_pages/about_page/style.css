@@ -1,5 +1,13 @@
 @import url(/site_pages/contacts_page/style.css);
 
+input#search {
+    background-image: url(/images/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 11px;
+    text-indent: 35px;
+    padding: 0 10px 0 10px;
+}
+
 .about {
     display: flex;
     margin-left: 238px;
@@ -116,7 +124,7 @@
     width: 50px;
     height: 1px;
     margin: 0 auto;
-    
+
 }
 .advantages__item-text {
     width: 540px;

@@ -1,8 +1,11 @@
 @import url(/site_pages/contacts_page/style.css);
 
+
+
 .header__searchLine-alarm {
   position: absolute;
-  margin-top: -249px;
+  margin-top: -248px;
+  margin-left: 1245px;
 }
 
 .shopping__list {
@@ -212,4 +215,12 @@ footer {
   height: 234px;
   box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
 
+}
+
+input#search {
+  background-image: url(/images/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 11px;
+  text-indent: 35px;
+  padding: 0 10px 0 10px;
 }

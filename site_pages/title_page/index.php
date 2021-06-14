@@ -29,8 +29,8 @@
       <div class="container">
         <div class="header__sections">
           <a class="header__sections-main" href="index.php">Главная</a>
-          <a class="header__sections-about" href="/site_pages/about_page/index.html">О нас</a>
-          <a class="header__sections-contacts" href="/site_pages/contacts_page/index.html">Контакты</a>
+          <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
+          <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
           <img class="header__phone-icon" src="/images/title_images/phone.svg">
           <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
           <img class="header__searchLine-alarm1" src="/images/оповещение.svg">
@@ -46,7 +46,7 @@
             if ( !isset($_SESSION['logged_user']) ) {
               echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
             } else {
-              echo '<a class="header__searchLine-profile" href="/site_pages/about_page/index.html"></a>';
+              echo '<a class="header__searchLine-profile" href="/site_pages/account_page/index.php"></a>';
             }
           ?>
         </div>

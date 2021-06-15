@@ -160,9 +160,32 @@
           <img class="header__menu-etc-icon" src="/images/etc.svg" alt="search">
         </div>
         <section class="navigation">
-            <p class="navigation__start">Главная</p>
-            <p class="navigation__simbol">/</p>
-            <p class="navigation__end">Личный кабинет</p>
-           </section>
+          <p class="navigation__start">Главная</p>
+          <p class="navigation__simbol">/</p>
+          <p class="navigation__end">Личный кабинет</p>
+        </section>
+        <div class="bonus">
+          <p class="bonus__title">Бонусная программа</p>
+          <p class="bonus__points">У вас 0 бонусных баллов</p>
+          <a class="bonus__rules" href="#">Правила бонусной программы</a>
+        </div>
+        <section class="benefits">
+          <div class="benefits__el1">
+            <img class="benefits__el1-img" src="/images/account_page/cashback.svg">
+            <p class="benefits__el1-text">Возвращаем до 7% на бонусный счет</p>
+          </div>
+          <div class="benefits__el2">
+            <img class="benefits__el2-img" src="/images/account_page/rub.svg">
+            <p class="benefits__el2-text">1 бонус = 1 рубль</p>
+          </div>
+          <div class="benefits__el3">
+            <img class="benefits__el3-img" src="/images/account_page/box.svg">
+            <p class="benefits__el3-text">Оплачивайте бонусами до 20% от покупки</p>
+          </div>
+        </section>
+        <section class="userData">
+          <div class="userData__info"></div>
+          <div class="userData__orders"></div>
+        </section>
       </div>
     </header>

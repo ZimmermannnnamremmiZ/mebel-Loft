@@ -184,8 +184,51 @@
           </div>
         </section>
         <section class="userData">
-          <div class="userData__info"></div>
-          <div class="userData__orders"></div>
+          <form class="userData__info">
+            <p class="userData__title">Личные данные</p>
+            <div class="flex">
+              <p class="mt30 inputHeader-style">Имя</p>
+              <p class="inputHeader-email mt30 inputHeader-style">E-mail</p>
+            </div>
+            <div class="flex">
+              <input type="text" class="input-1 input_style">
+              <input type="text" class="input-2 input_style">
+            </div>
+            <div class="mt10">
+              <div class="flex">
+                <p class="inputHeader-style">Фамилия</p>
+                <p class="inputHeader-number inputHeader-style">Номер телефона</p>
+              </div>
+              <div class="flex">
+                <input type="text" class="input-1 input_style">
+                <input type="text" class="input-2 input_style">
+              </div>
+            </div>
+            <div class="mt30">
+                <p class="inputHeader-style">Город</p>
+                <input type="text" class="input-1 input_style">
+            </div>
+            <div class="mt10">
+                <p class="inputHeader-style">Улица</p>
+                <input type="text" class="input-1 input_style w433">
+            </div>
+            <div class="mt10">
+              <div class="flex">
+                <p class="inputHeader-style">Дом/Корпус</p>
+                <p class="inputHeader-flat inputHeader-style">Квартира</p>
+              </div>
+              <div class="flex">
+                <input type="text" class="input-home input_style">
+                <input type="text" class="input-flat input_style">
+              </div>
+            </div>
+            <button class="change_button">
+              Изменить
+            </button>
+          </form>
+          <div class="userData__orders">
+            <p class="userData__-title">Мои заказы</p>
+          </div>
         </section>
       </div>
     </header>

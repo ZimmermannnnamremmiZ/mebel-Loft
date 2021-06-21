@@ -1,25 +1,36 @@
 <?php
+  require "db.php";
   session_start();
+  $data = $_POST;
   $cart = $_SESSION['cart'];
-  if(count((is_countable($cart)?$cart:[])) > 0){
-    echo '
-    <div class="container">
-    <img class="header__searchLine-alarm2" src="/images/оповещение.svg">
-    </div>
-    ';
-  }
+  $id = $_SESSION['logged_user']->id;
+  $id = (int)$id;
+    if ( isset($_POST['change'])) {
+      $findUser = R::findOne('users', 'id = ?', [$id]);
+            $findUser->name = $data['name'];
+            $findUser->email = $data['email'];
+            $findUser->surname = $data['surname'];
+            $findUser->telephone = $data['telephone'];
+            $findUser->city = $data['city'];
+            $findUser->street = $data['street'];
+            $findUser->house = $data['house'];
+            $findUser->flat = $data['flat'];
+            R::store($findUser);
+    echo '<div class="change__userData">
+            <p>Данные успешно изменены</p>
+         </div>';
+    };
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
   <body>
     <div class="container">
       <header class="header">
@@ -36,6 +47,10 @@
             <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
             <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
             <?php
+            // указатель наличия товара в корзине
+            if(count((is_countable($cart)?$cart:[])) > 0){
+              echo '<img class="header__searchLine-alarm2" src="/images/оповещение.svg">';
+            };
             if ( !isset($_SESSION['logged_user']) ) {
               echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
             } else {
@@ -159,6 +174,7 @@
           </div>
           <img class="header__menu-etc-icon" src="/images/etc.svg" alt="search">
         </div>
+          </header>
         <section class="navigation">
           <p class="navigation__start">Главная</p>
           <p class="navigation__simbol">/</p>
@@ -183,16 +199,19 @@
             <p class="benefits__el3-text">Оплачивайте бонусами до 20% от покупки</p>
           </div>
         </section>
+            <div class="userData__head flex">
+              <p class="userData__title">Личные данные</p>
+              <p class="userData__title userData__title-myOrders">Мои заказы</p>
+            </div>
         <section class="userData">
-          <form class="userData__info">
-            <p class="userData__title">Личные данные</p>
+          <form class="userData__info" action="/site_pages/account_page/index.php" method="POST">
             <div class="flex">
-              <p class="mt30 inputHeader-style">Имя</p>
+              <p class="inputHeader-style">Имя</p>
               <p class="inputHeader-email mt30 inputHeader-style">E-mail</p>
             </div>
             <div class="flex">
-              <input type="text" class="input-1 input_style">
-              <input type="text" class="input-2 input_style">
+              <input type="text" class="input-1 input_style" value="<?php echo $_SESSION['logged_user']->name ?>" name="name">
+              <input type="text" class="input-2 input_style" value="<?php echo $_SESSION['logged_user']->email ?>" name="email">
             </div>
             <div class="mt10">
               <div class="flex">
@@ -200,17 +219,17 @@
                 <p class="inputHeader-number inputHeader-style">Номер телефона</p>
               </div>
               <div class="flex">
-                <input type="text" class="input-1 input_style">
-                <input type="text" class="input-2 input_style">
+                <input type="text" class="input-1 input_style" value="<?php echo $_SESSION['logged_user']->surname ?>" name="surname">
+                <input type="text" class="input-2 input_style" value="<?php echo $_SESSION['logged_user']->telephone ?>" name="telephone">
               </div>
             </div>
             <div class="mt30">
                 <p class="inputHeader-style">Город</p>
-                <input type="text" class="input-1 input_style">
+                <input type="text" class="input-1 input_style" value="<?php echo $_SESSION['logged_user']->city ?>" name="city">
             </div>
             <div class="mt10">
                 <p class="inputHeader-style">Улица</p>
-                <input type="text" class="input-1 input_style w433">
+                <input type="text" class="input-1 input_style w433" value="<?php echo $_SESSION['logged_user']->street ?>" name="street">
             </div>
             <div class="mt10">
               <div class="flex">
@@ -218,17 +237,107 @@
                 <p class="inputHeader-flat inputHeader-style">Квартира</p>
               </div>
               <div class="flex">
-                <input type="text" class="input-home input_style">
-                <input type="text" class="input-flat input_style">
+                <input type="text" class="input-home input_style" value="<?php echo $_SESSION['logged_user']->house ?>" name="house">
+                <input type="text" class="input-flat input_style" value="<?php echo $_SESSION['logged_user']->flat ?>" name="flat">
               </div>
             </div>
-            <button class="change_button">
+            <button class="change_button" type="submit" name="change">
               Изменить
             </button>
           </form>
-          <div class="userData__orders">
-            <p class="userData__-title">Мои заказы</p>
-          </div>
+            <div class="userData__orders">
+              <div class="userData__orders-header flex">
+                <div class="userData__header-product">Товар</div>
+                <div class="userData__header-price">Цена</div>
+                <div class="userData__header-date">Дата</div>
+                <div class="userData__header-status">Статус</div>
+              </div>
+              <div class="userData__productUnit flex">
+                <div class="userData__product flex">
+                  <img class="product-img" src="/images/image 2-1.png" alt="empty">
+                  <p class="product-name">Кускен Navy Blue</p>
+                </div>
+                <div class="userData__price">16990</div>
+                <div class="userData__date">01.05.2020</div>
+                <div class="userData__status">Ожидается</div>
+              </div>
+              <div class="userData__productUnit flex">
+                <div class="userData__product flex">
+                  <img class="product-img" src="/images/image 2-4.png" alt="empty">
+                  <p class="product-name">Стелла Дуб Сонома</p>
+                </div>
+                <div class="userData__price">28490</div>
+                <div class="userData__date">01.05.2020</div>
+                <div class="userData__status2">Оплачено<br>50%</div>
+              </div>
+              <div class="userData__productUnit flex">
+                <div class="userData__product flex">
+                  <img class="product-img" src="/images/image 2-10.png" alt="empty">
+                  <p class="product-name">Вилли Pink</p>
+                </div>
+                <div class="userData__price">21990</div>
+                <div class="userData__date">01.05.2020</div>
+                <div class="userData__status">Доставлено</div>
+              </div>
+              <div class="userData__productUnit flex">
+                <div class="userData__product flex">
+                  <img class="product-img"  src="/images/image 2-14.png" alt="empty">
+                  <p class="product-name">Шерона Barhat Grey</p>
+                </div>
+                <div class="userData__price">21990</div>
+                <div class="userData__date">01.05.2020</div>
+                <div class="userData__status">Отменен</div>
+              </div>
+              <a href="#" class="userData__all">
+                Смотреть все
+              </a>
         </section>
-      </div>
-    </header>
+    <footer class="footer footer-bottom">
+        <div class="footer__navigation-leftSide">
+          <div class="footer__navigation">
+            <p class="footer__navigation-title">
+              НАВИГАЦИЯ
+            </p>
+            <div class="footer__navigation-item">
+              <a class="footer__navigation-itemText" href="#">Кухни</a>
+              <a class="footer__navigation-itemText" href="#">Прихожие</a>
+              <a class="footer__navigation-itemText" href="#">Шкафы</a>
+              <a class="footer__navigation-itemText" href="#">Спальни</a>
+              <a class="footer__navigation-itemText" href="#">Офисная мебель</a>
+              <a class="footer__navigation-itemText" href="#">Матрасы</a>
+              <a class="footer__navigation-itemText" href="#">Гостинные</a>
+              <a class="footer__navigation-itemText" href="#">Детская</a>
+              <a class="footer__navigation-itemText" href="#">Мягкая мебель</a>
+            </div>
+            <div class="footer__navigation-item2">
+              <a class="footer__navigation-stock" href="#">Акция</a>
+              <a class="footer__navigation-newItems" href="#">Новинки</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__navigation-rightSide">
+          <div class="footer__contacts">
+            <img class="footer__contacts-logo" src="/images/LM.svg" alt="empty">
+          </div>
+          <div class="footer__contacts-adres">
+            г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
+          </div>
+          <div class="footer__contacts-contacts">
+            <img class='footer__contacts-phoneImg' src="/images/phone_in_footer.svg" alt="empty">
+            <p class="footer__contacts-phoneText">
+              8 (964) 89 99 119
+            </p>
+            <img class='footer__contacts-instagramImg' src="/images/inst.svg" alt="empty">
+            <p class="footer__contacts-instagramText">
+              INSTAGRAM
+            </p>
+            <img class='footer__contacts-mailImg' src="/images/mail.svg" alt="empty">
+            <p class="footer__contacts-mailText">
+              mebel_loft_anapa@mail.ru
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

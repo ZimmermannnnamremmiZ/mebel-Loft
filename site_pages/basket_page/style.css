@@ -224,3 +224,11 @@ input#search {
   text-indent: 35px;
   padding: 0 10px 0 10px;
 }
+
+.header__searchLine-profile {
+  background-image: url("/images/profile-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 13.87px;
+  height: 20px;
+}

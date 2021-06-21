@@ -38,11 +38,6 @@
               <p>'.array_shift($errors).'</p>
             </div>';
     }
-
-
-
-
-
   }
 ?>
 

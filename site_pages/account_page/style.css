@@ -776,3 +776,28 @@ footer {
   line-height: 126.69%;
   color: #414141;
 }
+
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.change__userData {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  padding-top: 26px;
+  border: 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #245462;
+  color: #fff;
+}

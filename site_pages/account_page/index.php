@@ -15,10 +15,15 @@
             $findUser->street = $data['street'];
             $findUser->house = $data['house'];
             $findUser->flat = $data['flat'];
+            $_SESSION['logged_user']->name = $data['name'];
+            $_SESSION['logged_user']->email = $data['email'];
+            $_SESSION['logged_user']->surname = $data['surname'];
+            $_SESSION['logged_user']->telephone = $data['telephone'];
+            $_SESSION['logged_user']->city = $data['city'];
+            $_SESSION['logged_user']->street = $data['street'];
+            $_SESSION['logged_user']->house = $data['house'];
+            $_SESSION['logged_user']->flat = $data['flat'];
             R::store($findUser);
-    echo '<div class="change__userData">
-            <p>Данные успешно изменены</p>
-         </div>';
     };
 ?>
 <!DOCTYPE html>
@@ -292,6 +297,14 @@
                 Смотреть все
               </a>
         </section>
+        <?php if ( isset($_POST['change'])) {
+          echo '<a id="main" href="/site_pages/account_page/index.php">
+                  <div class="change__userData">
+                    Данные успешно изменены
+                  </div>
+                </a>';
+        }
+        ?>
     <footer class="footer footer-bottom">
         <div class="footer__navigation-leftSide">
           <div class="footer__navigation">

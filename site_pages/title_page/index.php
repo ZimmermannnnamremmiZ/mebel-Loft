@@ -206,7 +206,7 @@
         <?php
           $dbUser = 'root';
           $dbName = 'мебель loft';
-          $dbPass = 'root';
+          $dbPass = '';
           $mysqli = new mysqli('localhost', $dbUser, $dbPass, $dbName);
           $query = 'set names utf8';
           $mysqli->query($query);

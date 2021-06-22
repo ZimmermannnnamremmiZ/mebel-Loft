@@ -26,6 +26,7 @@
 
     if(empty($errors)){
       $user = R::dispense('users');
+      $user->name = $data['name'];
       $user->login = $data['login'];
       $user->email = $data['email'];
       $user->password = password_hash($data['password'], PASSWORD_DEFAULT);  // шифруем пароль

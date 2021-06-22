@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$mysqli = new mysqli('localhost', 'root', 'root', 'мебель loft');
+$mysqli = new mysqli('localhost', 'root', '', 'мебель loft');
 $query = 'set names utf8';
 $mysqli->query($query);
 $total = 0;

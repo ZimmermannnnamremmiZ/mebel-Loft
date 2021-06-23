@@ -5,7 +5,7 @@
 .header__searchLine-alarm {
   position: absolute;
   margin-top: -248px;
-  margin-left: 1245px;
+  margin-left: 1237px;
 }
 
 .shopping__list {
@@ -209,6 +209,7 @@
 }
 
 footer {
+  margin-top: 40px;
   display: flex;
   position: relative;
   width: 1400px;
@@ -229,6 +230,6 @@ input#search {
   background-image: url("/images/profile-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
-  width: 13.87px;
+  width: 15.87px;
   height: 20px;
 }

@@ -1,13 +1,5 @@
 <?php
   session_start();
-  $cart = $_SESSION['cart'];
-  if(count((is_countable($cart)?$cart:[])) > 0){
-    echo '
-    <div class="container">
-    <img class="header__searchLine-alarm2" src="/images/оповещение.svg">
-    </div>
-    ';
-  }
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +27,18 @@
                     <a class="header__sections-delivery" href="#">Доставка</a>
                     <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
                     <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
-                    <img class="header__searchLine-profile" src="/images/profile-icon.svg">
+                    <?php
+                        $cart = $_SESSION['cart'];
+                        // указатель наличия товара в корзине
+                        if(count((is_countable($cart)?$cart:[])) > 0){
+                            echo '<img class="header__searchLine-alarm2" src="/images/оповещение.svg">';
+                        };
+                        if ( !isset($_SESSION['logged_user']) ) {
+                            echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
+                        } else {
+                            echo '<a class="header__searchLine-profile" href="/site_pages/account_page/index.php"></a>';
+                        }
+                    ?>
                 </div>
             </header>
                 <section class="about">

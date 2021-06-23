@@ -1,78 +1,74 @@
-.form_reg {
-  border: 2px solid;
-  margin: 50px auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  position: relative;
-  background-color: #fff;
-  width: 500px;
-  height: 900px;
-  background-color: #e9e9e9;
+@import url(/site_pages/account_page/style.css);
+
+.mt30 {
+  margin-top: 30px;
 }
 
-.form_login {
-  border: 2px solid;
+.header__searchLine-alarm2 {
+  margin-left: 1236px;
+}
+
+
+.form {
   margin: 50px auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   padding: 15px;
   position: relative;
-  background-color: #fff;
   width: 500px;
-  height: 450px;
-  background-color: #e9e9e9;
+  height: 550px;
+}
+
+.form_reg {
+  height: 750px;
 }
 
 .error {
+  margin-top: 60px;
   width: 100%;
-  position: absolute;
-  margin-top: 30px;
-  margin-left: -5px;
-  z-index: 999;
   text-align: center;
   color: brown;
 }
 
 .success {
+  margin-top: 60px;
   width: 100%;
-  position: absolute;
-  margin-top: 30px;
   margin-left: -5px;
-  z-index: 998;
   text-align: center;
-  color: rgb(0, 83, 4);
+  color: rgb(29, 94, 33);
 }
 
-input {
-  width: 300px;
-  height: 30px;
-  border-radius: 10px 100px / 120px;
-  text-align: center;
-  outline: none;
+.login_header {
+  margin-top: 30px;
 }
 
-button {
-  width: 300px;
-  height: 50px;
-  border-radius: 10px 100px / 120px;
-  background-color: #d3e0d6;
-  margin-top: 20px;
-  cursor: pointer;
+.formElement__input {
+  margin-top: 10px;
+  background-color: rgb(245, 245, 245);
+  width: 200px;
+  height: 40px;
+  border: 1px solid;
+  padding: 0 10px;
 }
 
+.submit {
+  margin-top: 50px;
+  height: 40px;
+  width: 220px;
+  background-color: rgb(151, 212, 151);
+}
 
-p {
-  font-size: 16;
+footer {
+  margin-top: 0;
 }
 
 a {
   text-decoration: none;
-  color: rgb(0, 177, 177);
+  color: #414141;
+}
+
+form a {
+  color: #44989e;
 }

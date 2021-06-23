@@ -108,8 +108,9 @@ input#search {
   position: absolute;
   width: 8px;
   height: 8px;
-  margin-left: 1222px;
+  margin-left: 1237px;
   margin-top: 61px;
+  z-index: 999;
 }
 
 
@@ -122,7 +123,8 @@ input#search {
 }
 
 .header__searchLine-bag {
-  margin-left: 30.17px;
+  position: absolute;
+  margin-left: 1227px;
   margin-top: 59px;
   width: 15.13px;
   height: 18px;
@@ -132,10 +134,14 @@ input#search {
 }
 
 .header__searchLine-profile {
-  margin-left: 33.87px;
-  margin-top: 59px;
-  width: 12.87px;
-  height: 18px;
+  position: absolute;
+  background-image: url("/images/profile-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1266px;
+  margin-top: 36px;
+  width: 14.87px;
+  height: 19px;
 }
 
 .header__menu {
@@ -147,23 +153,36 @@ input#search {
   margin-top: 20px;
 }
 
+.header__menu-cell {
+  display: flex;
+  text-align: center;
+}
+
+.header__menu-cell:hover {
+  background-color: #245462;
+  color: #fff;
+}
+
 .header__menu-kitchen-icon {
   width: 23px;
   height: 23px;
-  padding-left: 40px;
   padding-top: 23px;
+  padding-left: 25px;
 }
+
 .header__menu-kitchen-text {
-  padding-left: 10px;
   padding-top: 25px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
+  padding-left: 10px;
+  padding-right: 25px;
+
 }
 .header__menu-bedroom-icon {
   width: 28px;
   height: 22.22px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 24px;
 }
 .header__menu-bedroom-text {
@@ -171,12 +190,13 @@ input#search {
   font-size: 16px;
   line-height: 18.75px;
   padding-left: 10px;
+  padding-right: 25px;
   padding-top: 25px;
 }
 .header__menu-livingroom-icon {
   width: 30px;
   height: 22.03px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 24px;
 }
 .header__menu-livingroom-text {
@@ -188,11 +208,12 @@ input#search {
   line-height: 18.75px;
   padding-left: 10px;
   padding-top: 25px;
+  padding-right: 25px;
 }
 .header__menu-closet-icon {
   width: 21.91px;
   height: 22px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 24px;
 }
 .header__menu-closet-text {
@@ -201,11 +222,12 @@ input#search {
   line-height: 18.75px;
   padding-left: 10.04px;
   padding-top: 25px;
+  padding-right: 25px;
 }
 .header__menu-office-icon {
   width: 22px;
   height: 22px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 24px;
 }
 .header__menu-office-text {
@@ -214,11 +236,12 @@ input#search {
   line-height: 18.75px;
   padding-left: 10px;
   padding-top: 25px;
+  padding-right: 25px;
 }
 .header__menu-childrensroom-icon {
   width: 22px;
   height: 22px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 24px;
 }
 .header__menu-childrensroom-text {
@@ -227,21 +250,82 @@ input#search {
   line-height: 18.75px;
   padding-left: 10px;
   padding-top: 25px;
+  padding-right: 25px;
 }
 .header__menu-stock-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
   color: #D74444;
-  padding-left: 50.04px;
+  padding-left: 25px;
   padding-top: 25px;
+  padding-right: 25px;
 }
+
+.header__menu-stock-text:hover {
+ color: #fff;
+}
+
 
 .header__menu-etc-icon {
   width: 4.27px;
   height: 14px;
-  padding-left: 47px;
+  padding-left: 25px;
   padding-top: 28px;
+  padding-right: 25px;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #fff;
+  z-index: 99;
+  width: 189px;
+  text-align: start;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  margin-top: 70px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+}
+
+
+.kitchen:hover .dropdown__kitchen {
+  display: flex;
+}
+
+.bedroom:hover .dropdown__bedroom {
+  display: flex;
+}
+
+.livingroom:hover .dropdown__livingroom {
+  display: flex;
+}
+
+.closet:hover .dropdown__closet {
+  display: flex;
+}
+
+.office:hover .dropdown__office {
+  display: flex;
+}
+
+.menu-stock:hover .dropdown__menu-stock {
+  display: flex;
+  width: 151px;
+  padding-bottom: 25px;;
+}
+
+.childrensroom:hover .dropdown__childrensroom {
+  display: flex;
+}
+
+.dropdown a {
+  margin-top: 25px;
+  text-decoration: none;
+
 }
 
 .navigation {

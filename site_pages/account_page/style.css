@@ -31,6 +31,11 @@ input#search {
   padding: 0 10px 0 10px;
 }
 
+a {
+  text-decoration: none;
+  color: #414141;
+}
+
 .flex {
   display: flex;
 }
@@ -269,7 +274,7 @@ input#search {
 }
 
 .header__menu-stock-text:hover {
-  color: #fff;
+ color: #fff;
 }
 
 

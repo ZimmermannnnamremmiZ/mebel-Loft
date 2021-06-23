@@ -28,14 +28,14 @@
             <a class="header__sections-delivery" href="#">Доставка</a>
             <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
             <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
-            <img id="dota" class="header__searchLine-alarm" src="/images/оповещение.svg" hidden>
             <?php
-            if ( !isset($_SESSION['logged_user']) ) {
-              echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
-            } else {
-              echo '<a class="header__searchLine-profile" href="/site_pages/account_page/index.php"></a>';
-            }
-             ?>
+              $cart = $_SESSION['cart'];
+              if ( !isset($_SESSION['logged_user']) ) {
+                echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
+              } else {
+                echo '<a class="header__searchLine-profile" href="/site_pages/account_page/index.php"></a>';
+              }
+           ?>
           </div>
 
           <div class="header__menu">

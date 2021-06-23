@@ -159,7 +159,7 @@ input#search {
   background-repeat: no-repeat;
   margin-left: 1266px;
   margin-top: 36px;
-  width: 14.87px;
+  width: 15.87px;
   height: 19px;
 }
 
@@ -599,6 +599,7 @@ input#search {
 }
 
 footer {
+  margin-top: 40px;
   display: flex;
   position: absolute;
   margin-left: 0;

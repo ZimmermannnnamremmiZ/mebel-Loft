@@ -1,5 +1,4 @@
 function addToCart(id) {
-    console.log('add' + id);
     $.ajax({
         async: false,
         type: "POST",
@@ -15,10 +14,10 @@ function addToCart(id) {
             dot.style.display = "block";
         }
     });
+
 }
 
 function showMyCart(){
-    console.log('show');
     $.ajax({
         async: false,
         type: "POST",
@@ -35,7 +34,6 @@ function showMyCart(){
 }
 
 function delFromCart(id) {
-    console.log('del' + id);
     $.ajax({
         async: false,
         type: "POST",

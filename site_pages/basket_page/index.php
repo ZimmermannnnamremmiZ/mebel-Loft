@@ -1,5 +1,5 @@
 <?php
-  session_start();
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -37,24 +37,123 @@
               }
            ?>
           </div>
-
           <div class="header__menu">
+          <div class="header__menu-cell kitchen">
             <img class="header__menu-kitchen-icon" src="/images/kitchen-icon.svg" alt="search">
             <h2 class="header__menu-kitchen-text">Кухни</h2>
+            <div class="dropdown__kitchen dropdown">
+              <a href="#">Модульные кухни</a>
+              <a href="#">Барная зона</a>
+              <a href="#">Кухонные уголки</a>
+              <a href="#">Обеденная зона</a>
+              <a href="#">Столешницы</a>
+              <a href="#">Стеновые панели</a>
+              <a href="#">Мойки, сушилки,<br>смесители для кухни</a>
+              <a href="#">Дополнительная<br>фурнитура</a>
+              <a href="#">Бытовыя техника</a>
+            </div>
+          </div>
+          <div class="header__menu-cell bedroom">
             <img class="header__menu-bedroom-icon" src="/images/bedroom-icon.svg" alt="search">
             <h2 class="header__menu-bedroom-text">Спальни</h2>
+            <div class="dropdown__bedroom dropdown">
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor, sit amet consectetur</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+            </div>
+          </div>
+          <div class="header__menu-cell livingroom">
             <img class="header__menu-livingroom-icon" src="/images/livingroom-icon.svg" alt="search">
             <h2 class="header__menu-livingroom-text">Гостинные</h2>
+            <div class="dropdown__livingroom dropdown">
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+            </div>
+          </div>
+          <div class="header__menu-cell closet">
             <img class="header__menu-closet-icon" src="/images/closet-icon.svg" alt="search">
             <h2 class="header__menu-closet-text">Прихожие</h2>
+            <div class="dropdown__closet dropdown">
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+            </div>
+          </div>
+          <div class="header__menu-cell office">
             <img class="header__menu-office-icon" src="/images/office-icon.svg" alt="search">
             <h2 class="header__menu-office-text">Офисная мебель</h2>
+            <div class="dropdown__office dropdown">
+              <a href="#">Lorem ipsum dolor, sit amet consectetur</a>
+              <a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+            </div>
+          </div>
+          <div class="header__menu-cell childrensroom">
             <img class="header__menu-childrensroom-icon" src="/images/childrensroom-icon.svg" alt="search">
             <h2 class="header__menu-childrensroom-text">Детская</h2>
-            <h6 class="header__menu-stock-text">Акция</h6>
-            <img class="header__menu-etc-icon" src="/images/etc.svg" alt="search">
+            <div class="dropdown__childrensroom dropdown">
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Lorem ipsum dolor</a>
+
+            </div>
           </div>
-      </header>
+          <div class="header__menu-cell menu-stock">
+            <h6 class="header__menu-stock-text">Акция</h6>
+            <div class="dropdown__menu-stock dropdown">
+              <a href="#">Новинки</a>
+              <a href="#">Шкафы</a>
+              <a href="#">Матрасы</a>
+              <a href="#">Мягкая мебель</a>
+            </div>
+          </div>
+          <img class="header__menu-etc-icon" src="/images/etc.svg" alt="search">
+        </div>
+          </header>
       <section class="navigation">
         <p class="navigation__start">Главная</p>
         <p class="navigation__simbol">/</p>
@@ -76,8 +175,58 @@
         </div>
         <div class="total"></div>
       </div>
-
     <div class="totalSum"></div>
+    <div class="random4items__header">
+      Вам может понравиться
+    </div>
+    <div class="random4items__box">
+      <?php
+            $dbUser = 'root';
+            $dbName = 'мебель loft';
+            $dbPass = '';
+            $mysqli = new mysqli('localhost', $dbUser, $dbPass, $dbName);
+            $query = 'set names utf8';
+            $mysqli->query($query);
+            $query = 'SELECT * FROM products order by RAND() LIMIT 4';
+            $results = $mysqli->query($query);
+
+            while($row = $results->fetch_assoc()){
+              echo '
+              <div class="bestsellers__box-item" data-toggle-id="hidde__toBasket'.$row["id"].'">
+              <img class="bestsellers__item-loverIcon" src="/images/список желаемого.svg" alt="empty">
+              <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
+              <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                '.$row["name"].'
+              </div>
+              <div class="bestsellers__item-category" data-toggle-id="hidde__toBasket'.$row["id"].'">
+              '.$row["category"].'
+              </div>
+              <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket'.$row["id"].'">
+              '.$row["price"].'₽
+              </div>
+              <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
+                <div class="toBasket__sizesLable">Размеры</div>
+                  <div class="toBasket__sizes">
+                    <div class="toBasket__width-text">ШИРИНА</div>
+                    <div class="toBasket__depth-text">ГЛУБИНА</div>
+                    <div class="toBasket__height-text">ВЫСОТА</div>
+                  </div>
+                  <div class="toBasket__x">
+                    <img class="toBasket__x-svg1" src="/images/title_images/×.svg" alt="empty">
+                    <img class="toBasket__x-svg2" src="/images/title_images/×.svg" alt="empty">
+                  </div>
+                  <div class="toBasket__num">
+                    <div class="toBasket__width-num">'.$row["width"].' СМ</div>
+                    <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
+                    <div class="toBasket__height-num">'.$row["height"].' СМ</div>
+                  </div>
+                  <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].')">Добавить в корзину</button>
+              </div>
+            </div>
+              ';
+            };
+          ?>
+    </div>
     <footer class="footer footer-bottom">
         <div class="footer__navigation-leftSide">
           <div class="footer__navigation">
@@ -124,6 +273,7 @@
           </div>
         </div>
       </footer>
-    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

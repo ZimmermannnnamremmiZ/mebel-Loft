@@ -1,0 +1,26 @@
+@import url(/site_pages/account_page/style.css);
+
+.catalog {
+  display: flex;
+}
+
+.catalog__menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 140px;
+  margin-top: 30px;
+  width: 263px;
+  height: 591px;
+}
+
+.catalog__select {
+  margin-top: 20px;
+  width: 203px;
+  height: 29px;
+  background: #F8F8F8;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #686868;
+  padding: 7px 10px;
+}

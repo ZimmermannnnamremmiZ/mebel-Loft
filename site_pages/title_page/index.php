@@ -55,15 +55,15 @@
             <img class="header__menu-kitchen-icon" src="/images/kitchen-icon.svg" alt="search">
             <h2 class="header__menu-kitchen-text">Кухни</h2>
             <div class="dropdown__kitchen dropdown">
-              <a href="#">Модульные кухни</a>
-              <a href="#">Барная зона</a>
-              <a href="#">Кухонные уголки</a>
-              <a href="#">Обеденная зона</a>
-              <a href="#">Столешницы</a>
-              <a href="#">Стеновые панели</a>
-              <a href="#">Мойки, сушилки,<br>смесители для кухни</a>
-              <a href="#">Дополнительная<br>фурнитура</a>
-              <a href="#">Бытовыя техника</a>
+              <a href="/site_pages/catalog_page/index.php">Модульные кухни</a>
+              <a href="/site_pages/catalog_page/index.php">Барная зона</a>
+              <a href="/site_pages/catalog_page/index.php">Кухонные уголки</a>
+              <a href="/site_pages/catalog_page/index.php">Обеденная зона</a>
+              <a href="/site_pages/catalog_page/index.php">Столешницы</a>
+              <a href="/site_pages/catalog_page/index.php">Стеновые панели</a>
+              <a href="/site_pages/catalog_page/index.php">Мойки, сушилки,<br>смесители для кухни</a>
+              <a href="/site_pages/catalog_page/index.php">Дополнительная<br>фурнитура</a>
+              <a href="/site_pages/catalog_page/index.php">Бытовыя техника</a>
             </div>
           </div>
           <div class="header__menu-cell bedroom">
@@ -252,7 +252,7 @@
       </div>
     </section>
     <div id="cart_content"></div>
-    <footer class="footer">
+    <footer class="footer footer_bottom">
       <div class="footer__navigation-leftSide">
         <div class="footer__navigation">
           <p class="footer__navigation-title">

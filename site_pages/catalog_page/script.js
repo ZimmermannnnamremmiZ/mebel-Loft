@@ -1,7 +1,8 @@
 // selects
 $ (function () {
+  let id = $(".catalog__select").val();
   $.ajax({
-    type: POST,
+    type: "POST",
     url: "subselect.php",
     data: {id: id},
     success: function (data) {
@@ -14,5 +15,12 @@ $ (function () {
 
     }
   });
-  
+  $.ajax({
+    type: "POST",
+    url: "subselect.php",
+    data: {id: id},
+    success: function (data) {
+      $(".subselect").html(data);
+    }
+  });
 });

@@ -1,7 +1,7 @@
 <?php
 
 require "../autorisation/libs/rb-mysql.php";
-R::setup( 'mysql:host=localhost;dbname=users',
+R::setup( 'mysql:host=localhost;dbname=selects',
 'root', '' );
 
 

@@ -1,6 +1,7 @@
 <?php
   session_start();
   $cart = $_SESSION['cart'];
+  require "db.php";
 ?>
 
 
@@ -143,7 +144,6 @@
                 <a href="#">Lorem ipsum dolor</a>
                 <a href="#">Lorem ipsum dolor</a>
                 <a href="#">Lorem ipsum dolor</a>
-
               </div>
             </div>
             <div class="header__menu-cell menu-stock">
@@ -158,50 +158,34 @@
             <img class="header__menu-etc-icon" src="/images/etc.svg" alt="search">
           </div>
         </header>
-
-      <form class="form" action="/site_pages/autorisation/login.php" method="POST">
-        <?php
-          require "db.php";
-          $data = $_POST; // все переменные по посту в переменную data
-          if ( isset($data['do_login']) ){
-            $errors = array();
-            $user = R::findOne('users', 'login = ?', array($data['login']));
-            if( $user ) { // если пользователь существует
-              if ( password_verify($data['password'], $user->password) ) {
-                $_SESSION['logged_user'] = $user;
-                echo '<div class="success">
-                        <p>Приветствуем, '.$_SESSION['logged_user']->login.'<br>Можете перейти на <a href="/site_pages/title_page/index.php">главную страницу</a> или в <a href="/site_pages/account_page/index.php">личный кабинет</a></p>
-                      </div>';
-              } else {
-                $errors[] = 'Неверно введен пароль!';
-              }
-
-            } else {
-              $errors[] = 'Пользователь с таким логином не сущеествует! <a href="/site_pages/autorisation/signup.php">Зарегистрироваться</a>';
-            }
-
-            if( !empty($errors) ){
-              echo '<div class="error">
-                      <p>'.array_shift($errors).'</p>
-                    </div>';
-            }
-          }
-        ?>
-          <div class="formElement mt30">
-            <p class="formElement__header"><strong>Ваш логин</strong>:</p>
-            <input class="formElement__input" type="text" name="login" value="<?php echo @$data['login']; ?>">
+        <section class="navigation">
+          <p class="navigation__start">Главная</p>
+          <p class="navigation__simbol">/</p>
+          <p class="navigation__end">lorem 1</p>
+          <p class="navigation__simbol">/</p>
+          <p class="navigation__end">lorem 2</p>
+          <p class="navigation__simbol">/</p>
+          <p class="navigation__end">lorem 3</p>
+        </section>
+        <section class="catalog">
+          <div class="catalog__menu">
+                <h3 class="catalog__h3">
+                  Раздел
+                </h3>
+                <select class="catalog__select">
+                  <option class="catalog__select-item" value="0">--Выбрать раздел--</option>
+                  <?php
+                    $query = $db->query("SELECT * FROM `select_1`");
+                    while($row = $query->fetch()) {
+                      echo "<option class='catalog__select-item' value='{$row->id}'>".$row->title."</option>";
+                    }
+                  ?>
+                </select>
+                <span class="subselect"></span>
           </div>
-
-          <div class="formElement mt30">
-            <p class="formElement__header"><strong>Ваш пароль</strong>:</p>
-            <input class="formElement__input" type="password" name="password">
-          </div>
-
-          <button class="submit" type="submit" name="do_login">Войти</button>
-
-      </form>
-
-      <footer class="footer footer-bottom">
+          <div class="catalog__items"></div>
+        </section>
+        <footer class="footer">
           <div class="footer__navigation-leftSide">
               <div class="footer__navigation">
                 <p class="footer__navigation-title">
@@ -248,5 +232,6 @@
         </div>
       </footer>
     </div>
+    <script srs="script.js"></script>
   </body>
 </html>

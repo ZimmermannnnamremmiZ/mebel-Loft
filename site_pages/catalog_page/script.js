@@ -14,13 +14,14 @@ $ (function () {
     if(id == 0) {
 
     }
-  });
-  $.ajax({
+
+    $.ajax({
     type: "POST",
     url: "subselect.php",
     data: {id: id},
     success: function (data) {
       $(".subselect").html(data);
     }
+  });
   });
 });

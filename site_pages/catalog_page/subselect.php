@@ -6,13 +6,19 @@
   });
 </script>
 <?php
-  require "db.php";
+ $dbUser = 'root';
+    $dbName = 'selects';
+    $dbPass = '';
+    $mysqli = new mysqli('localhost', $dbUser, $dbPass, $dbName);
+    $query = 'set names utf8';
+    $mysqli->query($query);
+    $query = 'select * from `select_2` where `id_select_1` = $id';
+    $results = $mysqli->query($query);
   if (isset($_POST['id']) && !empty($_POST['id'])) {
     $id = intval($_POST['id']);
-    $query = $db->query("SELECT * FROM `select_2` WHERE `id_select_1` = $id");
     echo "<select name='subselect'>";
-    while($row = $query->fetch()) {
-      echo "<option>{$row->title}</option>";
+    while($row = $results->fetch()) {
+      echo "<option>{$row["title"]}</option>";
     }
     echo "</select>";
   } else {

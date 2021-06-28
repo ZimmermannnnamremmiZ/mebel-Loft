@@ -187,7 +187,7 @@
                     }
                   ?>
                 </select>
-                <span class="subselect"></span>
+                <span class="subselect" name="subselect"></span>
           </div>
           <div class="catalog__items"></div>
         </section>

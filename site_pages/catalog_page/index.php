@@ -1,7 +1,6 @@
 <?php
   session_start();
   $cart = $_SESSION['cart'];
-  require "db.php";
 ?>
 
 
@@ -175,9 +174,16 @@
                 <select class="catalog__select">
                   <option class="catalog__select-item" value="0">--Выбрать раздел--</option>
                   <?php
-                    $query = $db->query("SELECT * FROM `select_1`");
-                    while($row = $query->fetch()) {
-                      echo "<option class='catalog__select-item' value='{$row->id}'>".$row->title."</option>";
+                  $dbUser = 'root';
+                  $dbName = 'selects';
+                  $dbPass = '';
+                  $mysqli = new mysqli('localhost', $dbUser, $dbPass, $dbName);
+                  $query = 'set names utf8';
+                  $mysqli->query($query);
+                  $query = 'select * from `select_1`';
+                  $results = $mysqli->query($query);
+                    while($row = $results->fetch_assoc()) {
+                      echo "<option class='catalog__select-item' value='{$row["id"]}'>".$row["title"]."</option>";
                     }
                   ?>
                 </select>

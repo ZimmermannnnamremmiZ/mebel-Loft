@@ -1,5 +1,9 @@
 @import url(/site_pages/account_page/style.css);
 
+.mt20 {
+  margin-top: 20px;
+}
+
 .catalog {
   display: flex;
 }
@@ -14,13 +18,17 @@
 }
 
 .catalog__select {
-  margin-top: 20px;
   width: 203px;
   height: 29px;
-  background: #F8F8F8;
+  background: #dbdbdb;
   border-radius: 3px;
   font-size: 12px;
   line-height: 14px;
   color: #686868;
   padding: 7px 10px;
+}
+
+.subselect {
+  width: 190px;
+  height: 29px;
 }

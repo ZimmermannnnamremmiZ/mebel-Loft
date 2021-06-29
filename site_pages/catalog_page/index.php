@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   </head>
     <body>
       <div class="container">
@@ -171,23 +172,23 @@
                 <h3 class="catalog__h3">
                   Раздел
                 </h3>
-                <select class="catalog__select">
-                  <option class="catalog__select-item" value="0">--Выбрать раздел--</option>
+                <select class="catalog__select mt20">
+                  <option class="catalog__select-item" value="0">Выбрать раздел</option>
                   <?php
-                  $dbUser = 'root';
-                  $dbName = 'selects';
-                  $dbPass = '';
-                  $mysqli = new mysqli('localhost', $dbUser, $dbPass, $dbName);
-                  $query = 'set names utf8';
-                  $mysqli->query($query);
-                  $query = 'select * from `select_1`';
-                  $results = $mysqli->query($query);
+                    $dbUser = 'root';
+                    $dbName = 'selects';
+                    $dbPass = '';
+                    $mysqli = new mysqli('localhost', $dbUser, $dbPass, $dbName);
+                    $query = 'set names utf8';
+                    $mysqli->query($query);
+                    $query = 'select * from `select_1`';
+                    $results = $mysqli->query($query);
                     while($row = $results->fetch_assoc()) {
                       echo "<option class='catalog__select-item' value='{$row["id"]}'>".$row["title"]."</option>";
                     }
                   ?>
                 </select>
-                <span class="subselect" name="subselect"></span>
+                <span class="subselect mt20" name="subselect"></span>
           </div>
           <div class="catalog__items"></div>
         </section>
@@ -238,6 +239,6 @@
         </div>
       </footer>
     </div>
-    <script srs="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

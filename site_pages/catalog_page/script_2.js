@@ -1,25 +1,25 @@
 // selects
 $ (function () {
-  let id = $(".catalog__select").val();
+  let id = $(".select_2").val();
   $.ajax({
     type: "POST",
-    url: "subselect.php",
+    url: "select_3.php",
     data: {id: id},
     success: function (data) {
-      $(".subselect").html(data);
+      $(".select_3").html(data);
     }
   });
-  $(".catalog__select").change(function() {
-    let id = $(".catalog__select").val();
+  $(".select_2").change(function() {
+    let id = $(".select_2").val();
     if(id == 0) {
 
     }
     $.ajax({
     type: "POST",
-    url: "subselect.php",
+    url: "select_3.php",
     data: {id: id},
     success: function (data) {
-      $(".subselect").html(data);
+      $(".select_3").html(data);
     }
   });
   });

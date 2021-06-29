@@ -189,8 +189,8 @@
                   ?>
                 </select>
                 <span class="subselect mt20" name="subselect"></span>
+                <span class="select_3 mt20" name="select_3"></span>
           </div>
-          <div class="catalog__items"></div>
         </section>
         <footer class="footer">
           <div class="footer__navigation-leftSide">
@@ -240,5 +240,6 @@
       </footer>
     </div>
     <script src="script.js"></script>
+    <script src="script_2.js"></script>
   </body>
 </html>

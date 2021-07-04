@@ -1,6 +1,7 @@
 // selects
+
 $ (function () {
-  let id = $(".select_2").val();
+  let id = $(".subselect").val();
   $.ajax({
     type: "POST",
     url: "select_3.php",
@@ -9,8 +10,8 @@ $ (function () {
       $(".select_3").html(data);
     }
   });
-  $(".select_2").change(function() {
-    let id = $(".select_2").val();
+  $(".subselect").change(function() {
+    let id = $(".subselect").val();
     if(id == 0) {
 
     }

@@ -188,8 +188,8 @@
                     }
                   ?>
                 </select>
-                <span class="subselect mt20" name="subselect"></span>
-                <span class="select_3 mt20" name="select_3"></span>
+                <select class="cs subselect mt20" name="subselect"></select>
+                <select class="cs select_3 mt20" name="select_3"></select>
           </div>
         </section>
         <footer class="footer">

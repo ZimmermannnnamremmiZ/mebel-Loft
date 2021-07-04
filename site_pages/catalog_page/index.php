@@ -169,9 +169,9 @@
         </section>
         <section class="catalog">
           <div class="catalog__menu">
-                <h3 class="catalog__h3">
+                <p class="catalog__header">
                   Раздел
-                </h3>
+                </p>
                 <select class="catalog__select mt20">
                   <option class="catalog__select-item" value="0">Выбрать раздел</option>
                   <?php
@@ -190,6 +190,23 @@
                 </select>
                 <select class="cs subselect mt20" name="subselect"></select>
                 <select class="cs select_3 mt20" name="select_3"></select>
+                <p class="catalog__header mt20">
+                  Цена
+                </p>
+                <div id='id66' class="range">
+                  <div id='id66b' class='range__between'></div>
+                    <div id='id661' class="range__button_1">
+                      <div class="white-circle"></div>
+                    </div>
+                    <div id='id662' class="range__button_2">
+                      <div class="white-circle"></div>
+                    </div>
+                    <div class="flex">
+                      <input id='id66i1' class='range_inpt1' type='number' min='0' max='120000'>
+                      <div class="line"></div>
+                      <input id='id66i2' class='range_inpt2' type='number' min='0' max='120000'>
+                    </div>
+                  </div>
           </div>
         </section>
         <footer class="footer">
@@ -241,5 +258,6 @@
     </div>
     <script src="script.js"></script>
     <script src="script_2.js"></script>
+    <script src="price-picker.js"></script>
   </body>
 </html>

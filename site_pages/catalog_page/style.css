@@ -4,6 +4,11 @@
   margin-top: 20px;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog {
   display: flex;
 }
@@ -20,7 +25,7 @@
 .catalog__select {
   width: 203px;
   height: 29px;
-  background: #dbdbdb;
+  background: #F8F8F8;;
   border-radius: 3px;
   font-size: 12px;
   line-height: 14px;
@@ -36,10 +41,69 @@
 .cs {
   width: 203px;
   height: 29px;
-  background: #dbdbdb;
+  background: #F8F8F8;;
   border-radius: 3px;
   font-size: 12px;
   line-height: 14px;
   color: #686868;
   padding: 7px 10px;
+}
+
+.range {
+    margin-top: 20px;
+    width: 223px;
+    height: 10px;
+    position: relative;
+    background: #ECECEC;
+    border-radius: 3px;
+}
+
+.range__button_1, .range__button_2 {
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+
+    cursor: move;
+    transform: translateY(-50%);
+
+    border: none;
+    border-radius: 50%;
+    background-color: #245462;
+}
+
+.white-circle {
+  margin: 3.5px auto;
+
+  width: 7px;
+  height: 7px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.range__between
+{
+    position: absolute;
+    height: 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #245462;
+}
+.range_inpt1, .range_inpt2
+{
+  text-align: center;
+  margin-top:20px;
+  width: 90px;
+  height: 30px;
+  background: #F8F8F8;
+  border-radius: 3px;
+}
+
+.line {
+  margin-top: 18px;
+  width: 19px;
+  height: 2px;
+  align-self: center;
+  background-color: #414141;
 }

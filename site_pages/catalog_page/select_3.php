@@ -1,10 +1,10 @@
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $(function() {
     $('select[name="select_3"]').change(function() {
       alert($('select[name="select_3"]').val());
     });
   });
-</script>
+</script> -->
 <?php
   $dbUser = 'root';
   $dbName = 'selects';
@@ -16,12 +16,10 @@
   $query = "select * from `select_3` where `id_select_2` = $id";
   $results = $mysqli->query($query);
   if (isset($_POST['id']) && !empty($_POST['id'])) {
-    echo "<select class='catalog__select select_3' name='select_3'>";
     while($row = $results->fetch_assoc()) {
-      echo "<option>{$row["title"]}</option>";
+      echo "<option value='{$row["id"]}'>{$row["title"]}</option>";
     }
-      echo "</select>";
   } else {
-      echo "<select class='catalog__select select_3' name='select_3' disabled><option value='0'>Сперва выберете раздел</option></select>";
+      echo "<option value='0'>Сперва выберете раздел</></option>";
   }
 ?>

@@ -258,19 +258,19 @@
                         НАВИГАЦИЯ
                         </p>
                         <div class="footer__navigation-item">
-                        <a class="footer__navigation-itemText" href="#">Кухни</a>
-                        <a class="footer__navigation-itemText" href="#">Прихожие</a>
-                        <a class="footer__navigation-itemText" href="#">Шкафы</a>
-                        <a class="footer__navigation-itemText" href="#">Спальни</a>
-                        <a class="footer__navigation-itemText" href="#">Офисная мебель</a>
-                        <a class="footer__navigation-itemText" href="#">Матрасы</a>
-                        <a class="footer__navigation-itemText" href="#">Гостинные</a>
-                        <a class="footer__navigation-itemText" href="#">Детская</a>
-                        <a class="footer__navigation-itemText" href="#">Мягкая мебель</a>
+                        <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Кухни</a>
+                        <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Прихожие</a>
+                        <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Шкафы</a>
+                        <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Спальни</a>
+                        <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Офисная мебель</a>
+                        <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Матрасы</a>
+                        <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Гостинные</a>
+                        <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Детская</a>
+                        <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
                         </div>
                         <div class="footer__navigation-item2">
-                        <a class="footer__navigation-stock" href="#">Акция</a>
-                        <a class="footer__navigation-newItems" href="#">Новинки</a>
+                        <a class="footer__navigation-stock" href="/site_pages/catalog_page/index.php">Акция</a>
+                        <a class="footer__navigation-newItems" href="/site_pages/catalog_page/index.php">Новинки</a>
                         </div>
                     </div>
                     </div>

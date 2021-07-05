@@ -25,3 +25,8 @@ $ (function () {
   });
 });
 
+// on click on show more
+$(".showMore").click(function() {
+  $(".moreBrands").css({"display":"flex", "flex-direction":"column"});
+  $(".showMore").css({"display":"none"});
+})

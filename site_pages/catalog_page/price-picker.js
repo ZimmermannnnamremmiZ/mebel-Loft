@@ -11,13 +11,14 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
             let min=inpt1.min;
   					let max=inpt1.max;
 
-    /*init*/
+    // init
     let sliderCoords = getCoords(slider);
     button1.style.marginLeft = '0px';
     button2.style.marginLeft = (slider.offsetWidth-button1.offsetWidth) + 'px';
     between.style.width = (slider.offsetWidth-button1.offsetWidth) + 'px';
     inpt1.value = min;
     inpt2.value = max;
+
 
     inpt1.onchange= function()
     {
@@ -31,7 +32,6 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
     		inpt1.value = inpt2.value;
     		inpt2.value = temp;
       }
-
 
         let sliderCoords = getCoords(slider);
         let per1 = parseInt(inpt1.value-min)*100/(max-min);
@@ -85,7 +85,9 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
                 between.style.width = (left2-left1) + 'px';
                 between.style.marginLeft = left1 + 5 + 'px';
               }
+              
     }
+
 
     /*mouse*/
     button1.onmousedown = function(evt) {

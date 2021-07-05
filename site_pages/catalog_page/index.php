@@ -206,7 +206,52 @@
                       <div class="line"></div>
                       <input id='id66i2' class='range_inpt2' type='number' min='0' max='120000'>
                     </div>
+                </div>
+                <p class="catalog__header colors">
+                  Цвет
+                </p>
+                <div class="color">
+                  <input type="checkbox" class="custom-checkbox" id="color1" name="color1" value="yes">
+                  <label for="color1"></label>
+                  <input type="checkbox" class="custom-checkbox" id="color2" name="color2" value="yes">
+                  <label for="color2"></label>
+                  <input type="checkbox" class="custom-checkbox" id="color3" name="color3" value="yes">
+                  <label for="color3"></label>
+                  <input type="checkbox" class="custom-checkbox" id="color4" name="color4" value="yes">
+                  <label for="color4"></label>
+                  <input type="checkbox" class="custom-checkbox" id="color5" name="color5" value="yes">
+                  <label for="color5"></label>
+                </div>
+                <p class="catalog__header brands">
+                  Бренд
+                </p>
+                <div class="brand">
+                  <input type="checkbox" class="custom-checkbox" id="brand1" name="brand1" value="yes">
+                  <label for="brand1">Динс</label>
+                  <input type="checkbox" class="custom-checkbox" id="brand2" name="brand2" value="yes">
+                  <label for="brand2">Кускен</label>
+                  <input type="checkbox" class="custom-checkbox" id="brand3" name="brand3" value="yes">
+                  <label for="brand3">Эби</label>
+                  <input type="checkbox" class="custom-checkbox" id="brand4" name="brand4" value="yes">
+                  <label for="brand4">Реджио</label>
+                  <input type="checkbox" class="custom-checkbox" id="brand5" name="brand5" value="yes">
+                  <label for="brand5">Сайле</label>
+                  <div class="moreBrands">
+                    <input type="checkbox" class="custom-checkbox" id="brand6" name="brand6" value="yes">
+                    <label for="brand6">Лонск</label>
+                    <input type="checkbox" class="custom-checkbox" id="brand7" name="brand7" value="yes">
+                    <label for="brand7">Кусклер</label>
+                    <input type="checkbox" class="custom-checkbox" id="brand8" name="brand8" value="yes">
+                    <label for="brand8">Эбимекс</label>
+                    <input type="checkbox" class="custom-checkbox" id="brand9" name="brand9" value="yes">
+                    <label for="brand9">Ребноск</label>
+                    <input type="checkbox" class="custom-checkbox" id="brand10" name="brand10" value="yes">
+                    <label for="brand10">Дисмес</label>
+                    <input type="checkbox" class="custom-checkbox" id="brand11" name="brand11" value="yes">
+                    <label for="brand11">Рамлюр</label>
                   </div>
+                  <button class="showMore">Показать ещё</button>
+                </div>
           </div>
         </section>
         <footer class="footer">

@@ -256,14 +256,13 @@
 /* products */
 
 .bestsellers__box {
-  margin-left: 140px;
+  margin-left: 10px;
   padding-top: 35px;
   display: flex;
   align-content: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1140px;
-  height: 2812px;
+  width: 849px;
 }
 
 

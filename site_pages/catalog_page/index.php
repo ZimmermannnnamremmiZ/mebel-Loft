@@ -202,9 +202,9 @@
                       <div class="white-circle"></div>
                     </div>
                     <div class="flex">
-                      <input id='id66i1' class='range_inpt1' type='number' min='0' max='120000'>
+                      <input id='id66i1' class='range_inpt1' type='number' min='2000' max='30000'>
                       <div class="line"></div>
-                      <input id='id66i2' class='range_inpt2' type='number' min='0' max='120000'>
+                      <input id='id66i2' class='range_inpt2' type='number' min='2000' max='30000'>
                     </div>
                 </div>
                 <p class="catalog__header colors">
@@ -253,6 +253,54 @@
                   <button class="showMore">Показать ещё</button>
                 </div>
           </div>
+      <div class="bestsellers__box">
+        <?php
+          $dbUser = 'root';
+          $dbName = 'мебель loft';
+          $dbPass = '';
+          $mysqli = new mysqli('localhost', $dbUser, $dbPass, $dbName);
+          $query = 'set names utf8';
+          $mysqli->query($query);
+          $query = 'select * from products';
+          $results = $mysqli->query($query);
+
+          while($row = $results->fetch_assoc()){
+            echo '
+            <div class="bestsellers__box-item" data-toggle-id="hidde__toBasket'.$row["id"].'">
+            <img class="bestsellers__item-loverIcon" src="/images/список желаемого.svg" alt="empty">
+            <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
+            <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
+              '.$row["name"].'
+            </div>
+            <div class="bestsellers__item-category" data-toggle-id="hidde__toBasket'.$row["id"].'">
+            '.$row["category"].'
+            </div>
+            <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket'.$row["id"].'">
+            '.$row["price"].'₽
+            </div>
+            <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
+              <div class="toBasket__sizesLable">Размеры</div>
+                <div class="toBasket__sizes">
+                  <div class="toBasket__width-text">ШИРИНА</div>
+                  <div class="toBasket__depth-text">ГЛУБИНА</div>
+                  <div class="toBasket__height-text">ВЫСОТА</div>
+                </div>
+                <div class="toBasket__x">
+                  <img class="toBasket__x-svg1" src="/images/title_images/×.svg" alt="empty">
+                  <img class="toBasket__x-svg2" src="/images/title_images/×.svg" alt="empty">
+                </div>
+                <div class="toBasket__num">
+                  <div class="toBasket__width-num">'.$row["width"].' СМ</div>
+                  <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
+                  <div class="toBasket__height-num">'.$row["height"].' СМ</div>
+                </div>
+                <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].')">Добавить в корзину</button>
+            </div>
+          </div>
+            ';
+          };
+        ?>
+      </div>
         </section>
         <footer class="footer">
           <div class="footer__navigation-leftSide">

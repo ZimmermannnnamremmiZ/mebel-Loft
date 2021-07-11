@@ -20,8 +20,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
     inpt2.value = max;
 
 
-    inpt1.onchange= function()
-    {
+    inpt1.onchange= function() {
     	if (parseInt(inpt1.value) < min)
     		inpt1.value = min;
     	if (parseInt(inpt1.value) > max)
@@ -52,9 +51,22 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
                 between.style.width = (left2-left1) + 'px';
                 between.style.marginLeft = left1 + 5 + 'px';
               }
+              const elements = document.querySelectorAll('.bestsellers__box-item');
+              const resultEl = document.querySelector(".bestsellers__box");
+
+              [...elements].forEach((el) => {
+                const priceEl= el.querySelector(".bestsellers__item-price");
+                const price =  parseInt(priceEl.innerHTML.replace(/ /g, ""));
+                 if (price < inpt2.value && price > inpt1.value) {
+                 resultEl.appendChild(el);
+                 el.style.display = 'block';
+                } else {
+                  el.style.display = 'none'
+                }
+                });
+
     }
-    inpt2.onchange= function()
-    {
+    inpt2.onchange= function() {
     	if (parseInt(inpt2.value) < min)
     		inpt2.value = min;
     	if (parseInt(inpt2.value) > max)
@@ -64,6 +76,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
       	let temp = inpt1.value;
     		inpt1.value = inpt2.value;
     		inpt2.value = temp;
+
       }
 
         let sliderCoords = getCoords(slider);
@@ -85,7 +98,20 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
                 between.style.width = (left2-left1) + 'px';
                 between.style.marginLeft = left1 + 5 + 'px';
               }
-              
+              const elements = document.querySelectorAll('.bestsellers__box-item');
+              const resultEl = document.querySelector(".bestsellers__box");
+
+              [...elements].forEach((el) => {
+                const priceEl= el.querySelector(".bestsellers__item-price");
+                const price =  parseInt(priceEl.innerHTML.replace(/ /g, ""));
+                 if (price < inpt2.value && price > inpt1.value) {
+                 resultEl.appendChild(el);
+                 el.style.display = 'block';
+                } else {
+                  el.style.display = 'none'
+                }
+                });
+
     }
 
 
@@ -132,6 +158,19 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
               }
                 inpt1.value= (parseInt(min)+Math.round((max-min)*per_min/100));
                 inpt2.value= (parseInt(min)+Math.round((max-min)*per_max/100));
+                const elements = document.querySelectorAll('.bestsellers__box-item');
+                const resultEl = document.querySelector(".bestsellers__box");
+
+                [...elements].forEach((el) => {
+                  const priceEl= el.querySelector(".bestsellers__item-price");
+                  const price =  parseInt(priceEl.innerHTML.replace(/ /g, ""));
+                   if (price < inpt2.value && price > inpt1.value) {
+                   resultEl.appendChild(el);
+                   el.style.display = 'block';
+                  } else {
+                    el.style.display = 'none'
+                  }
+                  });
 
         };
         document.onmouseup = function() {
@@ -140,7 +179,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
         return false;
     };
 
-  button2.onmousedown = function(evt) {
+    button2.onmousedown = function(evt) {
         let sliderCoords = getCoords(slider);
         let betweenCoords = getCoords(between);
         let buttonCoords1 = getCoords(button1);
@@ -181,6 +220,19 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
               }
                 inpt1.value= (parseInt(min)+Math.round((max-min)*per_min/100));
                 inpt2.value= (parseInt(min)+Math.round((max-min)*per_max/100));
+                const elements = document.querySelectorAll('.bestsellers__box-item');
+                const resultEl = document.querySelector(".bestsellers__box");
+
+                [...elements].forEach((el) => {
+                  const priceEl= el.querySelector(".bestsellers__item-price");
+                  const price =  parseInt(priceEl.innerHTML.replace(/ /g, ""));
+                   if (price < inpt2.value && price > inpt1.value) {
+                   resultEl.appendChild(el);
+                   el.style.display = 'block';
+                  } else {
+                    el.style.display = 'none'
+                  }
+                  });
 
         };
         document.onmouseup = function() {

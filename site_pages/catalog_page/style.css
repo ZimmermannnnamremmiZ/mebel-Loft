@@ -260,7 +260,6 @@
   padding-top: 35px;
   display: flex;
   align-content: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 849px;
 }
@@ -382,4 +381,95 @@
 .bestsellers__item-loverIcon {
   margin-left: 230px;
   margin-top: 21px;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > .hamburger__topline {
+  transform: scaleX(1);
+}
+#menu__toggle:checked ~ .menu__btn > .hamburger__midline {
+  transform: scaleX(0.6) translateX(6px);
+}
+#menu__toggle:checked ~ .menu__btn > .hamburger__botline {
+  transform: scaleX(0.4) translateX(13px);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  top: 270px;
+  margin-left: 847px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hamburger__topline,
+.hamburger__midline ,
+.hamburger__botline {
+  display: block;
+  position: absolute;
+
+  width: 18.33px;
+  height: 2px;
+
+  background-color: #616161;
+
+  transition-duration: .25s;
+}
+
+.hamburger__topline {
+  content: '';
+  top: 266px;
+}
+
+.hamburger__midline {
+  content: '';
+  top: 278px;
+}
+
+.hamburger__botline {
+  content: '';
+  top: 272px;
+}
+
+.menu__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  margin-top: -39px;
+  margin-left: 700px;
+  width: 165px;
+  text-align: right;
+
+  list-style: none;
+
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 13px 20px;
+
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #414141;
+
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
 }

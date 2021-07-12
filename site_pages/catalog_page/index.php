@@ -371,6 +371,6 @@
     <script src="script_2.js"></script>
     <script src="price-picker.js"></script>
     <script src="sort_products.js"></script>
-    <script src="../site_pages/basket_page/myCart.js"></script>
+    <script src="../basket_page/myCart.js"></script>
   </body>
 </html>

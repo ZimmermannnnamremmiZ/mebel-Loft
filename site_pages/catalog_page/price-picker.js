@@ -1,3 +1,16 @@
+const itemsPrice = document.querySelectorAll('.bestsellers__item-price');
+let itemsPriceNum = [...itemsPrice].map((el)=>{
+  return parseInt(el.innerHTML.replace(/ /g, ""))
+})
+const minPriceValue = Math.min(...itemsPriceNum);
+const maxPriceValue = Math.max(...itemsPriceNum);
+const linePricePicker = document.getElementById('id66i1');
+const blockInputPicker = document.getElementById('id66i2');
+linePricePicker.setAttribute('min', minPriceValue);
+linePricePicker.setAttribute('max', maxPriceValue);
+blockInputPicker.setAttribute('min', minPriceValue);
+blockInputPicker.setAttribute('max', maxPriceValue);
+
 setTimeout(init2slider('id66', 'id66b', 'id661', 'id662', 'id66i1', 'id66i2'), 0);
 
 function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
@@ -7,9 +20,24 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
     let button2 = document.getElementById(btn2X);
     let inpt1 = document.getElementById(input1);
     let inpt2 = document.getElementById(input2);
-
-            let min=inpt1.min;
-  					let max=inpt1.max;
+    let min=inpt1.min;
+    let max=inpt1.max;
+    function priceInRange() {
+      const elements = document.querySelectorAll('.bestsellers__box-item');
+      const resultEl = document.querySelector('.bestsellers__box');
+    
+        [...elements].forEach((el) => {
+        const priceEl= el.querySelector(".bestsellers__item-price");
+        const price =  parseInt(priceEl.innerHTML.replace(/ /g, ""));
+        
+         if (price < inpt2.value && price > inpt1.value) {
+         resultEl.appendChild(el);
+         el.style.display = 'block';
+        } else {
+          el.style.display = 'none'
+        }
+        });
+    }
 
     // init
     let sliderCoords = getCoords(slider);
@@ -51,20 +79,8 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
                 between.style.width = (left2-left1) + 'px';
                 between.style.marginLeft = left1 + 5 + 'px';
               }
-              const elements = document.querySelectorAll('.bestsellers__box-item');
-              const resultEl = document.querySelector(".bestsellers__box");
-
-              [...elements].forEach((el) => {
-                const priceEl= el.querySelector(".bestsellers__item-price");
-                const price =  parseInt(priceEl.innerHTML.replace(/ /g, ""));
-                 if (price < inpt2.value && price > inpt1.value) {
-                 resultEl.appendChild(el);
-                 el.style.display = 'block';
-                } else {
-                  el.style.display = 'none'
-                }
-                });
-
+              priceInRange()
+              
     }
     inpt2.onchange= function() {
     	if (parseInt(inpt2.value) < min)
@@ -98,20 +114,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
                 between.style.width = (left2-left1) + 'px';
                 between.style.marginLeft = left1 + 5 + 'px';
               }
-              const elements = document.querySelectorAll('.bestsellers__box-item');
-              const resultEl = document.querySelector(".bestsellers__box");
-
-              [...elements].forEach((el) => {
-                const priceEl= el.querySelector(".bestsellers__item-price");
-                const price =  parseInt(priceEl.innerHTML.replace(/ /g, ""));
-                 if (price < inpt2.value && price > inpt1.value) {
-                 resultEl.appendChild(el);
-                 el.style.display = 'block';
-                } else {
-                  el.style.display = 'none'
-                }
-                });
-
+              priceInRange()
     }
 
 
@@ -158,20 +161,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
               }
                 inpt1.value= (parseInt(min)+Math.round((max-min)*per_min/100));
                 inpt2.value= (parseInt(min)+Math.round((max-min)*per_max/100));
-                const elements = document.querySelectorAll('.bestsellers__box-item');
-                const resultEl = document.querySelector(".bestsellers__box");
-
-                [...elements].forEach((el) => {
-                  const priceEl= el.querySelector(".bestsellers__item-price");
-                  const price =  parseInt(priceEl.innerHTML.replace(/ /g, ""));
-                   if (price < inpt2.value && price > inpt1.value) {
-                   resultEl.appendChild(el);
-                   el.style.display = 'block';
-                  } else {
-                    el.style.display = 'none'
-                  }
-                  });
-
+                priceInRange()
         };
         document.onmouseup = function() {
             document.onmousemove = document.onmouseup = null;
@@ -220,20 +210,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
               }
                 inpt1.value= (parseInt(min)+Math.round((max-min)*per_min/100));
                 inpt2.value= (parseInt(min)+Math.round((max-min)*per_max/100));
-                const elements = document.querySelectorAll('.bestsellers__box-item');
-                const resultEl = document.querySelector(".bestsellers__box");
-
-                [...elements].forEach((el) => {
-                  const priceEl= el.querySelector(".bestsellers__item-price");
-                  const price =  parseInt(priceEl.innerHTML.replace(/ /g, ""));
-                   if (price < inpt2.value && price > inpt1.value) {
-                   resultEl.appendChild(el);
-                   el.style.display = 'block';
-                  } else {
-                    el.style.display = 'none'
-                  }
-                  });
-
+                priceInRange()
         };
         document.onmouseup = function() {
             document.onmousemove = document.onmouseup = null;

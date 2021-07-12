@@ -204,9 +204,9 @@
                       <div class="white-circle"></div>
                     </div>
                     <div class="flex">
-                      <input id='id66i1' class='range_inpt1' type='number' min='2000' max='30000'>
+                      <input id='id66i1' class='range__inpt1 inputright inputcurrency' type='number'>
                       <div class="line"></div>
-                      <input id='id66i2' class='range_inpt2' type='number' min='2000' max='30000'>
+                      <input id='id66i2' class='range__inpt2 inputright inputcurrency' type='number'>
                     </div>
                 </div>
                 <p class="catalog__header colors">
@@ -268,6 +268,9 @@
 			      <li id="toMaxPrice" class="menu__item">по возрастанию цены</a></li>
 			      <li class="menu__item">по популярности</a></li>
           </ul>
+        </div>
+        <div class="bestsellers__modalWindow-box">
+          Товар был успешно добавлен в корзину
         </div>
         <?php
           $dbUser = 'root';
@@ -368,5 +371,6 @@
     <script src="script_2.js"></script>
     <script src="price-picker.js"></script>
     <script src="sort_products.js"></script>
+    <script src="../site_pages/basket_page/myCart.js"></script>
   </body>
 </html>

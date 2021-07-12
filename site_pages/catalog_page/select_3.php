@@ -1,10 +1,25 @@
-<!-- <script type="text/javascript">
+<script type="text/javascript">
   $(function() {
     $('select[name="select_3"]').change(function() {
-      alert($('select[name="select_3"]').val());
+      function priceInRange() {
+      const elements = document.querySelectorAll('.bestsellers__box-item');
+      const resultEl = document.querySelector('.bestsellers__box');
+    
+        [...elements].forEach((el) => {
+          const itemCategory= el.querySelector(".bestsellers__item-category");
+          const categoryText =  itemCategory.innerHTML;
+        
+          if ($.trim($('select[name="select_3"]').innerHTML) === $.trim(categoryText)) {
+            resultEl.appendChild(el);
+            el.style.display = 'block';
+          } else {
+            el.style.display = 'none'
+          }
+        });
+       }
     });
   });
-</script> -->
+</script>
 <?php
   $dbUser = 'root';
   $dbName = 'selects';

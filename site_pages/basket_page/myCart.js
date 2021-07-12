@@ -9,7 +9,13 @@ function addToCart(id) {
             alert("Не смог");
         },
         success: function (response) {
-            alert('Товар был добавлен в корзину');
+            $('.bestsellers__modalWindow-box').hide();
+            setTimeout( function () {
+                $('.bestsellers__modalWindow-box').show();
+            }, 50)
+            setTimeout( function () {
+                $('.bestsellers__modalWindow-box').hide();
+            }, 3000)
             const dot = document.querySelector('.header__searchLine-alarm1');
             dot.style.display = "block";
         }
@@ -45,7 +51,6 @@ function delFromCart(id) {
         },
         success: function (response) {
             showMyCart();
-            console.log(response);
         }
     });
 }

@@ -1,10 +1,3 @@
-<!-- <script type="text/javascript">
-  $(function() {
-    $('select[name="subselect"]').change(function() {
-      alert($('select[name="subselect"]').val());
-    });
-  });
-</script> -->
 <?php
   $dbUser = 'root';
   $dbName = 'selects';

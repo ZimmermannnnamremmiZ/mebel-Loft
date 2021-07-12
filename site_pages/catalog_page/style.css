@@ -106,7 +106,7 @@
     border: none;
     background-color: #245462;
 }
-.range_inpt1, .range_inpt2
+.range__inpt1, .range__inpt2
 {
   text-align: center;
   margin-top:20px;
@@ -253,6 +253,22 @@
   display: none;
 }
 
+.bestsellers__modalWindow-box {
+  display: none;
+  position: fixed;
+  padding-top: 20px;
+  height: 40px;
+  left: 35%;
+  top: 0;
+  width: 30%;
+  text-align: center;
+  background-color: rgb(160, 160, 160);
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+  z-index: 999;
+}
 /* products */
 
 .bestsellers__box {
@@ -303,7 +319,7 @@
 
 .toBasket {
   position: absolute;
-  z-index: 99999;
+  z-index: 99;
   background-color: #fff;
   width: inherit;
   padding-bottom: 20px;
@@ -473,3 +489,14 @@
 .menu__item:hover {
   background-color: #CFD8DC;
 }
+
+.inputright {
+  text-align: center;
+}
+
+.inputcurrency {
+  background: url(/images/catalog_page/Ruble_sign.svg) no-repeat right;
+  background-position: 71% 51%;
+  background-size: 8% auto;
+}
+

@@ -1,13 +1,6 @@
 <?php
   session_start();
   $cart = $_SESSION['cart'];
-  if(count((is_countable($cart)?$cart:[])) > 0){
-    echo '
-    <div class="container">
-    <img class="header__searchLine-alarm2" src="/images/оповещение.svg">
-    </div>
-    ';
-  }
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +10,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Мебель Loft</title>
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="/site_pages/basket_page/myCart.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -26,7 +19,6 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="container">
         <div class="header__sections">
           <a class="header__sections-main" href="index.php">Главная</a>
           <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
@@ -43,6 +35,11 @@
           <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
           <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
           <?php
+            if(count((is_countable($cart)?$cart:[])) > 0){
+              echo '
+              <img class="header__searchLine-alarm2" src="/images/оповещение.svg">
+              ';
+            }
             if ( !isset($_SESSION['logged_user']) ) {
               echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
             } else {
@@ -166,7 +163,6 @@
           </div>
           <img class="header__menu-etc-icon" src="/images/etc.svg" alt="search">
         </div>
-      </div>
     </header>
     <section class="slider">
       <div class="slider__box">
@@ -195,6 +191,9 @@
       </div>
     </section>
     <section class="bestsellers">
+      <div class="bestsellers__modalWindow-box">
+        Товар был успешно добавлен в корзину
+      </div>
       <div class="bestsellers__head-text">
         Хиты продаж
       </div>

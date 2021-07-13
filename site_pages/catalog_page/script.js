@@ -6,11 +6,14 @@ $ (function () {
     url: "subselect.php",
     data: {id: id},
     success: function (data) {
+
       $(".subselect").html(data);
+      $(".select_3 option:last").prop('selected', true);
     }
   });
   $(".catalog__select").change(function() {
     let id = $(".catalog__select").val();
+    
     if(id == 0) {
 
     }
@@ -19,7 +22,9 @@ $ (function () {
     url: "subselect.php",
     data: {id: id},
     success: function (data) {
+
       $(".subselect").html(data);
+      $(".select_3 option:last").prop('selected', true);
     }
   });
   });

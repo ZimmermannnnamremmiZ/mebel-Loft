@@ -1,6 +1,8 @@
 <?php
   session_start();
   $cart = $_SESSION['cart'];
+  require_once "connection.php";
+  require_once "functions.php";
 ?>
 
 
@@ -174,24 +176,19 @@
                 <p class="catalog__header">
                   Раздел
                 </p>
-                <select class="catalog__select mt20">
-                  <option class="catalog__select-item" value="0">Выбрать раздел</option>
-                  <?php
-                    $dbUser = 'root';
-                    $dbName = 'selects';
-                    $dbPass = '';
-                    $mysqli = new mysqli('localhost', $dbUser, $dbPass, $dbName);
-                    $query = 'set names utf8';
-                    $mysqli->query($query);
-                    $query = 'select * from `select_1`';
-                    $results = $mysqli->query($query);
-                    while($row = $results->fetch_assoc()) {
-                      echo "<option class='catalog__select-item' value='{$row["id"]}'>".$row["title"]."</option>";
-                    }
-                  ?>
-                </select>
-                <select class="cs subselect mt20" name="subselect"></select>
-                <select class="cs select_3 mt20" name="select_3"></select>
+                <form action="" method="post">
+                  <div>
+                    <select class="catalog__select mt20" name="select_1" id="select_1">
+                      <option class="catalog__select-item" value="0">Выбрать раздел</option>
+                    </select>
+                    <div id="select_2-box" id="select_2-box">
+                      <select class="select_2 cs mt20" name="select_2" id="select_2" disabled></select>
+                    </div>
+                    <div id="select_3-box" id="select_3-box">
+                      <select class="select_3 cs mt20" name="select_3" id="select_3" disabled></select>
+                    </div>
+                  </div>
+                </form>
                 <p class="catalog__header mt20">
                   Цена
                 </p>

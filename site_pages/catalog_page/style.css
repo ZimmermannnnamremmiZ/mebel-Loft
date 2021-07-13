@@ -500,3 +500,6 @@
   background-size: 8% auto;
 }
 
+#select_2-box, #select_3-box {
+  display: none;
+}

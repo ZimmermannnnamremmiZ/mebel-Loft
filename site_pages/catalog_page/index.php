@@ -1,8 +1,19 @@
 <?php
   session_start();
   $cart = $_SESSION['cart'];
-  require_once "connection.php";
-  require_once "functions.php";
+  require_once "selects_functions.php";
+
+  if($_POST['select_1_val']) {
+    $return = selectFromSelect_2();
+    exit($return);
+  }
+
+  if($_POST['select_2_val']) {
+    $return = selectFromSelect_3();
+    exit($return);
+  }
+
+  $select_1 = catalogSelect();
 ?>
 
 
@@ -28,23 +39,23 @@
               <a class="header__sections-contacts" href="index.php">Контакты</a>
               <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
               <img class="header__phone-icon" src="/images/phone.svg">
-              <a class="header__sections-phone" href="href=" tel:89648999119">8 (964) 89 99 119</a>
+              <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
               <img class="header__searchLine-alarm1" src="/images/оповещение.svg">
               <img class="header__delivery-icon" src="/images/delivery-icon.svg">
               <a class="header__sections-delivery" href="#">Доставка</a>
               <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
               <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
               <?php
-                // указатель наличия товара в корзине
-                if(count((is_countable($cart)?$cart:[])) > 0){
-                  echo '<img class="header__searchLine-alarm2" src="/images/оповещение.svg">';
-                };
-                if ( !isset($_SESSION['logged_user']) ) {
-                  echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
-                } else {
-                  echo '<a class="header__searchLine-profile" href="/site_pages/account_page/index.php"></a>';
-                }
-            ?>
+                  // указатель наличия товара в корзине
+                  if(count((is_countable($cart)?$cart:[])) > 0){
+                    echo '<img class="header__searchLine-alarm2" src="/images/оповещение.svg">';
+                  };
+                  if ( !isset($_SESSION['logged_user']) ) {
+                    echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
+                  } else {
+                    echo '<a class="header__searchLine-profile" href="/site_pages/account_page/index.php"></a>';
+                  }
+              ?>
             </div>
           <div class="header__menu">
             <div class="header__menu-cell kitchen">
@@ -180,6 +191,9 @@
                   <div>
                     <select class="catalog__select mt20" name="select_1" id="select_1">
                       <option class="catalog__select-item" value="0">Выбрать раздел</option>
+                      <?php foreach($select_1 as $select_1_item): ?>
+                        <option class='catalog__select-item' value='<?=$select_1_item['id_select_1'] ?>'><?=$select_1_item['title'] ?></option>
+                      <?php endforeach; ?>
                     </select>
                     <div id="select_2-box" id="select_2-box">
                       <select class="select_2 cs mt20" name="select_2" id="select_2" disabled></select>
@@ -364,8 +378,8 @@
         </div>
       </footer>
     </div>
-    <script src="script.js"></script>
-    <script src="script_2.js"></script>
+    <script src="linkShowMore.js"></script>
+    <script src="selects.js"></script>
     <script src="price-picker.js"></script>
     <script src="sort_products.js"></script>
     <script src="../basket_page/myCart.js"></script>

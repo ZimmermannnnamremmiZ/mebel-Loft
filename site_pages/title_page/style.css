@@ -394,13 +394,14 @@ input#search {
 
 .slider__box-img {
   background-size: cover;
+  max-height: 450px;
 }
 
 .slider__title {
   position: absolute;
   width: 216px;
   height: 106px;
-  margin-top: -350px;
+  margin-top: -120px;
   margin-left: 120px;
   font-family: Playfair Display;
   font-style: normal;
@@ -443,6 +444,17 @@ input#search {
   text-transform: uppercase;
 }
 
+.slider__text-content_1 .slider__title, .slider__text-content_1 .slider__text {
+  color: #3C3C3C;
+}
+
+.slider__text-content_2 .slider__title, .slider__text-content_2 .slider__text {
+  color: #fff;
+}
+
+.slider__text-content_3 .slider__title, .slider__text-content_3 .slider__text {
+  color: #61ad94
+}
 
 .bestsellers__modalWindow-box {
   display: none;

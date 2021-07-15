@@ -9,8 +9,3 @@ document.addEventListener('click', function(event) {
   elem.parentElement.classList.toggle('box_withShadow');
 
 });
-
-// обновление страницы для добавления точки над значком корзины
-$(".toBascet__add").click(function() {
-  location.reload();
-})

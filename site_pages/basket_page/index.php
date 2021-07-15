@@ -220,7 +220,7 @@
                     <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
                     <div class="toBasket__height-num">'.$row["height"].' СМ</div>
                   </div>
-                  <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].')">Добавить в корзину</button>
+                  <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].'), loadToCart()">Добавить в корзину</button>
               </div>
             </div>
               ';

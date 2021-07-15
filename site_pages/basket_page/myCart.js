@@ -16,8 +16,6 @@ function addToCart(id) {
             setTimeout( function () {
                 $('.bestsellers__modalWindow-box').hide();
             }, 3000)
-            const dot = document.querySelector('.header__searchLine-alarm1');
-            dot.style.display = "block";
         }
     });
 
@@ -50,7 +48,15 @@ function delFromCart(id) {
             alert("Произошла ошибка при добавлении товара")
         },
         success: function (response) {
-            showMyCart();
+            showMyCart(response);
         }
     });
+}
+
+// basket update
+function loadToCart() {
+        let check = $("#in-check");
+        check.empty();
+        showMyCart();
+        $("html, body").animate({ scrollTop: $(document).height() });
 }

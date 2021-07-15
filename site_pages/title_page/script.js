@@ -1,4 +1,4 @@
-                      // Слайдер
+// Слайдер
 
 /* Устанавливаем индекс слайда по умолчанию */
 let slideIndex = 1;
@@ -21,7 +21,6 @@ function currentSlide(n) {
 
 /* Функция перелистывания */
 function showSlides(n) {
-    let i;
     let slides = document.getElementsByClassName("item");
 
     if (n > slides.length) {
@@ -36,6 +35,7 @@ function showSlides(n) {
         slide.style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
+
 }
 
 

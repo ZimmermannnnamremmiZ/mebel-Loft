@@ -168,26 +168,54 @@
       <div class="slider__box">
         <div class="item">
           <img class="slider__box-img" src="/images/slide_1.png">
+          <div class="slider__text-content_1">
+            <h2 class="slider__title">
+              loft<br>мебель
+            </h2>
+            <h6 class="slider__text">
+              Современная и удобная мебель в Анапе
+            </h6>
+            <button class="slider__button">
+              <div class="slider__button-text">
+                смотреть каталог
+              </div>
+            </button>
+          </div>
         </div>
         <div class="item">
           <img class="slider__box-img" src="/images/slide_2.png">
+          <div class="slider__text-content_2">
+            <h2 class="slider__title">
+              loft<br>мебель
+            </h2>
+            <h6 class="slider__text">
+              Современная и удобная мебель в Анапе
+            </h6>
+            <button class="slider__button">
+              <div class="slider__button-text">
+                смотреть каталог
+              </div>
+            </button>
+          </div>
         </div>
         <div class="item">
           <img class="slider__box-img" src="/images/slide_3.png">
+          <div class="slider__text-content_3">
+            <h2 class="slider__title">
+              loft<br>мебель
+            </h2>
+            <h6 class="slider__text">
+              Современная и удобная мебель в Анапе
+            </h6>
+            <button class="slider__button">
+              <div class="slider__button-text">
+                смотреть каталог
+              </div>
+            </button>
+          </div>
         </div>
         <a class="previous" onclick="previousSlide()">&#10094;</a>
         <a class="next" onclick="nextSlide()">&#10095;</a>
-        <h2 class="slider__title">
-          loft<br>мебель
-        </h2>
-        <h6 class="slider__text">
-          Современная и удобная мебель в Анапе
-        </h6>
-        <button class="slider__button">
-          <div class="slider__button-text">
-            смотреть каталог
-          </div>
-        </button>
       </div>
     </section>
     <section class="bestsellers">

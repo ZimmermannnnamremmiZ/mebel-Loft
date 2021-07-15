@@ -159,10 +159,13 @@
         <p class="navigation__simbol">/</p>
         <p class="navigation__end">Корзина</p>
       </section>
+      <div class="bestsellers__modalWindow-box">
+        Товар был успешно добавлен в корзину
+      </div>
       <div class="in-checkz" id="in-check">
         <div class="shopping__list">
           <div class="shoping__item">
-            <img class="shoping__img" src="itemImg">
+            <img class="shoping__img">
             <div class="item_title"></div>
             <div class="item_price"></div>
             <div class="item_textQuantity">Количество:</div>

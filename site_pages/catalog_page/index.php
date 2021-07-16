@@ -26,11 +26,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="/site_pages/basket_page/myCart.js"></script>
   </head>
     <body>
-      <div class="container">
+      <div class="container"></div>
         <header class="header">
             <div class="header__sections">
               <img class="header__logo" src="/images/LOGO.svg" alt="logo">
@@ -239,29 +239,29 @@
                   Бренд
                 </p>
                 <div class="brand">
-                  <input type="checkbox" class="custom-checkbox" id="brand1" name="brand1" value="yes">
+                  <input type="checkbox" class="custom-checkbox brandItem" id="brand1" name="brand1" value="Динс">
                   <label for="brand1">Динс</label>
-                  <input type="checkbox" class="custom-checkbox" id="brand2" name="brand2" value="yes">
+                  <input type="checkbox" class="custom-checkbox brandItem" id="brand2" name="brand2" value="Кускен">
                   <label for="brand2">Кускен</label>
-                  <input type="checkbox" class="custom-checkbox" id="brand3" name="brand3" value="yes">
-                  <label for="brand3">Эби</label>
-                  <input type="checkbox" class="custom-checkbox" id="brand4" name="brand4" value="yes">
+                  <input type="checkbox" class="custom-checkbox brandItem" id="brand3" name="brand3" value="Шерона">
+                  <label for="brand3">Шерона</label>
+                  <input type="checkbox" class="custom-checkbox brandItem" id="brand4" name="brand4" value="Реджио">
                   <label for="brand4">Реджио</label>
-                  <input type="checkbox" class="custom-checkbox" id="brand5" name="brand5" value="yes">
+                  <input type="checkbox" class="custom-checkbox brandItem" id="brand5" name="brand5" value="Сайле">
                   <label for="brand5">Сайле</label>
                   <div class="moreBrands">
-                    <input type="checkbox" class="custom-checkbox" id="brand6" name="brand6" value="yes">
-                    <label for="brand6">Лонск</label>
-                    <input type="checkbox" class="custom-checkbox" id="brand7" name="brand7" value="yes">
+                    <input type="checkbox" class="custom-checkbox brandItem brandItem" id="brand6" name="brand6" value="Равенна">
+                    <label for="brand6">Равенна</label>
+                    <input type="checkbox" class="custom-checkbox brandItem" id="brand7" name="brand7" value="Кусклер">
                     <label for="brand7">Кусклер</label>
-                    <input type="checkbox" class="custom-checkbox" id="brand8" name="brand8" value="yes">
-                    <label for="brand8">Эбимекс</label>
-                    <input type="checkbox" class="custom-checkbox" id="brand9" name="brand9" value="yes">
-                    <label for="brand9">Ребноск</label>
-                    <input type="checkbox" class="custom-checkbox" id="brand10" name="brand10" value="yes">
-                    <label for="brand10">Дисмес</label>
-                    <input type="checkbox" class="custom-checkbox" id="brand11" name="brand11" value="yes">
-                    <label for="brand11">Рамлюр</label>
+                    <input type="checkbox" class="custom-checkbox brandItem" id="brand8" name="brand8" value="Авиньон">
+                    <label for="brand8">Авиньон</label>
+                    <input type="checkbox" class="custom-checkbox brandItem" id="brand9" name="brand9" value="Стелла">
+                    <label for="brand9">Стелла</label>
+                    <input type="checkbox" class="custom-checkbox brandItem" id="brand10" name="brand10" value="Бенфлит">
+                    <label for="brand10">Бенфлит</label>
+                    <input type="checkbox" class="custom-checkbox brandItem" id="brand11" name="brand11" value="Валенсия">
+                    <label for="brand11">Валенсия</label>
                   </div>
                   <button class="showMore">Показать ещё</button>
                 </div>

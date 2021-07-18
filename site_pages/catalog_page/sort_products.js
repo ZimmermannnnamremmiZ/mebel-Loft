@@ -27,17 +27,15 @@ sortToMinBtn.addEventListener("click", () => {
 
   sorted.forEach(el => resultEl.appendChild(el));
   fnm()
-});
-
-
-
-function fnm() {
-  [...elements].forEach(el => {if (el.querySelector(".bestsellers__item-name").innerText.includes($(".brandItem:checked").map(function() {
-      return $(this).val();         
-      }).get())) {
-        el.style.display = "block";
-  } else {
-    el.style.display = "none";
-  }
-})}
+  });
+  function fnm() {
+     [...elements].forEach(el => {
+       el.style.display = "none"
+      });
+      $(".brandItem:checked").each(function(){
+         [...elements].forEach(el => {if (el.querySelector(".bestsellers__item-name").innerText.includes($(this).val())) {el.style.display = "block";
+        }
+    })
+  });
+}
 

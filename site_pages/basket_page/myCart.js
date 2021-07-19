@@ -16,6 +16,7 @@ function addToCart(id) {
             setTimeout( function () {
                 $('.bestsellers__modalWindow-box').hide();
             }, 3000)
+            $('.header__searchLine-alarm1').css("display", "block")
         }
     });
 

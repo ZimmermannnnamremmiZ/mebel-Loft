@@ -1,5 +1,4 @@
-// sorting products by price
-
+// sorting products by price (start)
 const sortToMaxBtn = document.getElementById("toMaxPrice");
 const elements = document.querySelectorAll('.bestsellers__box-item');
 const resultEl = document.querySelector(".bestsellers__box");
@@ -26,16 +25,20 @@ sortToMinBtn.addEventListener("click", () => {
   });
 
   sorted.forEach(el => resultEl.appendChild(el));
-  fnm()
   });
-  function fnm() {
-     [...elements].forEach(el => {
-       el.style.display = "none"
-      });
-      $(".brandItem:checked").each(function(){
-         [...elements].forEach(el => {if (el.querySelector(".bestsellers__item-name").innerText.includes($(this).val())) {el.style.display = "block";
-        }
-    })
-  });
-}
+// sorting products by price (end)
 
+// brand filter (start)
+$(".brandItem").click(function() {
+  [...elements].forEach(el => {
+    el.style.display = "none"
+   });
+   $(".brandItem:checked").each(function(){
+     [...elements].forEach(el => {
+       if (el.querySelector(".bestsellers__item-name").innerText.includes($(this).val())) {
+         el.style.display = "block";
+       }
+     })
+   });
+})
+// brand filter (end)

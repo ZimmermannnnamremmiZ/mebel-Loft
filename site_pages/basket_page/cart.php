@@ -98,7 +98,7 @@ echo '
                 <img class="header__searchLine-alarm" src="/images/оповещение.svg">
                 ';
                 };
-#####################################
+
 if ($action == 'add') {
     // Считываем уже имеющуюся корзину
     $cart = $_SESSION['cart'];
@@ -116,7 +116,7 @@ if ($action == 'add') {
     $_SESSION['cart'] = $cart;
 }
 
-#######################################
+
 if ($action == 'del'){
     // id продукта для удаления
     $id = $_POST["id"];

@@ -141,10 +141,11 @@ input#search {
 .header__searchLine-alarm1 {
   display: none;
   position: absolute;
-  margin-top: 86px;
-  margin-left: 1217px;
+  margin-top: 38px;
+  margin-left: 1227px;
   z-index: 100;
 }
+
 .header__searchLine-alarm2 {
   position: absolute;
   margin-top: 38px;

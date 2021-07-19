@@ -25,7 +25,6 @@
           <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
           <img class="header__phone-icon" src="/images/title_images/phone.svg">
           <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
-          <img class="header__searchLine-alarm1" src="/images/оповещение.svg">
           <img class="header__delivery-icon" src="/images/title_images/delivery-icon.svg">
           <a class="header__sections-delivery" href="#">Доставка</a>
         </div>
@@ -34,6 +33,7 @@
           <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
           <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
           <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
+          <img class="header__searchLine-alarm1" src="/images/оповещение.svg">
           <?php
             if(count((is_countable($cart)?$cart:[])) > 0){
               echo '

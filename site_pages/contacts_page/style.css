@@ -90,9 +90,9 @@ input#search {
 }
 
 .header__logo {
-  margin-top: 56px;
+  margin-top: -5px;
   margin-left: 140px;
-  height: 25px;
+  height: 26px;
   width: 112.96px;
 }
 

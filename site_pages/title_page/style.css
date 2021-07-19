@@ -758,9 +758,15 @@ footer {
   color: #414141;
 }
 
-/* @media (max-width:768px) {
+@media (max-width:960px) {
+  .header__sections {
+    display: none;
+  }
   .container {
     width: 740px;
     margin: 0 auto;
   }
-} */
+  .header__searchLine {
+    max-width: 340px;
+  }
+}

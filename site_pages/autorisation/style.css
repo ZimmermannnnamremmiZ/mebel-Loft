@@ -72,3 +72,10 @@ a {
 form a {
   color: #44989e;
 }
+
+.header__logo {
+  margin-top: -5px;
+  margin-left: 140px;
+  height: 26px;
+  width: 112.96px;
+}

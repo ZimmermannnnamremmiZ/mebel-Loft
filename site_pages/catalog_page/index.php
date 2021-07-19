@@ -33,7 +33,7 @@
       <div class="container"></div>
         <header class="header">
             <div class="header__sections">
-              <img class="header__logo" src="/images/LOGO.svg" alt="logo">
+              <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/LOGO.svg" alt="logo"></a>
               <a class="header__sections-main" href="/site_pages/title_page/index.php">Главная</a>
               <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
               <a class="header__sections-contacts" href="index.php">Контакты</a>

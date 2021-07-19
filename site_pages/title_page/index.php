@@ -29,7 +29,7 @@
           <a class="header__sections-delivery" href="#">Доставка</a>
         </div>
         <div class="header__searchLine">
-          <img class="header__logo" src="/images/LOGO.svg" alt="logo">
+          <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/LOGO.svg" alt="logo"></a>
           <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
           <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
           <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
@@ -325,7 +325,7 @@
         </div>
       </div>
     </footer>
-  </div>
+</div>
   <script src="script.js"></script>
 </body>
 

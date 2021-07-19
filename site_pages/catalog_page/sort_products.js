@@ -40,5 +40,10 @@ $(".brandItem").click(function() {
        }
      })
    });
+   if ($(".brandItem:checked").length === 0) {
+    [...elements].forEach(el => {
+      el.style.display = "block"
+     });
+   }
 })
 // brand filter (end)

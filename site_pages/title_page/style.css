@@ -759,11 +759,32 @@ footer {
 }
 
 @media (max-width:960px) {
-  .header__sections {
+  .header__sections-main, .header__sections-about, .header__sections-contacts, .header__menu-stock-text {
     display: none;
   }
+
+  .header__sections {
+    position: absolute;
+    margin-top: 27px;
+    display: flex;
+    background-color: #fff;
+    z-index: -1;
+  }
+
+  .header__sections a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .header__sections-phone{
+    width: 115px;
+  }
+
+  .header__phone-icon {
+    margin-left: 734px;
+  }
+
   .container {
-    width: 740px;
     margin: 0 auto;
   }
   .header__searchLine-input {
@@ -771,23 +792,46 @@ footer {
     border: 1px solid #E5E5E5;
     width: 243px;
     height: 50px;
-    margin-left: 385px;
+    margin-left: 250px;
     margin-top: 20px;
 }
 
   .header__logo {
     margin-top: 32px;
-    margin-left: 210px;
     height: 25px;
     width: 112.96px;
 }
   
-  .header__menu {
+.header__menu {
     display: flex;
     width: 959px;
     height: 70px;
     box-shadow: 0px 2px 4px rgb(0 0 0 / 7%);
-    margin-left: 140px;
     margin-top: 20px;
 }
+
+.header__menu-office-text {
+  width: 127px;
+}
+
+.header__searchLine-wishlist {
+  margin-left: 728px;
+}
+
+.header__searchLine-bag {
+  margin-left: 1106px;
+}
+
+.header__searchLine-profile {
+  margin-left: 1163px;
+}
+
+
+element.style {
+  display: block;
+}
+.header__searchLine-alarm1, .header__searchLine-alarm2 {
+  margin-left: 1116px;
+}
+
 }

@@ -51,7 +51,7 @@ body {
 
 .header__sections-main {
   margin-top: 10px;
-  margin-left: 140px;
+  margin-left: 137px;
 }
 
 .header__sections-about {
@@ -65,8 +65,8 @@ body {
 }
 
 .header__phone-icon{
-  margin-top: 10px;
-  margin-left: 652px;
+  margin-top: 9px;
+  margin-left: 641px;
   width: 17px;
   height: 17px;
 }
@@ -95,11 +95,12 @@ body {
 }
 
 .header__logo-link {
-  margin-left: 130px;
+  margin-left: 147px;
+  text-decoration: none;
+  margin-top: 19px;
 }
 
 .header__logo {
-  margin-top: 32px;
   height: 25px;
   width: 112.96px;
 }
@@ -107,10 +108,10 @@ body {
 .header__searchLine-input {
   position: absolute;
   border: 1px solid #E5E5E5;
-  width: 796px;
-  height: 50px;
-  margin-left: 291.04px;
-  margin-top: 20px;
+  width: 804px;
+  height: 49px;
+  margin-left: 296px;
+  margin-top: 8px;
 }
 
 
@@ -124,18 +125,18 @@ input#search {
 
 .header__searchLine-wishlist {
   position: relative;
-  margin-left: 911px;
-  margin-top: 37px;
-  width: 19.83px;
-  height: 17px;
+  margin-left: 900px;
+  margin-top: 25px;
+  width: 20.83px;
+  height: 18px;
 }
 
 .header__searchLine-bag {
   position: absolute;
-  margin-left: 1217px;
-  margin-top: 36px;
-  width: 15.13px;
-  height: 18px;
+  margin-left: 1209px;
+  margin-top: 24px;
+  width: 16.13px;
+  height: 20px;
   background-image: url(/images/bag.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -144,36 +145,36 @@ input#search {
 .header__searchLine-alarm1 {
   display: none;
   position: absolute;
-  margin-top: 38px;
-  margin-left: 1227px;
+  margin-top: 24.5px;
+  margin-left: 1220px;
   z-index: 100;
 }
 
 .header__searchLine-alarm2 {
   position: absolute;
-  margin-top: 38px;
-  margin-left: 1227px;
+  margin-top: 24.5px;
+  margin-left: 1220px;
   z-index: 100;
 }
 
 .header__searchLine-profile {
   position: absolute;
-  background-image: url("/images/profile-icon.svg");
+  background-image: url(/images/profile-icon.svg);
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 1266px;
-  margin-top: 36px;
-  width: 15.87px;
+  margin-left: 1256px;
+  margin-top: 24px;
+  width: 16.87px;
   height: 19px;
 }
 
 .header__menu {
   display: flex;
-  width: 1140px;
+  width: 1125px;
   height: 70px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
-  margin-left: 140px;
-  margin-top: 20px;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 7%);
+  margin-left: 147px;
+  margin-top: 28px;
 }
 
 .header__menu-cell {
@@ -190,7 +191,7 @@ input#search {
   width: 23px;
   height: 23px;
   padding-top: 23px;
-  padding-left: 25px;
+  padding-left: 39px;
 }
 
 .header__menu-kitchen-text {
@@ -205,8 +206,8 @@ input#search {
 .header__menu-bedroom-icon {
   width: 28px;
   height: 22.22px;
-  padding-left: 25px;
-  padding-top: 24px;
+  padding-left: 24px;
+  padding-top: 25px;
 }
 .header__menu-bedroom-text {
   font-weight: 400;
@@ -219,8 +220,8 @@ input#search {
 .header__menu-livingroom-icon {
   width: 30px;
   height: 22.03px;
-  padding-left: 25px;
-  padding-top: 24px;
+  padding-left: 23px;
+  padding-top: 25px;
 }
 .header__menu-livingroom-text {
   font-weight: 400;
@@ -250,8 +251,8 @@ input#search {
 .header__menu-office-icon {
   width: 22px;
   height: 22px;
-  padding-left: 25px;
-  padding-top: 24px;
+  padding-left: 22px;
+  padding-top: 25px;
 }
 .header__menu-office-text {
   font-weight: 400;
@@ -264,8 +265,8 @@ input#search {
 .header__menu-childrensroom-icon {
   width: 22px;
   height: 22px;
-  padding-left: 25px;
-  padding-top: 24px;
+  padding-left: 22px;
+  padding-top: 25px;
 }
 .header__menu-childrensroom-text {
   font-weight: 400;
@@ -292,9 +293,9 @@ input#search {
 
 .header__menu-etc-icon {
   width: 4.27px;
-  height: 14px;
-  padding-left: 25px;
-  padding-top: 28px;
+  height: 17px;
+  padding-left: 19px;
+  padding-top: 27px;
   padding-right: 25px;
 }
 
@@ -471,6 +472,7 @@ input#search {
   text-align: center;
   background-color: rgb(160, 160, 160);
   font-family: Playfair Display;
+  font-size: 14px;
   font-style: normal;
   font-weight: bold;
   color: black;
@@ -769,17 +771,17 @@ footer {
 @media (max-width:960px) {
   .container {
     margin: 0 32px;
-    max-width: 898px;
+    width: 898px;
   }
 
   header {
-    max-width: 898px;
+    width: 898px;
   }
   .header__searchLine {
-    max-width: 898px;
+    width: 898px;
   }
   .slider {
-    max-width: 898px;
+    width: 898px;
   }
   .header__sections-main, .header__sections-about, .header__sections-contacts, .header__menu-stock-text {
     display: none;
@@ -824,6 +826,7 @@ footer {
   }
   #menu__toggle:checked ~ .menu__box {
     visibility: visible;
+    z-index: 99999;
   }
 
   .menu__btn {
@@ -866,32 +869,33 @@ footer {
   }
 
   .menu__box {
-
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    margin-left: -32px;
+    margin-top: -44px;
     visibility: hidden;
     width: 227px;
-    height: 768px;
-    text-align: right;
-
+    height: 760px;
     list-style: none;
-
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
-
     transition-duration: .25s;
+  }
+
+  .menu__h {
+    height: 58px;
   }
 
   .menu__item {
     display: block;
-    padding: 13px 20px;
-
+    height: 46px;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
     color: #414141;
-
     transition-duration: .25s;
+
   }
   .menu__item:hover {
     background-color: #CFD8DC;
@@ -970,7 +974,7 @@ footer {
 }
 
 .header__searchLine-wishlist {
-  margin-left: 667.26px
+  margin-left: 637.26px
 }
 
 .header__searchLine-bag {
@@ -985,16 +989,95 @@ footer {
 
 .slider__box {
   width: 898px;
-  height: 450px;
+  height: 337px;
   position: relative;
   margin: 20px auto;
+}
+
+.slider__box-img {
+  height: 337px;
+}
+
+.slider__title {
+  display: none;
+}
+
+
+.slider__text {
+  visibility: hidden;
+  margin-left: 59px;
+}
+
+.slider__text::before {
+  content:'Современная';
+  visibility: visible;
+  display: block;
+  position: absolute;
+  width: 247px;
+  height: 68px;
+  font-size: 27px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: -35px;
+}
+
+.slider__text::after {
+  content:' и удобная мебель';
+  visibility: visible;
+  display: block;
+  position: absolute;
+  width: 247px;
+  height: 68px;
+  font-size: 27px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.slider__text-content_1 .slider__text {
+  color: #FFFFFF;
+}
+
+.slider__button {
+  margin-left: 59px;
+  margin-top: 44px;
+  width: 150px;
+  height: 44px;
+}
+
+.slider__text-content_1 {
+
+}
+
+.slider__box .previous, .slider .next {
+  margin-top: 58px;
+  padding: 6px 12px 6px 12px;
+  font-size: 10px;
+
+}
+
+
+.slider .next {
+  right: 3%;
+  border-radius: 0 3px 3px 0;
+}
+
+.slider__box .previous {
+  left: 90.46%;
+  border-radius: 3px 0 0 3px;
+}
+
+.slider__box .previous, .slider .next {
+  margin-top: 114px;
 }
 
 element.style {
   display: block;
 }
 .header__searchLine-alarm1, .header__searchLine-alarm2 {
-  margin-left: 0px;
+  margin-left: 856px;
 }
 
 .bestsellers__box {
@@ -1007,7 +1090,7 @@ element.style {
 }
 
 .bestsellers__discount {
-  margin-left: 0;
+    margin-left: 329px;
 }
 
 

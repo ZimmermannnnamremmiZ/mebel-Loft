@@ -45,13 +45,26 @@
             <label class="menu__btn" for="menu__toggle">
               <span class="hamburger__topline"></span>
               <span class="hamburger__midline"></span>
-              <span class="hamburger__botline"class="hamburge__topline"></span>
+              <span class="hamburger__botline hamburge__topline"></span>
             </label>
-            <ul class="menu__box">
-              <li id="toMinPrice" class="menu__item">по убыванию цены</li>
-              <li id="toMaxPrice" class="menu__item">по возрастанию цены</a></li>
-              <li class="menu__item">по популярности</a></li>
-            </ul>
+            <div class="menu__box">
+              <div class="menu__h"><strong>Меню</strong></div>
+              <div class="menu__item"><strong>Главная</strong></div>
+              <div class="menu__item"><a>О нас</a></div>
+              <div class="menu__item"><a>Контакты</a></div>
+              <div class="menu__h"><strong>Категории</strong></div>
+              <div class="menu__item"><a>Кухни</a></div>
+              <div class="menu__item"><a>Спальни</a></div>
+              <div class="menu__item"><a>Гостинные</a></div>
+              <div class="menu__item"><a>Прихожие</a></div>
+              <div class="menu__item"><a>Офисная мебель</a></div>
+              <div class="menu__item"><a>Детская</a></div>
+              <div class="menu__item"><a>Акция</a></div>
+              <div class="menu__item"><a>Новинки</a></div>
+              <div class="menu__item"><a>Матрасы</a></div>
+              <div class="menu__item"><a>Мягкая мебель</a></div>
+              <div class="menu__item"><a>Шкафы</a></div>
+            </div>
           </div>
           <a class="header__logo-link" href="/site_pages/title_page/index.php">
             <img class="header__logo" src="/images/LOGO.svg" alt="logo">

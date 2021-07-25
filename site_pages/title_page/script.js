@@ -52,3 +52,7 @@ document.addEventListener('click', function(event) {
   });
 
 $()
+
+$( document ).ready(function() {
+    console.log(($(".bestsellers__item-price").each(function () {return parseInt($(this).text()).toLocaleString('ru-RU') + "Р"})))
+});

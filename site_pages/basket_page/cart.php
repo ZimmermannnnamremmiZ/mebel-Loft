@@ -33,12 +33,12 @@ if ($action == 'show') {
 
 
             echo'
-            <div class="in-check" id="in-check">
+            <div class="in-check">
                 <div class="shopping__list">
                     <div class="shoping__item">
                         <img class="shoping__img" src="'.$row["image"].'">
                         <div class="item_title">'.$row["name"].'</div>
-                        <div class="item_price">'.$row["price"].'₽</div>
+                        <div class="item_price">'.$row["price"].'</div>
                         <div class="item_textQuantity">Количество:</div>
                         <div class="item_quantity">'.$num.'</div>
                         <div class="item_size">Размер(Ш×Д×В):</div>

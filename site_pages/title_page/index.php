@@ -48,8 +48,8 @@
               <span class="hamburger__botline hamburge__topline"></span>
             </label>
             <div class="menu__box">
-              <div class="menu__h"><strong>Меню</strong></div>
-              <div class="menu__item"><strong>Главная</strong></div>
+              <div class="menu__h"><strong class="menu__menu">Меню</strong></div>
+              <div class="menu__item"><strong class="menu__home">Главная</strong></div>
               <div class="menu__item"><a>О нас</a></div>
               <div class="menu__item"><a>Контакты</a></div>
               <div class="menu__h"><strong>Категории</strong></div>

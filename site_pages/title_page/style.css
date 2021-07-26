@@ -888,7 +888,6 @@ footer {
     margin-top: -44px;
     visibility: hidden;
     width: 227px;
-    height: 760px;
     list-style: none;
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
@@ -896,7 +895,10 @@ footer {
   }
 
   .menu__h {
-    height: 58px;
+    height: 15px;
+    font-size: 13px;
+    padding-top: 21px;
+    padding-bottom: 22px;
   }
 
   .menu__item {
@@ -909,6 +911,23 @@ footer {
     transition-duration: .25s;
 
   }
+
+  .menu__menu {
+    margin-left: 26px;
+  }
+
+  .menu__home {
+    margin-left: 28px;
+  }
+
+  .menu__home::before {
+    content: '';
+    background-image: url(/images/title_images/adaptive_960px/Home.svg);
+    background-repeat: no-repeat;
+    background-position: 0px -2px;
+    padding-right: 35px;
+  }
+
   .menu__item:hover {
     background-color: #CFD8DC;
   }
@@ -952,10 +971,10 @@ footer {
 }
 
 .header__logo {
-    margin-top: 32px;
-    margin-left: 30px;
-    height: 25px;
-    width: 112.96px;
+  margin-top: 17px;
+  margin-left: 30px;
+  height: 25px;
+  width: 112.96px;
 }
 
 .header__menu {
@@ -986,15 +1005,18 @@ footer {
 }
 
 .header__searchLine-wishlist {
-  margin-left: 637.26px
+  margin-left: 637.26px;
+  margin-top: 37px;
 }
 
 .header__searchLine-bag {
   margin-left: 846.13px;
+  margin-top: 37px;
 }
 
 .header__searchLine-profile {
   margin-left: 880px;
+  margin-top: 37px;
 }
 
 
@@ -1049,7 +1071,7 @@ footer {
 }
 
 .slider__text-content_1 .slider__text {
-  color: #FFFFFF;
+  color: #0a0a0a;
 }
 
 .slider__button {
@@ -1077,7 +1099,7 @@ footer {
 }
 
 .slider__box .previous {
-  left: 90.46%;
+  left: 87.46%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -1090,6 +1112,7 @@ element.style {
 }
 .header__searchLine-alarm1, .header__searchLine-alarm2 {
   margin-left: 856px;
+  margin-top: 39px;
 }
 
 .bestsellers__box {
@@ -1105,9 +1128,8 @@ element.style {
     margin-left: 329px;
 }
 
-
 footer {
-  margin-top: 1280px;
+  margin-top: 1090px;
   width: 898px;
   margin-right: auto;
   margin-left: auto;
@@ -1120,6 +1142,8 @@ footer {
 .footer__contacts-logo, .footer__contacts-logo, .footer__contacts-adres, .footer__contacts-contacts {
   padding-right: 0;
 }
+
+
 
 }
 

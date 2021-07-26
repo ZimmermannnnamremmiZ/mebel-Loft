@@ -50,31 +50,31 @@ body {
 }
 
 .header__sections-main {
-  margin-top: 10px;
-  margin-left: 137px;
+  margin-top: 11px;
+  margin-left: 136px;
 }
 
 .header__sections-about {
-  margin-top: 10px;
+  margin-top: 11px;
   margin-left: 30px;
 }
 
 .header__sections-contacts {
-  margin-top: 10px;
+  margin-top: 11px;
   margin-left: 30px;
 }
 
 .header__phone-icon{
-  margin-top: 9px;
-  margin-left: 641px;
-  width: 17px;
-  height: 17px;
+  margin-top: 10px;
+  margin-left: 644px;
+  width: 19px;
+  height: 19px;
 }
 
 
 .header__sections-phone {
-  margin-top: 10px;
-  margin-left: 11px;
+  margin-top: 11px;
+  margin-left: 8px;
 }
 
 .header__delivery-icon{
@@ -86,7 +86,7 @@ body {
 
 
 .header__sections-delivery {
-  margin-top: 10px;
+  margin-top: 11px;
   margin-left: 10px;
 }
 
@@ -121,7 +121,8 @@ input#search {
   background-repeat: no-repeat;
   background-position: 15px 17px;
   text-indent: 35px;
-  padding: 0 10px 0 10px;
+  font-size: 15px;
+  padding: 0 11px 0px 11px;
 }
 
 .header__searchLine-wishlist {
@@ -412,12 +413,12 @@ input#search {
   position: absolute;
   width: 216px;
   height: 106px;
-  margin-top: -117px;
-  margin-left: 123px;
+  margin-top: -119px;
+  margin-left: 124px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 49.9px;
   line-height: 105.3%;
   text-transform: uppercase;
 }
@@ -430,8 +431,8 @@ input#search {
   line-height: 140.8%;
   letter-spacing: 0.02em;
   color: #343434;
-  margin-top: -228px;
-  margin-left: 126px;
+  margin-top: -226px;
+  margin-left: 127px;
 }
 
 .slider__button {
@@ -486,7 +487,7 @@ input#search {
 
 .bestsellers__head-text {
   margin-left: 146px;
-  margin-top: 23px;
+  margin-top: 25px;
 }
 
 .bestsellers__discount {
@@ -516,20 +517,20 @@ input#search {
   align-content: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1140px;
+  width: 1129px;
   height: 2812px;
 }
 
 
 .bestsellers__box-item {
   width: 263px;
-  padding-bottom: 20px;
+  padding-bottom: 53px;
 }
 
 
 .bestsellers__item-img {
   margin-bottom: 150px;
-  margin-left: 40px;
+  margin-left: 36px;
   margin-top: 29px;
 }
 
@@ -549,8 +550,8 @@ input#search {
 }
 
 .bestsellers__item-price {
-  margin-left: 20px;
-  margin-top: 15px;
+  margin-left: 27px;
+  margin-top: 9px;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -567,11 +568,19 @@ input#search {
 }
 
 .toBasket__sizesLable {
-  margin-left: 20px;
+  margin-left: 26px;
   margin-top: 15px;
   font-size: 12px;
   line-height: 14px;
   color: #414141;
+}
+
+.toBasket__width-text {
+  margin-left: 7px;
+}
+
+.toBasket__width-num {
+  margin-left: 6px;
 }
 
 .toBasket__sizes {
@@ -620,10 +629,10 @@ input#search {
 }
 
 .toBascet__add {
-  width: 223px;
+  width: 221px;
   height: 40px;
-  margin-left: 20px;
-  margin-top: 17px;
+  margin-left: 27px;
+  margin-top: 16px;
   background: #245462;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
@@ -639,14 +648,13 @@ input#search {
 }
 
 footer {
-  margin-top: 40px;
   display: flex;
-  margin-left: 0;
-  margin-right: 0;
-  width: 1400px;
+  margin: -78px auto 0 auto;
+  width: 1368px;
   height: 234px;
-  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px -4px 10px rgb(0 0 0 / 3%);
   justify-content: space-between;
+  font-size: 14px;
 }
 
 .footer__navigation {
@@ -657,11 +665,11 @@ footer {
 }
 
 .footer__navigation-item {
-  margin-top: 15px;
+  margin-top: 11px;
   display: grid;
   justify-content: space-between;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 0.7fr 1fr 1fr;
+  grid-template-columns: 0.7fr 0.8fr 0.6fr;
   grid-gap: 9px;
 }
 
@@ -698,10 +706,10 @@ footer {
 }
 
 .footer__contacts-logo {
-  width: 60px;
+  width: 55px;
   height: 49px;
-  padding-right: 128px;
-  padding-top: 49px;
+  padding-right: 110px;
+  padding-top: 48px;
 }
 
 .footer__navigation-title {
@@ -713,16 +721,16 @@ footer {
 .footer__contacts-adres {
   font-size: 14px;
   line-height: 126.69%;
-  padding-right: 128px;
-  padding-top: 20px;
+  padding-right: 107px;
+  padding-top: 16px;
   color: #414141;
 }
 
 .footer__contacts-contacts {
   display: flex;
   justify-content: space-between;
-  padding-right: 128px;
-  padding-top: 35px;
+  padding-right: 107px;
+  padding-top: 29px;
   align-items: center;
 }
 
@@ -736,7 +744,8 @@ footer {
   font-size: 14px;
   line-height: 126.69%;
   color: #414141;
-  margin-right: 30px;
+  margin-right: 29px;
+
 }
 
 .footer__contacts-instagramImg {
@@ -750,7 +759,7 @@ footer {
   font-size: 12px;
   line-height: 126.69%;
   color: #414141;
-  margin-right: 30px;
+  margin-right: 29px;
 }
 
 .footer__contacts-mailImg {

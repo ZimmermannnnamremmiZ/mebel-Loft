@@ -33,7 +33,20 @@ function showMyCart(){
             alert("Произошла ошибка при добавлении товара");
         },
         success: function (response) {
-            $('#in-check').html(response);  // добавляем response в контейнер с id in-check
+            $('#in-check-box').html(response);  // добавляем response в контейнер с id in-check-box
+
+            const shopingItems = document.querySelectorAll('.shoping__item');
+            // spaces in prices (start)
+            if (shopingItems.length > 0) {
+                shopingItems.forEach((el) => {
+                    let item = el.querySelector('.item_price').textContent;
+                    el.querySelector('.item_price').textContent = parseInt(item.trim()).toLocaleString('ru-RU') + "₽";
+                });
+
+                let totalSum = document.querySelector('.totalSumBox__totalSum')
+                totalSum.textContent = parseInt(totalSum.textContent.trim()).toLocaleString('ru-RU') + "₽"
+            }
+            // spaces in prices (end)
         }
     });
 }
@@ -56,7 +69,7 @@ function delFromCart(id) {
 
 // basket update
 function loadToCart() {
-        let check = $("#in-check");
+        let check = $("#in-check-box");
         check.empty();
         showMyCart();
         $("html, body").animate({ scrollTop: $(document).height() });

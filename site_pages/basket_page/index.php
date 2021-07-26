@@ -162,22 +162,11 @@
       <div class="bestsellers__modalWindow-box">
         Товар был успешно добавлен в корзину
       </div>
-      <div class="in-checkz" id="in-check">
-        <div class="shopping__list">
-          <div class="shoping__item">
-            <img class="shoping__img">
-            <div class="item_title"></div>
-            <div class="item_price"></div>
-            <div class="item_textQuantity">Количество:</div>
-            <div class="item_quantity"></div>
-            <div class="item_width"></div>
-            <div class="item_depth"></div>
-            <div class="item_height"></div>
-            <button id="delete" class="item_delete"></button>
-          </div>
-        </div>
+
+      <div class="in-check-box" id="in-check-box">
         <div class="total"></div>
       </div>
+      
     <div class="totalSum"></div>
     <div class="random4items__header">
       Вам может понравиться

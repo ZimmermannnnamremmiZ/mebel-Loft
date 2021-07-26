@@ -234,3 +234,12 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
     }
 
 }
+
+// spaces in prices (start)
+document.addEventListener("DOMContentLoaded", function() {
+  elements.forEach((el) => {
+    let item = el.querySelector('.bestsellers__item-price').textContent;
+    el.querySelector('.bestsellers__item-price').textContent = parseInt(item.trim()).toLocaleString('ru-RU') + "₽";
+  });
+});
+// spaces in prices (end)

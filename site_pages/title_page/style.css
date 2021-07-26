@@ -899,10 +899,12 @@ footer {
     font-size: 13px;
     padding-top: 21px;
     padding-bottom: 22px;
+    margin-left: 26px;
   }
 
   .menu__item {
     display: block;
+    margin-left: 26px;
     height: 46px;
     font-weight: normal;
     font-size: 12px;
@@ -912,13 +914,13 @@ footer {
 
   }
 
-  .menu__menu {
+  /* .menu__menu {
     margin-left: 26px;
-  }
+  } */
 
-  .menu__home {
+  /* .menu__home {
     margin-left: 28px;
-  }
+  } */
 
   .menu__home::before {
     content: '';
@@ -1079,10 +1081,6 @@ footer {
   margin-top: 44px;
   width: 150px;
   height: 44px;
-}
-
-.slider__text-content_1 {
-
 }
 
 .slider__box .previous, .slider .next {

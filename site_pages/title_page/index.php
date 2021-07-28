@@ -48,22 +48,23 @@
               <span class="hamburger__botline hamburge__topline"></span>
             </label>
             <div class="menu__box">
+              <div class="menu__closeBtn"></div>
               <div class="menu__h"><strong class="menu__menu">Меню</strong></div>
-              <div class="menu__item"><strong class="menu__home">Главная</strong></div>
-              <div class="menu__item"><a>О нас</a></div>
-              <div class="menu__item"><a>Контакты</a></div>
-              <div class="menu__h"><strong>Категории</strong></div>
-              <div class="menu__item"><a>Кухни</a></div>
-              <div class="menu__item"><a>Спальни</a></div>
-              <div class="menu__item"><a>Гостинные</a></div>
-              <div class="menu__item"><a>Прихожие</a></div>
-              <div class="menu__item"><a>Офисная мебель</a></div>
-              <div class="menu__item"><a>Детская</a></div>
-              <div class="menu__item"><a>Акция</a></div>
-              <div class="menu__item"><a>Новинки</a></div>
-              <div class="menu__item"><a>Матрасы</a></div>
-              <div class="menu__item"><a>Мягкая мебель</a></div>
-              <div class="menu__item"><a>Шкафы</a></div>
+              <div class="menu__item"><strong class="menu__home"><a href="/site_pages/title_page/index.php">Главная</a></strong></div>
+              <div class="menu__item menu__about"><a href="/site_pages/about_page/index.php">О нас</a></div>
+              <div class="menu__item menu__contacts"><a href="/site_pages/contacts_page/index.php">Контакты</a></div>
+              <div class="menu__h menu__category"><strong>Категории</strong></div>
+              <div class="menu__item menu__kitchen"><a href="/site_pages/catalog_page/index.php">Кухни</a></div>
+              <div class="menu__item menu__bedroom"><a href="/site_pages/catalog_page/index.php">Спальни</a></div>
+              <div class="menu__item menu__livingroom"><a href="/site_pages/catalog_page/index.php">Гостинные</a></div>
+              <div class="menu__item menu__hallways"><a href="/site_pages/catalog_page/index.php">Прихожие</a></div>
+              <div class="menu__item menu__office"><a href="/site_pages/catalog_page/index.php">Офисная мебель</a></div>
+              <div class="menu__item menu__childrensroom"><a href="/site_pages/catalog_page/index.php">Детская</a></div>
+              <div class="menu__item menu__stock"><a href="/site_pages/catalog_page/index.php">Акция</a></div>
+              <div class="menu__item menu__novelty"><a href="/site_pages/catalog_page/index.php">Новинки</a></div>
+              <div class="menu__item menu__mattress"><a href="/site_pages/catalog_page/index.php">Матрасы</a></div>
+              <div class="menu__item menu__softFurniture"><a href="/site_pages/catalog_page/index.php">Мягкая мебель</a></div>
+              <div class="menu__item menu__cupboard"><a href="/site_pages/catalog_page/index.php">Шкафы</a></div>
             </div>
           </div>
           <a class="header__logo-link" href="/site_pages/title_page/index.php">
@@ -366,6 +367,7 @@
     </footer>
 </div>
   <script src="script.js"></script>
+  <script src="../scripts/menu_for_960px.js"></script>
 </body>
 
 </html>

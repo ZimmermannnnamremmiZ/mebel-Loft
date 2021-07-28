@@ -24,9 +24,9 @@ body {
 input#search {
   background-image: url(/images/search-icon.svg);
   background-repeat: no-repeat;
-  background-position: 15px 12px;
+  background-position: 14px 12px;
   text-indent: 35px;
-  padding: 0 10px 0 10px;
+  padding: 0px 10px 0 13px;
 }
 
 .container {
@@ -46,7 +46,7 @@ input#search {
 .header__sections a {
   color: #414141;
   text-decoration: none;
-  margin-top: 59px;
+  margin-top: 58px;
 }
 
 .header__sections-main {
@@ -59,7 +59,7 @@ input#search {
 }
 
 .header__sections-contacts {
-  margin-left: 30px;
+  margin-left: 32px;
 }
 
 .header__phone-icon{
@@ -98,10 +98,10 @@ input#search {
 
 .header__searchLine-input {
   border: 1px solid #E5E5E5;
-  width: 280px;
+  width: 256px;
   height: 40px;
   margin-left: 40px;
-  margin-top: 46px;
+  margin-top: 43px;
 }
 
 .header__searchLine-alarm2{
@@ -113,32 +113,28 @@ input#search {
   z-index: 999;
 }
 
-
-
 .header__searchLine-wishlist {
-  margin-left: 40px;
-  margin-top: 59px;
-  width: 19.83px;
-  height: 17px;
+  margin-left: 42px;
+  margin-top: 56px;
+  width: 20.83px;
+  height: 18px;
 }
 
 .header__searchLine-bag {
-  position: absolute;
-  margin-left: 1227px;
-  margin-top: 59px;
-  width: 15.13px;
-  height: 18px;
+  margin-left: 28px;
+  margin-top: 54px !important;
+  width: 17.13px;
+  height: 20px;
   background-image: url(/images/bag.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .header__searchLine-profile {
-  position: absolute;
   background-image: url("/images/profile-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 1266px;
+  margin-left: 10px;
   margin-top: 36px;
   width: 14.87px;
   height: 19px;
@@ -697,3 +693,4 @@ footer {
   line-height: 126.69%;
   color: #414141;
 }
+

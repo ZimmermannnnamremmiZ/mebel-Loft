@@ -1137,16 +1137,14 @@ footer {
 }
 
 .header__searchLine-bag {
-  margin-left: 846.13px;
   margin-top: 37px;
+  margin-left: 17px;
 }
 
 .header__searchLine-profile {
-  margin-left: 880px;
   margin-top: 37px;
+  margin-left: 17px;
 }
-
-
 
 .slider__box {
   width: 898px;
@@ -1233,8 +1231,9 @@ footer {
 element.style {
   display: block;
 }
+
 .header__searchLine-alarm1, .header__searchLine-alarm2 {
-  margin-left: 856px;
+  margin-left: 854px;
   margin-top: 39px;
 }
 
@@ -1253,9 +1252,18 @@ element.style {
 
 footer {
   margin-top: 1090px;
-  width: 898px;
+  width: 868px;
+  padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.footer__contacts-instagramText {
+  margin-right: 19px;
+}
+
+.footer__contacts-phoneText {
+  margin-right: 19px;
 }
 
 .footer__navigation {

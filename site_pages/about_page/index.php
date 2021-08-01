@@ -97,19 +97,19 @@
                                 <div class="benefits__item-title">
                                     Лучшая цена
                                 </div>
-                                <div class="benefits__item-text">
-                                    Предлагаем близкие к оптовым цены, которые дают возможность приобретать мебель дешевле, чем в розничных салонах и шоу-румах.
+                                <div class="benefits__item-text ">
+                                    Предлагаем близкие к оптовым цены, которые дают<br>возможность приобретать мебель дешевле, чем в розничных<br>салонах и шоу-румах.
                                 </div>
                             </div>
                         </div>
                             <div class="benefits__item">
-                                <img class="benefits__item-img" src="/images/about_images/Vector.svg" alt="empty">
-                                <div class="benefits__item-textBox">
+                                <img class="benefits__item-img car_delivery_img" src="/images/about_images/Vector.svg" alt="empty">
+                                <div class="benefits__item-textBox benefits__box№2">
                                     <div class="benefits__item-title">
                                         Прямые поставки
                                     </div>
                                     <div class="benefits__item-text">
-                                        С ведущих мебельных фабрик уменьшают срок выполнения вашего заказа, даже если речь идет об изготовлении предметов по индивидуальному проекту.
+                                        С ведущих мебельных фабрик уменьшают срок выполнения<br>вашего заказа, даже если речь идет об изготовлении предметов<br>по индивидуальному проекту.
                                     </div>
                                 </div>
                             </div>
@@ -122,20 +122,20 @@
                                         Экономие времени
                                     </div>
                                     <div class="benefits__item-text">
-                                        Не нашли оптимальный вариант или нет времени на поиски? Оставьте онлайн-заявку с критериями, и мы предложим вам несколько достойных образцов.
+                                        Не нашли оптимальный вариант или нет времени на поиски?<br>Оставьте онлайн-заявку с критериями, и мы предложим<br>вам несколько достойных образцов.
                                     </div>
                                 </div>
                             </div>
                             <div class="benefits__item">
                                 <img class="benefits__item-img" src="/images/about_images/production.svg" alt="empty">
-                                <div class="benefits__item-textBox">
+                                <div class="benefits__item-textBox benefits__box№4">
                                     <div class="benefits__item-title">
                                         Изготовление на заказ
                                     </div>
                                     <div class="benefits__item-text">
                                         Принимаем заявки на изготовление
-                                        мебели по персональному дизайн-проекту от покупателей из любой точки России.
-                                        Просим быть готовыми к авансированной оплате персональных заказов.
+                                        мебели по персональному<br>дизайн-проекту от покупателей из любой точки России.
+                                        Просим<br>быть готовыми к авансированной оплате персональных заказов.
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@
                             информационную рассылку!
                         </div>
                     </div>
-                    <div class="advantages__item">
+                    <div class="advantages__item ai_2">
                         <div class="advantages__item-title">
                             Гарантированное качество
                         </div>
@@ -165,13 +165,11 @@
                         </div>
                         <div class="advantages__item-text">
                             Вся продукция сопровождается
-                            гарантией производителя. В каталогах представлена только сертифицированная
-                            мебель. Собственный контроль качества тщательно проверяет каждый образец
-                            перед отправкой заказчику. Покупатели получают необходимые документы –
+                            гарантией производителя. В каталогах представлена только сертифицированная мебель. Собственный контроль качества тщательно проверяет каждый образец перед отправкой заказчику. Покупатели получают необходимые документы –
                             гарантийный талон и чек.
                         </div>
                     </div>
-                    <div class="advantages__item">
+                    <div class="advantages__item ai_3">
                         <div class="advantages__item-title">
                             Впечатляющий ассортимент
                         </div>
@@ -186,7 +184,7 @@
                     </div>
                 </section>
                 <section class="advantages2">
-                    <div class="advantages2__box">
+                    <div class="advantages2__box adv2_box_1">
                         <div class="advantages2__item">
                             <div class="advantages2__item-icon">
                                 <img src="/images/about_images/coop.svg" alt="empty" class="advantages2__item-img">
@@ -196,8 +194,7 @@
                             </div>
                             <div class="advantages2__item-text">
                                 Число наших оптовых
-                                покупателей неуклонно возрастает и всё потому, что мы сумели предложить
-                                владельцам мебельных магазинов наиболее выгодные условия.
+                                покупателей неуклонно возрастает и всё потому,<br>что мы сумели предложить владельцам мебельных магазинов наиболее выгодные условия.
                             </div>
                         </div>
                         <div class="advantages2__item">
@@ -210,12 +207,12 @@
                             <div class="advantages2__item-text">
                                 Собственная курьерская служба
                                 быстро привезет купленную мебель по указанному адресу. В российские регионы
-                                доставка осуществляется силами транспортных компаний.
+                                доставка осуществляется<br>силами транспортных компаний.
                             </div>
                         </div>
                     </div>
 
-                    <div class="advantages2__box">
+                    <div class="advantages2__box adv2_box_2">
                         <div class="advantages2__item">
                             <div class="advantages2__item-icon">
                                 <img src="/images/about_images/support.svg" alt="empty" class="advantages2__item-img">
@@ -225,7 +222,7 @@
                             </div>
                             <div class="advantages2__item-text">
                                 Квалифицированные менеджеры
-                                интернет-магазина ответят на все вопросы по ассортименту и предоставляемым
+                                интернет-магазина ответят на все<br>вопросы по ассортименту и предоставляемым
                                 возможностям, а также помогут оформить заказ и проконтролируют реализацию
                                 клиентских пожеланий при заказе мебели.
                             </div>
@@ -254,8 +251,8 @@
                             <img class="weHelp__icon" src="/images/about_images/green_vector.svg" alt="empty">
                             <div class="weHelp__item-text">
                                 <b>Время.</b><br>
-                                Примем вашу заявку в кротчайшие сроки. При необходимости
-                                подберем для вас достойные варианты по заданным критериям.
+                                Примем вашу заявку в кратчайшие сроки.<br>При необходимости
+                                подберем для вас<br>достойные варианты по заданным<br>критериям.
                             </div>
                         </div>
                         <div class="weHelp__item">
@@ -304,7 +301,7 @@
                     </div>
                     <div class="footer__navigation-rightSide">
                     <div class="footer__contacts">
-                        <img class="footer__contacts-logo" src="/images/LM.svg" alt="empty">
+                        <img class="footer__contacts-logo" src="/images/about_images/logo2.svg" alt="empty">
                     </div>
                     <div class="footer__contacts-adres">
                         г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море

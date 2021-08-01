@@ -22,7 +22,7 @@
                                 <label class="menu__btn" for="menu__toggle">
                                     <span class="hamburger__topline"></span>
                                     <span class="hamburger__midline"></span>
-                                    <span class="hamburger__botline hamburge__topline"></span>
+                                    <span class="hamburger__botline"></span>
                                 </label>
                         <div class="menu__box">
                             <div class="menu__closeBtn"></div>

@@ -250,25 +250,25 @@
                         <div class="weHelp__item">
                             <img class="weHelp__icon" src="/images/about_images/green_vector.svg" alt="empty">
                             <div class="weHelp__item-text">
-                                <b>Время.</b><br>
-                                Примем вашу заявку в кратчайшие сроки.<br>При необходимости
-                                подберем для вас<br>достойные варианты по заданным<br>критериям.
+                                <div class="weHelp__item-title">Время.</div>
+                                <p>Примем вашу заявку в кратчайшие сроки.<br>При необходимости
+                                подберем для вас<br>достойные варианты по заданным<br>критериям.</p>
                             </div>
                         </div>
                         <div class="weHelp__item">
                             <img class="weHelp__icon" src="/images/about_images/green_vector.svg" alt="empty">
                             <div class="weHelp__item-text">
-                                <b>Силы.</b><br>
-                                Закупим оптом или закажем на фабрике, избавив от длительных
+                                <div class="weHelp__item-title">Силы.</div>
+                                <p>Закупим оптом или закажем на фабрике, избавив от длительных
                                 обсуждений заказа с исполнителем. Курируем все этапы работы над
-                                заказом.
+                                заказом.</p>
                             </div>
                         </div>
                         <div class="weHelp__item">
                             <img class="weHelp__icon" src="/images/about_images/green_vector.svg" alt="empty">
                             <div class="weHelp__item-text">
-                                <b>Деньги.</b><br>
-                                Вы точно купите мебель дешевле, чем в розницу.
+                                <div class="weHelp__item-title">Деньги.</div>
+                                <p>Вы точно купите мебель дешевле, чем в розницу.</p>
                             </div>
                         </div>
                     </div>

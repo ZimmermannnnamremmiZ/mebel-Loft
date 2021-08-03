@@ -343,6 +343,11 @@ input#search {
   width: 1157px;
 }
 
+.weHelp__item-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .weHelp__item {
   display: flex;
   align-items: center;
@@ -430,14 +435,14 @@ input#search {
 @media (max-width:1024px) {
     .container {
       margin: 0 32px;
-      width: 898px;
+      width: 960px;
     }
 
     header {
-      width: 898px;
+      width: 959px;
     }
     .header__searchLine {
-      width: 898px;
+      width: 959px;
     }
 
     .header__searchLine-alarm2 {
@@ -826,6 +831,15 @@ input#search {
       width: 959px;
     }
 
+    .advantages2 br {
+      display: none;
+    }
+
+    .advantages2__item-title {
+      margin-top: 29px !important;
+      margin-bottom: 10px;
+    }
+
     .advantages__item-text {
       margin-left: auto;
       margin-right: auto;
@@ -847,9 +861,22 @@ input#search {
       width: 450px;
     }
 
+    .weHelp__itemBox br {
+      display: none;
+    }
+
+    .weHelp__title1 {
+      margin: 50px auto;
+      text-align: center;
+    }
+
     .weHelp__itemBox {
       margin-left: 0;
       width: 959px;
+    }
+
+    .weHelp__title2 {
+      margin: 100px auto;
     }
 
       footer {

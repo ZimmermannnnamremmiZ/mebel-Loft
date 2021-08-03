@@ -90,7 +90,7 @@
                     <div class="benefits__title">
                         Покупайте с выгодой!
                     </div>
-                    <div class="benefits__box">
+                    <div class="benefits__box ben_box_1">
                         <div class="benefits__item">
                             <img class="benefits__item-img" src="/images/about_images/profit.svg" alt="empty">
                             <div class="benefits__item-textBox">
@@ -104,7 +104,7 @@
                         </div>
                             <div class="benefits__item">
                                 <img class="benefits__item-img car_delivery_img" src="/images/about_images/Vector.svg" alt="empty">
-                                <div class="benefits__item-textBox benefits__box№2">
+                                <div class="benefits__item-textBox benefits__text_box№2">
                                     <div class="benefits__item-title">
                                         Прямые поставки
                                     </div>
@@ -114,7 +114,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="benefits__box">
+                    <div class="benefits__box ben_box_2">
                             <div class="benefits__item">
                                 <img class="benefits__item-img" src="/images/about_images/time.svg" alt="empty">
                                 <div class="benefits__item-textBox">
@@ -128,7 +128,7 @@
                             </div>
                             <div class="benefits__item">
                                 <img class="benefits__item-img" src="/images/about_images/production.svg" alt="empty">
-                                <div class="benefits__item-textBox benefits__box№4">
+                                <div class="benefits__item-textBox benefits__text_box№4">
                                     <div class="benefits__item-title">
                                         Изготовление на заказ
                                     </div>

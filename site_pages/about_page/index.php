@@ -16,14 +16,14 @@
 <body>
     <div class="container">
         <header class="header">
-                        <div class="header__sections">
-                            <div class="hamburger-menu">
-                            <input id="menu__toggle" type="checkbox" />
-                                <label class="menu__btn" for="menu__toggle">
-                                    <span class="hamburger__topline"></span>
-                                    <span class="hamburger__midline"></span>
-                                    <span class="hamburger__botline"></span>
-                                </label>
+            <div class="header__sections">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                             <span class="hamburger__topline"></span>
+                             <span class="hamburger__midline"></span>
+                             <span class="hamburger__botline"></span>
+                        </label>
                         <div class="menu__box">
                             <div class="menu__closeBtn"></div>
                             <div class="menu__h"><strong class="menu__menu">Меню</strong></div>

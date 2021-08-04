@@ -11,12 +11,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
     <body>
       <div class="container">
        <header class="header">
           <div class="header__sections">
+            <div class="hamburger-menu">
+              <input id="menu__toggle" type="checkbox" />
+              <label class="menu__btn" for="menu__toggle">
+                  <span class="hamburger__topline"></span>
+                  <span class="hamburger__midline"></span>
+                  <span class="hamburger__botline"></span>
+              </label>
+              <div class="menu__box">
+                  <div class="menu__closeBtn"></div>
+                  <div class="menu__h"><strong class="menu__menu">Меню</strong></div>
+                  <div class="menu__item"><strong class="menu__home"><a href="/site_pages/title_page/index.php">Главная</a></strong></div>
+                  <div class="menu__item menu__about"><a href="/site_pages/about_page/index.php">О нас</a></div>
+                  <div class="menu__item menu__contacts"><a href="/site_pages/contacts_page/index.php">Контакты</a></div>
+                  <div class="menu__h menu__category"><strong>Категории</strong></div>
+                  <div class="menu__item menu__kitchen"><a href="/site_pages/catalog_page/index.php">Кухни</a></div>
+                  <div class="menu__item menu__bedroom"><a href="/site_pages/catalog_page/index.php">Спальни</a></div>
+                  <div class="menu__item menu__livingroom"><a href="/site_pages/catalog_page/index.php">Гостинные</a></div>
+                  <div class="menu__item menu__hallways"><a href="/site_pages/catalog_page/index.php">Прихожие</a></div>
+                  <div class="menu__item menu__office"><a href="/site_pages/catalog_page/index.php">Офисная мебель</a></div>
+                  <div class="menu__item menu__childrensroom"><a href="/site_pages/catalog_page/index.php">Детская</a></div>
+                  <div class="menu__item menu__stock"><a href="/site_pages/catalog_page/index.php">Акция</a></div>
+                  <div class="menu__item menu__novelty"><a href="/site_pages/catalog_page/index.php">Новинки</a></div>
+                  <div class="menu__item menu__mattress"><a href="/site_pages/catalog_page/index.php">Матрасы</a></div>
+                  <div class="menu__item menu__softFurniture"><a href="/site_pages/catalog_page/index.php">Мягкая мебель</a></div>
+                  <div class="menu__item menu__cupboard"><a href="/site_pages/catalog_page/index.php">Шкафы</a></div>
+              </div>
+            </div>
             <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/LOGO.svg" alt="logo"></a>
             <a class="header__sections-main" href="/site_pages/title_page/index.php">Главная</a>
             <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
@@ -262,6 +290,7 @@
         </div>
       </footer>
     </div>
+    <script src="../scripts/menu_for_960px.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

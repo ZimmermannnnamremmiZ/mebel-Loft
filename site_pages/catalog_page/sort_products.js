@@ -9,7 +9,6 @@ sortToMaxBtn.addEventListener("click", () => {
     const getPrice = (el) => parseInt(el.innerHTML.replace(/ /g, ""));
     return getPrice(priceElA) - getPrice(priceElB);
   });
-
   sorted.forEach(el => resultEl.appendChild(el));
 });
 

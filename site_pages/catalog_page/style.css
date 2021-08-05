@@ -36,6 +36,13 @@
   display: flex;
 }
 
+.catalog__filterBtn {
+  display: none;
+  padding: 10px 20px;
+  background-color: #245462;
+  color: #fff;
+}
+
 .catalog__menu {
   display: flex;
   flex-direction: column;
@@ -436,6 +443,13 @@
   z-index: 1;
 }
 
+.hamburger-menu {
+  display: block;
+  position: absolute;
+  margin-top: -234px;
+  margin-left: 428px;
+}
+
 .hamburger__topline,
 .hamburger__midline ,
 .hamburger__botline {
@@ -469,7 +483,7 @@
   display: block;
   position: absolute;
   visibility: hidden;
-  margin-top: -39px;
+  margin-top: 238px !important;
   margin-left: 700px;
   width: 165px;
   text-align: right;
@@ -509,4 +523,41 @@
 
 #select_2-box, #select_3-box {
   display: none;
+}
+
+@media (max-width:1024px) {
+  .catalog__menu {
+    margin-left: 0;
+  }
+  .catalog {
+    width: 959px;
+    justify-content: center;
+  }
+  .catalog__filterBtn {
+    position: absolute;
+    margin-top: 6px;
+    display: block;
+    align-self: flex-start;
+  }
+  .catalog__menu {
+    display: none;
+  }
+  .bestsellers__box {
+    justify-content: space-between;
+    margin-left: 0;
+  }
+  .inputcurrency {
+    background-position: 80% 51%;
+  }
+  .hamburger-menu {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 0;
+  }
+  .menu__box {
+    margin-top: 238px !important;
+  }
+  .header__searchLine-alarm2 {
+    margin-left: 887px;
+  }
 }

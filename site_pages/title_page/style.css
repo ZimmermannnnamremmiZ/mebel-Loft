@@ -155,7 +155,7 @@ input#search {
 
 .header__searchLine-alarm2 {
   position: absolute;
-  margin-top: 24.5px;
+  margin-top: 27px;
   margin-left: 1220px;
   z-index: 100;
 }
@@ -914,7 +914,7 @@ footer {
   .menu__category {
     padding-top: 15px;
     padding-bottom: 15px;
-}
+  }
 
   .menu__item {
     display: block;

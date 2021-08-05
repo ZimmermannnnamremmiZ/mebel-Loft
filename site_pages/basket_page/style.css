@@ -425,3 +425,63 @@ input#search {
   color: black;
   z-index: 999;
 }
+
+@media (max-width:1024px) {
+  .header__searchLine-alarm {
+    margin-top: -259px;
+    margin-left: 904px;
+  }
+  input#search {
+    background-position: 15px 16px;
+  }
+  .totalQuantity {
+    margin-left: 0;
+    width: 950px;
+  }
+  .in-check, .shoping__item {
+    width: 959px;
+  }
+  .shoping__item {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .item_size {
+    margin-left: -57px;
+  }
+  .item_width {
+    margin-left: -35px;
+  }
+  .item_x {
+    grid-area: x;
+    margin-left: -77px;
+  }
+  .item_depth {
+    margin-left: -147px;
+  }
+  .item_x2 {
+    margin-left: -188px;
+  }
+  .item_height {
+    margin-left: -258px;
+  }
+  .totalSumBox__text {
+    margin-left: 519px;
+  }
+  .random4items__box {
+    width: 959px;
+    margin-left: 0;
+    justify-content: start
+  }
+  .bestsellers__box-item {
+    width: 239px;
+  }
+  .toBascet__add {
+    width: 197px;
+  }
+  .random4items__header {
+    margin-left: 0;
+  }
+  footer {
+    width: 959px;
+  }
+}

@@ -30,7 +30,7 @@
     <script src="/site_pages/basket_page/myCart.js"></script>
   </head>
     <body>
-      <div class="container"></div>
+      <div class="container">
         <header class="header">
             <div class="header__sections">
               <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/LOGO.svg" alt="logo"></a>
@@ -182,6 +182,7 @@
           <p class="navigation__simbol">/</p>
           <p class="navigation__end">lorem 3</p>
         </section>
+        <button class="catalog__filterBtn">Фильтр</button>
         <section class="catalog">
           <div class="catalog__menu">
                 <p class="catalog__header">
@@ -266,8 +267,7 @@
                   <button class="showMore">Показать ещё</button>
                 </div>
           </div>
-      <div class="bestsellers__box">
-        <div class="hamburger-menu">
+      <div class="hamburger-menu">
           <input id="menu__toggle" type="checkbox" />
           <label class="menu__btn" for="menu__toggle">
             <span class="hamburger__topline"></span>
@@ -279,7 +279,8 @@
 			      <li id="toMaxPrice" class="menu__item">по возрастанию цены</a></li>
 			      <li class="menu__item">по популярности</a></li>
           </ul>
-        </div>
+      </div>
+      <div class="bestsellers__box">
         <div class="bestsellers__modalWindow-box">
           Товар был успешно добавлен в корзину
         </div>
@@ -379,6 +380,7 @@
       </footer>
     </div>
     <script src="linkShowMore.js"></script>
+    <script src="../scripts/filterBtn_for_960px.js"></script>
     <script src="selects.js"></script>
     <script src="price-picker.js"></script>
     <script src="sort_products.js"></script>

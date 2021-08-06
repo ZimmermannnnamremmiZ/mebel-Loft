@@ -12,11 +12,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мебель Loft</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="owl.carousel.min.css">
-  <link rel="stylesheet" href="owl.theme.default.min.css">
+  <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="/site_pages/basket_page/myCart.js"></script>
-  <script src="owl.carousel.min.js"></script>
+  <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -369,6 +368,7 @@
     </footer>
 </div>
   <script src="script.js"></script>
-  <script src="../scripts/menu_for_960px.js"></script>
+  <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
+  <script src="../scripts//menu_for_960px.js"></script>
 </body>
 </html>

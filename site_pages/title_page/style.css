@@ -190,7 +190,7 @@ input#search {
 }
 
 .header__menu-kitchen-icon {
-  width: 23px;
+  width: 23px !important;
   height: 23px;
   padding-top: 23px;
   padding-left: 39px;
@@ -206,7 +206,7 @@ input#search {
 
 }
 .header__menu-bedroom-icon {
-  width: 28px;
+  width: 28px !important;
   height: 22.22px;
   padding-left: 24px;
   padding-top: 25px;
@@ -220,7 +220,7 @@ input#search {
   padding-top: 25px;
 }
 .header__menu-livingroom-icon {
-  width: 30px;
+  width: 30px !important;
   height: 22.03px;
   padding-left: 23px;
   padding-top: 25px;
@@ -237,7 +237,7 @@ input#search {
   padding-right: 25px;
 }
 .header__menu-closet-icon {
-  width: 21.91px;
+  width: 21.91px !important;
   height: 22px;
   padding-left: 24px;
   padding-top: 24px;
@@ -252,7 +252,7 @@ input#search {
   margin-left: -1px;
 }
 .header__menu-office-icon {
-  width: 22px;
+  width: 22px !important;
   height: 22px;
   padding-left: 23px;
   padding-top: 24px;
@@ -266,7 +266,7 @@ input#search {
   padding-right: 25px;
 }
 .header__menu-childrensroom-icon {
-  width: 22px;
+  width: 22px !important;
   height: 22px;
   padding-left: 23px;
   padding-top: 24px;
@@ -773,8 +773,28 @@ footer {
 }
 
 
+.slide {
+  height: 70px;
+  margin-left: 0;
+  margin-right: 0;
+}
 
+.owl-item:hover {
+  color: #fff;
+  height: 1000px;
+}
 
+.header__menu-etc-icon {
+  position: absolute;
+  width: 4.27px;
+  height: 17px;
+  margin-top: -70px;
+  margin-left: 1210px;
+}
+
+.owl-stage {
+  width: 1125px !important;
+}
 
 @media (max-width:1024px) {
   .container {
@@ -791,8 +811,13 @@ footer {
   .slider {
     width: 959px;
   }
-  .header__sections-main, .header__sections-about, .header__sections-contacts, .header__menu-stock-text {
+  .header__sections-main, .header__sections-about, .header__sections-contacts {
     display: none;
+  }
+
+  .no-js .owl-carousel, .owl-carousel.owl-loaded{
+      width: 888px;
+      margin: 10px auto;
   }
 
   .header__sections {

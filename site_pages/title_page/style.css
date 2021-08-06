@@ -293,15 +293,6 @@ input#search {
   color: #fff;
 }
 
-
-.header__menu-etc-icon {
-  width: 4.27px;
-  height: 17px;
-  padding-left: 19px;
-  padding-top: 27px;
-  padding-right: 25px;
-}
-
 .dropdown {
   display: none;
   flex-direction: column;
@@ -772,7 +763,7 @@ footer {
   color: #414141;
 }
 
-
+/* owl carousel start */
 .slide {
   height: 70px;
   margin-left: 0;
@@ -790,11 +781,15 @@ footer {
   height: 17px;
   margin-top: -70px;
   margin-left: 1210px;
+  padding-left: 19px;
+  padding-top: 27px;
+  padding-right: 25px;
 }
 
 .owl-stage {
   width: 1125px !important;
 }
+/* owl carousel end */
 
 @media (max-width:1024px) {
   .container {
@@ -1143,6 +1138,8 @@ footer {
 }
 
 .header__menu-etc-icon {
+  margin-top: -81px;
+  margin-left: 918px;
   padding-left: 0;
 }
 

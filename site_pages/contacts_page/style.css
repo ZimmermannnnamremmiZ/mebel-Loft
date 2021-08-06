@@ -222,7 +222,7 @@ input#search {
   padding-right: 25px;
 }
 .header__menu-office-icon {
-  width: 22px;
+  width: 22px !important;
   height: 22px;
   padding-left: 25px;
   padding-top: 24px;
@@ -232,7 +232,7 @@ input#search {
   font-size: 16px;
   line-height: 18.75px;
   padding-left: 10px;
-  padding-top: 25px;
+  padding-top: 26px;
   padding-right: 25px;
 }
 .header__menu-childrensroom-icon {
@@ -259,17 +259,19 @@ input#search {
   padding-right: 25px;
 }
 
-.header__menu-stock-text:hover {
- color: #fff;
+.header__menu-etc-icon {
+  position: absolute;
+  width: 4.27px;
+  height: 17px;
+  margin-top: -70px;
+  margin-left: 1210px;
+  padding-left: 19px;
+  padding-top: 27px;
+  padding-right: 25px;
 }
 
-
-.header__menu-etc-icon {
-  width: 4.27px;
-  height: 14px;
-  padding-left: 25px;
-  padding-top: 28px;
-  padding-right: 25px;
+.header__menu-stock-text:hover {
+ color: #fff;
 }
 
 .dropdown {
@@ -695,7 +697,25 @@ footer {
   color: #414141;
 }
 
+/* owl carousel start */
+.slide {
+  height: 70px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.owl-item:hover {
+  color: #fff;
+  height: 1000px;
+}
+
+.owl-stage {
+  width: 1125px !important;
+}
+/* owl carousel end */
+
 @media (max-width:1024px) {
+  
   .container {
     margin: 0 32px;
     width: 960px;
@@ -971,8 +991,20 @@ footer {
     padding-left: 5px;
     padding-right: 5px;
   }
+
+  .no-js .owl-carousel, .owl-carousel.owl-loaded{
+    width: 888px;
+    margin: 10px auto;
+  }
+
+  .owl-stage-outer {
+    width: 858px;
+  }
+
   .header__menu-etc-icon {
-    padding-left: 12px !important;
+    margin-top: -81px;
+    margin-left: 918px;
+    padding-left: 0;
   }
   .navigation, .contacts__title, .contacts__form, .map__title {
     margin-left: 0;

@@ -31,14 +31,14 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
         });
         $(".brandItem:checked").each(function() {
           [...elements].forEach(el => {
-            let inpt1 = document.getElementById('id66i1');
-            let inpt2 = document.getElementById('id66i2');
+            let input1 = document.getElementById('id66i1');
+            let input2 = document.getElementById('id66i2');
             const priceEl= el.querySelector(".bestsellers__item-price");
             const price =  parseInt(priceEl.innerHTML.replace(/[^0-9]/ig, ''));
-            if (el.querySelector(".bestsellers__item-name").innerText.includes($(this).val()) && price <= inpt2.value && price >= inpt1.value) {
+            if (el.querySelector(".bestsellers__item-name").innerText.includes($(this).val()) && price <= input2.value && price >= input1.value) {
               resultEl.appendChild(el);
               el.style.display = "block";
-            } else if (($(".brandItem:checked").length === 0) && price <= inpt2.value && price >= inpt1.value ) {
+            } else if (($(".brandItem:checked").length === 0) && price <= input2.value && price >= input1.value) {
               resultEl.appendChild(el);
               el.style.display = "block";
             }

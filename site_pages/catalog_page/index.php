@@ -306,7 +306,7 @@
               '.$row["category"].'
               </div>
               <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket'.$row["id"].'">
-              '.$row["price"].'₽
+              '.$row["price"].'
               </div>
               <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
                 <div class="toBasket__sizesLable">Размеры</div>
@@ -383,6 +383,7 @@
     <script src="../scripts/filterBtn_for_960px.js"></script>
     <script src="selects.js"></script>
     <script src="price-picker.js"></script>
+    <script src="filter-products.js"></script>
     <script src="sort_products.js"></script>
     <script src="../basket_page/myCart.js"></script>
   </body>

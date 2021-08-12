@@ -26,16 +26,23 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
       const elements = document.querySelectorAll('.bestsellers__box-item');
       const resultEl = document.querySelector('.bestsellers__box');
     
-        [...elements].forEach((el) => {
-        const priceEl= el.querySelector(".bestsellers__item-price");
-        const price =  parseInt(priceEl.innerHTML.replace(/ /g, ""));
-        
-         if (price < inpt2.value && price > inpt1.value) {
-         resultEl.appendChild(el);
-         el.style.display = 'block';
-        } else {
-          el.style.display = 'none'
-        }
+        [...elements].forEach(el => {
+          el.style.display = "none"
+        });
+        $(".brandItem:checked").each(function() {
+          [...elements].forEach(el => {
+            let inpt1 = document.getElementById('id66i1');
+            let inpt2 = document.getElementById('id66i2');
+            const priceEl= el.querySelector(".bestsellers__item-price");
+            const price =  parseInt(priceEl.innerHTML.replace(/[^0-9]/ig, ''));
+            if (el.querySelector(".bestsellers__item-name").innerText.includes($(this).val()) && price <= inpt2.value && price >= inpt1.value) {
+              resultEl.appendChild(el);
+              el.style.display = "block";
+            } else if (($(".brandItem:checked").length === 0) && price <= inpt2.value && price >= inpt1.value ) {
+              resultEl.appendChild(el);
+              el.style.display = "block";
+            }
+          })
         });
     }
 
@@ -79,8 +86,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
                 between.style.width = (left2-left1) + 'px';
                 between.style.marginLeft = left1 + 5 + 'px';
               }
-              priceInRange()
-              
+              priceInRange()  
     }
     inpt2.onchange= function() {
     	if (parseInt(inpt2.value) < min)
@@ -232,7 +238,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
             left: box.left + pageXOffset
         };
     }
-
+    
 }
 
 // spaces in prices (start)
@@ -243,3 +249,4 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 // spaces in prices (end)
+

@@ -813,8 +813,16 @@ footer {
   }
 
   .no-js .owl-carousel, .owl-carousel.owl-loaded{
-      width: 888px;
+      width: 947px !important;
       margin: 10px auto;
+  }
+
+  .owl-stage-outer {
+    width: 900px !important;
+  }
+
+  .header__menu-kitchen-icon {
+    padding-left: 39px !important;
   }
 
   .header__sections {
@@ -839,6 +847,7 @@ footer {
 
   .hamburger-menu {
     display: block;
+    margin-left: 6px;
   }
 
   #menu__toggle {

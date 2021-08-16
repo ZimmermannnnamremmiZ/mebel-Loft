@@ -25,25 +25,29 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
     function priceInRange() {
       const elements = document.querySelectorAll('.bestsellers__box-item');
       const resultEl = document.querySelector('.bestsellers__box');
-    
+      let input1 = document.getElementById('id66i1');
+      let input2 = document.getElementById('id66i2');
+
+      [...elements].forEach(el => {
+        el.style.display = "none";
+        const priceEl= el.querySelector(".bestsellers__item-price");
+        const price =  parseInt(priceEl.innerHTML.replace(/[^0-9]/ig, ''));
+         if (($(".brandItem:checked").length === 0) && price <= input2.value && price >= input1.value) {
+          resultEl.appendChild(el);
+          el.style.display = "block";
+        }
+      });
+
+      $(".brandItem:checked").each(function() {
         [...elements].forEach(el => {
-          el.style.display = "none"
-        });
-        $(".brandItem:checked").each(function() {
-          [...elements].forEach(el => {
-            let input1 = document.getElementById('id66i1');
-            let input2 = document.getElementById('id66i2');
-            const priceEl= el.querySelector(".bestsellers__item-price");
-            const price =  parseInt(priceEl.innerHTML.replace(/[^0-9]/ig, ''));
-            if (el.querySelector(".bestsellers__item-name").innerText.includes($(this).val()) && price <= input2.value && price >= input1.value) {
-              resultEl.appendChild(el);
-              el.style.display = "block";
-            } else if (($(".brandItem:checked").length === 0) && price <= input2.value && price >= input1.value) {
-              resultEl.appendChild(el);
-              el.style.display = "block";
-            }
-          })
-        });
+          const priceEl= el.querySelector(".bestsellers__item-price");
+          const price =  parseInt(priceEl.innerHTML.replace(/[^0-9]/ig, ''));
+          if (el.querySelector(".bestsellers__item-name").innerText.includes($(this).val()) && price <= input2.value && price >= input1.value) {
+            resultEl.appendChild(el);
+            el.style.display = "block";
+          }
+        })
+      });
     }
 
     // init
@@ -86,7 +90,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
                 between.style.width = (left2-left1) + 'px';
                 between.style.marginLeft = left1 + 5 + 'px';
               }
-              priceInRange()  
+              priceInRange()
     }
     inpt2.onchange= function() {
     	if (parseInt(inpt2.value) < min)
@@ -238,7 +242,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
             left: box.left + pageXOffset
         };
     }
-    
+
 }
 
 // spaces in prices (start)

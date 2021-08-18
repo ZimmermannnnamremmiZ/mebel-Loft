@@ -95,7 +95,7 @@ echo '
     // при наличии товара в корзине, возле неё появится точка
     if($quantityAll > 0){
                 echo '
-                <img class="header__searchLine-alarm" src="/images/оповещение.svg">
+                <img class="header__searchLine-alarm" src="/images/title_page/оповещение.svg">
                 ';
                 };
 

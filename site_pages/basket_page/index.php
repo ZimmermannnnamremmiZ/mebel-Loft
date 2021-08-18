@@ -9,8 +9,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="myCart.js"></script>
+  <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body onLoad="showMyCart()">
@@ -45,16 +47,16 @@
                     <div class="menu__item menu__cupboard"><a href="/site_pages/catalog_page/index.php">Шкафы</a></div>
                 </div>
               </div>
-              <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/LOGO.svg" alt="logo"></a>
+              <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/title_page/LOGO.svg" alt="logo"></a>
               <a class="header__sections-main" href="/site_pages/title_page/index.php">Главная</a>
               <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
               <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
               <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
-              <img class="header__phone-icon" src="/images/phone.svg">
+              <img class="header__phone-icon" src="/images/title_page/phone.svg">
               <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
-              <img class="header__delivery-icon" src="/images/delivery-icon.svg">
+              <img class="header__delivery-icon" src="/images/title_page/delivery-icon.svg">
               <a class="header__sections-delivery" href="#">Доставка</a>
-              <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
+              <img class="header__searchLine-wishlist" src="/images/title_page/wishlist-icon.svg" alt="search">
               <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
               <?php
                 $cart = $_SESSION['cart'];
@@ -65,9 +67,9 @@
                 }
             ?>
             </div>
-            <div class="header__menu">
-            <div class="header__menu-cell kitchen">
-              <img class="header__menu-kitchen-icon" src="/images/kitchen-icon.svg" alt="search">
+            <div class="header__menu owl-carousel" id="slider">
+          <div class="header__menu-cell kitchen slide">
+              <img class="header__menu-kitchen-icon" src="/images/title_page/kitchen-icon.svg" alt="search">
               <h2 class="header__menu-kitchen-text">Кухни</h2>
               <div class="dropdown__kitchen dropdown">
                 <a href="/site_pages/catalog_page/index.php">Модульные кухни</a>
@@ -80,9 +82,9 @@
                 <a href="/site_pages/catalog_page/index.php">Дополнительная<br>фурнитура</a>
                 <a href="/site_pages/catalog_page/index.php">Бытовыя техника</a>
               </div>
-            </div>
-            <div class="header__menu-cell bedroom">
-              <img class="header__menu-bedroom-icon" src="/images/bedroom-icon.svg" alt="search">
+          </div>
+          <div class="header__menu-cell bedroom slide">
+              <img class="header__menu-bedroom-icon" src="/images/title_page/bedroom-icon.svg" alt="search">
               <h2 class="header__menu-bedroom-text">Спальни</h2>
               <div class="dropdown__bedroom dropdown">
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -98,9 +100,9 @@
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
               </div>
-            </div>
-            <div class="header__menu-cell livingroom">
-              <img class="header__menu-livingroom-icon" src="/images/livingroom-icon.svg" alt="search">
+          </div>
+          <div class="header__menu-cell livingroom slide">
+              <img class="header__menu-livingroom-icon" src="/images/title_page/livingroom-icon.svg" alt="search">
               <h2 class="header__menu-livingroom-text">Гостинные</h2>
               <div class="dropdown__livingroom dropdown">
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -122,9 +124,9 @@
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
               </div>
-            </div>
-            <div class="header__menu-cell closet">
-              <img class="header__menu-closet-icon" src="/images/closet-icon.svg" alt="search">
+          </div>
+          <div class="header__menu-cell closet slide">
+              <img class="header__menu-closet-icon" src="/images/title_page/closet-icon.svg" alt="search">
               <h2 class="header__menu-closet-text">Прихожие</h2>
               <div class="dropdown__closet dropdown">
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -133,9 +135,9 @@
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
               </div>
-            </div>
-            <div class="header__menu-cell office">
-              <img class="header__menu-office-icon" src="/images/office-icon.svg" alt="search">
+          </div>
+          <div class="header__menu-cell office slide">
+              <img class="header__menu-office-icon" src="/images/title_page/office-icon.svg" alt="search">
               <h2 class="header__menu-office-text">Офисная мебель</h2>
               <div class="dropdown__office dropdown">
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
@@ -159,28 +161,27 @@
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
               </div>
-            </div>
-            <div class="header__menu-cell childrensroom">
-              <img class="header__menu-childrensroom-icon" src="/images/childrensroom-icon.svg" alt="search">
+          </div>
+          <div class="header__menu-cell childrensroom slide">
+              <img class="header__menu-childrensroom-icon" src="/images/title_page/childrensroom-icon.svg" alt="search">
               <h2 class="header__menu-childrensroom-text">Детская</h2>
               <div class="dropdown__childrensroom dropdown">
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
                 <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-
               </div>
-            </div>
-            <div class="header__menu-cell menu-stock">
-              <h6 class="header__menu-stock-text">Акция</h6>
+          </div>
+          <div class="header__menu-cell menu-stock slide">
+            <h6 class="header__menu-stock-text">Акция</h6>
               <div class="dropdown__menu-stock dropdown">
                 <a href="/site_pages/catalog_page/index.php">Новинки</a>
                 <a href="/site_pages/catalog_page/index.php">Шкафы</a>
                 <a href="/site_pages/catalog_page/index.php">Матрасы</a>
                 <a href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
               </div>
-            </div>
           </div>
-          <img class="header__menu-etc-icon" src="/images/etc.svg" alt="search">
+        </div>
+        <img class="header__menu-etc-icon" src="/images/title_page/etc.svg" alt="search">
             </header>
         <section class="navigation">
           <p class="navigation__start">Главная</p>
@@ -215,7 +216,7 @@
               while($row = $results->fetch_assoc()){
                 echo '
                 <div class="bestsellers__box-item" data-toggle-id="hidde__toBasket'.$row["id"].'">
-                <img class="bestsellers__item-loverIcon" src="/images/список желаемого.svg" alt="empty">
+                <img class="bestsellers__item-loverIcon" src="/images/title_page/список желаемого.svg" alt="empty">
                 <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
                 <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
                   '.$row["name"].'
@@ -234,8 +235,8 @@
                       <div class="toBasket__height-text">ВЫСОТА</div>
                     </div>
                     <div class="toBasket__x">
-                      <img class="toBasket__x-svg1" src="/images/title_images/×.svg" alt="empty">
-                      <img class="toBasket__x-svg2" src="/images/title_images/×.svg" alt="empty">
+                      <img class="toBasket__x-svg1" src="/images/title_page/×.svg" alt="empty">
+                      <img class="toBasket__x-svg2" src="/images/title_page/×.svg" alt="empty">
                     </div>
                     <div class="toBasket__num">
                       <div class="toBasket__width-num">'.$row["width"].' СМ</div>
@@ -274,21 +275,21 @@
           </div>
           <div class="footer__navigation-rightSide">
             <div class="footer__contacts">
-              <img class="footer__contacts-logo" src="/images/LM.svg" alt="empty">
+              <img class="footer__contacts-logo" src="/images/title_page/LM.svg" alt="empty">
             </div>
             <div class="footer__contacts-adres">
               г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
             </div>
             <div class="footer__contacts-contacts">
-              <img class='footer__contacts-phoneImg' src="/images/phone_in_footer.svg" alt="empty">
+              <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
               <p class="footer__contacts-phoneText">
                 8 (964) 89 99 119
               </p>
-              <img class='footer__contacts-instagramImg' src="/images/inst.svg" alt="empty">
+              <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
               <p class="footer__contacts-instagramText">
                 INSTAGRAM
               </p>
-              <img class='footer__contacts-mailImg' src="/images/mail.svg" alt="empty">
+              <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
               <p class="footer__contacts-mailText">
                 mebel_loft_anapa@mail.ru
               </p>
@@ -298,6 +299,7 @@
       </div>
   </div>
   <script src="script.js"></script>
-  <script src="../scripts/menu_for_960px.js"></script>
+  <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
+  <script src="../scripts//menu_for_960px.js"></script>
 </body>
 </html>

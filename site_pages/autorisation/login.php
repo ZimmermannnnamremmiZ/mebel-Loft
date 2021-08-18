@@ -49,10 +49,10 @@
               <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/LOGO.svg" alt="logo"></a>
               <a class="header__sections-main" href="/site_pages/title_page/index.php">Главная</a>
               <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
-              <a class="header__sections-contacts" href="index.php">Контакты</a>
+              <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
               <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
               <img class="header__phone-icon" src="/images/phone.svg">
-              <a class="header__sections-phone" href="href=" tel:89648999119">8 (964) 89 99 119</a>
+              <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
               <img class="header__delivery-icon" src="/images/delivery-icon.svg">
               <a class="header__sections-delivery" href="#">Доставка</a>
               <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">

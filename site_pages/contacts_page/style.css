@@ -69,14 +69,14 @@ input#search {
 }
 
 .header__phone-icon {
-  margin-left: 32px;
+  margin-left: 28px;
   margin-top: 55px;
   width: 19px;
   height: 19px;
 }
 
 .header__delivery-icon {
-  margin-left: 34px;
+  margin-left: 32px;
   width: 32px;
   height: 17.92px;
   margin-top: 56.46px;
@@ -122,7 +122,7 @@ input#search {
 }
 
 .header__searchLine-bag {
-  margin-left: 23px;
+  margin-left: 29px;
   margin-top: 54px !important;
   width: 17.13px;
   height: 20px;
@@ -135,7 +135,7 @@ input#search {
   background-image: url("/images/title_page/profile-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 23px;
+  margin-left: 31px;
   margin-top: 54px !important;
   width: 16.87px;
   height: 21px;
@@ -143,10 +143,10 @@ input#search {
 
 .header__menu {
   display: flex;
-  width: 1140px;
+  width: 1162px;
   height: 70px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
-  margin-left: 160px;
+  margin-left: 140px;
   margin-top: 20px;
 }
 
@@ -164,7 +164,7 @@ input#search {
   width: 23px;
   height: 23px;
   padding-top: 23px;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 
 .header__menu-kitchen-text {
@@ -176,12 +176,14 @@ input#search {
   padding-right: 25px;
 
 }
+
 .header__menu-bedroom-icon {
   width: 28px;
   height: 22.22px;
-  padding-left: 25px;
+  padding-left: 30px;
   padding-top: 24px;
 }
+
 .header__menu-bedroom-text {
   font-weight: 400;
   font-size: 16px;
@@ -190,12 +192,14 @@ input#search {
   padding-right: 25px;
   padding-top: 25px;
 }
+
 .header__menu-livingroom-icon {
   width: 30px;
   height: 22.03px;
-  padding-left: 25px;
+  padding-left: 29px;
   padding-top: 24px;
 }
+
 .header__menu-livingroom-text {
   font-weight: 400;
   font-size: 16px;
@@ -207,12 +211,14 @@ input#search {
   padding-top: 25px;
   padding-right: 25px;
 }
+
 .header__menu-closet-icon {
   width: 21.91px;
   height: 22px;
-  padding-left: 25px;
+  padding-left: 29px;
   padding-top: 24px;
 }
+
 .header__menu-closet-text {
   font-weight: 400;
   font-size: 16px;
@@ -221,12 +227,14 @@ input#search {
   padding-top: 25px;
   padding-right: 25px;
 }
+
 .header__menu-office-icon {
   width: 22px !important;
   height: 22px;
-  padding-left: 25px;
+  padding-left: 29px;
   padding-top: 24px;
 }
+
 .header__menu-office-text {
   font-weight: 400;
   font-size: 16px;
@@ -235,12 +243,14 @@ input#search {
   padding-top: 26px;
   padding-right: 25px;
 }
+
 .header__menu-childrensroom-icon {
   width: 22px;
   height: 22px;
-  padding-left: 25px;
+  padding-left: 29px;
   padding-top: 24px;
 }
+
 .header__menu-childrensroom-text {
   font-weight: 400;
   font-size: 16px;
@@ -249,12 +259,13 @@ input#search {
   padding-top: 25px;
   padding-right: 25px;
 }
+
 .header__menu-stock-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
   color: #D74444;
-  padding-left: 25px;
+  padding-left: 27px;
   padding-top: 25px;
   padding-right: 25px;
 }
@@ -263,8 +274,8 @@ input#search {
   position: absolute;
   width: 4.27px;
   height: 17px;
-  margin-top: -70px;
-  margin-left: 1210px;
+  margin-top: -71px;
+  margin-left: 1239px;
   padding-left: 19px;
   padding-top: 27px;
   padding-right: 25px;

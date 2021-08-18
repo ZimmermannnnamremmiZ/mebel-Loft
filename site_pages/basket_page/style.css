@@ -1,7 +1,7 @@
 @import url(/site_pages/contacts_page/style.css);
 
 .container {
-  width: 1400px;
+  width: 960px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -222,6 +222,7 @@
   display: flex;
   margin-top: 60px;
   flex-direction: column;
+  width: 959px;
 }
 
 footer {
@@ -420,14 +421,77 @@ footer {
   z-index: 999;
 }
 
+/* owl carousel start */
+.slide {
+  height: 70px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.owl-item:hover {
+  color: #fff;
+  height: 1000px;
+}
+
+.header__menu-etc-icon {
+  position: absolute;
+  width: 4.27px;
+  height: 17px;
+  margin-top: -70px;
+  margin-left: 1210px;
+  padding-left: 19px;
+  padding-top: 27px;
+  padding-right: 25px;
+}
+
+.header__menu, .owl-carousel, .owl-loaded, .owl-drag, .owl-stage, .owl-stage-outer {
+  width: 1125px !important;
+}
+
+
+/* owl carousel end */
+
 @media (max-width:1024px) {
+
   .header__searchLine-alarm {
-    margin-top: -259px;
-    margin-left: 904px;
+    margin-top: -248px;
+    margin-left: 913px;
   }
+
   input#search {
     background-position: 15px 16px;
   }
+
+  .slider {
+    width: 959px;
+  }
+  .header__sections-main, .header__sections-about, .header__sections-contacts {
+    display: none;
+  }
+  
+  .no-js .owl-carousel, .owl-carousel.owl-loaded{
+      width: 947px !important;
+      margin: 10px auto;
+  }
+
+  .owl-stage-outer {
+    width: 897px !important;
+  }
+
+  .header__menu {
+    margin-left: -3px !important;
+  }
+
+  .header__menu-etc-icon {
+    margin-top: -80px;
+    margin-left: 918px;
+    padding-left: 0;
+  }
+
+  .header__menu-kitchen-icon {
+    padding-left: 39px !important;
+  }
+
   .totalQuantity {
     margin-left: 0;
     width: 950px;

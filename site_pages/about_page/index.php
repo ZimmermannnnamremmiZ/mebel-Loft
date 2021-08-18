@@ -44,22 +44,22 @@
                             <div class="menu__item menu__cupboard"><a href="/site_pages/catalog_page/index.php">Шкафы</a></div>
                         </div>
                     </div>
-                    <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/LOGO.svg" alt="logo"></a>
+                    <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/title_page/LOGO.svg" alt="logo"></a>
                     <a class="header__sections-main" href="/site_pages/title_page/index.php">Главная</a>
                     <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
                     <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
                     <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
-                    <img class="header__phone-icon" src="/images/phone.svg">
+                    <img class="header__phone-icon" src="/images/title_page/phone.svg">
                     <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
-                    <img class="header__delivery-icon" src="/images/delivery-icon.svg">
+                    <img class="header__delivery-icon" src="/images/title_page/delivery-icon.svg">
                     <a class="header__sections-delivery" href="#">Доставка</a>
-                    <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
+                    <img class="header__searchLine-wishlist" src="/images/title_page/wishlist-icon.svg" alt="search">
                     <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
                     <?php
                         $cart = $_SESSION['cart'];
                         // указатель наличия товара в корзине
                         if(count((is_countable($cart)?$cart:[])) > 0){
-                            echo '<img class="header__searchLine-alarm2" src="/images/оповещение.svg">';
+                            echo '<img class="header__searchLine-alarm2" src="/images/title_page/оповещение.svg">';
                         };
                         if ( !isset($_SESSION['logged_user']) ) {
                             echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
@@ -307,15 +307,15 @@
                         г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
                     </div>
                     <div class="footer__contacts-contacts">
-                        <img class='footer__contacts-phoneImg' src="/images/phone_in_footer.svg" alt="empty">
+                        <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
                         <p class="footer__contacts-phoneText">
                         8 (964) 89 99 119
                         </p>
-                        <img class='footer__contacts-instagramImg' src="/images/inst.svg" alt="empty">
+                        <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
                         <p class="footer__contacts-instagramText">
                         INSTAGRAM
                         </p>
-                        <img class='footer__contacts-mailImg' src="/images/mail.svg" alt="empty">
+                        <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
                         <p class="footer__contacts-mailText">
                         mebel_loft_anapa@mail.ru
                         </p>

@@ -1,7 +1,7 @@
 @import url(/site_pages/contacts_page/style.css);
 
 .container {
-  width: 960px;
+  width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,10 @@
   margin-left: 1248px;
 }
 
+.header__searchLine-bag {
+  background-image: url(/images/basket_page/bag.svg);
+}
+
 .shopping__list {
   display: flex;
   flex-direction: column;
@@ -34,13 +38,12 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 50% 50%;
-  grid-template-areas:
-    "img a a a b b b b b h"
-    "img c d r i x f z g h";
+  grid-template-areas: "img a a a b b b b b h"
+  "img c d r i x f z g h";
   width: 1140px;
   height: 120px;
-  margin-left: 25px;
-  margin-top: 20px;
+  margin-left: 151px;
+  margin-top: 12px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
 }
 
@@ -194,9 +197,9 @@
 
 .totalQuantity {
   margin-left: 130px;
-  width: 1180px;
+  width: 1163px;
   position: absolute;
-  margin-top: -20px;
+  margin-top: -18px;
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -452,6 +455,10 @@ footer {
 /* owl carousel end */
 
 @media (max-width:1024px) {
+
+  .container {
+    width: 960px;
+  }
 
   .header__searchLine-alarm {
     margin-top: -248px;

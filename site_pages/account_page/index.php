@@ -68,21 +68,21 @@
                   <div class="menu__item menu__cupboard"><a href="/site_pages/catalog_page/index.php">Шкафы</a></div>
               </div>
             </div>
-            <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/LOGO.svg" alt="logo"></a>
+            <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/title_page/LOGO.svg" alt="logo"></a>
             <a class="header__sections-main" href="/site_pages/title_page/index.php">Главная</a>
             <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
-            <a class="header__sections-contacts" href="index.php">Контакты</a>
+            <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
             <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
-            <img class="header__phone-icon" src="/images/phone.svg">
+            <img class="header__phone-icon" src="/images/title_page/phone.svg">
             <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
-            <img class="header__delivery-icon" src="/images/delivery-icon.svg">
+            <img class="header__delivery-icon" src="/images/title_page/delivery-icon.svg">
             <a class="header__sections-delivery" href="#">Доставка</a>
-            <img class="header__searchLine-wishlist" src="/images/wishlist-icon.svg" alt="search">
+            <img class="header__searchLine-wishlist" src="/images/title_page/wishlist-icon.svg" alt="search">
             <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
             <?php
             // указатель наличия товара в корзине
             if(count((is_countable($cart)?$cart:[])) > 0){
-              echo '<img class="header__searchLine-alarm2" src="/images/оповещение.svg">';
+              echo '<img class="header__searchLine-alarm2" src="/images/title_page/оповещение.svg">';
             };
             if ( !isset($_SESSION['logged_user']) ) {
               echo '<a class="header__searchLine-profile" href="/site_pages/autorisation/login.php"></a>';
@@ -93,7 +93,7 @@
         </div>
         <div class="header__menu">
           <div class="header__menu-cell kitchen">
-            <img class="header__menu-kitchen-icon" src="/images/kitchen-icon.svg" alt="search">
+            <img class="header__menu-kitchen-icon" src="/images/title_page/kitchen-icon.svg" alt="search">
             <h2 class="header__menu-kitchen-text">Кухни</h2>
             <div class="dropdown__kitchen dropdown">
               <a href="/site_pages/catalog_page/index.php">Модульные кухни</a>
@@ -108,7 +108,7 @@
             </div>
           </div>
           <div class="header__menu-cell bedroom">
-            <img class="header__menu-bedroom-icon" src="/images/bedroom-icon.svg" alt="search">
+            <img class="header__menu-bedroom-icon" src="/images/title_page/bedroom-icon.svg" alt="search">
             <h2 class="header__menu-bedroom-text">Спальни</h2>
             <div class="dropdown__bedroom dropdown">
               <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -126,7 +126,7 @@
             </div>
           </div>
           <div class="header__menu-cell livingroom">
-            <img class="header__menu-livingroom-icon" src="/images/livingroom-icon.svg" alt="search">
+            <img class="header__menu-livingroom-icon" src="/images/title_page/livingroom-icon.svg" alt="search">
             <h2 class="header__menu-livingroom-text">Гостинные</h2>
             <div class="dropdown__livingroom dropdown">
               <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -150,7 +150,7 @@
             </div>
           </div>
           <div class="header__menu-cell closet">
-            <img class="header__menu-closet-icon" src="/images/closet-icon.svg" alt="search">
+            <img class="header__menu-closet-icon" src="/images/title_page/closet-icon.svg" alt="search">
             <h2 class="header__menu-closet-text">Прихожие</h2>
             <div class="dropdown__closet dropdown">
               <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -161,7 +161,7 @@
             </div>
           </div>
           <div class="header__menu-cell office">
-            <img class="header__menu-office-icon" src="/images/office-icon.svg" alt="search">
+            <img class="header__menu-office-icon" src="/images/title_page/office-icon.svg" alt="search">
             <h2 class="header__menu-office-text">Офисная мебель</h2>
             <div class="dropdown__office dropdown">
               <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
@@ -187,7 +187,7 @@
             </div>
           </div>
           <div class="header__menu-cell childrensroom">
-            <img class="header__menu-childrensroom-icon" src="/images/childrensroom-icon.svg" alt="search">
+            <img class="header__menu-childrensroom-icon" src="/images/title_page/childrensroom-icon.svg" alt="search">
             <h2 class="header__menu-childrensroom-text">Детская</h2>
             <div class="dropdown__childrensroom dropdown">
               <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -205,7 +205,7 @@
               <a href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
             </div>
           </div>
-          <img class="header__menu-etc-icon" src="/images/etc.svg" alt="search">
+          <img class="header__menu-etc-icon" src="/images/title_page/etc.svg" alt="search">
         </div>
           </header>
         <section class="navigation">
@@ -287,7 +287,7 @@
               </div>
               <div class="userData__productUnit flex">
                 <div class="userData__product flex">
-                  <img class="product-img" src="/images/image 2-1.png" alt="empty">
+                  <img class="product-img" src="/images/title_page/image 2-1.png" alt="empty">
                   <p class="product-name">Кускен Navy Blue</p>
                 </div>
                 <div class="userData__price">16990</div>
@@ -296,7 +296,7 @@
               </div>
               <div class="userData__productUnit flex">
                 <div class="userData__product flex">
-                  <img class="product-img" src="/images/image 2-4.png" alt="empty">
+                  <img class="product-img" src="/images/title_page/image 2-4.png" alt="empty">
                   <p class="product-name">Стелла Дуб Сонома</p>
                 </div>
                 <div class="userData__price">28490</div>
@@ -305,7 +305,7 @@
               </div>
               <div class="userData__productUnit flex">
                 <div class="userData__product flex">
-                  <img class="product-img" src="/images/image 2-10.png" alt="empty">
+                  <img class="product-img" src="/images/title_page/image 2-10.png" alt="empty">
                   <p class="product-name">Вилли Pink</p>
                 </div>
                 <div class="userData__price">21990</div>
@@ -314,7 +314,7 @@
               </div>
               <div class="userData__productUnit flex">
                 <div class="userData__product flex">
-                  <img class="product-img"  src="/images/image 2-14.png" alt="empty">
+                  <img class="product-img"  src="/images/title_page/image 2-14.png" alt="empty">
                   <p class="product-name">Шерона Barhat Grey</p>
                 </div>
                 <div class="userData__price">21990</div>
@@ -358,21 +358,21 @@
         </div>
         <div class="footer__navigation-rightSide">
           <div class="footer__contacts">
-            <img class="footer__contacts-logo" src="/images/LM.svg" alt="empty">
+            <img class="footer__contacts-logo" src="/images/title_page/LM.svg" alt="empty">
           </div>
           <div class="footer__contacts-adres">
             г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
           </div>
           <div class="footer__contacts-contacts">
-            <img class='footer__contacts-phoneImg' src="/images/phone_in_footer.svg" alt="empty">
+            <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
             <p class="footer__contacts-phoneText">
               8 (964) 89 99 119
             </p>
-            <img class='footer__contacts-instagramImg' src="/images/inst.svg" alt="empty">
+            <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
             <p class="footer__contacts-instagramText">
               INSTAGRAM
             </p>
-            <img class='footer__contacts-mailImg' src="/images/mail.svg" alt="empty">
+            <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
             <p class="footer__contacts-mailText">
               mebel_loft_anapa@mail.ru
             </p>

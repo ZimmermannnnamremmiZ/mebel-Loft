@@ -9,8 +9,6 @@ a {
   display: flex;
 }
 
-
-
 .navigation {
   display: flex;
   margin-top: 30px;
@@ -485,7 +483,7 @@ footer {
     width: 960px;
   }
   header {
-    width: 960px;
+    width: 965px;
   }
   .header__searchLine {
     width: 959px;
@@ -724,9 +722,7 @@ footer {
     width: 223px;
     height: 50px;
   }
-  input#search {
-    background-position: 15px 18px;
-  }
+
   .header__searchLine-wishlist {
     margin-left: 107px;
   }
@@ -744,9 +740,6 @@ footer {
   .header__menu-cell h2, .header__menu-cell img {
     padding-left: 13px;
     font-size: 14px;
-  }
-  .header__menu-kitchen-icon {
-    padding-left: 0 !important;
   }
   .header__menu-office-text {
     width: 127px;

@@ -13,7 +13,7 @@
 }
 
 .wrap_2 {
-  margin-top: 291px;
+  margin-top: 103px;
   flex: 0 0 auto;
 }
 
@@ -21,8 +21,8 @@
   position: absolute;
   width: 8px;
   height: 8px;
-  margin-top: -253px;
-  margin-left: 1248px;
+  margin-top: -252px;
+  margin-left: 1109px;
 }
 
 .header__searchLine-bag {
@@ -41,9 +41,9 @@
   grid-template-areas: "img a a a b b b b b h"
   "img c d r i x f z g h";
   width: 1140px;
-  height: 120px;
-  margin-left: 151px;
-  margin-top: 12px;
+  height: 123px;
+  margin-top: 10px;
+  margin-left: 11px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
 }
 
@@ -61,7 +61,8 @@
 
 .item_title {
   grid-area: a;
-  padding-top: 25px;
+  padding-left: 42px;
+  padding-top: 27px;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -71,8 +72,8 @@
 .item_price {
   grid-area: b;
   justify-self: end;
-  padding-top: 25px;
-  margin-right: -35px;
+  padding-top: 28px;
+  margin-right: -28px;
   font-weight: bold;
 }
 
@@ -80,21 +81,22 @@
   grid-area: c;
   justify-self: end;
   font-size: 12px;
-  line-height: 14px;
-  padding-left: 130px;
+  line-height: 27px;
+  padding-left: 192px;
 }
 
 .item_quantity {
   grid-area: d;
   font-size: 12px;
   line-height: 14px;
-  margin-left: 10px;
+  margin-left: 11px;
+  margin-top: 6px;
 }
 
 .item_width {
   grid-area: i;
-  margin-left: -73px;
-  margin-top: 1px;
+  margin-left: -45px;
+  margin-top: 6px;
   font-size: 12px;
   line-height: 14px;
   font-size: 12px;
@@ -104,8 +106,8 @@
 
 .item_depth {
   grid-area: f;
-  margin-left: -226px;
-  margin-top: 1px;
+  margin-left: -183px;
+  margin-top: 6px;
   font-size: 12px;
   line-height: 14px;
   font-size: 12px;
@@ -115,8 +117,8 @@
 
 .item_height {
   grid-area: g;
-  margin-left: -376px;
-  margin-top: 1px;
+  margin-left: -322px;
+  margin-top: 6px;
   font-size: 12px;
   line-height: 14px;
   font-size: 12px;
@@ -126,16 +128,16 @@
 
 .item_size {
   grid-area: r;
-  margin-left: -70px;
+  margin-left: -61px;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 27px;
   color: #414141;
 }
 
 .item_x {
   grid-area: x;
-  margin-left: -135px;
-  margin-top: 5px;
+  margin-left: -100px;
+  margin-top: 11px;
   background-image: url('/images/basket_page/×.svg');
   background-repeat: no-repeat;
 }
@@ -144,8 +146,8 @@
   grid-area: z;
   background-image: url('/images/basket_page/×.svg');
   background-repeat: no-repeat;
-  margin-left: -286px;
-  margin-top: 5px;
+  margin-left: -239px;
+  margin-top: 10px;
 }
 
 .item_delete {
@@ -160,24 +162,25 @@
 }
 
 .in-check {
-  margin: 10px auto;
+  margin-top: 10px;
 }
 
 .totalSumBox {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .totalSumBox__text {
-  margin-left: 835px;
-  margin-top: 53px;
+  margin-left: 712px;
+  margin-top: 55px;
   font-size: 14px;
   line-height: 16px;
   color: #414141;
 }
 
 .totalSumBox__totalSum {
-  margin-left: 15px;
-  margin-top: 51px;
+  margin-left: 20px;
+  margin-top: 53px;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -185,18 +188,18 @@
 }
 
 .totalSumBox__checkout {
-  margin-left: 25px;
-  margin-top: 40px;
+  margin-left: 26px;
+  margin-top: 42px;
   background-color: #245462;
-  width: 202px;
+  width: 206px;
   height: 40px;
   color: #fff;
   font-size: 13px;
+  letter-spacing: 0.3px;
   line-height: 15px;
 }
 
 .totalQuantity {
-  margin-left: 130px;
   width: 1163px;
   position: absolute;
   margin-top: -18px;
@@ -209,7 +212,6 @@
 }
 
 .totalQuantity__text {
-  margin-left: 10px;
   font-size: 16px;
   line-height: 19px;
   color: #414141;
@@ -224,8 +226,8 @@
 .in-check-box {
   display: flex;
   margin-top: 60px;
+  margin-left: 140px;
   flex-direction: column;
-  width: 959px;
 }
 
 footer {
@@ -272,7 +274,7 @@ footer {
 
 .random4items__box {
   margin-left: 140px;
-  padding-top: 35px;
+  padding-top: 24px;
   display: flex;
   align-content: flex-start;
   justify-content: space-between;
@@ -295,7 +297,7 @@ footer {
 
 .bestsellers__item-name {
   margin-left: 20px;
-  margin-top: -73px;
+  margin-top: -99px;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -311,7 +313,7 @@ footer {
 
 .bestsellers__item-price {
   margin-left: 20px;
-  margin-top: 15px;
+  margin-top: 9px;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -392,10 +394,8 @@ footer {
   color: #FFFFFF;
 }
 
-
-
 .bestsellers__item-loverIcon {
-  margin-left: 230px;
+  margin-left: 234px;
   margin-top: 21px;
 }
 
@@ -436,16 +436,6 @@ footer {
   height: 1000px;
 }
 
-.header__menu-etc-icon {
-  position: absolute;
-  width: 4.27px;
-  height: 17px;
-  margin-top: -70px;
-  margin-left: 1210px;
-  padding-left: 19px;
-  padding-top: 27px;
-  padding-right: 25px;
-}
 
 .header__menu, .owl-carousel, .owl-loaded, .owl-drag, .owl-stage, .owl-stage-outer {
   width: 1125px !important;
@@ -463,10 +453,6 @@ footer {
   .header__searchLine-alarm {
     margin-top: -248px;
     margin-left: 913px;
-  }
-
-  input#search {
-    background-position: 15px 16px;
   }
 
   .slider {
@@ -497,6 +483,11 @@ footer {
 
   .header__menu-kitchen-icon {
     padding-left: 39px !important;
+  }
+
+  .in-check-box {
+    width: 959px;
+    margin-left: 0;
   }
 
   .totalQuantity {

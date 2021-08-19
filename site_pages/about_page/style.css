@@ -619,9 +619,7 @@
   .header__sections > img {
     margin-top: 0;
   }
-  input#search {
-    background-position: 14px 17px;
-  }
+
   .header__searchLine-input {
     margin-top: 0;
     width: 223px;

@@ -13,7 +13,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
     <body>
@@ -70,122 +72,121 @@
               }
            ?>
           </div>
-        <div class="header__menu">
-          <div class="header__menu-cell kitchen">
-            <img class="header__menu-kitchen-icon" src="/images/title_page/kitchen-icon.svg" alt="search">
-            <h2 class="header__menu-kitchen-text">Кухни</h2>
-            <div class="dropdown__kitchen dropdown">
-              <a href="/site_pages/catalog_page/index.php">Модульные кухни</a>
-              <a href="/site_pages/catalog_page/index.php">Барная зона</a>
-              <a href="/site_pages/catalog_page/index.php">Кухонные уголки</a>
-              <a href="/site_pages/catalog_page/index.php">Обеденная зона</a>
-              <a href="/site_pages/catalog_page/index.php">Столешницы</a>
-              <a href="/site_pages/catalog_page/index.php">Стеновые панели</a>
-              <a href="/site_pages/catalog_page/index.php">Мойки, сушилки,<br>смесители для кухни</a>
-              <a href="/site_pages/catalog_page/index.php">Дополнительная<br>фурнитура</a>
-              <a href="/site_pages/catalog_page/index.php">Бытовыя техника</a>
+          <div class="header__menu owl-carousel" id="slider">
+              <div class="header__menu-cell kitchen slide">
+                  <img class="header__menu-kitchen-icon" src="/images/title_page/kitchen-icon.svg" alt="search">
+                  <h2 class="header__menu-kitchen-text">Кухни</h2>
+                  <div class="dropdown__kitchen dropdown">
+                    <a href="/site_pages/catalog_page/index.php">Модульные кухни</a>
+                    <a href="/site_pages/catalog_page/index.php">Барная зона</a>
+                    <a href="/site_pages/catalog_page/index.php">Кухонные уголки</a>
+                    <a href="/site_pages/catalog_page/index.php">Обеденная зона</a>
+                    <a href="/site_pages/catalog_page/index.php">Столешницы</a>
+                    <a href="/site_pages/catalog_page/index.php">Стеновые панели</a>
+                    <a href="/site_pages/catalog_page/index.php">Мойки, сушилки,<br>смесители для кухни</a>
+                    <a href="/site_pages/catalog_page/index.php">Дополнительная<br>фурнитура</a>
+                    <a href="/site_pages/catalog_page/index.php">Бытовыя техника</a>
+                  </div>
+              </div>
+              <div class="header__menu-cell bedroom slide">
+                  <img class="header__menu-bedroom-icon" src="/images/title_page/bedroom-icon.svg" alt="search">
+                  <h2 class="header__menu-bedroom-text">Спальни</h2>
+                  <div class="dropdown__bedroom dropdown">
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                    <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+                  </div>
+              </div>
+              <div class="header__menu-cell livingroom slide">
+                <img class="header__menu-livingroom-icon" src="/images/title_page/livingroom-icon.svg" alt="search">
+                <h2 class="header__menu-livingroom-text">Гостинные</h2>
+                <div class="dropdown__livingroom dropdown">
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                </div>
+              </div>
+              <div class="header__menu-cell closet slide">
+                <img class="header__menu-closet-icon" src="/images/title_page/closet-icon.svg" alt="search">
+                <h2 class="header__menu-closet-text">Прихожие</h2>
+                <div class="dropdown__closet dropdown">
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                </div>
+              </div>
+              <div class="header__menu-cell office slide">
+                <img class="header__menu-office-icon" src="/images/title_page/office-icon.svg" alt="search">
+                <h2 class="header__menu-office-text">Офисная мебель</h2>
+                <div class="dropdown__office dropdown">
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                </div>
+              </div>
+              <div class="header__menu-cell childrensroom slide">
+                <img class="header__menu-childrensroom-icon" src="/images/title_page/childrensroom-icon.svg" alt="search">
+                <h2 class="header__menu-childrensroom-text">Детская</h2>
+                <div class="dropdown__childrensroom dropdown">
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                </div>
+              </div>
+              <div class="header__menu-cell menu-stock slide">
+                <h6 class="header__menu-stock-text">Акция</h6>
+                  <div class="dropdown__menu-stock dropdown">
+                    <a href="/site_pages/catalog_page/index.php">Новинки</a>
+                    <a href="/site_pages/catalog_page/index.php">Шкафы</a>
+                    <a href="/site_pages/catalog_page/index.php">Матрасы</a>
+                    <a href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
+                  </div>
+              </div>
             </div>
-          </div>
-          <div class="header__menu-cell bedroom">
-            <img class="header__menu-bedroom-icon" src="/images/title_page/bedroom-icon.svg" alt="search">
-            <h2 class="header__menu-bedroom-text">Спальни</h2>
-            <div class="dropdown__bedroom dropdown">
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
-            </div>
-          </div>
-          <div class="header__menu-cell livingroom">
-            <img class="header__menu-livingroom-icon" src="/images/title_page/livingroom-icon.svg" alt="search">
-            <h2 class="header__menu-livingroom-text">Гостинные</h2>
-            <div class="dropdown__livingroom dropdown">
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            </div>
-          </div>
-          <div class="header__menu-cell closet">
-            <img class="header__menu-closet-icon" src="/images/title_page/closet-icon.svg" alt="search">
-            <h2 class="header__menu-closet-text">Прихожие</h2>
-            <div class="dropdown__closet dropdown">
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            </div>
-          </div>
-          <div class="header__menu-cell office">
-            <img class="header__menu-office-icon" src="/images/title_page/office-icon.svg" alt="search">
-            <h2 class="header__menu-office-text">Офисная мебель</h2>
-            <div class="dropdown__office dropdown">
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            </div>
-          </div>
-          <div class="header__menu-cell childrensroom">
-            <img class="header__menu-childrensroom-icon" src="/images/title_page/childrensroom-icon.svg" alt="search">
-            <h2 class="header__menu-childrensroom-text">Детская</h2>
-            <div class="dropdown__childrensroom dropdown">
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-
-            </div>
-          </div>
-          <div class="header__menu-cell menu-stock">
-            <h6 class="header__menu-stock-text">Акция</h6>
-            <div class="dropdown__menu-stock dropdown">
-              <a href="/site_pages/catalog_page/index.php">Новинки</a>
-              <a href="/site_pages/catalog_page/index.php">Шкафы</a>
-              <a href="/site_pages/catalog_page/index.php">Матрасы</a>
-              <a href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
-            </div>
-          </div>
-          <img class="header__menu-etc-icon" src="/images/title_page/etc.svg" alt="search">
-        </div>
+            <img class="header__menu-etc-icon" src="/images/title_page/etc.svg" alt="search">
        </header>
 
 <form class="form form_reg" action="/site_pages/autorisation/signup.php" method="POST">
@@ -305,6 +306,7 @@
           </div>
         </footer>
       </div>
+      <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
       <script src="../scripts/menu_for_960px.js"></script>
   </body>
 </html>

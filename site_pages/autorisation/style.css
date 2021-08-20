@@ -4,6 +4,9 @@
   margin-top: 30px;
 }
 
+.header__searchLine-profile {
+  background-image: url(/images/account_page/profile-icon-black.svg) !important;
+}
 
 .form {
   margin: 50px auto;

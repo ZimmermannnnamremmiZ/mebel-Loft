@@ -9,6 +9,10 @@ a {
   display: flex;
 }
 
+.header__searchLine-profile {
+  background-image: url(/images/account_page/profile-icon-black.svg) !important;
+}
+
 .navigation {
   display: flex;
   margin-top: 30px;

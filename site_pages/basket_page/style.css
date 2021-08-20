@@ -21,8 +21,8 @@
   position: absolute;
   width: 8px;
   height: 8px;
-  margin-top: -252px;
-  margin-left: 1109px;
+  margin-top: -223px;
+  margin-left: 1108px;
 }
 
 .header__searchLine-bag {
@@ -451,43 +451,29 @@ footer {
   }
 
   .header__searchLine-alarm {
-    margin-top: -248px;
+    margin-top: -238px;
     margin-left: 913px;
   }
 
-  .slider {
-    width: 959px;
-  }
   .header__sections-main, .header__sections-about, .header__sections-contacts {
     display: none;
   }
-  
-  .no-js .owl-carousel, .owl-carousel.owl-loaded{
-      width: 947px !important;
-      margin: 10px auto;
-  }
 
   .owl-stage-outer {
-    width: 897px !important;
+    width: 896px !important;
   }
 
-  .header__menu {
-    margin-left: -3px !important;
-  }
-
-  .header__menu-etc-icon {
-    margin-top: -80px;
-    margin-left: 918px;
-    padding-left: 0;
-  }
-
-  .header__menu-kitchen-icon {
-    padding-left: 39px !important;
+  .navigation {
+    margin-bottom: 50px;
   }
 
   .in-check-box {
     width: 959px;
     margin-left: 0;
+  }
+
+  .item_price {
+    margin-right: -14px;
   }
 
   .totalQuantity {
@@ -502,26 +488,26 @@ footer {
     margin-left: 0;
   }
   .item_size {
-    margin-left: -57px;
+    margin-left: -45px;
   }
   .item_width {
-    margin-left: -35px;
+    margin-left: -15px;
   }
   .item_x {
     grid-area: x;
-    margin-left: -77px;
+    margin-left: -50px;
   }
   .item_depth {
-    margin-left: -147px;
+    margin-left: -115px;
   }
   .item_x2 {
-    margin-left: -188px;
+    margin-left: -151px;
   }
   .item_height {
-    margin-left: -258px;
+    margin-left: -215px;
   }
   .totalSumBox__text {
-    margin-left: 519px;
+    margin-left: 509px;
   }
   .random4items__box {
     width: 959px;

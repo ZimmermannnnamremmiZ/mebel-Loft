@@ -74,8 +74,8 @@ body {
   width: 19px;
   height: 19px;
   background-image: url('/images/title_page/phone-black.svg');
+  background-repeat: no-repeat;
 }
-
 
 .header__sections-phone {
   margin-top: 11px;
@@ -87,8 +87,9 @@ body {
   width: 29px;
   height: 16.92px;
   margin-top: 10.46px;
+  background-image: url('/images/title_page/delivery-icon-white.svg');
+  background-repeat: no-repeat;
 }
-
 
 .header__sections-delivery {
   margin-top: 11px;
@@ -846,10 +847,8 @@ footer {
     margin-top: 15.46px;
     width: 30px;
     height: 19.92px;
-  }
-
-  .header__delivery-icon path {
-    fill:  black;
+    background-image: url('/images/title_page/delivery-icon-black.svg');
+    background-repeat: no-repeat;
   }
 
   .header__sections-delivery {

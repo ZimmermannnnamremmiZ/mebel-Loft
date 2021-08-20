@@ -908,12 +908,12 @@ footer {
 
   .hamburger__midline {
     content: '';
-    top: 52px;
+    top: 53px;
   }
 
   .hamburger__botline {
     content: '';
-    top: 56px;
+    top: 58px;
   }
 
   .menu__box {
@@ -1154,7 +1154,6 @@ footer {
   .header__menu {
       display: flex;
       margin-top: 51px !important;
-      margin-left: -3px !important;
       width: 959px;
       height: 70px;
       box-shadow: 0px 2px 4px rgb(0 0 0 / 7%);

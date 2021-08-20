@@ -735,6 +735,9 @@ footer {
   header {
     width: 960px;
   }
+  .header__logo {
+    margin-left: 15px !important;
+  }
   .header__searchLine {
     width: 959px;
   }
@@ -787,11 +790,11 @@ footer {
   }
   .hamburger__midline {
     content: '';
-    top: 52px;
+    top: 53px;
   }
   .hamburger__botline {
     content: '';
-    top: 56px;
+    top: 58px;
   }
   .menu__box {
     display: flex;
@@ -1006,12 +1009,12 @@ footer {
   }
 
   .no-js .owl-carousel, .owl-carousel.owl-loaded{
-    width: 888px;
+    width: 947px !important;
     margin: 10px auto;
   }
 
   .owl-stage-outer {
-    width: 858px !important;
+    width: 896px !important;
   }
 
   .header__menu-etc-icon {

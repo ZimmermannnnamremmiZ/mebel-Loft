@@ -1,4 +1,4 @@
-@import url(/site_pages/account_page/style.css);
+@import url(/site_pages/contacts_page/style.css);
 
 .display-none {
   display: none;
@@ -20,8 +20,8 @@
 .header__searchLine-alarm1 {
   display: none;
   position: absolute;
-  margin-top: 61px;
-  margin-left: 1237px;
+  margin-top: 56px;
+  margin-left: 1248px;
   z-index: 100;
 }
 
@@ -406,31 +406,29 @@
   color: #FFFFFF;
 }
 
-
-
 .bestsellers__item-loverIcon {
   margin-left: 230px;
   margin-top: 21px;
 }
 
-#menu__toggle {
+#menu-2__toggle {
   opacity: 0;
 }
 
-#menu__toggle:checked ~ .menu__btn > .hamburger__topline {
+#menu-2__toggle:checked ~ .menu-2__btn > .hamburger-menu-2__topline {
   transform: scaleX(1);
 }
-#menu__toggle:checked ~ .menu__btn > .hamburger__midline {
+#menu-2__toggle:checked ~ .menu-2__btn > .hamburger-menu-2__midline {
   transform: scaleX(0.6) translateX(6px);
 }
-#menu__toggle:checked ~ .menu__btn > .hamburger__botline {
+#menu-2__toggle:checked ~ .menu-2__btn > .hamburger-menu-2__botline {
   transform: scaleX(0.4) translateX(13px);
 }
-#menu__toggle:checked ~ .menu__box {
+#menu-2__toggle:checked ~ .menu-2__box {
   visibility: visible;
 }
 
-.menu__btn {
+.menu-2__btn {
   display: flex;
   align-items: center;
   top: 270px;
@@ -443,16 +441,16 @@
   z-index: 1;
 }
 
-.hamburger-menu {
+.hamburger-menu-2 {
   display: block;
   position: absolute;
   margin-top: -234px;
   margin-left: 428px;
 }
 
-.hamburger__topline,
-.hamburger__midline ,
-.hamburger__botline {
+.hamburger-menu-2__topline,
+.hamburger-menu-2__midline ,
+.hamburger-menu-2__botline {
   display: block;
   position: absolute;
 
@@ -464,22 +462,22 @@
   transition-duration: .25s;
 }
 
-.hamburger__topline {
+.hamburger-menu-2__topline {
   content: '';
   top: 266px;
 }
 
-.hamburger__midline {
+.hamburger-menu-2__midline {
   content: '';
   top: 278px;
 }
 
-.hamburger__botline {
+.hamburger-menu-2__botline {
   content: '';
   top: 272px;
 }
 
-.menu__box {
+.menu-2__box {
   display: block;
   position: absolute;
   visibility: hidden;
@@ -496,7 +494,7 @@
   transition-duration: .25s;
 }
 
-.menu__item {
+.menu-2__item {
   display: block;
   padding: 13px 20px;
 
@@ -507,7 +505,7 @@
 
   transition-duration: .25s;
 }
-.menu__item:hover {
+.menu-2__item:hover {
   background-color: #CFD8DC;
 }
 
@@ -517,7 +515,7 @@
 
 .inputcurrency {
   background: url(/images/catalog_page/Ruble_sign.svg) no-repeat right;
-  background-position: 71% 51%;
+  background-position: 74% 45%;
   background-size: 8% auto;
 }
 
@@ -535,7 +533,7 @@
   }
   .catalog__filterBtn {
     position: absolute;
-    margin-top: 6px;
+    margin-top: 45px;
     display: block;
     align-self: flex-start;
   }
@@ -547,17 +545,17 @@
     margin-left: 0;
   }
   .inputcurrency {
-    background-position: 80% 51%;
+    background-position: 83% 44%;
   }
-  .hamburger-menu {
+  .hamburger-menu-2 {
     position: absolute;
     margin-top: -250px;
     margin-left: 0;
   }
-  .menu__box {
+  .menu-2__box {
     margin-top: 238px !important;
   }
   .header__searchLine-alarm2 {
-    margin-left: 887px;
+    margin-left: 913px;
   }
 }

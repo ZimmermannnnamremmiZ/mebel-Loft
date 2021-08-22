@@ -207,7 +207,7 @@
             </h6>
             <button class="slider__button">
               <div class="slider__button-text">
-                смотреть каталог
+                Cмотреть каталог
               </div>
             </button>
           </div>
@@ -223,7 +223,7 @@
             </h6>
             <button class="slider__button">
               <div class="slider__button-text">
-                смотреть каталог
+                Cмотреть каталог
               </div>
             </button>
           </div>
@@ -239,7 +239,7 @@
             </h6>
             <button class="slider__button">
               <div class="slider__button-text">
-                смотреть каталог
+                Cмотреть каталог
               </div>
             </button>
           </div>

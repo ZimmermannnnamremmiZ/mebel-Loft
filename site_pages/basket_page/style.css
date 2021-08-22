@@ -437,11 +437,6 @@ footer {
 }
 
 
-.header__menu, .owl-carousel, .owl-loaded, .owl-drag, .owl-stage, .owl-stage-outer {
-  width: 1125px !important;
-}
-
-
 /* owl carousel end */
 
 @media (max-width:1024px) {

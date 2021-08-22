@@ -804,7 +804,7 @@ footer {
   header {
     width: 959px;
   }
-  
+
   .header__searchLine {
     width: 980px;
     margin-top: 6px;
@@ -1122,7 +1122,7 @@ footer {
     margin-left: 11px;
     font-size: 13px;
   }
-  
+
 
   .header__phone-icon {
     margin-left: -46px;
@@ -1325,4 +1325,157 @@ footer {
   }
 
   }
+
+  @media (max-width:768px) {
+
+    .container {
+      margin: 0 24px;
+      width: 720px;
+    }
+
+    .hamburger-menu {
+      margin-left: 0;
+    }
+
+    .header__searchLine {
+      width: 720px;
+      margin: 0;
+    }
+
+    .header__sections {
+      position: absolute;
+      margin-top: 21px;
+      margin-left: 448px;
+    }
+
+    .hamburger-menu {
+      margin-top: 0;
+    }
+
+    .header__logo {
+      margin-top: 13px;
+    }
+
+    .hamburger__topline {
+      width: 20px;
+      top: 38px;
+    }
+
+    .hamburger__midline {
+      width: 20px;
+      top: 44px;
+    }
+
+    .hamburger__botline {
+      width: 20px;
+      top: 50px;
+    }
+
+    input#search {
+      padding: 4px 11px 4px 11px;
+      background-position: 15px 11px;
+    }
+
+    .header__searchLine-input {
+      position: static;
+      width: 219px;
+      height: 30px;
+      margin-left: 40px;
+    }
+
+    .header__phone-icon {
+      display: none;
+    }
+
+    .header__sections-phone {
+      display: none;
+    }
+
+    .header__delivery-icon {
+      margin-left: 20px;
+      margin-top: 15.46px;
+      width: 29px;
+      height: 17px;
+    }
+
+    .header__searchLine-wishlist {
+      margin-top: 34px;
+      margin-left: 170.26px;
+      width: 21.83px;
+      height: 19px;
+    }
+
+    .header__searchLine-bag {
+      margin-top: 34px;
+      width: 18.13px;
+      height: 20px;
+    }
+
+    .header__searchLine-profile {
+      margin-top: 34px;
+      width: 15.87px;
+      height: 20px;
+    }
+
+    .header__menu-cell h2, .header__menu-cell img {
+      padding-left: 8px;
+      font-size: 14px;
+    }
+
+    .owl-stage-outer {
+      width: 714px !important;
+    }
+
+    .no-js .owl-carousel, .owl-carousel.owl-loaded {
+      width: 720px !important;
+      margin-left: 0;
+    }
+
+    .header__menu-kitchen-icon {
+      padding-left: 25px !important;
+    }
+
+    .header__menu-etc-icon {
+      margin-top: -80px;
+      margin-left: 695px;
+      padding-left: 0;
+    }
+
+    .slider__box .item img {
+      margin-left: 0;
+      object-fit: cover;
+      width: 720px;
+      height: 253px;
+  }
+
+  .slider__text::before {
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .slider__text::after {
+    margin-top: 39px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .slider__button {
+    margin-top: 87px;
+    width: 130px;
+    height: 40px;
+  }
+
+  .slider__button-text {
+    font-size: 10px;
+    text-transform: none;
+  }
+
+  .bestsellers__box {
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  }
+
 

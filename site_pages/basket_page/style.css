@@ -424,21 +424,6 @@ footer {
   z-index: 999;
 }
 
-/* owl carousel start */
-.slide {
-  height: 70px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.owl-item:hover {
-  color: #fff;
-  height: 1000px;
-}
-
-
-/* owl carousel end */
-
 @media (max-width:1024px) {
 
   .container {

@@ -160,11 +160,48 @@ input#search {
   color: #fff;
 }
 
+.header__menu-cell:hover .header__menu-kitchen-icon {
+  background-image: url(/images/title_page/kitchen-icon-white.svg);
+  background-size: 23px 23px;
+}
+
+.header__menu-cell:hover .header__menu-bedroom-icon {
+  background-image: url(/images/title_page/bedroom-icon-white.svg);
+  background-size: 28px 22.22px;
+}
+
+.header__menu-cell:hover .header__menu-livingroom-icon {
+  background-image: url(/images/title_page/livingroom-icon-white.svg);
+  background-size: 30px 30.03px;
+  background-position: 20px 20px;
+}
+
+.header__menu-cell:hover .header__menu-closet-icon {
+  background-image: url(/images/title_page/closet-icon-white.svg);
+  background-size: 21.91px 22px;
+}
+
+.header__menu-cell:hover .header__menu-office-icon {
+  background-image: url(/images/title_page/office-icon-white.svg);
+  background-size: 22px 22px;
+}
+
+.header__menu-cell:hover .header__menu-childrensroom-icon {
+  background-image: url(/images/title_page/childrensroom-icon-white.svg);
+  background-size: 22px 22px;
+}
+
+.carousel_icon {
+  background-repeat: no-repeat;
+  background-position: 20px 23px;
+}
+
 .header__menu-kitchen-icon {
-  width: 23px;
+  background-image: url(/images/title_page/kitchen-icon.svg);
+  width: 23px !important;
   height: 23px;
   padding-top: 23px;
-  padding-left: 40px;
+  padding-left: 24px;
 }
 
 .header__menu-kitchen-text {
@@ -176,14 +213,13 @@ input#search {
   padding-right: 25px;
 
 }
-
 .header__menu-bedroom-icon {
-  width: 28px;
+  background-image: url(/images/title_page/bedroom-icon.svg);
+  width: 28px !important;
   height: 22.22px;
-  padding-left: 30px;
-  padding-top: 24px;
+  padding-left: 24px;
+  padding-top: 25px;
 }
-
 .header__menu-bedroom-text {
   font-weight: 400;
   font-size: 16px;
@@ -192,14 +228,13 @@ input#search {
   padding-right: 25px;
   padding-top: 25px;
 }
-
 .header__menu-livingroom-icon {
-  width: 30px;
+  background-image: url(/images/title_page/livingroom-icon.svg);
+  width: 30px !important;
   height: 22.03px;
-  padding-left: 29px;
-  padding-top: 24px;
+  padding-left: 23px;
+  padding-top: 25px;
 }
-
 .header__menu-livingroom-text {
   font-weight: 400;
   font-size: 16px;
@@ -211,30 +246,29 @@ input#search {
   padding-top: 25px;
   padding-right: 25px;
 }
-
 .header__menu-closet-icon {
-  width: 21.91px;
+  background-image: url(/images/title_page/closet-icon.svg);
+  width: 21.91px !important;
   height: 22px;
-  padding-left: 29px;
+  padding-left: 24px;
   padding-top: 24px;
 }
-
 .header__menu-closet-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
   padding-left: 10.04px;
-  padding-top: 25px;
+  padding-top: 26px;
   padding-right: 25px;
+  margin-left: -1px;
 }
-
 .header__menu-office-icon {
+  background-image: url(/images/title_page/office-icon.svg);
   width: 22px !important;
   height: 22px;
-  padding-left: 29px;
+  padding-left: 23px;
   padding-top: 24px;
 }
-
 .header__menu-office-text {
   font-weight: 400;
   font-size: 16px;
@@ -243,21 +277,20 @@ input#search {
   padding-top: 26px;
   padding-right: 25px;
 }
-
 .header__menu-childrensroom-icon {
-  width: 22px;
+  background-image: url(/images/title_page/childrensroom-icon.svg);
+  width: 22px !important;
   height: 22px;
-  padding-left: 29px;
+  padding-left: 23px;
   padding-top: 24px;
 }
-
 .header__menu-childrensroom-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
   padding-left: 10px;
-  padding-top: 25px;
-  padding-right: 25px;
+  padding-top: 26px;
+  padding-right: 24px;
 }
 
 .header__menu-stock-text {
@@ -700,8 +733,8 @@ footer {
 /* owl carousel start */
 .slide {
   height: 70px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .owl-item:hover {

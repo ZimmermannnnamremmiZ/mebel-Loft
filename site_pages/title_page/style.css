@@ -4,6 +4,11 @@
        url("/fonts/RobotoCondensed-Regular.ttf") format('truetype')
 }
 
+body,
+html {
+  height: 100%;
+}
+
 * {
     margin:0;
     padding:0;
@@ -32,6 +37,17 @@ body {
 .container {
   width: 1400px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrap_1 {
+  flex: 1 0 auto;
+}
+
+.wrap_2 {
+  flex: 0 0 auto;
 }
 
 .hamburger-menu {
@@ -191,11 +207,48 @@ input#search {
   color: #fff;
 }
 
+.header__menu-cell:hover .header__menu-kitchen-icon {
+  background-image: url(/images/title_page/kitchen-icon-white.svg);
+  background-size: 23px 23px;
+}
+
+.header__menu-cell:hover .header__menu-bedroom-icon {
+  background-image: url(/images/title_page/bedroom-icon-white.svg);
+  background-size: 28px 22.22px;
+}
+
+.header__menu-cell:hover .header__menu-livingroom-icon {
+  background-image: url(/images/title_page/livingroom-icon-white.svg);
+  background-size: 30px 30.03px;
+  background-position: 20px 20px;
+}
+
+.header__menu-cell:hover .header__menu-closet-icon {
+  background-image: url(/images/title_page/closet-icon-white.svg);
+  background-size: 21.91px 22px;
+}
+
+.header__menu-cell:hover .header__menu-office-icon {
+  background-image: url(/images/title_page/office-icon-white.svg);
+  background-size: 22px 22px;
+}
+
+.header__menu-cell:hover .header__menu-childrensroom-icon {
+  background-image: url(/images/title_page/childrensroom-icon-white.svg);
+  background-size: 22px 22px;
+}
+
+.carousel_icon {
+  background-repeat: no-repeat;
+  background-position: 20px 23px;
+}
+
 .header__menu-kitchen-icon {
+  background-image: url(/images/title_page/kitchen-icon.svg);
   width: 23px !important;
   height: 23px;
   padding-top: 23px;
-  padding-left: 39px;
+  padding-left: 24px;
 }
 
 .header__menu-kitchen-text {
@@ -208,6 +261,7 @@ input#search {
 
 }
 .header__menu-bedroom-icon {
+  background-image: url(/images/title_page/bedroom-icon.svg);
   width: 28px !important;
   height: 22.22px;
   padding-left: 24px;
@@ -222,6 +276,7 @@ input#search {
   padding-top: 25px;
 }
 .header__menu-livingroom-icon {
+  background-image: url(/images/title_page/livingroom-icon.svg);
   width: 30px !important;
   height: 22.03px;
   padding-left: 23px;
@@ -239,6 +294,7 @@ input#search {
   padding-right: 25px;
 }
 .header__menu-closet-icon {
+  background-image: url(/images/title_page/closet-icon.svg);
   width: 21.91px !important;
   height: 22px;
   padding-left: 24px;
@@ -254,6 +310,7 @@ input#search {
   margin-left: -1px;
 }
 .header__menu-office-icon {
+  background-image: url(/images/title_page/office-icon.svg);
   width: 22px !important;
   height: 22px;
   padding-left: 23px;
@@ -268,6 +325,7 @@ input#search {
   padding-right: 25px;
 }
 .header__menu-childrensroom-icon {
+  background-image: url(/images/title_page/childrensroom-icon.svg);
   width: 22px !important;
   height: 22px;
   padding-left: 23px;
@@ -510,7 +568,6 @@ input#search {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 1129px;
-  height: 2812px;
 }
 
 
@@ -639,7 +696,6 @@ input#search {
 
 footer {
   display: flex;
-  margin: -78px auto 0 auto;
   width: 1368px;
   height: 234px;
   box-shadow: 0px -4px 10px rgb(0 0 0 / 3%);
@@ -768,8 +824,8 @@ footer {
 /* owl carousel start */
 .slide {
   height: 70px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .owl-item:hover {
@@ -1301,7 +1357,6 @@ footer {
   }
 
   footer {
-    margin-top: 1090px;
     width: 868px;
     padding: 0 15px;
     margin-right: auto;
@@ -1331,6 +1386,11 @@ footer {
     .container {
       margin: 0 24px;
       width: 720px;
+    }
+
+    .header__searchLine-alarm1, .header__searchLine-alarm2 {
+      margin-left: 666px;
+      margin-top: 37px;
     }
 
     .hamburger-menu {
@@ -1446,35 +1506,139 @@ footer {
       object-fit: cover;
       width: 720px;
       height: 253px;
-  }
+    }
 
-  .slider__text::before {
-    margin-top: 32px;
-    font-size: 24px;
-    line-height: 28px;
-  }
+    .slider, .slider__box {
+      width: 720px;
+      height: 253px;
+    } 
 
-  .slider__text::after {
-    margin-top: 39px;
-    font-size: 24px;
-    line-height: 28px;
-  }
+    .slider__text::before {
+      margin-top: 32px;
+      font-size: 24px;
+      line-height: 28px;
+    }
 
-  .slider__button {
-    margin-top: 87px;
-    width: 130px;
-    height: 40px;
-  }
+    .slider__text::after {
+      margin-top: 39px;
+      font-size: 24px;
+      line-height: 28px;
+    }
 
-  .slider__button-text {
-    font-size: 10px;
-    text-transform: none;
-  }
+    .slider__button {
+      margin-top: 87px;
+      width: 130px;
+      height: 40px;
+    }
 
-  .bestsellers__box {
-    width: 720px;
-    margin: 0 auto;
-  }
+    .slider__button-text {
+      font-size: 10px;
+      text-transform: none;
+    }
+
+    .slider__box .previous, .slider .next {
+      margin-top: 84px;
+    }
+
+    .slider__box .previous {
+      left: 87%;
+    }
+
+    .slider .next {
+      right: 1.7%;
+    }
+
+    .bestsellers__box {
+      width: 720px;
+      margin: 0 auto;
+    }
+
+    .bestsellers__box-item {
+      width: 240px;
+    }
+
+    .bestsellers__item-loverIcon {
+      margin-left: 213px;
+    }
+
+    .bestsellers__item-price, .bestsellers__item-category, .bestsellers__item-name, .bestsellers__item-img {
+      margin-left: 42px;
+    }
+
+    .bestsellers__item-img {
+      width: 160px;
+      height: 120px;
+    }
+
+    .bestsellers__item-price, .bestsellers__item-name {
+      font-size: 14px;
+    }
+
+    .bestsellers__discount {
+      margin-left: 249px;
+    }
+    
+    .bestsellers__head-text {
+      margin-top: 42px;
+    }
+
+    .toBasket__sizesLable {
+      margin-left: 41px;
+    }
+
+    .toBasket__width-text {
+      margin-left: 21px;
+    }
+
+    .toBasket__depth-text, .toBasket__height-text {
+      margin-left: 15px;
+    }
+
+    .toBasket__num {
+      margin-left: 36px;
+      margin-top: 8px;
+    }
+
+    .toBasket__depth-num {
+      margin-left: 29px;
+    }
+
+    .toBasket__height-num {
+      margin-left: 30px;
+    }
+
+    .toBasket__x {
+      position: absolute;
+      margin-left: 80px;
+      margin-top: 6px;
+    }
+
+    .toBasket__x-svg2 {
+      margin-left: 50px;
+    }
+
+    .toBascet__add {
+      width: 186px;
+    }
+
+    .bestsellers__modalWindow-box {
+      left: 25%;
+    }
+
+    footer {
+      width: 720px;
+    }
+
+    .footer__contacts-phoneImg {
+      position: absolute;
+      margin-top: -1px;
+      margin-left: -154px;
+    }
+
+    .footer__contacts-phoneText {
+      margin-left: -132px;
+      position: absolute;
+    }
 
   }
 

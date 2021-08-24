@@ -521,9 +521,9 @@ input#search {
   position: fixed;
   padding-top: 20px;
   height: 40px;
-  left: 35%;
-  top: 0;
-  width: 30%;
+  left: 40%;
+  top: 1%;
+  width: 25%;
   text-align: center;
   background-color: rgb(160, 160, 160);
   font-family: Playfair Display;
@@ -532,6 +532,7 @@ input#search {
   font-weight: bold;
   color: black;
   z-index: 999;
+  border-radius: 100px / 80px;
 }
 
 
@@ -833,7 +834,7 @@ footer {
   height: 1000px;
 }
 
-.owl-stage {
+.owl-carousel, .owl-stage {
   width: 1125px !important;
 }
 
@@ -847,18 +848,16 @@ footer {
   padding-top: 27px;
   padding-right: 25px;
 }
-
-.header__menu, .owl-carousel, .owl-loaded, .owl-drag, .owl-stage-outer {
-  width: 1125px;
-}
-
-
 /* owl carousel end */
 
 @media (max-width:1024px) {
   .container {
     margin: 0 32px;
     width: 960px;
+  }
+
+  .bestsellers__modalWindow-box {
+    font-size: 12px;
   }
 
   header {
@@ -891,7 +890,7 @@ footer {
   }
 
   .no-js .owl-carousel, .owl-carousel.owl-loaded{
-      width: 947px;
+      width: 947px !important;
       margin: 10px auto;
   }
 
@@ -899,8 +898,8 @@ footer {
     width: 900px;
   }
 
-  .owl-stage {
-    width: 1125px !important;
+  .carousel_icon {
+    margin-left: 10px;
   }
 
   .header__sections {
@@ -1217,19 +1216,15 @@ footer {
   }
 
   .header__menu-cell h2, .header__menu-cell img {
-    padding-left: 13px;
+    padding-left: 6px;
     font-size: 14px;
     padding-right: 18px;
-}
+  }
 
   .header__menu-etc-icon {
     margin-top: -80px;
     margin-left: 918px;
     padding-left: 0;
-  }
-
-  .header__menu-office-text {
-    width: 127px;
   }
 
   .header__phone-icon path {
@@ -1334,13 +1329,9 @@ footer {
     margin-top: 114px;
   }
 
-  element.style {
-    display: block;
-  }
-
   .header__searchLine-alarm1, .header__searchLine-alarm2 {
-    margin-left: 919px;
-    margin-top: 46px;
+    margin-left: 908px;
+    margin-top: -3px;
   }
 
   .bestsellers__box {
@@ -1403,7 +1394,7 @@ footer {
 
     .header__searchLine-alarm1, .header__searchLine-alarm2 {
       margin-left: 666px;
-      margin-top: 37px;
+      margin-top: -3px;
     }
 
     .header__searchLine {
@@ -1413,7 +1404,7 @@ footer {
 
     .header__sections {
       position: absolute;
-      margin-top: 21px;
+      margin-top: 34px;
       margin-left: 448px;
     }
 
@@ -1422,23 +1413,20 @@ footer {
       margin-left: 0;
     }
 
-    .header__logo {
-      margin-top: 13px;
-    }
 
     .hamburger__topline {
       width: 20px;
-      top: 38px;
+      top: 50px;
     }
 
     .hamburger__midline {
       width: 20px;
-      top: 44px;
+      top: 56px;
     }
 
     .hamburger__botline {
       width: 20px;
-      top: 50px;
+      top: 62px;
     }
 
     input#search {
@@ -1464,52 +1452,48 @@ footer {
 
     .header__delivery-icon {
       margin-left: 20px;
-      margin-top: 15.46px;
       width: 29px;
       height: 17px;
     }
 
     .header__searchLine-wishlist {
-      margin-top: 34px;
       margin-left: 170.26px;
       width: 21.83px;
       height: 19px;
     }
 
     .header__searchLine-bag {
-      margin-top: 34px;
       width: 18.13px;
       height: 20px;
     }
 
     .header__searchLine-profile {
-      margin-top: 34px;
       width: 15.87px;
       height: 20px;
     }
 
     .header__menu-cell h2, .header__menu-cell img {
-      padding-left: 8px;
+      padding-left: 5px;
       font-size: 14px;
-      padding-right: 7px;
+      padding-right: 19px;
     }
 
     .owl-stage-outer {
-      width: 705px;
+      width: 720px !important;
     }
 
     .no-js .owl-carousel, .owl-carousel.owl-loaded {
-      width: 720px;
+      width: 720px !important;
       margin-left: 0;
     }
 
-    .header__menu-kitchen-icon {
-      padding-left: 25px;
+    .carousel_icon {
+      margin-left: -3px;
     }
 
     .header__menu-etc-icon {
-      margin-top: -80px;
-      margin-left: 695px;
+      margin-top: -81px;
+      margin-left: 703px;
       padding-left: 0;
     }
 
@@ -1570,7 +1554,7 @@ footer {
     }
 
     .bestsellers__item-loverIcon {
-      margin-left: 213px;
+      margin-left: 210px;
     }
 
     .bestsellers__item-price, .bestsellers__item-category, .bestsellers__item-name, .bestsellers__item-img {
@@ -1632,7 +1616,9 @@ footer {
     }
 
     .bestsellers__modalWindow-box {
-      left: 25%;
+      left: 35%;
+      font-size: 13px;
+      width: 300px;
     }
 
     footer {

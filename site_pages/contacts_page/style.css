@@ -195,6 +195,7 @@ input#search {
 .carousel_icon {
   background-repeat: no-repeat;
   background-position: 20px 23px;
+  margin-left: 10px;
 }
 
 .header__menu-kitchen-icon {
@@ -734,8 +735,8 @@ footer {
 /* owl carousel start */
 .slide {
   height: 70px;
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .owl-item:hover {
@@ -999,7 +1000,7 @@ footer {
     font-size: 13px;
   }
   .header__searchLine-alarm2 {
-    margin-left: 913px;
+    margin-left: 902px;
     padding-bottom: 5px !important;
   }
   .header__logo {
@@ -1026,15 +1027,11 @@ footer {
   }
 
   .header__menu-cell h2, .header__menu-cell img {
-    padding-left: 13px;
+    padding-left: 6px;
     font-size: 14px;
+    padding-right: 18px;
   }
-  .header__menu-kitchen-icon {
-    padding-left: 39px !important;
-  }
-  .header__menu-office-text {
-    width: 127px;
-  }
+
   .header__searchLine-wishlist {
     margin-left: 102px;
   }
@@ -1042,6 +1039,7 @@ footer {
     padding-left: 5px;
     padding-right: 5px;
   }
+  
   .no-js .owl-carousel, .owl-carousel.owl-loaded{
     width: 947px !important;
     margin: 10px auto;
@@ -1097,7 +1095,7 @@ footer {
   .header__sections {
     align-items: center;
     width: 720px;
-    height: 65px;
+    height: 115px;
   }
 
   .hamburger-menu {
@@ -1111,17 +1109,17 @@ footer {
 
   .hamburger__topline {
     width: 20px;
-    top: 38px;
+    top: 50px;
   }
 
   .hamburger__midline {
     width: 20px;
-    top: 44px;
+    top: 56px;
   }
 
   .hamburger__botline {
     width: 20px;
-    top: 50px;
+    top: 62px;
   }
 
   input#search {
@@ -1131,7 +1129,7 @@ footer {
 
   .header__searchLine-input {
     position: static;
-    width: 219px;
+    width: 216px;
     height: 30px;
     margin-left: 40px;
   }
@@ -1144,8 +1142,21 @@ footer {
     display: none;
   }
 
+  .header__delivery-icon {
+    margin-left: 32.5px;
+    width: 33px;
+    height: 16.92px;
+    margin-top: 56.46px;
+  }
+
+  .header__sections-delivery {
+    margin-left: 8.5px;
+  }
+
   .header__searchLine-wishlist {
-    margin-left: 33px;
+    margin-left: 37px;
+    width: 21.83px;
+    height: 19px;
   }
 
   .header__searchLine-alarm1, .header__searchLine-alarm2 {
@@ -1153,10 +1164,16 @@ footer {
     margin-top: 37px;
   }
 
+  .carousel_icon {
+    background-repeat: no-repeat;
+    background-position: 20px 23px;
+    margin-left: -3px;
+  }
+
   .header__menu-cell h2, .header__menu-cell img {
-    padding-left: 8px;
+    padding-left: 5px;
     font-size: 14px;
-    padding-right: 7px;
+    padding-right: 19px;
   }
 
   .no-js .owl-carousel, .owl-carousel.owl-loaded {
@@ -1165,7 +1182,88 @@ footer {
   }
 
   .owl-stage-outer {
-    width: 705px !important;
+    width: 715px !important;
+  }
+
+  .header__menu-etc-icon {
+    margin-top: -81px;
+    margin-left: 703px;
+    padding-left: 0;
+  }
+
+  .contacts__leftSideArea {
+    width: 50%;
+  }
+
+  .contacts__rightSideArea * {
+    font-size: 13px;
+  }
+
+  .contacts__form-nameInput, .contacts__form-emailInput {
+    width: 177px;
+  }
+
+  .contacts__form-emailLable {
+    margin-left: 131px;
+  }
+
+  .contacts__form-messageInput {
+    width: 78%;
+  }
+
+  .contacts__form-fileAndSubmit {
+    justify-content: start;
+  }
+
+  .contacts__form-fileButton {
+    margin-left: 48px;
+  }
+
+  .map__map {
+    width: 720px;
+  }
+
+  footer {
+    width: 720px;
+    padding: 0;
+  }
+
+  .footer__contacts-phoneImg {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -154px;
+  }
+
+  .footer__contacts-phoneText {
+    margin-left: -132px;
+    position: absolute;
+  }
+
+  .footer__contacts-logo {
+    width: 55px;
+    height: 49px;
+    padding-top: 48px;
+  }
+
+  .footer__contacts-adres {
+    padding-top: 17px;
+  }
+
+  .footer__contacts-contacts {
+    padding-top: 29px;
+  }
+
+  .footer__contacts-instagramText {
+    margin-right: 19px;
+  }
+
+  .footer__navigation-item {
+    margin-top: 11px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 0.7fr 0.8fr 0.6fr;
+    grid-gap: 9px;
   }
 
 }

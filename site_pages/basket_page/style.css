@@ -412,16 +412,18 @@ footer {
   position: fixed;
   padding-top: 20px;
   height: 40px;
-  left: 35%;
-  top: 0;
-  width: 30%;
+  left: 40%;
+  top: 1%;
+  width: 25%;
   text-align: center;
   background-color: rgb(160, 160, 160);
   font-family: Playfair Display;
+  font-size: 14px;
   font-style: normal;
   font-weight: bold;
   color: black;
   z-index: 999;
+  border-radius: 100px / 80px;
 }
 
 @media (max-width:1024px) {
@@ -430,9 +432,18 @@ footer {
     width: 960px;
   }
 
+  .bestsellers__modalWindow-box {
+    font-size: 12px;
+    width: 300px;
+  }
+
   .header__searchLine-alarm {
     margin-top: -238px;
-    margin-left: 913px;
+    margin-left: 902px;
+  }
+
+  .bestsellers__item-loverIcon {
+    margin-left: 205px;
   }
 
   .header__sections-main, .header__sections-about, .header__sections-contacts {
@@ -506,4 +517,103 @@ footer {
   footer {
     width: 959px;
   }
+}
+
+@media (max-width:768px) {
+
+  .container {
+    margin: 0 24px;
+    width: 720px;
+  }
+
+  .header__searchLine-alarm {
+    margin-top: -238px;
+    margin-left: 666px;
+  }
+
+  .bestsellers__modalWindow-box {
+    left: 35%;
+    font-size: 13px;
+  }
+
+  .owl-stage-outer {
+    width: 715px !important;
+  }
+
+  .totalQuantity {
+    width: 720px;
+  }
+
+  .totalSumBox__text {
+    margin-left: 248px;
+  }
+
+  .in-check-box {
+    width: 720px;
+  }
+
+  .in-check, .shoping__item {
+    width: 720px;
+  }
+
+  .item_title {
+    padding-left: 14px;
+    font-size: 14px;
+  }
+
+  .item_textQuantity {
+    font-size: 11px;
+    padding-left: 99px;
+  }
+
+  .item_quantity {
+    font-size: 11px;
+    margin-left: 11px;
+  }
+
+  .item_size {
+    margin-left: -25px;
+    font-size: 11px;
+  }
+
+  .item_width {
+    margin-left: 10px;
+  }
+
+  .item_x {
+    margin-left: -8px;
+  }
+
+  .item_depth {
+    margin-left: -54px;
+  }
+
+  .item_x2 {
+    margin-left: -72px;
+  }
+
+  .item_height {
+    margin-left: -118px;
+  }
+
+  .item_price {
+    margin-right: 0px;
+  }
+
+  .random4items__box {
+    width: 720px;
+  }
+
+  .bestsellers__box-item:last-child {
+    display: none;
+  }
+
+  .bestsellers__item-loverIcon {
+    margin-left: 205px;
+  }
+
+  footer {
+    width: 720px;
+  }
+
 }

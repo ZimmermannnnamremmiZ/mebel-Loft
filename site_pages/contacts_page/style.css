@@ -117,7 +117,7 @@ input#search {
   position: absolute;
   width: 8px;
   height: 8px;
-  margin-left: 1248px;
+  margin-left: 1243px;
   margin-top: 56px;
   z-index: 999;
 }
@@ -195,7 +195,7 @@ input#search {
 .carousel_icon {
   background-repeat: no-repeat;
   background-position: 20px 23px;
-  margin-left: 10px;
+  padding-left: 20px;
 }
 
 .header__menu-kitchen-icon {
@@ -203,7 +203,6 @@ input#search {
   width: 23px !important;
   height: 23px;
   padding-top: 23px;
-  padding-left: 24px;
 }
 
 .header__menu-kitchen-text {
@@ -219,7 +218,6 @@ input#search {
   background-image: url(/images/title_page/bedroom-icon.svg);
   width: 28px !important;
   height: 22.22px;
-  padding-left: 24px;
   padding-top: 25px;
 }
 .header__menu-bedroom-text {
@@ -234,7 +232,6 @@ input#search {
   background-image: url(/images/title_page/livingroom-icon.svg);
   width: 30px !important;
   height: 22.03px;
-  padding-left: 23px;
   padding-top: 25px;
 }
 .header__menu-livingroom-text {
@@ -252,7 +249,6 @@ input#search {
   background-image: url(/images/title_page/closet-icon.svg);
   width: 21.91px !important;
   height: 22px;
-  padding-left: 24px;
   padding-top: 24px;
 }
 .header__menu-closet-text {
@@ -268,7 +264,6 @@ input#search {
   background-image: url(/images/title_page/office-icon.svg);
   width: 22px !important;
   height: 22px;
-  padding-left: 23px;
   padding-top: 24px;
 }
 .header__menu-office-text {
@@ -283,7 +278,6 @@ input#search {
   background-image: url(/images/title_page/childrensroom-icon.svg);
   width: 22px !important;
   height: 22px;
-  padding-left: 23px;
   padding-top: 24px;
 }
 .header__menu-childrensroom-text {
@@ -300,9 +294,9 @@ input#search {
   font-size: 16px;
   line-height: 18.75px;
   color: #D74444;
-  padding-left: 27px;
+  padding-left: 26px;
   padding-top: 25px;
-  padding-right: 25px;
+  padding-right: 26px;
 }
 
 .header__menu-stock-text:hover {
@@ -317,9 +311,10 @@ input#search {
   line-height: 16px;
   background-color: #fff;
   z-index: 99;
-  width: 189px;
+  min-width: 139px;
   text-align: start;
-  padding-left: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 25px;
   margin-top: 70px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
@@ -749,7 +744,7 @@ footer {
   width: 4.27px;
   height: 17px;
   margin-top: -71px;
-  margin-left: 1239px;
+  margin-left: 1219px;
   padding-left: 19px;
   padding-top: 27px;
   padding-right: 25px;
@@ -757,7 +752,7 @@ footer {
 
 
 .header__menu, .owl-carousel, .owl-loaded, .owl-drag, .owl-stage, .owl-stage-outer {
-  width: 1160px !important;
+  width: 1125px !important;
 }
 /* owl carousel end */
 
@@ -1025,30 +1020,23 @@ footer {
   .header__menu img {
     padding-left: 15px;
   }
-
-  .header__menu-cell h2, .header__menu-cell img {
+  .header__menu-cell h2 {
     padding-left: 6px;
     font-size: 14px;
-    padding-right: 18px;
+    padding-right: 26px;
   }
-
   .header__searchLine-wishlist {
     margin-left: 102px;
   }
-  .header__menu-stock-text {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  
   .no-js .owl-carousel, .owl-carousel.owl-loaded{
     width: 947px !important;
     margin: 10px auto;
   }
   .owl-stage-outer {
-    width: 896px !important;
+    width: 925px !important;
   }
   .header__menu-etc-icon {
-    margin-top: -81px;
+    margin-top: -80px;
     margin-left: 918px;
     padding-left: 0;
   }
@@ -1066,7 +1054,8 @@ footer {
     margin-left: 0;
   }
   footer {
-    width: 959px;
+      width: 929px;
+      padding: 0 15px;
   }
   .footer__navigation {
     margin-left: 0;
@@ -1167,13 +1156,12 @@ footer {
   .carousel_icon {
     background-repeat: no-repeat;
     background-position: 20px 23px;
-    margin-left: -3px;
   }
 
-  .header__menu-cell h2, .header__menu-cell img {
+  .header__menu-cell h2 {
     padding-left: 5px;
     font-size: 14px;
-    padding-right: 19px;
+    padding-right: 20px;
   }
 
   .no-js .owl-carousel, .owl-carousel.owl-loaded {
@@ -1182,7 +1170,7 @@ footer {
   }
 
   .owl-stage-outer {
-    width: 715px !important;
+    width: 720px !important;
   }
 
   .header__menu-etc-icon {
@@ -1224,8 +1212,7 @@ footer {
   }
 
   footer {
-    width: 720px;
-    padding: 0;
+    width: 690px;
   }
 
   .footer__contacts-phoneImg {

@@ -464,7 +464,7 @@ footer {
   }
 
   .item_price {
-    margin-right: -14px;
+    margin-right: -3px;
   }
 
   .totalQuantity {
@@ -505,14 +505,19 @@ footer {
     margin-left: 0;
     justify-content: start
   }
+  .random4items__header {
+    margin-left: 0;
+  }
   .bestsellers__box-item {
     width: 239px;
   }
+  .bestsellers__item-img {
+    margin-bottom: 150px;
+    margin-left: 21px;
+    margin-top: 38px;
+  }
   .toBascet__add {
     width: 197px;
-  }
-  .random4items__header {
-    margin-left: 0;
   }
   footer {
     width: 959px;
@@ -542,10 +547,16 @@ footer {
 
   .totalQuantity {
     width: 720px;
+    font-size: 14px;
   }
 
   .totalSumBox__text {
     margin-left: 248px;
+    font-size: 14px;
+  }
+
+  .totalQuantity__text, .totalQuantity__num, .item_price, .totalSumBox__totalSum {
+    font-size: 14px;
   }
 
   .in-check-box {
@@ -597,7 +608,7 @@ footer {
   }
 
   .item_price {
-    margin-right: 0px;
+    margin-right: 10px;
   }
 
   .random4items__box {
@@ -613,7 +624,7 @@ footer {
   }
 
   footer {
-    width: 720px;
+    width: 690px;
   }
 
 }

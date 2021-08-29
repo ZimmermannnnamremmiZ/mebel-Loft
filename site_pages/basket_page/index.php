@@ -70,7 +70,7 @@
             <div class="header__menu owl-carousel" id="slider">
             <div class="header__menu-cell kitchen slide">
                 <div class="header__menu-kitchen-icon carousel_icon"></div>
-                <h2 class="header__menu-kitchen-text">Кухни</h2>
+                <h2 class="header__menu-kitchen-text header__menu-text">Кухни</h2>
                 <div class="dropdown__kitchen dropdown">
                   <a href="/site_pages/catalog_page/index.php">Модульные кухни</a>
                   <a href="/site_pages/catalog_page/index.php">Барная зона</a>
@@ -85,7 +85,7 @@
             </div>
             <div class="header__menu-cell bedroom slide">
                 <div class="header__menu-bedroom-icon carousel_icon"></div>
-                <h2 class="header__menu-bedroom-text">Спальни</h2>
+                <h2 class="header__menu-bedroom-text header__menu-text">Спальни</h2>
                 <div class="dropdown__bedroom dropdown">
                   <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
                   <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -103,7 +103,7 @@
             </div>
             <div class="header__menu-cell livingroom slide">
                 <div class="header__menu-livingroom-icon carousel_icon"></div>
-                <h2 class="header__menu-livingroom-text">Гостинные</h2>
+                <h2 class="header__menu-livingroom-text header__menu-text">Гостинные</h2>
                 <div class="dropdown__livingroom dropdown">
                   <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
                   <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -127,7 +127,7 @@
             </div>
             <div class="header__menu-cell closet slide">
                 <div class="header__menu-closet-icon carousel_icon"></div>
-                <h2 class="header__menu-closet-text">Прихожие</h2>
+                <h2 class="header__menu-closet-text header__menu-text">Прихожие</h2>
                 <div class="dropdown__closet dropdown">
                   <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
                   <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -138,7 +138,7 @@
             </div>
             <div class="header__menu-cell office slide">
                 <div class="header__menu-office-icon carousel_icon"></div>
-                <h2 class="header__menu-office-text">Офисная мебель</h2>
+                <h2 class="header__menu-office-text header__menu-text">Офисная мебель</h2>
                 <div class="dropdown__office dropdown">
                   <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
                   <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
@@ -164,7 +164,7 @@
             </div>
             <div class="header__menu-cell childrensroom slide">
                 <div class="header__menu-childrensroom-icon carousel_icon"></div>
-                <h2 class="header__menu-childrensroom-text">Детская</h2>
+                <h2 class="header__menu-childrensroom-text header__menu-text">Детская</h2>
                 <div class="dropdown__childrensroom dropdown">
                   <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
                   <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
@@ -181,7 +181,7 @@
                 </div>
             </div>
           </div>
-        <img class="header__menu-etc-icon" src="/images/title_page/etc.svg" alt="search">
+          <img class="header__menu-etc-icon" src="/images/title_page/etc.svg" alt="search">
             </header>
         <section class="navigation">
           <p class="navigation__start">Главная</p>

@@ -112,6 +112,7 @@ a {
 
 .userData {
   display: flex;
+  margin-bottom: 170px;
   margin-left: 140px;
   margin-top: 42px;
   width: 1140px;
@@ -388,7 +389,7 @@ a {
 }
 
 @media (max-width:768px) {
-  
+
   .bonus__title {
     font-size: 14px;
   }

@@ -173,8 +173,8 @@ input#search {
 
 .header__searchLine-alarm2 {
   position: absolute;
-  margin-top: 27px;
-  margin-left: 1221px;
+  margin-top: 28px;
+  margin-left: 1222px;
   z-index: 100;
 }
 
@@ -188,6 +188,8 @@ input#search {
   height: 19px;
 }
 
+
+/* header carousel start */
 .header__menu {
   display: flex;
   width: 1125px;
@@ -244,6 +246,11 @@ input#search {
   padding-left: 26px;
 }
 
+.header__menu-text {
+  padding-left: 5px;
+  padding-right: 25px;
+}
+
 .header__menu-kitchen-icon {
   background-image: url(/images/title_page/kitchen-icon.svg);
   width: 23px !important;
@@ -256,9 +263,6 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10px;
-  padding-right: 25px;
-
 }
 .header__menu-bedroom-icon {
   background-image: url(/images/title_page/bedroom-icon.svg);
@@ -270,8 +274,6 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10px;
-  padding-right: 25px;
   padding-top: 25px;
 }
 .header__menu-livingroom-icon {
@@ -287,9 +289,7 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10px;
   padding-top: 25px;
-  padding-right: 25px;
 }
 .header__menu-closet-icon {
   background-image: url(/images/title_page/closet-icon.svg);
@@ -301,10 +301,7 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10.04px;
   padding-top: 26px;
-  padding-right: 25px;
-  margin-left: -1px;
 }
 .header__menu-office-icon {
   background-image: url(/images/title_page/office-icon.svg);
@@ -316,9 +313,7 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10px;
   padding-top: 26px;
-  padding-right: 25px;
 }
 .header__menu-childrensroom-icon {
   background-image: url(/images/title_page/childrensroom-icon.svg);
@@ -330,9 +325,7 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10px;
   padding-top: 26px;
-  padding-right: 24px;
 }
 .header__menu-stock-text {
   font-weight: 400;
@@ -347,6 +340,35 @@ input#search {
 .header__menu-stock-text:hover {
   color: #fff;
 }
+
+/* owl carousel start */
+.slide {
+  height: 70px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.owl-item:hover {
+  color: #fff;
+  height: 1000px;
+}
+
+.owl-carousel, .owl-stage {
+  width: 1125px !important;
+}
+
+.header__menu-etc-icon {
+  position: absolute;
+  width: 4.27px;
+  height: 17px;
+  margin-top: -70px;
+  margin-left: 1210px;
+  padding-left: 19px;
+  padding-top: 27px;
+  padding-right: 25px;
+}
+/* owl carousel end */
+/* header carousel end */
 
 .dropdown {
   display: none;
@@ -818,33 +840,6 @@ footer {
   color: #414141;
 }
 
-/* owl carousel start */
-.slide {
-  height: 70px;
-  margin-left: 1px;
-  margin-right: 1px;
-}
-
-.owl-item:hover {
-  color: #fff;
-  height: 1000px;
-}
-
-.owl-carousel, .owl-stage {
-  width: 1125px !important;
-}
-
-.header__menu-etc-icon {
-  position: absolute;
-  width: 4.27px;
-  height: 17px;
-  margin-top: -70px;
-  margin-left: 1210px;
-  padding-left: 19px;
-  padding-top: 27px;
-  padding-right: 25px;
-}
-/* owl carousel end */
 
 @media (max-width:1024px) {
   .container {
@@ -1220,10 +1215,6 @@ footer {
     padding-left: 0;
   }
 
-  .header__phone-icon path {
-    fill: #000;
-  }
-
   .header__searchLine-wishlist {
     margin-left: 685.26px;
     width: 22.83px;
@@ -1332,21 +1323,26 @@ footer {
     margin: 0 auto;
   }
 
+  .bestsellers__item-img {
+    margin-bottom: 150px;
+    margin-left: 33px;
+    margin-top: 29px;
+  }
+
   .bestsellers__head-text {
     margin-left: 0px;
   }
 
   .bestsellers__discount {
-      margin-left: 329px;
+    margin-left: 362px;
   }
 
   .toBasket__num {
-    display: flex;
-    font-size: 9px;
-    line-height: 11px;
-    color: #414141;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 21px;
+  }
+
+  .toBascet__add {
+    margin-left: 21px;
   }
 
   footer {
@@ -1500,7 +1496,7 @@ footer {
     .slider, .slider__box {
       width: 720px;
       height: 253px;
-    } 
+    }
 
     .slider__text::before {
       margin-top: 32px;
@@ -1566,7 +1562,7 @@ footer {
     .bestsellers__discount {
       margin-left: 249px;
     }
-    
+
     .bestsellers__head-text {
       margin-top: 42px;
     }
@@ -1606,6 +1602,7 @@ footer {
 
     .toBascet__add {
       width: 186px;
+      margin-left: 27px;
     }
 
     .bestsellers__modalWindow-box {

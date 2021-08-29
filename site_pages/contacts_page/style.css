@@ -24,10 +24,10 @@ body {
 input#search {
   background-image: url(/images/title_page/search-icon.svg);
   background-repeat: no-repeat;
-  background-position: 15px 17px;
-  text-indent: 35px;
+  background-position: 13px 12px;
+  text-indent: 36px;
   font-size: 15px;
-  padding: 0 11px 0px 11px;
+  padding: 2px 15px 0px 11px;
 }
 
 .container {
@@ -54,15 +54,15 @@ input#search {
 }
 
 .header__sections-main {
-  margin-left: 37.04px;
+  margin-left: 34.04px;
 }
 
 .header__sections-about {
-  margin-left: 33px;
+  margin-left: 30px;
 }
 
 .header__sections-contacts {
-  margin-left: 33px;
+  margin-left: 30px;
 }
 
 .header__sections-phone {
@@ -70,14 +70,14 @@ input#search {
 }
 
 .header__phone-icon {
-  margin-left: 28px;
+  margin-left: 31px;
   margin-top: 55px;
   width: 19px;
   height: 19px;
 }
 
 .header__delivery-icon {
-  margin-left: 32px;
+  margin-left: 30px;
   width: 32px;
   height: 16.92px;
   margin-top: 56.46px;
@@ -102,12 +102,12 @@ input#search {
   border: 1px solid #E5E5E5;
   width: 257px;
   height: 39px;
-  margin-left: 43px;
+  margin-left: 40px;
   margin-top: 42px;
 }
 
 .header__searchLine-wishlist {
-  margin-left: 41px;
+  margin-left: 35px;
   margin-top: 54px;
   width: 22.83px;
   height: 19px;
@@ -117,8 +117,8 @@ input#search {
   position: absolute;
   width: 8px;
   height: 8px;
-  margin-left: 1243px;
-  margin-top: 56px;
+  margin-left: 1230px;
+  margin-top: 57px;
   z-index: 999;
 }
 
@@ -136,7 +136,7 @@ input#search {
   background-image: url("/images/title_page/profile-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 31px;
+  margin-left: 29px;
   margin-top: 54px !important;
   width: 16.87px;
   height: 21px;
@@ -144,9 +144,9 @@ input#search {
 
 .header__menu {
   display: flex;
-  width: 1162px;
+  width: 1140px;
   height: 70px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 7%);
   margin-left: 140px;
   margin-top: 20px;
 }
@@ -195,7 +195,12 @@ input#search {
 .carousel_icon {
   background-repeat: no-repeat;
   background-position: 20px 23px;
-  padding-left: 20px;
+  padding-left: 26px;
+}
+
+.header__menu-text {
+  padding-left: 5px;
+  padding-right: 25px;
 }
 
 .header__menu-kitchen-icon {
@@ -210,9 +215,6 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10px;
-  padding-right: 25px;
-
 }
 .header__menu-bedroom-icon {
   background-image: url(/images/title_page/bedroom-icon.svg);
@@ -224,8 +226,6 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10px;
-  padding-right: 25px;
   padding-top: 25px;
 }
 .header__menu-livingroom-icon {
@@ -241,9 +241,7 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10px;
   padding-top: 25px;
-  padding-right: 25px;
 }
 .header__menu-closet-icon {
   background-image: url(/images/title_page/closet-icon.svg);
@@ -255,10 +253,7 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10.04px;
   padding-top: 26px;
-  padding-right: 25px;
-  margin-left: -1px;
 }
 .header__menu-office-icon {
   background-image: url(/images/title_page/office-icon.svg);
@@ -270,9 +265,7 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10px;
   padding-top: 26px;
-  padding-right: 25px;
 }
 .header__menu-childrensroom-icon {
   background-image: url(/images/title_page/childrensroom-icon.svg);
@@ -284,23 +277,20 @@ input#search {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
-  padding-left: 10px;
   padding-top: 26px;
-  padding-right: 24px;
 }
-
 .header__menu-stock-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
   color: #D74444;
-  padding-left: 26px;
-  padding-top: 25px;
-  padding-right: 26px;
+  padding-left: 25px;
+  padding-top: 26px;
+  padding-right: 25px;
 }
 
 .header__menu-stock-text:hover {
- color: #fff;
+  color: #fff;
 }
 
 .dropdown {
@@ -422,7 +412,8 @@ input#search {
 .contacts__form-nameInput {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  width: 207px;
+  width: 187px;
+  padding: 0 10px;
   height: 38px;
   margin-top: 5px;
   font-size: 12px;
@@ -434,7 +425,8 @@ input#search {
 .contacts__form-emailInput {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  width: 240px;
+  width: 220px;
+  padding: 0 10px;
   height: 38px;
   margin-top: 5px;
   font-size: 12px;
@@ -452,10 +444,10 @@ input#search {
 }
 
 .contacts__form-messageInput {
-  height: 142px;
-  width: 100%;
+  height: 122px;
+  width: 437px;
+  padding: 10px;
   margin-top: 5px;
-  padding: 0;
   font-size: 12px;
   line-height: 14px;
   color: #3C3C3C;
@@ -612,10 +604,10 @@ footer {
 }
 
 .footer__navigation {
-  width: 390px;
+  width: 450px;
   height: 148px;
   margin-left: 130px;
-  margin-top: 54px;
+  margin-top: 34px;
 }
 
 .footer__navigation-item {
@@ -662,7 +654,7 @@ footer {
 .footer__contacts-logo {
   width: 60px;
   height: 49px;
-  padding-right: 128px;
+  padding-right: 130px;
   padding-top: 49px;
 }
 
@@ -675,7 +667,7 @@ footer {
 .footer__contacts-adres {
   font-size: 14px;
   line-height: 126.69%;
-  padding-right: 128px;
+  padding-right: 130px;
   padding-top: 20px;
   color: #414141;
 }
@@ -683,7 +675,7 @@ footer {
 .footer__contacts-contacts {
   display: flex;
   justify-content: space-between;
-  padding-right: 128px;
+  padding-right: 130px;
   padding-top: 35px;
   align-items: center;
 }
@@ -739,20 +731,19 @@ footer {
   height: 1000px;
 }
 
+.owl-carousel, .owl-stage {
+  width: 1140px !important;
+}
+
 .header__menu-etc-icon {
   position: absolute;
   width: 4.27px;
   height: 17px;
-  margin-top: -71px;
-  margin-left: 1219px;
+  margin-top: -70px;
+  margin-left: 1210px;
   padding-left: 19px;
   padding-top: 27px;
   padding-right: 25px;
-}
-
-
-.header__menu, .owl-carousel, .owl-loaded, .owl-drag, .owl-stage, .owl-stage-outer {
-  width: 1125px !important;
 }
 /* owl carousel end */
 
@@ -770,6 +761,11 @@ footer {
   }
   .header__searchLine {
     width: 959px;
+  }
+  .slide {
+    height: 70px;
+    margin-left: 1px;
+    margin-right: 4px;
   }
   .about__textBlock-head::before {
     display: none;
@@ -995,8 +991,8 @@ footer {
     font-size: 13px;
   }
   .header__searchLine-alarm2 {
-    margin-left: 902px;
-    padding-bottom: 5px !important;
+    margin-left: 901px;
+    padding-bottom: 6px !important;
   }
   .header__logo {
     margin-left: 15px;
@@ -1021,7 +1017,7 @@ footer {
     padding-left: 15px;
   }
   .header__menu-cell h2 {
-    padding-left: 6px;
+    padding-left: 11.5px;
     font-size: 14px;
     padding-right: 26px;
   }
@@ -1033,7 +1029,7 @@ footer {
     margin: 10px auto;
   }
   .owl-stage-outer {
-    width: 925px !important;
+    width: 907px !important;
   }
   .header__menu-etc-icon {
     margin-top: -80px;

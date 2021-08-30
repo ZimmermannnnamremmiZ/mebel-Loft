@@ -762,11 +762,6 @@ footer {
   .header__searchLine {
     width: 959px;
   }
-  .slide {
-    height: 70px;
-    margin-left: 1px;
-    margin-right: 4px;
-  }
   .about__textBlock-head::before {
     display: none;
   }
@@ -1003,21 +998,23 @@ footer {
   }
   input#search {
     background-position: 15px 18px;
+    text-indent: 35px;
+    font-size: 15px;
     padding: 1px 11px 0px 11px;
   }
   .header__sections {
     align-items: center;
-    width: 967px;
+    width: 960px;
   }
   .header__menu {
-    width: 959px;
+    width: 960px;
     margin-left: 0;
   }
   .header__menu img {
     padding-left: 15px;
   }
   .header__menu-cell h2 {
-    padding-left: 11.5px;
+    padding-left: 6px;
     font-size: 14px;
     padding-right: 26px;
   }
@@ -1029,18 +1026,22 @@ footer {
     margin: 10px auto;
   }
   .owl-stage-outer {
-    width: 907px !important;
+    width: 927px;
   }
   .header__menu-etc-icon {
     margin-top: -80px;
-    margin-left: 918px;
+    margin-left: 930px;
     padding-left: 0;
   }
   .navigation, .contacts__title, .contacts__form, .map__title {
     margin-left: 0;
   }
+  .contacts {
+    justify-content: start;
+  }
   .contacts__rightSideArea {
     margin-right: 0;
+    margin-left: 25px;
   }
   .contacts__phoneAndMail {
     margin-top: 122px;
@@ -1150,8 +1151,16 @@ footer {
   }
 
   .carousel_icon {
-    background-repeat: no-repeat;
-    background-position: 20px 23px;
+    padding-left: 20px;
+  }
+
+  .no-js .owl-carousel, .owl-carousel.owl-loaded {
+    width: 720px !important;
+    margin-left: 0;
+  }
+
+  .owl-stage-outer {
+    width: 720px !important;
   }
 
   .header__menu-cell h2 {
@@ -1160,19 +1169,8 @@ footer {
     padding-right: 20px;
   }
 
-  .no-js .owl-carousel, .owl-carousel.owl-loaded {
-    width: 720px !important;
-    margin: 10px auto;
-  }
-
-  .owl-stage-outer {
-    width: 720px !important;
-  }
-
-  .header__menu-etc-icon {
-    margin-top: -81px;
-    margin-left: 703px;
-    padding-left: 0;
+  .slide {
+    margin-right: 1px;
   }
 
   .contacts__leftSideArea {

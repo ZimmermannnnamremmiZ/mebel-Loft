@@ -165,13 +165,9 @@ input#search {
 
 .header__searchLine-alarm1 {
   display: none;
-  position: absolute;
-  margin-top: 27px;
-  margin-left: 1221px;
-  z-index: 100;
 }
 
-.header__searchLine-alarm2 {
+.header__searchLine-alarm1, .header__searchLine-alarm2 {
   position: absolute;
   margin-top: 28px;
   margin-left: 1222px;
@@ -853,12 +849,12 @@ footer {
   }
 
   header {
-    width: 959px;
+    width: 960px;
   }
 
   .header__searchLine {
     align-items: center;
-    width: 967px;
+    width: 960px;
     height: 115px;
     margin-left: -6px;
   }
@@ -874,9 +870,6 @@ footer {
     padding: 1px 11px 0px 11px;
   }
 
-  .slider {
-    width: 959px;
-  }
   .header__sections-main, .header__sections-about, .header__sections-contacts {
     display: none;
   }
@@ -892,7 +885,7 @@ footer {
 
   .header__sections {
     position: absolute;
-    margin-top: 34px;
+    margin-top: 33px;
     margin-left: 525px;
     display: flex;
     background-color: #fff;
@@ -902,7 +895,7 @@ footer {
   }
 
   .header__delivery-icon {
-    margin-left: 20px;
+    margin-left: 19px;
     margin-top: 15.46px;
     width: 30px;
     height: 19.92px;
@@ -913,8 +906,8 @@ footer {
   .header__sections-delivery {
     margin-top: 17px;
     font-size: 13px;
-    margin-left: 11px;
-  }
+    margin-left: 10px;
+}
 
   .hamburger-menu {
     display: block;
@@ -1174,7 +1167,7 @@ footer {
 
   .header__phone-icon {
     margin-left: -53px;
-    margin-top: 14px;
+    margin-top: 15px;
     background-image: url('/images/title_page/phone-white.svg');
   }
 
@@ -1183,7 +1176,7 @@ footer {
     border: 1px solid #E5E5E5;
     width: 223px;
     height: 50px;
-    margin-left: 203px;
+    margin-left: 199.5px;
   }
 
   .header__logo-link {
@@ -1197,10 +1190,10 @@ footer {
   }
 
   .header__menu {
-      display: flex;
-      width: 959px;
-      height: 70px;
-      box-shadow: 0px 2px 4px rgb(0 0 0 / 7%);
+    display: flex;
+    width: 960px;
+    height: 70px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 7%);
   }
 
   .header__menu-cell h2{
@@ -1211,15 +1204,15 @@ footer {
 
   .header__menu-etc-icon {
     margin-top: -80px;
-    margin-left: 918px;
+    margin-left: 930px;
     padding-left: 0;
   }
 
   .header__searchLine-wishlist {
-    margin-left: 685.26px;
+    margin-left: 683px;
     width: 22.83px;
     height: 19px;
-}
+  }
 
   .header__searchLine-bag {
     margin-left: 29px;
@@ -1228,9 +1221,13 @@ footer {
   }
 
   .header__searchLine-profile {
-    margin-left: 31px;
+    margin-left: 29px;
     width: 16.87px;
     height: 21px;
+  }
+
+  .slider {
+    width: 960px;
   }
 
   .slider__box {
@@ -1314,7 +1311,7 @@ footer {
   }
 
   .header__searchLine-alarm1, .header__searchLine-alarm2 {
-    margin-left: 908px;
+    margin-left: 907px;
     margin-top: -3px;
   }
 

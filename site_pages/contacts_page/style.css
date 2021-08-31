@@ -77,14 +77,16 @@ input#search {
 }
 
 .header__delivery-icon {
-  margin-left: 30px;
-  width: 32px;
+  margin-left: 31px;
+  width: 29px;
   height: 16.92px;
   margin-top: 56.46px;
+  background-image: url('/images/title_page/delivery-icon-black.svg');
+  background-repeat: no-repeat;
 }
 
 .header__sections-delivery {
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 .header__searchLine{
@@ -986,7 +988,7 @@ footer {
     font-size: 13px;
   }
   .header__searchLine-alarm2 {
-    margin-left: 901px;
+    margin-left: 902px;
     padding-bottom: 6px !important;
   }
   .header__logo {
@@ -1019,19 +1021,24 @@ footer {
     padding-right: 26px;
   }
   .header__searchLine-wishlist {
-    margin-left: 102px;
-  }
-  .no-js .owl-carousel, .owl-carousel.owl-loaded{
-    width: 947px !important;
-    margin: 10px auto;
-  }
-  .owl-stage-outer {
-    width: 927px;
+    margin-left: 104px;
   }
   .header__menu-etc-icon {
     margin-top: -80px;
     margin-left: 930px;
     padding-left: 0;
+  }
+  .no-js .owl-carousel, .owl-carousel.owl-loaded{
+    width: 960px !important;
+    margin: 10px auto;
+  }
+  .slide {
+    height: 70px;
+    margin-left: 0px;
+    margin-right: 2px; 
+  }
+  .owl-stage-outer {
+    width: 927px;
   }
   .navigation, .contacts__title, .contacts__form, .map__title {
     margin-left: 0;
@@ -1051,8 +1058,8 @@ footer {
     margin-left: 0;
   }
   footer {
-      width: 929px;
-      padding: 0 15px;
+    width: 930px;
+    padding: 0 15px;
   }
   .footer__navigation {
     margin-left: 0;
@@ -1115,7 +1122,7 @@ footer {
 
   .header__searchLine-input {
     position: static;
-    width: 216px;
+    width: 218px;
     height: 30px;
     margin-left: 40px;
   }

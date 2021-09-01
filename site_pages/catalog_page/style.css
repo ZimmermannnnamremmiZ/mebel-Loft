@@ -521,6 +521,10 @@
 }
 
 @media (max-width:1024px) {
+
+  .header__searchLine-alarm2 {
+    margin-left: 913px;
+  }
   .catalog__menu {
     margin-left: 0;
   }
@@ -530,9 +534,10 @@
   }
   .catalog__filterBtn {
     position: absolute;
-    margin-top: 45px;
+    margin-top: 30px;
     display: block;
     align-self: flex-start;
+    z-index: 9999;
   }
   .catalog__menu {
     display: none;
@@ -545,12 +550,29 @@
     margin-top: -250px;
     margin-left: 0;
   }
+  .hamburger-menu-2__topline {
+    content: '';
+    top: 293px;
+  }
+  .hamburger-menu-2__midline {
+    content: '';
+    top: 298px;
+  }
+  .hamburger-menu-2__botline {
+    content: '';
+    top: 303px;
+  }
+  .menu-2__btn {
+    margin-left: 947px;
+  }
   .menu-2__box {
-    margin-top: 238px !important;
+    margin-top: 262px !important;
+    margin-left: 801px;
   }
-  .header__searchLine-alarm2 {
-    margin-left: 913px;
+  .bestsellers__box-item {
+    margin-left: 10px;
   }
+
 }
 
 @media (max-width:768px) {

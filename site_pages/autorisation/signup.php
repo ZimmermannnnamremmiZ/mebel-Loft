@@ -55,7 +55,7 @@
             <a class="header__sections-contacts" href="index.php">Контакты</a>
             <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
             <img class="header__phone-icon" src="/images/title_page/phone.svg">
-            <a class="header__sections-phone" href="href=" tel:89648999119">8 (964) 89 99 119</a>
+            <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
             <img class="header__delivery-icon" src="/images/title_page/delivery-icon-black.svg">
             <a class="header__sections-delivery" href="#">Доставка</a>
             <img class="header__searchLine-wishlist" src="/images/title_page/wishlist-icon.svg" alt="search">

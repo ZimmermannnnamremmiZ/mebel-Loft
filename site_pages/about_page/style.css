@@ -561,6 +561,10 @@
     margin-top: 70px;
   }
 
+  .advantages2 {
+    width: 720px;
+  }
+
   .advantages2__box {
     flex-direction: column;
     width: 720px;

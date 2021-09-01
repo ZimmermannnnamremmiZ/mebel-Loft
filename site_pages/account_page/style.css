@@ -1,5 +1,25 @@
 @import url(/site_pages/contacts_page/style.css);
 
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrap_1 {
+  flex: 1 0 auto;
+}
+
+.wrap_2 {
+  margin-top: 103px;
+  flex: 0 0 auto;
+}
+
 a {
   text-decoration: none;
   color: #414141;
@@ -112,7 +132,7 @@ a {
 
 .userData {
   display: flex;
-  margin-bottom: 170px;
+  margin-bottom: 100px;
   margin-left: 140px;
   margin-top: 42px;
   width: 1140px;
@@ -372,20 +392,21 @@ a {
   }
   .userData {
     width: 959px;
+    margin-bottom: 0;
   }
+  
   .userData__all {
     margin-left: 402px;
   }
-  footer {
-    width: 959px;
-    margin-top: 70px;
+
+  .userData__title-myOrders {
+    margin-left: 360px;
   }
-  .footer__navigation {
-    margin-left: 0;
+
+  .footer {
+    margin-top: 100px;
   }
-  .footer__contacts-logo, .footer__contacts-adres, .footer__contacts-contacts {
-    padding-right: 0;
-  }
+
 }
 
 @media (max-width:768px) {
@@ -396,10 +417,115 @@ a {
 
   .bonus {
     flex-wrap: wrap;
+    margin-top: 30px;
   }
+  
 
   .bonus__points {
     margin-left: 226px;
   }
 
+  .benefits {
+    display: flex;
+    width: 720px;
+    margin: 30px auto;
+    height: 40px;
+    justify-content: space-between;
+  }
+
+  .benefits__el1, .benefits__el2, .benefits__el3 {
+    margin-left: 0;
+    align-self: center;
+  }
+
+  .benefits__el1-text, .benefits__el2-text, .benefits__el3-text {
+    font-size: 13px;
+    margin-left: 8px;
+  }
+
+  .benefits__el1-img, .benefits__el2-img, .benefits__el3-img {
+    width: 22px;
+  }
+
+  .userData__title {
+    margin-top: 0px;
+    font-size: 14px;
+  }
+
+  .userData__title-myOrders {
+    position: absolute;
+
+  }
+
+  .userData {
+    width: 720px;
+    flex-direction: column;
+  }
+
+  .userData__info {
+    width: 100%;
+  }
+
+  .userData__orders {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .inputHeader-email {
+    margin-left: 335px;
+  }
+
+  .input-1, .input-2 {
+    width: 326px;
+  }
+
+  .inputHeader-number {
+    margin-left: 308px;
+  } 
+  
+  .change_button {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 619px;
+  }
+
+  .userData__header-product {
+    width: 417px;
+  }
+  
+  .userData__header-price {
+    width: 80px;
+  }
+
+  .userData__header-date, .userData__header-status {  
+    width: 100px;
+  }
+
+  .userData__product {
+    width: 434px;
+  }
+
+  .userData__price {
+    width: 82px;
+  }
+
+  .userData__date {
+    width: 102px;
+  }
+
+  .userData__status {
+    width: 102px;
+  }
+
+  .userData__status2 {
+    width: 102px;
+  }
+
+  .userData__all {
+    margin-left: 642px;
+  }
+
+  .footer {
+    margin-top: 320px;
+  }
 }

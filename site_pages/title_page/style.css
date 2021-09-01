@@ -181,7 +181,7 @@ input#search {
   margin-left: 32px;
   margin-top: 25px;
   width: 16.87px;
-  height: 19px;
+  height: 20px;
 }
 
 
@@ -1439,7 +1439,6 @@ footer {
       display: none;
     }
 
-
     .header__sections-phone {
       display: none;
     }
@@ -1451,8 +1450,13 @@ footer {
       height: 17px;
     }
 
+    .header__sections-delivery {
+      margin-top: 17px;
+      margin-left: 13px;
+    }
+
     .header__searchLine-wishlist {
-      margin-left: 170.26px;
+      margin-left: 169.26px;
       width: 21.83px;
       height: 19px;
     }
@@ -1463,9 +1467,10 @@ footer {
     }
 
     .header__searchLine-profile {
+      margin-left: 28px;
       width: 15.87px;
       height: 20px;
-    }
+  }
 
     .header__menu-cell h2 {
       padding-left: 5px;
@@ -1490,7 +1495,7 @@ footer {
     }
 
     .owl-stage-outer {
-      width: 710px !important;
+      width: 715px !important;
     }
 
     .no-js .owl-carousel, .owl-carousel.owl-loaded {

@@ -432,7 +432,7 @@
   display: flex;
   align-items: center;
   top: 270px;
-  margin-left: 847px;
+  margin-left: 830px;
 
   width: 26px;
   height: 26px;
@@ -482,15 +482,12 @@
   position: absolute;
   visibility: hidden;
   margin-top: 238px !important;
-  margin-left: 700px;
+  margin-left: 683px;
   width: 165px;
   text-align: right;
-
   list-style: none;
-
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
-
   transition-duration: .25s;
 }
 
@@ -540,10 +537,6 @@
   .catalog__menu {
     display: none;
   }
-  .bestsellers__box {
-    justify-content: space-between;
-    margin-left: 0;
-  }
   .inputcurrency {
     background-position: 83% 44%;
   }
@@ -557,5 +550,49 @@
   }
   .header__searchLine-alarm2 {
     margin-left: 913px;
+  }
+}
+
+@media (max-width:768px) {
+
+  .catalog {
+    width: 720px;
+  }
+
+  .hamburger-menu-2__topline {
+    top: 276px;
+  }
+
+  .hamburger-menu-2__midline {
+    top: 282px;
+  }
+
+  .hamburger-menu-2__botline {
+    top: 288px;
+  }
+
+  .bestsellers__box {
+    width: auto;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 54px;
+  }
+
+  .bestsellers__box-item {
+    width: 237px;
+  }
+
+  .bestsellers__item-loverIcon {
+    margin-left: 207px;
+    margin-top: 11px;
+  }
+
+  .bestsellers__item-img {
+    margin-left: 20px;
+  }
+
+  .toBascet__add {
+    width: 197px;
   }
 }

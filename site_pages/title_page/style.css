@@ -1765,6 +1765,21 @@ footer {
       padding-right: 0;
     }
 
+    .header__menu-stock-text::before {
+      position: absolute;
+      content: url("/images/title_page/adaptive_320px/stock.svg");
+      width: 17px;
+      height: 17px;
+      margin-top: -32px;
+      margin-left: 4px;
+    }
+
+    .menu-stock:hover .header__menu-stock-text::before {
+      content: url("/images/title_page/adaptive_320px/stock-white.svg");
+      width: 17px;
+      height: 17px;
+    }
+
     .header__menu-etc-icon {
       display: none;
     }

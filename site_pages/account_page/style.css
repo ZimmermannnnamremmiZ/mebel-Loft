@@ -375,7 +375,7 @@ a {
   color: #fff;
 }
 
-@media (max-width:1024px) {
+@media screen and (max-width:1024px) {
 
   .navigation, .bonus, .benefits, .userData__head, .userData {
     margin-left: 0;
@@ -394,7 +394,7 @@ a {
     width: 959px;
     margin-bottom: 0;
   }
-  
+
   .userData__all {
     margin-left: 402px;
   }
@@ -409,7 +409,7 @@ a {
 
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
 
   .bonus__title {
     font-size: 14px;
@@ -419,7 +419,7 @@ a {
     flex-wrap: wrap;
     margin-top: 30px;
   }
-  
+
 
   .bonus__points {
     margin-left: 226px;
@@ -481,8 +481,8 @@ a {
 
   .inputHeader-number {
     margin-left: 308px;
-  } 
-  
+  }
+
   .change_button {
     position: absolute;
     margin-top: -40px;
@@ -492,12 +492,12 @@ a {
   .userData__header-product {
     width: 417px;
   }
-  
+
   .userData__header-price {
     width: 80px;
   }
 
-  .userData__header-date, .userData__header-status {  
+  .userData__header-date, .userData__header-status {
     width: 100px;
   }
 

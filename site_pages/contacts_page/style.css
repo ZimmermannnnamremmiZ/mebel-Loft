@@ -750,7 +750,7 @@ footer {
 }
 /* owl carousel end */
 
-@media (max-width:1024px) {
+@media screen and (max-width:1024px) {
 
   .container {
     margin: 0 32px;
@@ -1070,7 +1070,7 @@ footer {
   }
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
 
   .container {
     margin: 0 24px;

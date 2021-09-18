@@ -520,7 +520,7 @@
   display: none;
 }
 
-@media (max-width:1024px) {
+@media screen and (max-width:1024px) {
 
   .header__searchLine-alarm2 {
     margin-left: 913px;
@@ -575,7 +575,7 @@
 
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
 
   .catalog {
     width: 720px;

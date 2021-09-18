@@ -355,7 +355,7 @@
   margin-right: 7.67px;
 }
 
-@media (max-width:1024px) {
+@media screen and (max-width:1024px) {
 
   .about__textBlock-head::before {
     display: none;
@@ -489,7 +489,7 @@
   }
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
 
   .about {
     width: 720px;

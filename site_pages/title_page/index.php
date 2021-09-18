@@ -23,19 +23,19 @@
     <header class="header">
       <div class="header__blackBack"></div>
       <div class="container">
-      <div class="header__sections">
-        <div class="header__leftSide">
-          <a class="header__sections-main" href="index.php">Главная</a>
-          <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
-          <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
+        <div class="header__sections">
+          <div class="header__leftSide">
+            <a class="header__sections-main" href="index.php">Главная</a>
+            <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
+            <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
+          </div>
+          <div class="header__rightSide">
+            <div class="header__phone-icon"></div>
+            <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
+            <a class="header__delivery-icon" href="#"></a>
+            <a class="header__sections-delivery" href="#">Доставка</a>
+          </div>
         </div>
-        <div class="header__rightSide">
-          <div class="header__phone-icon"></div>
-          <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
-          <a class="header__delivery-icon" href="#"></a>
-          <a class="header__sections-delivery" href="#">Доставка</a>
-        </div>
-      </div>
         <div class="header__searchLine">
           <div class="header__searchLine-leftSide">
             <div class="hamburger-menu">
@@ -331,48 +331,50 @@
     </div>
     <div class="wrap_2">
       <footer class="footer footer_bottom">
-        <div class="footer__navigation-leftSide">
-          <div class="footer__navigation">
-            <p class="footer__navigation-title">
-              НАВИГАЦИЯ
-            </p>
-            <div class="footer__navigation-item">
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Кухни</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Прихожие</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Шкафы</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Спальни</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Офисная мебель</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Матрасы</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Гостинные</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Детская</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
+        <div class="footer__content container">
+          <div class="footer__navigation-leftSide">
+            <div class="footer__navigation">
+              <p class="footer__navigation-title">
+                НАВИГАЦИЯ
+              </p>
+              <div class="footer__navigation-item">
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Кухни</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Прихожие</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Шкафы</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Спальни</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Офисная мебель</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Матрасы</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Гостинные</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Детская</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
+              </div>
+              <div class="footer__navigation-item2">
+                <a class="footer__navigation-stock" href="/site_pages/catalog_page/index.php">Акция</a>
+                <a class="footer__navigation-newItems" href="/site_pages/catalog_page/index.php">Новинки</a>
+              </div>
             </div>
-            <div class="footer__navigation-item2">
-              <a class="footer__navigation-stock" href="/site_pages/catalog_page/index.php">Акция</a>
-              <a class="footer__navigation-newItems" href="/site_pages/catalog_page/index.php">Новинки</a>
+          </div>
+          <div class="footer__navigation-rightSide">
+            <div class="footer__contacts">
+              <img class="footer__contacts-logo" src="/images/title_page/LM.svg" alt="empty">
             </div>
-          </div>
-        </div>
-        <div class="footer__navigation-rightSide">
-          <div class="footer__contacts">
-            <img class="footer__contacts-logo" src="/images/title_page/LM.svg" alt="empty">
-          </div>
-          <div class="footer__contacts-adres">
-            г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
-          </div>
-          <div class="footer__contacts-contacts">
-            <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
-            <p class="footer__contacts-phoneText">
-              8 (964) 89 99 119
-            </p>
-            <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
-            <p class="footer__contacts-instagramText">
-              INSTAGRAM
-            </p>
-            <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
-            <p class="footer__contacts-mailText">
-              mebel_loft_anapa@mail.ru
-            </p>
+            <div class="footer__contacts-adres">
+              г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
+            </div>
+            <div class="footer__contacts-contacts">
+              <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
+              <p class="footer__contacts-phoneText">
+                8 (964) 89 99 119
+              </p>
+              <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
+              <p class="footer__contacts-instagramText">
+                INSTAGRAM
+              </p>
+              <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
+              <p class="footer__contacts-mailText">
+                mebel_loft_anapa@mail.ru
+              </p>
+            </div>
           </div>
         </div>
       </footer>

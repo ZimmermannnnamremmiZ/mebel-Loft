@@ -2460,7 +2460,8 @@ footer {
     margin-top: 107px;
   }
 
-  .slider__box .previous, .slider .next {
+  .slider__box .previous,
+  .slider .next {
     margin-top: 64px;
   }
 
@@ -2633,7 +2634,8 @@ footer {
     display: none;
   }
 
-  .slider, .slider__box {
+  .slider,
+  .slider__box {
     width: 480px;
     height: 189px;
   }
@@ -2657,7 +2659,8 @@ footer {
     margin-top: 120px;
   }
 
-  .slider__box .previous, .slider .next {
+  .slider__box .previous,
+  .slider .next {
     margin-top: 52px;
   }
 
@@ -2769,7 +2772,8 @@ footer {
     margin-left: -150px;
   }
 
-  .slider, .slider__box {
+  .slider,
+  .slider__box {
     width: 400px;
     height: 158px;
   }
@@ -2785,7 +2789,8 @@ footer {
     height: 30px;
   }
 
-  .slider__box .previous, .slider .next {
+  .slider__box .previous,
+  .slider .next {
     margin-top: 36px;
   }
 
@@ -2902,7 +2907,8 @@ footer {
     margin-left: -121px;
   }
 
-  .slider, .slider__box {
+  .slider,
+  .slider__box {
     width: 360px;
     height: 142px;
   }
@@ -2929,7 +2935,8 @@ footer {
     margin-left: 40px;
   }
 
-  .slider__box .previous, .slider .next {
+  .slider__box .previous,
+  .slider .next {
     margin-top: 29px;
   }
 
@@ -2979,7 +2986,8 @@ footer {
     margin-top: 343px;
   }
 
-  .bestsellers__item-price, .bestsellers__item-name {
+  .bestsellers__item-price,
+  .bestsellers__item-name {
     font-size: 13px;
   }
 
@@ -2993,7 +3001,162 @@ footer {
 }
 
 @media screen and (max-width:380px) {
-  
+
+  .container,
+  .header__searchLine {
+    width: 330px;
+  }
+
+  .header__sections {
+    margin-left: 173px;
+  }
+
+  input#search {
+    width: 308px;
+  }
+
+  .no-js .owl-carousel,
+  .owl-carousel.owl-loaded {
+    width: 330px !important;
+  }
+
+  .owl-stage-outer {
+    width: 355px !important;
+  }
+
+  .slider,
+  .slider__box {
+    width: 330px;
+    height: 130px;
+  }
+
+  .slider__box .item img {
+    width: 330px;
+    height: 130px;
+  }
+
+  .slider__text::before {
+    margin-top: 92px;
+    padding-top: 32px;
+    padding-left: 15px;
+    width: 151px;
+    height: 98px;
+    margin-left: -59px;
+    background-color: #F4F4F4;
+  }
+
+  .slider__text::after {
+    margin-top: 124px;
+    margin-left: -43px;
+  }
+
+  .slider__button {
+    display: none;
+  }
+
+  .slider__text::before {
+    margin-top: 92px;
+    padding-top: 30px;
+    padding-left: 15px;
+    width: 151px;
+    height: 100px;
+    margin-left: -59px;
+    background-color: #F4F4F4;
+  }
+
+  .slider__text::after {
+    margin-top: 100px;
+    margin-left: -43px;
+  }
+
+  .slider__box::before {
+    content: "С доставкой по";
+    margin-top: 72px;
+    margin-left: 16px;
+    font-size: 10px;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .slider__box::after {
+    content: "Краснодарскому краю";
+    margin-top: 84px;
+    margin-left: 16px;
+    font-size: 10px;
+    visibility: visible;
+    display: block;
+    position: absolute;
+  }
+
+  .slider__box .previous,
+  .slider .next {
+    display: none;
+  }
+
+  .bestsellers__modalWindow-box {
+    width: 70%;
+    left: 15%;
+    height: 30px;
+    padding-top: 11px;
+    }
+
+  .bestsellers__box {
+    width: 330px;
+  }
+
+  .bestsellers__box-item {
+    width: 162px;
+  }
+
+  .bestsellers__item-img {
+    margin-left: 16px;
+  }
+
+  .bestsellers__item-loverIcon {
+    margin-left: 129px;
+  }
+
+  .bestsellers__item-price,
+  .bestsellers__item-category,
+  .bestsellers__item-name,
+  .toBasket__sizesLable,
+  .toBasket__sizes {
+    margin-left: 11px;
+  }
+
+  .toBasket__depth-text,
+  .toBasket__height-text {
+    margin-left: 12px;
+  }
+
+  .toBasket__num {
+    margin-left: 12px;
+  }
+
+  .toBasket__depth-num {
+    margin-left: 25px;
+  }
+
+  .toBasket__x {
+    margin-left: 53px;
+  }
+
+  .toBasket__x-svg2 {
+    margin-left: 47px;
+  }
+
+  .toBasket__height-num {
+    margin-left: 27px;
+  }
+
+  .toBascet__add {
+    width: 140px;
+    margin-left: 11px;
+  }
+
+
 }
 
 @media screen and (max-width:320px) {

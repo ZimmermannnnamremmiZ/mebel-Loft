@@ -3069,13 +3069,16 @@ footer {
     margin-left: -43px;
   }
 
+
+  #slider {
+    z-index: 2;
+  }
+
   .slider__box::before {
     content: "С доставкой по";
     margin-top: 72px;
     margin-left: 16px;
     font-size: 10px;
-    visibility: visible;
-    display: block;
     position: absolute;
     z-index: 1;
   }
@@ -3085,8 +3088,6 @@ footer {
     margin-top: 84px;
     margin-left: 16px;
     font-size: 10px;
-    visibility: visible;
-    display: block;
     position: absolute;
   }
 

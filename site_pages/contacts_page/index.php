@@ -187,110 +187,114 @@
           </div>
           <img class="header__menu-etc-icon" src="/images/title_page/etc.svg" alt="search">
           </header>
-      <section class="navigation">
-        <p class="navigation__start">Главная</p>
-        <p class="navigation__simbol">/</p>
-        <p class="navigation__end">Контакты</p>
-      </section>
-      <section class="contacts">
-        <div class="contacts__leftSideArea">
-          <div class="contacts__title">
-            Свяжитесь с нами
-          </div>
-          <form class="contacts__form" action="#" method="POST">
-            <div class="contacts__form-nameMailLabels">
-              <div class="contacts__form-nameLable">
-                Ваше имя
-              </div>
-              <div class="contacts__form-emailLable">
-                Ваш e-mail
-              </div>
+        <section class="navigation">
+          <p class="navigation__start">Главная</p>
+          <p class="navigation__simbol">/</p>
+          <p class="navigation__end">Контакты</p>
+        </section>
+        <section class="contacts">
+          <div class="contacts__leftSideArea">
+            <div class="contacts__title">
+              Свяжитесь с нами
             </div>
-              <input type="text" class="contacts__form-nameInput">
-              <input type="text" class="contacts__form-emailInput">
-              <div class="contacts__form-messageLable">
-                Сообщение
+            <form class="contacts__form" action="#" method="POST">
+              <div class="contacts__form-nameMailLabels">
+                <div class="contacts__form-nameLable">
+                  Ваше имя
+                </div>
+                <div class="contacts__form-emailLable">
+                  Ваш e-mail
+                </div>
               </div>
-              <textarea type="text" class="contacts__form-messageInput"></textarea>
-              <div class="contacts__form-fileAndSubmit">
-                <div class="contacts__form-fileButton">
-                  <input id="file" class="contacts__form-fileButtonInput" type="file" name="uploadFile"/>
-                  <label class="contacts__form-fileButtonLable" for="file">
-                      <i class="contacts__form-fileButtonIcon"></i>
-                      <span class="contacts__form-fileButtonText">Прикрепить файл</span>
-                  </label>
-              </div>
-                <input class="contacts__form-submit" type="submit" value="Отправить">
-              </div>
-          </form>
-        </div>
-        <div class="contacts__rightSideArea">
-          <div class="contacts__phoneAndMail">
-            <img class="contacts__phone--img" src="/images/title_page/phone_in_footer.svg" alt="empty">
-            <a class="contacts__phone" href="tel:89648999119">8 (964) 89 99 119</a>
-            <img class="contacts__mail--img" src="/images/title_page/mail.svg" alt="empty">
-            <a class="contacts__mail">mebel_loft_anapa@mail.ru</a>
+                <input type="text" class="contacts__form-nameInput">
+                <input type="text" class="contacts__form-emailInput">
+                <div class="contacts__form-messageLable">
+                  Сообщение
+                </div>
+                <textarea type="text" class="contacts__form-messageInput"></textarea>
+                <div class="contacts__form-fileAndSubmit">
+                  <div class="contacts__form-fileButton">
+                    <input id="file" class="contacts__form-fileButtonInput" type="file" name="uploadFile"/>
+                    <label class="contacts__form-fileButtonLable" for="file">
+                        <i class="contacts__form-fileButtonIcon"></i>
+                        <span class="contacts__form-fileButtonText">Прикрепить файл</span>
+                    </label>
+                </div>
+                  <input class="contacts__form-submit" type="submit" value="Отправить">
+                </div>
+            </form>
           </div>
-          <div class="contacts__instagram">
-            <img class="contacts__instagram--img" src="/images/title_page/inst.svg" alt="empty">
-            <a class="contacts__instagramText" href="#">INSTAGRAM</a>
-          </div>
-          <div class="contacts__address">
-            Адрес: г. Анапа, Анапское шоссе, 30 Ж/К Черное море
-          </div>
-        </div>
-      </section>
-      <section class="map">
-        <div class="map__title">Адрес нашей компании</div>
-        <iframe class="map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A28aaf99b6c2226fc98b2c93140ff49f41ddb264d5ea9c6ec609ae974159dd938&amp;source=constructor" width="1140" height="400" frameborder="0"></iframe>
-      </section>
-      <footer class="footer">
-        <div class="footer__navigation-leftSide">
-          <div class="footer__navigation">
-            <p class="footer__navigation-title">
-              НАВИГАЦИЯ
-            </p>
-            <div class="footer__navigation-item">
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Кухни</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Прихожие</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Шкафы</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Спальни</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Офисная мебель</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Матрасы</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Гостинные</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Детская</a>
-              <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
+          <div class="contacts__rightSideArea">
+            <div class="contacts__phoneAndMail">
+              <img class="contacts__phone--img" src="/images/title_page/phone_in_footer.svg" alt="empty">
+              <a class="contacts__phone" href="tel:89648999119">8 (964) 89 99 119</a>
+              <img class="contacts__mail--img" src="/images/title_page/mail.svg" alt="empty">
+              <a class="contacts__mail">mebel_loft_anapa@mail.ru</a>
             </div>
-            <div class="footer__navigation-item2">
-              <a class="footer__navigation-stock" href="/site_pages/catalog_page/index.php">Акция</a>
-              <a class="footer__navigation-newItems" href="/site_pages/catalog_page/index.php">Новинки</a>
+            <div class="contacts__instagram">
+              <img class="contacts__instagram--img" src="/images/title_page/inst.svg" alt="empty">
+              <a class="contacts__instagramText" href="#">INSTAGRAM</a>
+            </div>
+            <div class="contacts__address">
+              Адрес: г. Анапа, Анапское шоссе, 30 Ж/К Черное море
             </div>
           </div>
+        </section>
+        <section class="map">
+          <div class="map__title">Адрес нашей компании</div>
+          <iframe class="map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A28aaf99b6c2226fc98b2c93140ff49f41ddb264d5ea9c6ec609ae974159dd938&amp;source=constructor" width="1140" height="400" frameborder="0"></iframe>
+        </section>
+      </div>
+      <div class="footer_1400">
+        <div class="container">
+          <footer>
+          <div class="footer__navigation-leftSide">
+            <div class="footer__navigation">
+              <p class="footer__navigation-title">
+                НАВИГАЦИЯ
+              </p>
+              <div class="footer__navigation-item">
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Кухни</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Прихожие</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Шкафы</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Спальни</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Офисная мебель</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Матрасы</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Гостинные</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Детская</a>
+                <a class="footer__navigation-itemText" href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
+              </div>
+              <div class="footer__navigation-item2">
+                <a class="footer__navigation-stock" href="/site_pages/catalog_page/index.php">Акция</a>
+                <a class="footer__navigation-newItems" href="/site_pages/catalog_page/index.php">Новинки</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__navigation-rightSide">
+            <div class="footer__contacts">
+              <img class="footer__contacts-logo" src="/images/title_page/LM.svg" alt="empty">
+            </div>
+            <div class="footer__contacts-adres">
+              г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
+            </div>
+            <div class="footer__contacts-contacts">
+              <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
+              <p class="footer__contacts-phoneText">
+                8 (964) 89 99 119
+              </p>
+              <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
+              <p class="footer__contacts-instagramText">
+                INSTAGRAM
+              </p>
+              <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
+              <p class="footer__contacts-mailText">
+                mebel_loft_anapa@mail.ru
+              </p>
+            </div>
+          </div>
+          </footer>
         </div>
-        <div class="footer__navigation-rightSide">
-          <div class="footer__contacts">
-            <img class="footer__contacts-logo" src="/images/title_page/LM.svg" alt="empty">
-          </div>
-          <div class="footer__contacts-adres">
-            г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
-          </div>
-          <div class="footer__contacts-contacts">
-            <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
-            <p class="footer__contacts-phoneText">
-              8 (964) 89 99 119
-            </p>
-            <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
-            <p class="footer__contacts-instagramText">
-              INSTAGRAM
-            </p>
-            <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
-            <p class="footer__contacts-mailText">
-              mebel_loft_anapa@mail.ru
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
+      </div>
     <script src="../scripts/menu_for_960px.js"></script>
     <script src="script.js"></script>
     <script src="../scripts/owl carousel/owl_carousel_init.js"></script>

@@ -537,7 +537,6 @@
     margin-top: 30px;
     display: block;
     align-self: flex-start;
-    z-index: 9999;
   }
   .catalog__menu {
     display: none;

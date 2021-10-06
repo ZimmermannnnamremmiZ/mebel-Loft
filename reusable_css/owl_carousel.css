@@ -208,6 +208,7 @@
   background-color: #fff;
   z-index: 99;
   min-width: 139px;
+  max-width: 200px;
   text-align: start;
   padding-left: 25px;
   padding-right: 25px;
@@ -263,10 +264,6 @@
 @media screen and (max-width:1180px) {
   .container {
     width: 1040px;
-  }
-
-  .header__menu {
-    margin-top: 10px;
   }
 
   .carousel_icon {
@@ -346,6 +343,10 @@
   .header__sections-about,
   .header__sections-contacts {
     display: none;
+  }
+
+  .header__menu {
+    margin-top: 10px;
   }
 
   .hamburger-menu {
@@ -632,6 +633,11 @@
     background-position: 24px 23px;
   }
 
+  .childrensroom:hover .dropdown__childrensroom {
+    display: flex;
+    margin-left: -56px;
+  }
+
   .footer__contacts-instagramText {
     margin-right: 19px;
   }
@@ -665,6 +671,11 @@
 
   .header__menu-cell h2 {
     padding-right: 21px;
+  }
+
+  .childrensroom:hover .dropdown__childrensroom {
+    display: flex;
+    margin-left: -64px;
   }
 
   .header__menu-etc-icon {
@@ -704,6 +715,7 @@
   }
 
   .carousel_icon {
+    padding-left: 18px;
     background-position: 15px 23px;
   }
 
@@ -711,8 +723,26 @@
     padding-right: 15px;
   }
 
+  .childrensroom:hover .dropdown__childrensroom {
+    display: flex;
+    margin-left: -74px;
+  }
+
+  .header__menu-cell:hover .header__menu-bedroom-icon {
+    background-image: url(/images/title_page/bedroom-icon-white.svg);
+    background-size: 28px 28.22px;
+    background-position: 17px 21px;
+  }
+
+  .header__menu-cell:hover .header__menu-livingroom-icon {
+    background-image: url(/images/title_page/livingroom-icon-white.svg);
+    background-size: 30px 30.03px;
+    background-position: 17px 20px;
+    box-shadow: none;
+  }
+
   .header__menu-etc-icon {
-    margin-left: 809px;
+    margin-left: 797px;
   }
 }
 
@@ -766,6 +796,16 @@
     padding-left: 19px;
   }
 
+  .office:hover .dropdown__office {
+    display: flex;
+    margin-left: -85px;
+  }
+
+  .childrensroom:hover .dropdown__childrensroom {
+    display: flex;
+    margin-left: -79px;
+  }
+
   .header__menu-cell h2 {
     padding-left: 1px;
     padding-right: 13px;
@@ -791,6 +831,21 @@
     padding-right: 27px;
   }
 
+  .closet:hover .dropdown__closet {
+    display: flex;
+    margin-left: -44px;
+  }
+
+  .office:hover .dropdown__office {
+    display: flex;
+    margin-left: -61px;
+  }
+
+  .childrensroom:hover .dropdown__childrensroom {
+    display: flex;
+    margin-left: -56px;
+  }
+
   .header__menu-etc-icon {
     margin-left: 580px;
   }
@@ -810,8 +865,18 @@
     padding-right: 17px;
   }
 
+  .closet:hover .dropdown__closet {
+    display: flex;
+    margin-left: -53px;
+  }
+
+  .childrensroom:hover .dropdown__childrensroom {
+    display: flex;
+    margin-left: -66px;
+  }
+
   .header__menu-etc-icon {
-    margin-left: 530px;
+    margin-left: 527px;
   }
 }
 
@@ -823,12 +888,17 @@
 
   .header__menu {
     box-shadow: none;
+    margin-top: 30px;
   }
 
   .header__menu-cell {
     flex-direction: column;
     margin-left: 10px;
     width: 50px;
+  }
+
+  .owl-stage-outer {
+    width: 100% !important;
   }
 
   .carousel_icon {
@@ -1037,6 +1107,11 @@
     padding: 0;
     margin: 0 auto;
     font-size: 9px;
+  }
+
+  .office:hover .dropdown__office {
+    display: flex;
+    margin-left: -200px;
   }
 
   .office {

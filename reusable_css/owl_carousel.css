@@ -193,7 +193,7 @@
   position: absolute;
   width: 4.27px;
   height: 17px;
-  margin-top: 80px;
+  margin-top: -82px;
   margin-left: 1072px;
   padding-left: 19px;
   padding-top: 39px;
@@ -638,25 +638,6 @@
     margin-left: -56px;
   }
 
-  .footer__contacts-instagramText {
-    margin-right: 19px;
-  }
-
-  .footer__contacts-phoneText {
-    margin-right: 19px;
-  }
-
-  .footer__navigation {
-    margin-left: 0;
-  }
-
-  .footer__contacts-logo,
-  .footer__contacts-logo,
-  .footer__contacts-adres,
-  .footer__contacts-contacts {
-    padding-right: 0;
-  }
-
 }
 
 @media screen and (max-width:980px) {
@@ -779,10 +760,6 @@
     height: 253px;
   }
 
-  .footer__contacts-contacts {
-    margin-left: -288px;
-    position: absolute;
-  }
 }
 
 @media screen and (max-width:740px) {
@@ -926,6 +903,10 @@
     margin-left: 21.5px;
   }
 
+  .header__menu-cell:hover .carousel_icon {
+    box-shadow: none;
+  }
+
   .kitchen {
     margin-left: 0;
   }
@@ -976,24 +957,6 @@
     display: none;
   }
 
-  .footer__navigation {
-    width: 243px;
-  }
-
-
-  .footer__navigation-stock {
-    display: none;
-  }
-
-  .footer__navigation-item {
-    grid-template-columns: 0.7fr 1.8fr 2.1fr;
-    grid-gap: 8px;
-    width: 327px;
-  }
-
-  .footer__navigation-newItems {
-    display: none;
-  }
 
 }
 
@@ -1013,29 +976,6 @@
 
   .menu-stock:hover .dropdown__menu-stock {
     margin-left: -150px;
-  }
-
-  .footer__navigation-item {
-    grid-template-columns: 0.5fr 0.8fr 1.1fr;
-    width: 299px;
-  }
-
-  .footer__contacts-logo {
-    width: 46px;
-    height: 32px;
-  }
-
-  .footer__navigation-title,
-  .footer__navigation-itemText,
-  .footer__contacts-adres,
-  .footer__contacts-phoneText,
-  .footer__contacts-instagramText,
-  .footer__contacts-mailText {
-    font-size: 11px;
-  }
-
-  .footer__contacts-contacts {
-    margin-left: -260px;
   }
 
 }
@@ -1060,9 +1000,6 @@
     margin-left: -121px;
   }
 
-  .footer {
-    display: none;
-  }
 }
 
 @media screen and (max-width:380px) {

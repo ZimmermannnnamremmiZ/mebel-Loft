@@ -1,0 +1,244 @@
+footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 234px;
+  box-shadow: 0px -4px 10px rgb(0 0 0 / 3%);
+  font-size: 14px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footer__navigation {
+  width: 390px;
+  height: 148px;
+  margin-top: 54px;
+}
+
+.footer__navigation-item {
+  margin-top: 11px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 0.7fr 0.8fr 0.6fr;
+  grid-gap: 9px;
+}
+
+.footer__navigation-itemText {
+  font-size: 14px;
+  line-height: 126.69%;
+  text-decoration: none;
+  color: #3C3C3C;
+}
+
+.footer__navigation-item2 {
+  display: flex;
+  margin-top: 34px;
+}
+
+.footer__navigation-stock {
+
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 126.69%;
+  color: #D74444;
+}
+
+.footer__navigation-newItems {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 126.69%;
+  margin-left: 30px;
+  color: #414141;
+}
+
+.footer__navigation-rightSide {
+  text-align: right;
+}
+
+.footer__contacts-logo {
+  width: 55px;
+  height: 49px;
+  padding-top: 48px;
+}
+
+.footer__navigation-title {
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 126.69%;
+}
+
+.footer__contacts-adres {
+  font-size: 14px;
+  line-height: 126.69%;
+  padding-top: 16px;
+  color: #414141;
+}
+
+.footer__contacts-contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  align-items: center;
+}
+
+.footer__contacts-phoneImg {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.footer__contacts-phoneText {
+  font-size: 14px;
+  line-height: 126.69%;
+  color: #414141;
+  margin-right: 29px;
+
+}
+
+.footer__contacts-instagramImg {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.footer__contacts-instagramText {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 126.69%;
+  color: #414141;
+  margin-right: 29px;
+}
+
+.footer__contacts-mailImg {
+  width: 16.33px;
+  height: 14px;
+  margin-right: 10.67px;
+}
+
+.footer__contacts-mailText {
+  font-size: 14px;
+  line-height: 126.69%;
+  color: #414141;
+}
+
+@media screen and (max-width:1024px) {
+  .footer__contacts-instagramText {
+    margin-right: 19px;
+  }
+
+  .footer__contacts-phoneText {
+    margin-right: 19px;
+  }
+
+  .footer__navigation {
+    margin-left: 0;
+  }
+
+  .footer__contacts-logo,
+  .footer__contacts-logo,
+  .footer__contacts-adres,
+  .footer__contacts-contacts {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width:880px) {
+  .footer__contacts-contacts {
+    margin-left: -288px;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .footer__navigation-newItems {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .footer__navigation-leftSide {
+    width: 60%;
+  }
+
+  .footer__navigation {
+    width: 100%;
+  }
+
+  .footer__navigation-item {
+    grid-template-columns: 0.6fr 0.8fr 0.7fr;
+  }
+
+  .footer__navigation-item2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width:560px) {
+  footer {
+    height: 190px;
+  }
+
+  .footer__navigation {
+    height: auto;
+    margin-top: 24px;
+  }
+
+  .footer__contacts-logo {
+    padding-top: 24px;
+  }
+
+  .footer__navigation-leftSide {
+    width: 64%;
+  }
+
+  .footer__navigation-item {
+    grid-template-columns: 0.7fr 2.2fr 2.1fr;
+    grid-gap: 8px;
+  }
+
+  .footer__contacts-contacts {
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  footer {
+    height: 165px;
+  }
+
+  .footer__navigation-item {
+    grid-template-columns: 0.5fr 0.8fr 1.1fr;
+    width: 299px;
+  }
+
+  .footer__contacts-logo {
+    width: 46px;
+    height: 32px;
+  }
+
+  .footer__navigation-title,
+  .footer__navigation-itemText,
+  .footer__contacts-adres,
+  .footer__contacts-phoneText,
+  .footer__contacts-instagramText,
+  .footer__contacts-mailText {
+    font-size: 11px;
+  }
+
+  .footer__contacts-contacts {
+    margin-left: -260px;
+  }
+
+}
+
+
+@media screen and (max-width:420px) {
+  .footer {
+    display: none;
+  }
+}

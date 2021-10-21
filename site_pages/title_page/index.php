@@ -274,10 +274,7 @@
         <div class="bestsellers__head-text">
           Хиты продаж
         </div>
-        <div class="bestsellers__discount">
-          <img class="bestsellers__discount-logo" src="/images/title_page/Vector.svg" alt="empty">
-          <div class="bestsellers__discount-num">-25%</div>
-        </div>
+
         <div class="bestsellers__box">
           <?php
               $dbUser = 'root';
@@ -292,6 +289,16 @@
               while($row = $results->fetch_assoc()){
                 echo '
                 <div class="bestsellers__box-item" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                ';
+                if($row["discount"]> 0) {
+                  echo '
+                  <div class="bestsellers__discount">
+                  <img class="bestsellers__discount-logo" src="/images/title_page/Vector.svg" alt="empty">
+                  <div class="bestsellers__discount-num">-'.$row["discount"].'%</div>
+                  </div>
+                  ';
+                }
+                echo '
                 <img class="bestsellers__item-loverIcon" src="/images/title_page/список желаемого.svg" alt="empty">
                 <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
                 <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
@@ -322,7 +329,7 @@
                     <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].')">Добавить в корзину</button>
                 </div>
               </div>
-                ';
+              ';
               };
             ?>
         </div>

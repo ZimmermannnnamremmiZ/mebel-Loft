@@ -193,8 +193,8 @@
   position: absolute;
   width: 4.27px;
   height: 17px;
-  margin-top: -82px;
   margin-left: 1072px;
+  margin-top: -81px;
   padding-left: 19px;
   padding-top: 39px;
 }
@@ -278,11 +278,6 @@
     margin-left: 998px;
   }
 
-  .slider__box {
-    width: 1040px;
-  }
-
-
 }
 
 @media screen and (max-width:1120px) {
@@ -300,10 +295,6 @@
 
   .header__menu-etc-icon {
     margin-left: 976px;
-  }
-
-  .slider__box {
-    width: 1020px;
   }
 
 }
@@ -327,10 +318,6 @@
     margin-left: 938px;
   }
 
-  .slider__box {
-    width: 980px;
-  }
-
 }
 
 
@@ -347,251 +334,6 @@
 
   .header__menu {
     margin-top: 10px;
-  }
-
-  .hamburger-menu {
-    display: block;
-    margin-left: 6px;
-  }
-
-  #menu__toggle {
-    opacity: 0;
-  }
-
-  #menu__toggle:checked~.menu__btn>.hamburger__topline {
-    transform: scaleX(1);
-  }
-
-  #menu__toggle:checked~.menu__btn>.hamburger__midline {
-    transform: scaleX(0.6) translateX(6px);
-  }
-
-  #menu__toggle:checked~.menu__btn>.hamburger__botline {
-    transform: scaleX(0.4) translateX(13px);
-  }
-
-  .menu__btn {
-    display: flex;
-    margin-left: 0px;
-    align-items: center;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-  }
-
-  .hamburger__topline,
-  .hamburger__midline,
-  .hamburger__botline {
-    display: block;
-    position: absolute;
-
-    width: 18.33px;
-    height: 2px;
-
-    background-color: #616161;
-
-    transition-duration: .25s;
-  }
-
-  .hamburger__topline {
-    content: '';
-    top: 54px;
-  }
-
-  .hamburger__midline {
-    content: '';
-    top: 59px;
-  }
-
-  .hamburger__botline {
-    content: '';
-    top: 64px;
-  }
-
-  .menu__box {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-left: -32px;
-    margin-top: -44px;
-    visibility: hidden;
-    width: 227px;
-    list-style: none;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
-    transition-duration: .25s;
-    z-index: 9999;
-  }
-
-  .menu__box a {
-    text-decoration: none;
-    color: #414141;
-  }
-
-  .menu__closeBtn {
-    position: absolute;
-    margin-left: 194px;
-    margin-top: 22px;
-    width: 20px;
-    height: 20px;
-    background-image: url('/images/title_page/adaptive_960px/x.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .menu__h {
-    height: 15px;
-    font-size: 13px;
-    padding-top: 23px;
-    padding-bottom: 15px;
-    margin-left: 26px;
-  }
-
-  .menu__category {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  .menu__item {
-    display: block;
-    margin-left: 26px;
-    height: 31px;
-    padding-top: 15px;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: #414141;
-    transition-duration: .25s;
-
-  }
-
-  .menu__item:hover {
-    background-color: #61ad94;
-  }
-
-  .menu__about::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/Vector.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 1px;
-    background-size: 10px 11px;
-    padding-right: 35px;
-  }
-
-  .menu__home::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/Home.svg);
-    background-repeat: no-repeat;
-    background-position: 0px -2px;
-    padding-right: 35px;
-  }
-
-  .menu__contacts::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/@.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 1px;
-    background-size: 13px 13px;
-    padding-right: 35px;
-  }
-
-  .menu__kitchen::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/kitchen-icon.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 1px;
-    background-size: 13px 13px;
-    padding-right: 35px;
-  }
-
-  .menu__bedroom::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/bedroom-icon.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 1px;
-    background-size: 17px 13px;
-    padding-right: 35px;
-  }
-
-  .menu__livingroom::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/livingroom-icon.svg);
-    background-repeat: no-repeat;
-    background-size: 17px 13px;
-    padding-right: 35px;
-  }
-
-  .menu__hallways::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/closet-icon.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__office::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/office-icon.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__childrensroom::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/childrensroom-icon.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__stock a {
-    color: #E92D2D;
-  }
-
-  .menu__stock::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/stock.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__novelty::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/novelty.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__mattress::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/mattress.svg);
-    background-repeat: no-repeat;
-    background-size: 19px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__softFurniture::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/armchair.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__cupboard::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/cupboard.svg);
-    background-repeat: no-repeat;
-    background-size: 12px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__item:hover {
-    background-color: #CFD8DC;
   }
 
   .header__sections a {
@@ -623,7 +365,6 @@
   }
 
   .header__menu-etc-icon {
-    margin-top: 114px;
     margin-left: 929px;
     padding-left: 0;
   }
@@ -751,13 +492,6 @@
 
   .carousel_icon {
     padding-left: 20px;
-  }
-
-  .slider__box .item img {
-    margin-left: 0;
-    object-fit: cover;
-    width: 720px;
-    height: 253px;
   }
 
 }

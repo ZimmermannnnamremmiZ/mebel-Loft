@@ -410,13 +410,13 @@
       </footer>
     </div>
     <script src="linkShowMore.js"></script>
-    <script src="../scripts/filterBtn_for_960px.js"></script>
+    <script src="filterBtn_for_1024px.js"></script>
     <script src="../scripts/menu_for_960px.js"></script>
     <script src="selects.js"></script>
     <script src="price-picker.js"></script>
     <script src="filter-products.js"></script>
     <script src="sort_products.js"></script>
     <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
-    <script src="../basket_page/myCart.js"></script>
+    <script src="../scripts/cart/myCart.js"></script>
   </body>
 </html>

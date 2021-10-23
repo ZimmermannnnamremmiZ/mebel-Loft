@@ -13,8 +13,11 @@
   <title>Мебель Loft</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="/reusable_css/hamburger_menu.css">
+  <link rel="stylesheet" href="/reusable_css/owl_carousel.css">
+  <link rel="stylesheet" href="/reusable_css/footer.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="/site_pages/basket_page/myCart.js"></script>
+  <script src="../scripts/cart/myCart.js"></script>
   <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
 </head>
 
@@ -388,7 +391,7 @@
     </div>
     <script src="script.js"></script>
     <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
-    <script src="../scripts//menu_for_960px.js"></script>
+    <script src="../scripts//menu_for_1024px.js"></script>
 </body>
 
 </html>

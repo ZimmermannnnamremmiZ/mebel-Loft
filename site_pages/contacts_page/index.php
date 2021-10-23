@@ -12,7 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/reusable_css/header.css">
+    <link rel="stylesheet" href="/reusable_css/hamburger_menu.css">
     <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/reusable_css/owl_carousel.css">
+    <link rel="stylesheet" href="/reusable_css/footer.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
   </head>
@@ -245,9 +249,8 @@
           <iframe class="map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A28aaf99b6c2226fc98b2c93140ff49f41ddb264d5ea9c6ec609ae974159dd938&amp;source=constructor" width="1140" height="400" frameborder="0"></iframe>
         </section>
       </div>
-      <div class="footer_1400">
-        <div class="container">
-          <footer>
+      <footer class="footer footer_bottom">
+        <div class="footer__content container">
           <div class="footer__navigation-leftSide">
             <div class="footer__navigation">
               <p class="footer__navigation-title">
@@ -292,10 +295,9 @@
               </p>
             </div>
           </div>
-          </footer>
         </div>
-      </div>
-    <script src="../scripts/menu_for_960px.js"></script>
+      </footer>
+    <script src="../scripts/menu_for_1024px.js"></script>
     <script src="script.js"></script>
     <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
   </body>

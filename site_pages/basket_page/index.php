@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="myCart.js"></script>
+  <script src="../scripts/cart/myCart.js"></script>
   <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
 </head>
 <body onLoad="showMyCart()">
@@ -300,6 +300,6 @@
   </div>
   <script src="script.js"></script>
   <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
-  <script src="../scripts//menu_for_960px.js"></script>
+  <script src="../scripts/menu_for_1024px.js"></script>
 </body>
 </html>

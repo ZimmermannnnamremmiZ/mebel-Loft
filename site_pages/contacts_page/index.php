@@ -281,18 +281,24 @@
               г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
             </div>
             <div class="footer__contacts-contacts">
-              <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
-              <p class="footer__contacts-phoneText">
-                8 (964) 89 99 119
-              </p>
-              <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
-              <p class="footer__contacts-instagramText">
-                INSTAGRAM
-              </p>
-              <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
-              <p class="footer__contacts-mailText">
-                mebel_loft_anapa@mail.ru
-              </p>
+              <div class="footer__contacts-phone">
+                <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
+                <p class="footer__contacts-phoneText">
+                  8 (964) 89 99 119
+                </p>
+              </div>
+              <div class="footer__contacts-instagram">
+                <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
+                <p class="footer__contacts-instagramText">
+                  INSTAGRAM
+                </p>
+              </div>
+              <div class="footer__contacts-mail">
+                <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
+                <p class="footer__contacts-mailText">
+                  mebel_loft_anapa@mail.ru
+                </p>
+              </div>
             </div>
           </div>
         </div>

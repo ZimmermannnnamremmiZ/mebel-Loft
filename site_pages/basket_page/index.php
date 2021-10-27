@@ -10,7 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/reusable_css/header.css">
+    <link rel="stylesheet" href="/reusable_css/hamburger_menu.css">
+    <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/reusable_css/owl_carousel.css">
+    <link rel="stylesheet" href="/reusable_css/footer.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="../scripts/cart/myCart.js"></script>
   <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
@@ -250,7 +254,8 @@
               };
             ?>
       </div>
-      <footer class="footer footer-bottom">
+      <footer class="footer footer_bottom">
+        <div class="footer__content container">
           <div class="footer__navigation-leftSide">
             <div class="footer__navigation">
               <p class="footer__navigation-title">
@@ -281,25 +286,32 @@
               г. Анапа, Анапское шоссе,<br>30 Ж/К Черное море
             </div>
             <div class="footer__contacts-contacts">
-              <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
-              <p class="footer__contacts-phoneText">
-                8 (964) 89 99 119
-              </p>
-              <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
-              <p class="footer__contacts-instagramText">
-                INSTAGRAM
-              </p>
-              <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
-              <p class="footer__contacts-mailText">
-                mebel_loft_anapa@mail.ru
-              </p>
+              <div class="footer__contacts-phone">
+                <img class='footer__contacts-phoneImg' src="/images/title_page/phone_in_footer.svg" alt="empty">
+                <p class="footer__contacts-phoneText">
+                  8 (964) 89 99 119
+                </p>
+              </div>
+              <div class="footer__contacts-instagram">
+                <img class='footer__contacts-instagramImg' src="/images/title_page/inst.svg" alt="empty">
+                <p class="footer__contacts-instagramText">
+                  INSTAGRAM
+                </p>
+              </div>
+              <div class="footer__contacts-mail">
+                <img class='footer__contacts-mailImg' src="/images/title_page/mail.svg" alt="empty">
+                <p class="footer__contacts-mailText">
+                  mebel_loft_anapa@mail.ru
+                </p>
+              </div>
             </div>
           </div>
-        </footer>
+        </div>
+      </footer>
       </div>
   </div>
-  <script src="script.js"></script>
-  <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
   <script src="../scripts/menu_for_1024px.js"></script>
+    <script src="script.js"></script>
+    <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
 </body>
 </html>

@@ -636,20 +636,20 @@ body {
 
   .header__sections-phone {
     width: 115px;
-    margin-top: 18px;
+    margin-top: 15px;
     margin-left: 11px;
     font-size: 13px;
   }
 
   .header__phone-icon {
-    margin-left: -53px;
-    margin-top: 15px;
+    margin-left: -51px;
+    margin-top: 13px;
     background-image: url('/images/title_page/phone-white.svg');
   }
 
   .header__delivery-icon {
     margin-left: 18px;
-    margin-top: 16.46px;
+    margin-top: 14px;
     width: 29px;
     height: 19.92px;
     background-image: url('/images/title_page/delivery-icon-black.svg');
@@ -657,7 +657,7 @@ body {
   }
 
   .header__sections-delivery {
-    margin-top: 18px;
+    margin-top: 15px;
     font-size: 13px;
     margin-left: 12px;
   }
@@ -680,7 +680,7 @@ body {
 
   .header__logo {
     margin-left: 15px;
-    margin-top: 12px;
+    margin-top: 4px;
     height: 25px;
     width: 112.96px;
   }
@@ -1007,14 +1007,14 @@ body {
 
   .header__delivery-icon {
     margin-left: 20px;
-    margin-top: 15.46px;
+    margin-top: 9px;
     width: 29px;
     height: 17px;
   }
 
   .header__sections-delivery {
-    margin-top: 17px;
-    margin-left: 13px;
+    margin-top: 10px;
+    margin-left: 8px;
   }
 
   .header__searchLine-wishlist {
@@ -1029,7 +1029,6 @@ body {
   }
 
   .header__searchLine-profile {
-    margin-left: 28px;
     width: 15.87px;
     height: 20px;
   }
@@ -1174,6 +1173,11 @@ body {
 
   .header__delivery-icon {
     margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .header__sections-delivery {
+    margin-top: 16px;
   }
 
   .header__searchLine-icons {
@@ -1238,10 +1242,10 @@ body {
 
   .header__delivery-icon {
     margin-left: 11px;
-    margin-top: 6px;
     width: 31px;
-    height: 26px;
+    height: 27px;
     background-size: 30px 36px;
+    background-position-y: center;
   }
 
   .header__searchLine-wishlist {
@@ -1362,11 +1366,16 @@ body {
   }
 
   .bestsellers__item-img {
-    margin-left: 5px;
+    margin-left: 15px;
+    width: 140px;
   }
 
   .bestsellers__item-loverIcon {
     margin-left: 133px;
+  }
+
+  .bestsellers__discount {
+    margin-left: 14px;
   }
 
   .toBasket__x {
@@ -1395,17 +1404,18 @@ body {
     width: 458px;
   }
 
+  .header__delivery-icon {
+    margin-top: 8px;
+  }
+
   .header__sections-delivery {
     display: block;
+    margin-top: 14px;
   }
 
   .header__sections {
     margin-left: 233px;
     margin-top: 35px;
-  }
-
-  .header__searchLine-icons {
-    margin-top: 9px;
   }
 
   .header__menu-cell:hover .header__menu-bedroom-icon {
@@ -1476,6 +1486,10 @@ body {
 
   .bestsellers__item-loverIcon {
     margin-left: 197px;
+  }
+
+  .bestsellers__discount {
+    margin-left: 20px;
   }
 }
 
@@ -1632,6 +1646,11 @@ body {
 
   .bestsellers__item-loverIcon {
     margin-left: 147px;
+    margin-top: 13px;
+  }
+
+  .bestsellers__discount {
+    margin-left: 11px;
     margin-top: 13px;
   }
 
@@ -1836,13 +1855,18 @@ body {
     margin-left: 24.5px;
   }
 
+  .bestsellers__discount {
+    margin-left: 9px;
+    margin-top: 9px;
+  }
+
   .bestsellers__discount-logo {
     width: 14px;
     height: 14px;
   }
 
   .bestsellers__discount-num {
-    margin-left: 5px;
+    margin-left: 3px;
     font-size: 10px;
   }
 

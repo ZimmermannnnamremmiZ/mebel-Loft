@@ -118,7 +118,12 @@
 
 @media screen and (max-width:1180px) {
 
-  .header__sections-main,
+  .header__sections-main {
+    margin-left: 27px;
+  }
+
+  .header__sections-about,
+  .header__sections-contacts,
   .header__searchLine-input,
   .header__phone-icon,
   .header__delivery-icon,
@@ -128,12 +133,407 @@
     margin-left: 25px;
   }
 
-  .header__sections-about,
-  .header__sections-contacts {
-    margin-left: 26px;
-  }
-
   .header__searchLine-alarm2 {
     margin-left: 991px;
   }
+}
+
+@media screen and (max-width:1120px) {
+
+  .header__sections-main {
+    margin-left: 25px;
+  }
+
+  .header__searchLine-input,
+  .header__phone-icon,
+  .header__delivery-icon,
+  .header__searchLine-wishlist,
+  .header__searchLine-bag,
+  .header__searchLine-profile {
+    margin-left: 22px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 974px;
+  }
+}
+
+@media screen and (max-width:1080px) {
+
+  .header__sections-main {
+    margin-left: 27px;
+  }
+
+  .header__searchLine-input,
+  .header__phone-icon,
+  .header__delivery-icon,
+  .header__searchLine-wishlist,
+  .header__searchLine-bag,
+  .header__searchLine-profile {
+    margin-left: 28px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 926px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+
+  .header__logo {
+    margin-left: 15px;
+    height: 25px;
+    width: 112.96px;
+    margin-top: 4px;
+  }
+
+  .header__searchLine {
+    width: 100%;
+  }
+
+  .about__textBlock-head::before {
+    display: none;
+  }
+
+  .about {
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header__searchLine-input {
+    margin-left: 39px;
+    border: 1px solid #E5E5E5;
+    width: 223px;
+    height: 50px;
+    background-position: 15px 18px;
+    text-indent: 35px;
+    font-size: 15px;
+    padding: 1px 11px 0px 11px;
+  }
+
+  .header__delivery-icon {
+    margin-left: 31px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 108px;
+  }
+
+  .header__searchLine-bag,
+  .header__searchLine-profile {
+    margin-left: 29px;
+  }
+
+  .header__sections-main,
+  .header__sections-about,
+  .header__sections-contacts {
+    display: none;
+  }
+
+  .header__sections a {
+    font-size: 13px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 908px;
+  }
+}
+
+@media screen and (max-width:980px) {
+  .header__searchLine-wishlist {
+    margin-left: 48px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 848px;
+  }
+}
+
+@media screen and (max-width:920px) {
+
+  .header__searchLine-wishlist {
+    margin-left: 48px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 848px;
+  }
+
+  .header__searchLine-input {
+    margin-left: 28px;
+  }
+
+  .header__phone-icon {
+    margin-left: 26px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 21.3px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 808px;
+  }
+
+}
+
+
+@media screen and (max-width:880px) {
+
+  .header__logo {
+    margin-left: 12px;
+  }
+
+  .header__searchLine-input {
+    margin-left: 24px;
+  }
+
+  .header__phone-icon {
+    margin-left: 21px;
+  }
+
+  .header__sections-phone {
+    margin-left: 7px;
+  }
+
+  .header__delivery-icon {
+    margin-left: 21px;
+  }
+
+  .header__sections-delivery {
+    margin-left: 7px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 30.37px;
+  }
+
+  .header__searchLine-bag,
+  .header__searchLine-profile {
+    margin-left: 20px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 777px;
+  }
+
+}
+
+
+@media screen and (max-width:840px) {
+
+  .header__searchLine-input {
+    position: static;
+    width: 219px;
+    height: 30px;
+    margin-left: 40px;
+    padding: 4px 11px 4px 11px;
+    background-position: 15px 11px;
+  }
+
+  .header__phone-icon,
+  .header__sections-phone {
+    display: none;
+  }
+
+  .header__delivery-icon {
+    margin-left: 34px;
+  }
+
+  .header__sections-delivery {
+    margin-left: 8px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 59.51px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 677px;
+  }
+
+}
+
+@media screen and (max-width:740px) {
+
+  .header__searchLine-input {
+    margin-left: 20px;
+  }
+
+  .header__delivery-icon {
+    margin-left: 23px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 26.51px;
+  }
+
+  .header__searchLine-bag,
+  .header__searchLine-profile {
+    margin-left: 22px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 614px;
+  }
+}
+
+@media screen and (max-width:740px) {
+
+  .header__sections-delivery {
+    display: none;
+  }
+
+  .header__delivery-icon {
+    width: 31px;
+    height: 27px;
+    background-size: 30px 36px;
+    background-position-y: center;
+  }
+
+  .header__delivery-icon {
+    margin-left: 34px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 20.249px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 554px;
+  }
+
+}
+
+@media screen and (max-width:630px) {
+  .header__searchLine-input {
+    width: 178px;
+  }
+
+  .header__searchLine-bag, .header__searchLine-profile {
+    margin-left: 20px;
+  }
+
+  .header__delivery-icon {
+    margin-left: 23px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 16.24px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 496px;
+  }
+}
+
+@media screen and (max-width:560px) {
+
+  .header__searchLine-input {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 110px;
+    width: 458px;
+  }
+
+  .header__sections-delivery {
+    display: block;
+  }
+
+  .header__delivery-icon {
+    margin-left: 93px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 41.51px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 437px;
+  }
+}
+
+@media screen and (max-width:500px) {
+
+  .header__delivery-icon {
+    margin-left: 26px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 28.51px;
+  }
+
+  .header__searchLine-input {
+    width: 378px;
+  }
+
+  .header__searchLine-input {
+    width: 378px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 357px;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .header__sections-delivery {
+    display: none;
+  }
+
+  .header__delivery-icon {
+    margin-left: 62px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 19.24px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 317px;
+  }
+
+  .header__searchLine-input {
+    width: 338px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .header__delivery-icon {
+    margin-left: 33px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 18.24px;
+  }
+
+  .header__searchLine-input {
+    width: 308px;
+  }
+
+  .header__searchLine-alarm2 {
+    margin-left: 287px;
+  }
+}
+
+
+@media screen and (max-width:340px) {
+  .header__delivery-icon {
+    display: none;
+  }
+
+  .header__searchLine-input {
+    margin-left: 0;
+    margin-top: 90px;
+    width: 266px;
+  }
+
+  .header__searchLine-wishlist {
+    margin-left: 42.24px;
+}
+
+.header__searchLine-alarm2 {
+  margin-left: 246px;
+}
 }

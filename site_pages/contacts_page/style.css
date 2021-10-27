@@ -268,6 +268,7 @@ body {
   margin-top: 30px;
   position: relative;
   margin-bottom: 70px;
+  width: 100%;
 }
 
 @media screen and (max-width:1240px) {
@@ -281,29 +282,6 @@ body {
     width: 1040px;
   }
 
-  .header__sections-main {
-    margin-left: 30px;
-  }
-
-  .header__searchLine-input {
-    width: 230px;
-    margin-left: 30px;
-  }
-
-  .header__phone-icon,
-  .header__delivery-icon {
-    margin-left: 20px;
-  }
-
-  .header__searchLine-wishlist,
-  .header__searchLine-bag,
-  .header__searchLine-profile {
-    margin-left: 28px;
-  }
-
-  .map__map {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width:1120px) {
@@ -340,306 +318,6 @@ body {
     width: 960px;
   }
 
-  .header__logo {
-    margin-left: 15px !important;
-  }
-
-  .header__searchLine {
-    width: 959px;
-  }
-
-  .about__textBlock-head::before {
-    display: none;
-  }
-
-  .about {
-    margin-left: 0;
-    width: 959px;
-    justify-content: space-between;
-  }
-
-  .hamburger-menu {
-    display: block;
-  }
-
-  #menu__toggle {
-    opacity: 0;
-  }
-
-  #menu__toggle:checked~.menu__btn>.hamburger__topline {
-    transform: scaleX(1);
-  }
-
-  #menu__toggle:checked~.menu__btn>.hamburger__midline {
-    transform: scaleX(0.6) translateX(6px);
-  }
-
-  #menu__toggle:checked~.menu__btn>.hamburger__botline {
-    transform: scaleX(0.4) translateX(13px);
-  }
-
-  .menu__btn {
-    display: flex;
-    margin-left: 0px;
-    align-items: center;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-  }
-
-  .hamburger__topline,
-  .hamburger__midline,
-  .hamburger__botline {
-    display: block;
-    position: absolute;
-    width: 18.33px;
-    height: 2px;
-    background-color: #616161;
-    transition-duration: .25s;
-  }
-
-  .hamburger__topline {
-    content: '';
-    top: 48px;
-  }
-
-  .hamburger__midline {
-    content: '';
-    top: 53px;
-  }
-
-  .hamburger__botline {
-    content: '';
-    top: 58px;
-  }
-
-  .menu__box {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-left: -32px;
-    margin-top: -78px !important;
-    visibility: hidden;
-    width: 227px;
-    list-style: none;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
-    transition-duration: .25s;
-    z-index: 9999;
-  }
-
-  .menu__box a {
-    text-decoration: none;
-    color: #414141;
-  }
-
-  .menu__closeBtn {
-    position: absolute;
-    margin-left: 194px;
-    margin-top: 22px !important;
-    width: 20px;
-    height: 20px;
-    background-image: url('/images/title_page/adaptive_960px/x.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .menu__h {
-    height: 15px;
-    font-size: 13px;
-    padding-top: 23px;
-    padding-bottom: 15px;
-    margin-left: 26px;
-  }
-
-  .menu__category {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  .menu__item {
-    display: block;
-    margin-left: 26px;
-    height: 31px;
-    padding-top: 15px;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: #414141;
-    transition-duration: .25s;
-  }
-
-  .menu__item:hover {
-    background-color: #61ad94;
-  }
-
-  .menu__about::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/Vector.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 1px;
-    background-size: 10px 11px;
-    padding-right: 35px;
-  }
-
-  .menu__home::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/Home.svg);
-    background-repeat: no-repeat;
-    background-position: 0px -2px;
-    padding-right: 35px;
-  }
-
-  .menu__contacts::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/@.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 1px;
-    background-size: 13px 13px;
-    padding-right: 35px;
-  }
-
-  .menu__kitchen::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/kitchen-icon.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 1px;
-    background-size: 13px 13px;
-    padding-right: 35px;
-  }
-
-  .menu__bedroom::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/bedroom-icon.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 1px;
-    background-size: 17px 13px;
-    padding-right: 35px;
-  }
-
-  .menu__livingroom::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/livingroom-icon.svg);
-    background-repeat: no-repeat;
-    background-size: 17px 13px;
-    padding-right: 35px;
-  }
-
-  .menu__hallways::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/closet-icon.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__office::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/office-icon.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__childrensroom::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/childrensroom-icon.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__stock a {
-    color: #E92D2D;
-  }
-
-  .menu__stock::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/stock.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__novelty::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/novelty.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__mattress::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/mattress.svg);
-    background-repeat: no-repeat;
-    background-size: 19px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__softFurniture::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/armchair.svg);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__cupboard::before {
-    content: '';
-    background-image: url(/images/title_page/adaptive_960px/cupboard.svg);
-    background-repeat: no-repeat;
-    background-size: 12px 14px;
-    padding-right: 35px;
-  }
-
-  .menu__item:hover {
-    background-color: #CFD8DC;
-  }
-
-  .header__sections-main,
-  .header__sections-about,
-  .header__sections-contacts {
-    display: none;
-  }
-
-  .header__sections a,
-  .header__sections input,
-  .header__sections img {
-    margin-top: 0 !important;
-    font-size: 13px;
-  }
-
-  .header__searchLine-alarm2 {
-    margin-left: 902px;
-    padding-bottom: 6px !important;
-  }
-
-  .header__logo {
-    margin-left: 15px;
-  }
-
-  .header__searchLine-input {
-    width: 223px;
-    height: 50px;
-  }
-
-  input#search {
-    background-position: 15px 18px;
-    text-indent: 35px;
-    font-size: 15px;
-    padding: 1px 11px 0px 11px;
-  }
-
-  .header__sections {
-    align-items: center;
-  }
-
-  .header__searchLine-wishlist {
-    margin-left: 104px;
-  }
-
   .navigation,
   .contacts__title,
   .contacts__form,
@@ -660,25 +338,6 @@ body {
     margin-top: 122px;
   }
 
-  .map__map {
-    width: 959px;
-    margin-left: 0;
-  }
-
-  footer {
-    width: 930px;
-    padding: 0 15px;
-  }
-
-  .footer__navigation {
-    margin-left: 0;
-  }
-
-  .footer__contacts-logo,
-  .footer__contacts-adres,
-  .footer__contacts-contacts {
-    padding-right: 0;
-  }
 }
 
 @media screen and (max-width:980px) {
@@ -697,99 +356,25 @@ body {
   .container {
     width: 820px;
   }
+
+  .contacts__rightSideArea {
+    margin-left: 18px;
+  }
+
+  .contacts__phone--img,
+  .contacts__mail--img,
+  .contacts__instagram--img {
+    margin-right: 5px;
+  }
+
+  .contacts__phone {
+    margin-right: 11px;
+  }
 }
 
 @media screen and (max-width:840px) {
   .container {
     width: 720px;
-  }
-}
-
-@media screen and (max-width:768px) {
-
-  .container {
-    width: 720px;
-  }
-
-  header {
-    width: 720px;
-  }
-
-  .header__searchLine {
-    width: 720px;
-    margin: 0;
-  }
-
-  .header__sections {
-    align-items: center;
-    height: 115px;
-  }
-
-  .hamburger-menu {
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .header__logo {
-    margin-top: 13px;
-  }
-
-  .hamburger__topline {
-    width: 20px;
-    top: 50px;
-  }
-
-  .hamburger__midline {
-    width: 20px;
-    top: 56px;
-  }
-
-  .hamburger__botline {
-    width: 20px;
-    top: 62px;
-  }
-
-  input#search {
-    padding: 4px 11px 4px 11px;
-    background-position: 15px 11px;
-  }
-
-  .header__searchLine-input {
-    position: static;
-    width: 218px;
-    height: 30px;
-    margin-left: 40px;
-  }
-
-  .header__phone-icon {
-    display: none;
-  }
-
-  .header__sections-phone {
-    display: none;
-  }
-
-  .header__delivery-icon {
-    margin-left: 32.5px;
-    width: 33px;
-    height: 16.92px;
-    margin-top: 56.46px;
-  }
-
-  .header__sections-delivery {
-    margin-left: 8.5px;
-  }
-
-  .header__searchLine-wishlist {
-    margin-left: 37px;
-    width: 21.83px;
-    height: 19px;
-  }
-
-  .header__searchLine-alarm1,
-  .header__searchLine-alarm2 {
-    margin-left: 666px;
-    margin-top: 37px;
   }
 
   .contacts__leftSideArea {
@@ -823,55 +408,12 @@ body {
   .contacts__form-fileAndSubmit {
     margin-left: 85px;
   }
+}
 
-  .map__map {
+@media screen and (max-width:768px) {
+
+  .container {
     width: 720px;
-  }
-
-  footer {
-    width: 690px;
-  }
-
-  .footer__navigation {
-    width: 385px;
-  }
-
-  .footer__contacts-phoneImg {
-    position: absolute;
-    margin-top: -1px;
-    margin-left: -154px;
-  }
-
-  .footer__contacts-phoneText {
-    margin-left: -132px;
-    position: absolute;
-  }
-
-  .footer__contacts-logo {
-    width: 55px;
-    height: 49px;
-    padding-top: 48px;
-  }
-
-  .footer__contacts-adres {
-    padding-top: 17px;
-  }
-
-  .footer__contacts-contacts {
-    padding-top: 29px;
-  }
-
-  .footer__contacts-instagramText {
-    margin-right: 19px;
-  }
-
-  .footer__navigation-item {
-    margin-top: 11px;
-    display: grid;
-    justify-content: space-between;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 0.7fr 0.8fr 0.6fr;
-    grid-gap: 9px;
   }
 
 }
@@ -880,11 +422,70 @@ body {
   .container {
     width: 660px;
   }
+
+  .contacts__rightSideArea {
+    margin-left: 0;
+  }
+
+  .contacts__form-emailLable {
+    margin-left: 16.5%;
+  }
+
+  .contacts__form-nameInput {
+    width: 22%;
+  }
+
+  .contacts__form-emailInput {
+    width: 37%;
+  }
+
+  .contacts__form-messageInput {
+    width: 65%;
+  }
+
+  .contacts__form-fileAndSubmit {
+    margin-left: 10.3%;
+  }
+
+  .contacts__form-emailLable {
+    margin-left: 13.5%;
+  }
+
+  .contacts__form-nameInput {
+    width: 19%;
+  }
+
+  .contacts__form-emailInput {
+    width: 34%;
+  }
+
+  .contacts__form-messageInput {
+    width: 59.5%;
+  }
+
+  .contacts__form-fileAndSubmit {
+    margin-left: 4.8%;
+  }
+
+  .contacts__phone--img,
+  .contacts__mail--img,
+  .contacts__instagram--img {
+    margin-right: 2px;
+  }
+
+  .contacts__phone {
+    margin-right: 7px;
+  }
+
 }
 
 @media screen and (max-width:680px) {
   .container {
     width: 600px;
+  }
+
+  .contacts__rightSideArea {
+    margin-left: 14px;
   }
 }
 
@@ -892,11 +493,44 @@ body {
   .container {
     width: 540px;
   }
+
+  .contacts__phoneAndMail {
+    flex-wrap: wrap;
+  }
+
+  .contacts__phone--img {
+    margin-left: 27px;
+  }
+
+  .contacts__phone {
+    margin-right: 79px;
+  }
+
+  .contacts__mail--img,
+  .contacts__instagram--img,
+  .contacts__address {
+    margin-top: 18px;
+    margin-left: 26px;
+  }
+
+  .contacts__mail,
+  .contacts__instagramText {
+    margin-top: 16px;
+  }
+
 }
 
 @media screen and (max-width:560px) {
   .container {
     width: 480px;
+  }
+
+  .contacts__rightSideArea {
+    margin-left: 45px;
+  }
+
+  .contacts__phone {
+    margin-right: 35px;
   }
 }
 
@@ -904,12 +538,95 @@ body {
   .container {
     width: 400px;
   }
+
+  .contacts__form {
+    width: 100%;
+  }
+
+  .contacts {
+    display: block;
+  }
+
+  .contacts__leftSideArea {
+    width: 100%;
+  }
+
+  .contacts__form-nameInput {
+    width: 35%;
+  }
+
+  .contacts__form-emailLable {
+    margin-left: 28.5%;
+  }
+
+  .contacts__form-emailInput {
+    width: 52%;
+  }
+
+  .contacts__form-messageInput {
+    width: 94.2%;
+  }
+
+  .contacts__form-fileAndSubmit {
+    margin-left: 0;
+  }
+
+  .contacts__phoneAndMail {
+    flex-wrap: nowrap;
+    margin-top: 40px;
+  }
+
+  .contacts__rightSideArea {
+    margin-left: 0;
+  }
+
+  .contacts__phone--img,
+  .contacts__mail--img,
+  .contacts__instagram--img,
+  .contacts__address {
+    margin-left: 0;
+  }
+
+  .contacts__mail--img,
+  .contacts__mail {
+    margin-top: 0;
+  }
+
+  .contacts__instagramText {
+    margin-top: 19px;
+  }
+
+  .map__map {
+    height: 250px;
+    margin-bottom: 40px;
+  }
+
+  .map__title {
+    margin-top: 40px;
+  }
+
 }
 
 
 @media screen and (max-width:420px) {
   .container {
     width: 360px;
+  }
+
+  .contacts__form-nameInput {
+    width: 34%;
+  }
+
+  .contacts__form-emailLable {
+    margin-left: 26.7%;
+  }
+
+  .contacts__form-emailInput {
+    width: 51%;
+  }
+
+  .contacts__form-messageInput {
+    width: 93.2%;
   }
 }
 
@@ -923,8 +640,26 @@ body {
   .container {
     width: 290px;
   }
+
+  .contacts__form-emailLable {
+    margin-left: 22.7%;
+  }
+
+  .contacts__form-nameInput {
+    width: 32%;
+  }
+
+  .contacts__form-emailInput {
+    width: 49%;
+  }
+
+  .contacts__form-messageInput {
+    width: 91.2%;
+  }
+
+  .contacts__phone {
+    margin-right: 17px;
+  }
 }
 
-@media screen and (max-width:335px) {
-
-}
+@media screen and (max-width:335px) {}

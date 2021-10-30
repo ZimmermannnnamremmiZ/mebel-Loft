@@ -1264,6 +1264,10 @@ body {
     width: 185px;
   }
 
+  .bestsellers__discount {
+    margin-left: 14px;
+  }
+
   .bestsellers__item-price,
   .bestsellers__item-category,
   .bestsellers__item-name,

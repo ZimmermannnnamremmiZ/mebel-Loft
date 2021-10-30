@@ -246,7 +246,7 @@
         </section>
         <section class="map">
           <div class="map__title">Адрес нашей компании</div>
-          <iframe class="map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A28aaf99b6c2226fc98b2c93140ff49f41ddb264d5ea9c6ec609ae974159dd938&amp;source=constructor" width="1140" height="400" frameborder="0"></iframe>
+          <iframe class="map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A28aaf99b6c2226fc98b2c93140ff49f41ddb264d5ea9c6ec609ae974159dd938&amp;source=constructor" width="1140" height="400" frameborder="0" loading="lazy"></iframe>
         </section>
       </div>
       <footer class="footer footer_bottom">

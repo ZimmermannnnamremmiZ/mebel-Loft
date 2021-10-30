@@ -176,6 +176,11 @@
   .header__searchLine-alarm2 {
     margin-left: 926px;
   }
+
+  .header__sections-main {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width:1024px) {
@@ -377,34 +382,35 @@
   .header__searchLine-alarm2 {
     margin-left: 614px;
   }
+
+  .header__delivery-icon {
+    width: 29px;
+    height: 17px;
+  }
 }
 
-@media screen and (max-width:740px) {
-
+@media screen and (max-width:680px) {
   .header__sections-delivery {
     display: none;
   }
 
   .header__delivery-icon {
+    margin-left: 34px;
     width: 31px;
     height: 27px;
     background-size: 30px 36px;
     background-position-y: center;
   }
 
-  .header__delivery-icon {
-    margin-left: 34px;
-  }
-
   .header__searchLine-wishlist {
-    margin-left: 20.249px;
+    margin-left: 20px;
   }
 
   .header__searchLine-alarm2 {
-    margin-left: 554px;
+    margin-left: 555px;
   }
-
 }
+
 
 @media screen and (max-width:630px) {
   .header__searchLine-input {

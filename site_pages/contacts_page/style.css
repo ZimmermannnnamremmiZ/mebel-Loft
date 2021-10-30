@@ -296,20 +296,6 @@ body {
     width: 980px;
   }
 
-  .header__sections-main {
-    display: none;
-  }
-
-  .header__searchLine-wishlist,
-  .header__searchLine-bag,
-  .header__searchLine-profile {
-    margin-left: 35.8px;
-  }
-
-  .header__phone-icon,
-  .header__delivery-icon {
-    margin-left: 62.98px;
-  }
 }
 
 

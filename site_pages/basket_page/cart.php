@@ -38,6 +38,16 @@ if ($action == 'show') {
                     <div class="shoping__item">
                         <img class="shoping__img" src="'.$row["image"].'">
                         <div class="item_title">'.$row["name"].'</div>
+            ';
+            if($row["discount"]> 0) {
+                echo '
+                    <div class="bestsellers__discount">
+                        <img class="bestsellers__discount-logo" src="/images/title_page/Vector.svg" alt="empty">
+                        <div class="bestsellers__discount-num">-'.$row["discount"].'%</div>
+                    </div>
+                ';
+            }
+                        echo '
                         <div class="item_price">'.$row["price"].'</div>
                         <div class="item_textQuantity">Количество:</div>
                         <div class="item_quantity">'.$num.'</div>

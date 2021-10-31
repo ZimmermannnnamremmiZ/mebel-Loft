@@ -18,5 +18,28 @@ document.addEventListener("DOMContentLoaded", function() {
     let item = el.querySelector('.bestsellers__item-price').textContent;
     el.querySelector('.bestsellers__item-price').textContent = parseInt(item.trim()).toLocaleString('ru-RU') + "₽";
   });
+
+  
 });
 // spaces in prices (end)
+
+
+
+
+
+
+
+
+
+
+
+// const price = $(".bestsellers__item-price").text();
+// const discont = $("bestsellers__discount-num").text();
+
+// console.log(price)
+// // function PriceWithoutDiscont (price, discont) {
+// //   const res = (Number(price))/Number(discont)
+// //   console.log(res)
+// //   return res
+// // }
+// // $("bestsellers__discount").insertAfter(PriceWithoutDiscont(price, discont))

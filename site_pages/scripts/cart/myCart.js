@@ -40,6 +40,25 @@ function showMyCart(){
             if (shopingItems.length > 0) {
                 shopingItems.forEach((el) => {
                     let item = el.querySelector('.item_price').textContent;
+
+
+                    let dis = el.querySelector('.bestsellers__discount-num')
+                    if (dis !== null) {
+                        const discount = dis.textContent.replace(/\D+/g,"");
+                        const priceWithDiscountInPercent = 100 - discount;
+                        const res = (item*100)/priceWithDiscountInPercent;
+                        const fullRes = Math.round(res);
+                        let fullPrice = document.createElement('div')
+                        fullPrice.className = "bestsellers__fullPrice";
+                        fullPrice.innerHTML = fullRes;
+                        return fullPrice
+                    }
+
+
+
+
+
+
                     el.querySelector('.item_price').textContent = parseInt(item.trim()).toLocaleString('ru-RU') + "₽";
                 });
 

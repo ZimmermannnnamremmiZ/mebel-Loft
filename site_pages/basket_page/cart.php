@@ -31,6 +31,12 @@ if ($action == 'show') {
             $total += $bT;
             $quantityAll += $num;
 
+        // при наличии товара в корзине, возле неё появится точка
+        if($quantityAll > 0){
+            echo '
+            <img class="header__searchLine-alarm" src="/images/title_page/оповещение.svg">
+            ';
+        };
 
             echo'
             <div class="in-check">
@@ -38,17 +44,20 @@ if ($action == 'show') {
                     <div class="shoping__item">
                         <img class="shoping__img" src="'.$row["image"].'">
                         <div class="item_title">'.$row["name"].'</div>
+                        <div class="shoping__item_price-box">
             ';
-            if($row["discount"]> 0) {
-                echo '
-                    <div class="bestsellers__discount">
-                        <img class="bestsellers__discount-logo" src="/images/title_page/Vector.svg" alt="empty">
-                        <div class="bestsellers__discount-num">-'.$row["discount"].'%</div>
-                    </div>
-                ';
-            }
-                        echo '
-                        <div class="item_price">'.$row["price"].'</div>
+        if($row["discount"]> 0) {
+            echo '
+                            <div class="shoping__item-discount">
+                                <img class="shoping__item-discount-logo" src="/images/title_page/Vector.svg" alt="empty">
+                                <div class="shoping__item-discount-num">-'.$row["discount"].'%</div>
+                            </div>
+            ';
+        }
+            echo '
+                            <div class="shoping__item_withoutDiscount"></div>
+                            <div class="item_price">'.$row["price"].'</div>
+                        </div>
                         <div class="item_textQuantity">Количество:</div>
                         <div class="item_quantity">'.$num.'</div>
                         <div class="item_size">Размер(Ш×Д×В):</div>
@@ -102,12 +111,7 @@ echo '
     ';
 
 
-    // при наличии товара в корзине, возле неё появится точка
-    if($quantityAll > 0){
-                echo '
-                <img class="header__searchLine-alarm" src="/images/title_page/оповещение.svg">
-                ';
-                };
+
 
 if ($action == 'add') {
     // Считываем уже имеющуюся корзину

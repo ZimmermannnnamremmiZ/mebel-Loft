@@ -52,11 +52,21 @@ document.addEventListener('click', function(event) {
   });
 
 
-// spaces in prices (start)
+// spaces in price and in price without discount  (start)
 const boxItems = document.querySelectorAll('.bestsellers__box-item');
 
 boxItems.forEach((el) => {
     let item = el.querySelector('.bestsellers__item-price').textContent;
     el.querySelector('.bestsellers__item-price').textContent = parseInt(item.trim()).toLocaleString('ru-RU') + "₽";
+
+    let itemPrice = (el.querySelector(".bestsellers__item-price").innerHTML).replace(/\D+/g, "");
+    let disсount = el.querySelector(".bestsellers__discount-num");
+    if (disсount !== null) {
+      const discountNum = disсount.textContent.replace(/\D+/g, "");
+      const priceWithDiscountInPercent = 100 - discountNum;
+      const res = (itemPrice * 100) / priceWithDiscountInPercent;
+      const fullRes = Math.round(res);
+      el.querySelector(".bestsellers__fullPrice").innerHTML = fullRes.toLocaleString('ru-RU') + "₽";
+    }
   });
-// spaces in prices (end)
+

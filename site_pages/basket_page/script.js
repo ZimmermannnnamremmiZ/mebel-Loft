@@ -17,29 +17,17 @@ document.addEventListener("DOMContentLoaded", function() {
   boxItems.forEach((el) => {
     let item = el.querySelector('.bestsellers__item-price').textContent;
     el.querySelector('.bestsellers__item-price').textContent = parseInt(item.trim()).toLocaleString('ru-RU') + "₽";
+    let itemPrice = (el.querySelector(".bestsellers__item-price").innerHTML).replace(/\D+/g, "");
+    let disсount = el.querySelector(".bestsellers__discount-num");
+    if (disсount !== null) {
+      const discountNum = disсount.textContent.replace(/\D+/g, "");
+      const priceWithDiscountInPercent = 100 - discountNum;
+      const res = (itemPrice * 100) / priceWithDiscountInPercent;
+      const fullRes = Math.round(res);
+      el.querySelector(".bestsellers__fullPrice").innerHTML = fullRes.toLocaleString('ru-RU') + "₽";
+    }
   });
 
   
 });
 // spaces in prices (end)
-
-
-
-
-
-
-
-
-
-
-
-// const price = $(".bestsellers__item-price").text();
-// const discont = $("bestsellers__discount-num").text();
-
-// console.log(price)
-// // function PriceWithoutDiscont (price, discont) {
-// //   const res = (Number(price))/Number(discont)
-// //   console.log(res)
-// //   return res
-// // }
-// // $("bestsellers__discount").insertAfter(PriceWithoutDiscont(price, discont))

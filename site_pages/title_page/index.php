@@ -295,42 +295,45 @@
                 ';
                 if($row["discount"]> 0) {
                   echo '
-                  <div class="bestsellers__discount">
-                  <img class="bestsellers__discount-logo" src="/images/title_page/Vector.svg" alt="empty">
-                  <div class="bestsellers__discount-num">-'.$row["discount"].'%</div>
-                  </div>
+                    <div class="bestsellers__discount">
+                    <img class="bestsellers__discount-logo" src="/images/title_page/Vector.svg" alt="empty">
+                    <div class="bestsellers__discount-num">-'.$row["discount"].'%</div>
+                    </div>
                   ';
                 }
-                echo '
-                <img class="bestsellers__item-loverIcon" src="/images/title_page/список желаемого.svg" alt="empty">
-                <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
-                <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
-                  '.$row["name"].'
-                </div>
-                <div class="bestsellers__item-category" data-toggle-id="hidde__toBasket'.$row["id"].'">
-                '.$row["category"].'
-                </div>
-                <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket'.$row["id"].'">
-                '.$row["price"].'₽
-                </div>
-                <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
-                  <div class="toBasket__sizesLable">Размеры</div>
-                    <div class="toBasket__sizes">
-                      <div class="toBasket__width-text">ШИРИНА</div>
-                      <div class="toBasket__depth-text">ГЛУБИНА</div>
-                      <div class="toBasket__height-text">ВЫСОТА</div>
+                  echo '
+                    <img class="bestsellers__item-loverIcon" src="/images/title_page/список желаемого.svg" alt="empty">
+                    <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                    <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                      '.$row["name"].'
                     </div>
-                    <div class="toBasket__x">
-                      <img class="toBasket__x-svg1" src="/images/title_page/×.svg" alt="empty">
-                      <img class="toBasket__x-svg2" src="/images/title_page/×.svg" alt="empty">
+                    <div class="bestsellers__item-category" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                    '.$row["category"].'
                     </div>
-                    <div class="toBasket__num">
-                      <div class="toBasket__width-num">'.$row["width"].' СМ</div>
-                      <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
-                      <div class="toBasket__height-num">'.$row["height"].' СМ</div>
+                    <div class="bestsellers__item-priceBox">
+                      <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                      '.$row["price"].'₽
+                      </div>
+                      <div class="bestsellers__fullPrice"></div>
                     </div>
-                    <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].')">Добавить в корзину</button>
-                </div>
+                    <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
+                      <div class="toBasket__sizesLable">Размеры</div>
+                        <div class="toBasket__sizes">
+                          <div class="toBasket__width-text">ШИРИНА</div>
+                          <div class="toBasket__depth-text">ГЛУБИНА</div>
+                          <div class="toBasket__height-text">ВЫСОТА</div>
+                        </div>
+                        <div class="toBasket__x">
+                          <img class="toBasket__x-svg1" src="/images/title_page/×.svg" alt="empty">
+                          <img class="toBasket__x-svg2" src="/images/title_page/×.svg" alt="empty">
+                        </div>
+                        <div class="toBasket__num">
+                          <div class="toBasket__width-num">'.$row["width"].' СМ</div>
+                          <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
+                          <div class="toBasket__height-num">'.$row["height"].' СМ</div>
+                        </div>
+                        <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].')">Добавить в корзину</button>
+                    </div>
               </div>
               ';
               };

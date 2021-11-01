@@ -408,12 +408,25 @@ body {
   line-height: 13px;
 }
 
+.bestsellers__item-priceBox {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 9px;
+}
+
 .bestsellers__item-price {
   margin-left: 20px;
-  margin-top: 9px;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
+}
+
+.bestsellers__fullPrice{
+  font-size: 12px;
+  text-decoration-line: line-through;
+  color: #CCCCCC;
 }
 
 .toBasket {

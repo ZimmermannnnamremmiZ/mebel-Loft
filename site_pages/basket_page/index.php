@@ -22,8 +22,8 @@
 </head>
 
 <body onLoad="showMyCart()">
+<div class="wrap_1">
   <div class="container">
-    <div class="wrap_1">
       <header class="header">
         <div class="header__sections">
           <div class="hamburger-menu">
@@ -243,8 +243,11 @@
                   ';
                 }
                 echo '
-                <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket'.$row["id"].'">
-                '.$row["price"].'₽
+                <div class="bestsellers__item-priceBox">
+                  <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                  '.$row["price"].'₽
+                  </div>
+                  <div class="bestsellers__fullPrice"></div>
                 </div>
                 <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
                   <div class="toBasket__sizesLable">Размеры</div>

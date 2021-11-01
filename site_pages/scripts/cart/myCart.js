@@ -42,16 +42,14 @@ function showMyCart(){
                     let item = el.querySelector('.item_price').textContent;
 
 
-                    let dis = el.querySelector('.bestsellers__discount-num')
+                    let dis = el.querySelector('.shoping__item-discount-num')
                     if (dis !== null) {
                         const discount = dis.textContent.replace(/\D+/g,"");
                         const priceWithDiscountInPercent = 100 - discount;
                         const res = (item*100)/priceWithDiscountInPercent;
                         const fullRes = Math.round(res);
-                        let fullPrice = document.createElement('div')
-                        fullPrice.className = "bestsellers__fullPrice";
-                        fullPrice.innerHTML = fullRes;
-                        return fullPrice
+                        el.querySelector(".shoping__item_withoutDiscount").innerHTML = fullRes;
+
                     }
 
 

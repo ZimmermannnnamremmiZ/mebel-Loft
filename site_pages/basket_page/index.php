@@ -22,8 +22,8 @@
 </head>
 
 <body onLoad="showMyCart()">
-<div class="wrap_1">
-  <div class="container">
+  <div class="wrap_1">
+    <div class="container">
       <header class="header">
         <div class="header__sections">
           <div class="hamburger-menu">
@@ -37,7 +37,7 @@
               <div class="menu__closeBtn"></div>
               <div class="menu__h"><strong class="menu__menu">Меню</strong></div>
               <div class="menu__item"><strong class="menu__home"><a
-                    href="/site_pages/title_page/index.php">Главная</a></strong></div>
+                    href="/index.php">Главная</a></strong></div>
               <div class="menu__item menu__about"><a href="/site_pages/about_page/index.php">О нас</a></div>
               <div class="menu__item menu__contacts"><a href="/site_pages/contacts_page/index.php">Контакты</a></div>
               <div class="menu__h menu__category"><strong>Категории</strong></div>
@@ -55,9 +55,9 @@
               <div class="menu__item menu__cupboard"><a href="/site_pages/catalog_page/index.php">Шкафы</a></div>
             </div>
           </div>
-          <a href="/site_pages/title_page/index.php" class=""><img class="header__logo"
+          <a href="/index.php" class=""><img class="header__logo"
               src="/images/title_page/LOGO.svg" alt="logo"></a>
-          <a class="header__sections-main" href="/site_pages/title_page/index.php">Главная</a>
+          <a class="header__sections-main" href="/index.php">Главная</a>
           <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
           <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
           <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
@@ -208,11 +208,12 @@
       <div class="totalSum"></div>
     </div>
     <div class="wrap_2">
-      <div class="random4items__header">
-        Вам может понравиться
-      </div>
-      <div class="random4items__box">
-        <?php
+      <div class="container">
+        <div class="random4items__header">
+          Вам может понравиться
+        </div>
+        <div class="random4items__box">
+          <?php
               $dbUser = 'root';
               $dbName = 'мебель loft';
               $dbPass = '';
@@ -226,7 +227,9 @@
                 echo '
                 <div class="bestsellers__box-item" data-toggle-id="hidde__toBasket'.$row["id"].'">
                 <img class="bestsellers__item-loverIcon" src="/images/title_page/список желаемого.svg" alt="empty">
-                <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                <div class="bestsellers__item-imgBox">
+                  <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                </div>
                 <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
                   '.$row["name"].'
                 </div>
@@ -271,6 +274,7 @@
                 ';
               };
             ?>
+        </div>
       </div>
     </div>
   </div>

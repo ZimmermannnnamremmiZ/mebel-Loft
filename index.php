@@ -11,14 +11,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мебель Loft</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="/site_pages/title_page/style.css">
+  <link rel="stylesheet" href="/site_pages/scripts/owl carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="/reusable_css/hamburger_menu.css">
   <link rel="stylesheet" href="/reusable_css/owl_carousel.css">
   <link rel="stylesheet" href="/reusable_css/footer.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="../scripts/cart/myCart.js"></script>
-  <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
+  <script src="/site_pages/scripts/cart/myCart.js"></script>
+  <script src="/site_pages/scripts/owl carousel/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                 <div class="menu__closeBtn"></div>
                 <div class="menu__h"><strong class="menu__menu">Меню</strong></div>
                 <div class="menu__item"><strong class="menu__home"><a
-                      href="/site_pages/title_page/index.php">Главная</a></strong></div>
+                      href="/index.php">Главная</a></strong></div>
                 <div class="menu__item menu__about"><a href="/site_pages/about_page/index.php">О нас</a></div>
                 <div class="menu__item menu__contacts"><a href="/site_pages/contacts_page/index.php">Контакты</a></div>
                 <div class="menu__h menu__category"><strong>Категории</strong></div>
@@ -74,7 +74,7 @@
                 <div class="menu__item menu__cupboard"><a href="/site_pages/catalog_page/index.php">Шкафы</a></div>
               </div>
             </div>
-            <a class="header__logo-link" href="/site_pages/title_page/index.php">
+            <a class="header__logo-link" href="/index.php">
               <img class="header__logo" src="/images/title_page/LOGO.svg" alt="logo">
             </a>
             <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
@@ -303,7 +303,9 @@
                 }
                   echo '
                     <img class="bestsellers__item-loverIcon" src="/images/title_page/список желаемого.svg" alt="empty">
-                    <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                    <div class="bestsellers__item-imgBox">
+                      <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                    </div>
                     <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
                       '.$row["name"].'
                     </div>
@@ -399,9 +401,9 @@
       </div>
     </footer>
   </div>
-  <script src="script.js"></script>
-  <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
-  <script src="../scripts//menu_for_1024px.js"></script>
+  <script src="/site_pages/title_page/script.js"></script>
+  <script src="/site_pages/scripts/owl carousel/owl_carousel_init.js"></script>
+  <script src="/site_pages/scripts//menu_for_1024px.js"></script>
 </body>
 
 </html>

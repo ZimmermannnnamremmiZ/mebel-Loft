@@ -33,6 +33,7 @@
 }
 
 .catalog {
+  margin-bottom: 80px;
   display: flex;
 }
 
@@ -300,10 +301,22 @@
 }
 
 
-.bestsellers__item-img {
+.bestsellers__item-imgBox {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 150px;
   margin-bottom: 150px;
-  margin-left: 32px;
-  margin-top: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 29px;
+}
+
+.bestsellers__item-img {
+  align-self: center;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .bestsellers__item-name {

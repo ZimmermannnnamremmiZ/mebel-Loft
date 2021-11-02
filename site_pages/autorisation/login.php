@@ -37,7 +37,7 @@
             <div class="menu__closeBtn"></div>
             <div class="menu__h"><strong class="menu__menu">Меню</strong></div>
             <div class="menu__item"><strong class="menu__home"><a
-                  href="/site_pages/title_page/index.php">Главная</a></strong></div>
+                  href="/index.php">Главная</a></strong></div>
             <div class="menu__item menu__about"><a href="/site_pages/about_page/index.php">О нас</a></div>
             <div class="menu__item menu__contacts"><a href="/site_pages/contacts_page/index.php">Контакты</a></div>
             <div class="menu__h menu__category"><strong>Категории</strong></div>
@@ -55,9 +55,9 @@
             <div class="menu__item menu__cupboard"><a href="/site_pages/catalog_page/index.php">Шкафы</a></div>
           </div>
         </div>
-        <a href="/site_pages/title_page/index.php" class=""><img class="header__logo" src="/images/title_page/LOGO.svg"
+        <a href="/index.php" class=""><img class="header__logo" src="/images/title_page/LOGO.svg"
             alt="logo"></a>
-        <a class="header__sections-main" href="/site_pages/title_page/index.php">Главная</a>
+        <a class="header__sections-main" href="/index.php">Главная</a>
         <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
         <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
         <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
@@ -206,7 +206,7 @@
               if ( password_verify($data['password'], $user->password) ) {
                 $_SESSION['logged_user'] = $user;
                 echo '<div class="success">
-                        <p>Приветствуем, '.$_SESSION['logged_user']->login.'<br>Можете перейти на <a href="/site_pages/title_page/index.php">главную страницу</a> или в <a href="/site_pages/account_page/index.php">личный кабинет</a></p>
+                        <p>Приветствуем, '.$_SESSION['logged_user']->login.'<br>Можете перейти на <a href="/index.php">главную страницу</a> или в <a href="/site_pages/account_page/index.php">личный кабинет</a></p>
                       </div>';
               } else {
                 $errors[] = 'Неверно введен пароль!';

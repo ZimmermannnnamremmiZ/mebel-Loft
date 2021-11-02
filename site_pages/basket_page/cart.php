@@ -104,12 +104,10 @@ echo '
     };
 
     echo '
-    <div class="container">
-        <div class="totalQuantity">
+        <div class="totalQuantity container">
         <div class="totalQuantity__text">Ваша корзина</div>
         <div class="totalQuantity__num">'.num_word($quantityAll, array('предмет', 'предмета', 'предметов')).'</div>
         </div>
-    </div>
     ';
 
 

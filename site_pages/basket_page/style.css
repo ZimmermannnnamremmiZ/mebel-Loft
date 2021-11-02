@@ -127,11 +127,8 @@ body {
 
 .shoping__img {
   margin-left: 10px;
-  width: 100px;
-  height: 75px;
-}
-
-.shoping__img {
+  max-width: 100px;
+  max-height: 75px;
   grid-area: img;
   justify-self: center;
   align-self: center;
@@ -239,6 +236,7 @@ body {
 }
 
 .in-check-box {
+  position: relative;
   display: flex;
   margin-top: 50px;
   flex-direction: column;
@@ -283,7 +281,6 @@ body {
 }
 
 .totalQuantity {
-  width: 1140px;
   position: absolute;
   margin-top: -18px;
   display: flex;
@@ -359,10 +356,22 @@ body {
   color: #000000;
 }
 
-.bestsellers__item-img {
+.bestsellers__item-imgBox {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 150px;
   margin-bottom: 150px;
-  margin-left: 32px;
-  margin-top: 78px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 29px;
+}
+
+.bestsellers__item-img {
+  align-self: center;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .bestsellers__item-name {

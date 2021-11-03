@@ -255,17 +255,15 @@
                 <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
                   <div class="toBasket__sizesLable">Размеры</div>
                     <div class="toBasket__sizes">
-                      <div class="toBasket__width-text">ШИРИНА</div>
-                      <div class="toBasket__depth-text">ГЛУБИНА</div>
-                      <div class="toBasket__height-text">ВЫСОТА</div>
-                    </div>
-                    <div class="toBasket__x">
+                      <div class="toBasket__widthBox">
+                        <div class="toBasket__width-text">ШИРИНА</div>
+                        <div class="toBasket__width-num">'.$row["width"].' СМ</div>
+                      </div>
                       <img class="toBasket__x-svg1" src="/images/title_page/×.svg" alt="empty">
-                      <img class="toBasket__x-svg2" src="/images/title_page/×.svg" alt="empty">
-                    </div>
-                    <div class="toBasket__num">
-                      <div class="toBasket__width-num">'.$row["width"].' СМ</div>
+                      <div class="toBasket__depth-text">ГЛУБИНА</div>
                       <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
+                      <img class="toBasket__x-svg2" src="/images/title_page/×.svg" alt="empty">
+                      <div class="toBasket__height-text">ВЫСОТА</div>
                       <div class="toBasket__height-num">'.$row["height"].' СМ</div>
                     </div>
                     <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].'), loadToCart()">Добавить в корзину</button>

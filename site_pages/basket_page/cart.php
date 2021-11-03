@@ -58,14 +58,18 @@ if ($action == 'show') {
                             <div class="shoping__item_withoutDiscount"></div>
                             <div class="item_price">'.$row["price"].'</div>
                         </div>
-                        <div class="item_textQuantity">Количество:</div>
-                        <div class="item_quantity">'.$num.'</div>
+                        <div class="item_quantityBox">
+                            <div class="item_quantityText">Количество:</div>
+                            <div class="item_quantity">'.$num.'</div>
+                        </div>
                         <div class="item_size">Размер(Ш×Д×В):</div>
-                        <div class="item_width">'.$row["width"].' СМ</div>
-                        <div class="item_x"></div>
-                        <div class="item_depth">'.$row["depth"].' СМ</div>
-                        <div class="item_x2"></div>
-                        <div class="item_height">'.$row["height"].' СМ</div>
+                        <div class="item__size-numBox">
+                            <div class="item_width">'.$row["width"].' СМ</div>
+                            <img class="item_x" src="/images/basket_page/×.svg"></img>
+                            <div class="item_depth">'.$row["depth"].' СМ</div>
+                            <img class="item_x2" src="/images/basket_page/×.svg"></img>
+                            <div class="item_height">'.$row["height"].' СМ</div>
+                        </div>
                         <button class="item_delete" id="delete" onClick="delFromCart('.$row["id"].')"></button>
                     </div>
                 </div>

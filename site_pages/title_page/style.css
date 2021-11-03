@@ -554,12 +554,6 @@ body {
     width: 257px;
   }
 
-  .bestsellers__item-img {
-    margin-left: 28.5px;
-  }
-
-
-
   .bestsellers__item-loverIcon {
     margin-left: 217px;
   }
@@ -579,10 +573,6 @@ body {
     width: 252px;
   }
 
-  .bestsellers__item-img {
-    margin-left: 26px;
-  }
-
   .toBascet__add {
     width: 212px;
   }
@@ -598,10 +588,6 @@ body {
 
   .bestsellers__box-item {
     width: 242px;
-  }
-
-  .bestsellers__item-img {
-    margin-left: 21px;
   }
 
   .toBascet__add {
@@ -825,9 +811,7 @@ body {
     width: 300px;
   }
 
-  .bestsellers__item-img {
-    margin-bottom: 150px;
-    margin-left: 50px;
+  .bestsellers__item-imgBox {
     margin-top: 29px;
   }
 
@@ -882,10 +866,6 @@ body {
     width: 296px;
   }
 
-  .bestsellers__item-img {
-    margin-left: 48px;
-  }
-
   .bestsellers__item-loverIcon {
     margin-left: 257px;
   }
@@ -924,10 +904,6 @@ body {
 
   .bestsellers__item-loverIcon {
     margin-left: 243px;
-  }
-
-  .bestsellers__item-img {
-    margin-left: 42.5px;
   }
 
   .toBascet__add {
@@ -985,10 +961,6 @@ body {
 
   .bestsellers__item-loverIcon {
     margin-left: 230px;
-  }
-
-  .bestsellers__item-img {
-    margin-left: 34px;
   }
 
   .toBascet__add {
@@ -1119,16 +1091,14 @@ body {
   .bestsellers__item-price,
   .bestsellers__item-category,
   .bestsellers__item-name,
-  .bestsellers__item-img,
   .toBasket__sizesLable,
   .toBasket__sizes,
   .toBasket__num {
     margin-left: 35px;
   }
 
-  .bestsellers__item-img {
+  .bestsellers__item-imgBox {
     width: 160px;
-    height: 120px;
   }
 
   .bestsellers__item-price,
@@ -1226,7 +1196,6 @@ body {
   .bestsellers__item-price,
   .bestsellers__item-category,
   .bestsellers__item-name,
-  .bestsellers__item-img,
   .toBasket__sizesLable,
   .toBasket__sizes {
     margin-left: 22.5px;
@@ -1296,7 +1265,6 @@ body {
   .bestsellers__item-price,
   .bestsellers__item-category,
   .bestsellers__item-name,
-  .bestsellers__item-img,
   .toBasket__sizesLable,
   .toBasket__sizes {
     margin-left: 12.5px;
@@ -1394,8 +1362,7 @@ body {
     width: 170px;
   }
 
-  .bestsellers__item-img {
-    margin-left: 15px;
+  .bestsellers__item-imgBox {
     width: 140px;
   }
 
@@ -1488,10 +1455,8 @@ body {
     width: 238px;
   }
 
-  .bestsellers__item-img {
-    margin-left: 29px;
+  .bestsellers__item-imgBox {
     width: 180px;
-    height: auto;
   }
 
 
@@ -1578,9 +1543,8 @@ body {
     width: 195px;
   }
 
-  .bestsellers__item-img {
+  .bestsellers__item-imgBox {
     width: 160px;
-    margin-left: 17.5px;
   }
 
   .toBascet__add {
@@ -1654,10 +1618,9 @@ body {
     width: 178px;
   }
 
-  .bestsellers__item-img {
-    margin-left: 24px;
+  .bestsellers__item-imgBox {
     margin-bottom: 125px;
-    width: 130px;
+    width: 100%;
   }
 
   .bestsellers__item-price,
@@ -1784,10 +1747,6 @@ body {
     width: 162px;
   }
 
-  .bestsellers__item-img {
-    margin-left: 16px;
-  }
-
   .bestsellers__item-loverIcon {
     margin-left: 129px;
   }
@@ -1877,11 +1836,6 @@ body {
 
   .bestsellers__box-item {
     width: 143px;
-  }
-
-  .bestsellers__item-img {
-    width: 94px;
-    margin-left: 24.5px;
   }
 
   .bestsellers__discount {

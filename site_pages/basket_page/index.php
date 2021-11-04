@@ -260,11 +260,15 @@
                         <div class="toBasket__width-num">'.$row["width"].' СМ</div>
                       </div>
                       <img class="toBasket__x-svg1" src="/images/title_page/×.svg" alt="empty">
-                      <div class="toBasket__depth-text">ГЛУБИНА</div>
-                      <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
+                      <div class="toBasket__depthBox">
+                        <div class="toBasket__depth-text">ГЛУБИНА</div>
+                        <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
+                      </div>
                       <img class="toBasket__x-svg2" src="/images/title_page/×.svg" alt="empty">
-                      <div class="toBasket__height-text">ВЫСОТА</div>
-                      <div class="toBasket__height-num">'.$row["height"].' СМ</div>
+                      <div class="toBasket__heightBox">
+                        <div class="toBasket__height-text">ВЫСОТА</div>
+                        <div class="toBasket__height-num">'.$row["height"].' СМ</div>
+                      </div>
                     </div>
                     <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].'), loadToCart()">Добавить в корзину</button>
                 </div>

@@ -52,8 +52,7 @@
               <div class="menu__box">
                 <div class="menu__closeBtn"></div>
                 <div class="menu__h"><strong class="menu__menu">Меню</strong></div>
-                <div class="menu__item"><strong class="menu__home"><a
-                      href="/index.php">Главная</a></strong></div>
+                <div class="menu__item"><strong class="menu__home"><a href="/index.php">Главная</a></strong></div>
                 <div class="menu__item menu__about"><a href="/site_pages/about_page/index.php">О нас</a></div>
                 <div class="menu__item menu__contacts"><a href="/site_pages/contacts_page/index.php">Контакты</a></div>
                 <div class="menu__h menu__category"><strong>Категории</strong></div>
@@ -321,20 +320,22 @@
                     </div>
                     <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
                       <div class="toBasket__sizesLable">Размеры</div>
-                        <div class="toBasket__sizes">
-                          <div class="toBasket__width-text">ШИРИНА</div>
-                          <div class="toBasket__depth-text">ГЛУБИНА</div>
-                          <div class="toBasket__height-text">ВЫСОТА</div>
-                        </div>
-                        <div class="toBasket__x">
-                          <img class="toBasket__x-svg1" src="/images/title_page/×.svg" alt="empty">
-                          <img class="toBasket__x-svg2" src="/images/title_page/×.svg" alt="empty">
-                        </div>
-                        <div class="toBasket__num">
-                          <div class="toBasket__width-num">'.$row["width"].' СМ</div>
-                          <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
-                          <div class="toBasket__height-num">'.$row["height"].' СМ</div>
-                        </div>
+                      <div class="toBasket__sizes">
+                      <div class="toBasket__widthBox">
+                        <div class="toBasket__width-text">ШИРИНА</div>
+                        <div class="toBasket__width-num">'.$row["width"].' СМ</div>
+                      </div>
+                      <img class="toBasket__x-svg1" src="/images/title_page/×.svg" alt="empty">
+                      <div class="toBasket__depthBox">
+                        <div class="toBasket__depth-text">ГЛУБИНА</div>
+                        <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
+                      </div>
+                      <img class="toBasket__x-svg2" src="/images/title_page/×.svg" alt="empty">
+                      <div class="toBasket__heightBox">
+                        <div class="toBasket__height-text">ВЫСОТА</div>
+                        <div class="toBasket__height-num">'.$row["height"].' СМ</div>
+                      </div>
+                    </div>
                         <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].')">Добавить в корзину</button>
                     </div>
               </div>

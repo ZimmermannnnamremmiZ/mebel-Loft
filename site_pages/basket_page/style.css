@@ -162,7 +162,7 @@ body {
   font-size: 12px;
   line-height: 14px;
   margin-left: 11px;
-  margin-top: 6px;
+  margin-top: 7px;
 }
 
 .item_size {
@@ -431,6 +431,7 @@ body {
 .toBasket__sizes {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 8%;
   margin-top: 8px;
   width: 68%;
@@ -530,6 +531,10 @@ body {
 
   .header__searchLine-alarm {
     margin-left: 974px;
+  }
+
+  .bestsellers__item-loverIcon {
+    right: 7%;
   }
 }
 
@@ -649,7 +654,12 @@ body {
     padding-bottom: 35px;
   }
 
-  .toBasket__width-text, .toBasket__depth-text, .toBasket__height-text, .toBasket__width-num, .toBasket__depth-num, .toBasket__height-num {
+  .toBasket__width-text,
+  .toBasket__depth-text,
+  .toBasket__height-text,
+  .toBasket__width-num,
+  .toBasket__depth-num,
+  .toBasket__height-num {
     font-size: 8px;
   }
 
@@ -682,4 +692,376 @@ body {
   .item_delete {
     width: 60%;
   }
+}
+
+@media screen and (max-width:630px) {
+  .container {
+    width: 540px;
+  }
+
+  .header__searchLine-alarm {
+    margin-left: 496px;
+  }
+
+  .shoping__item {
+    grid-template-columns: 135px 98px 100px;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "img a a a h"
+      "img c c c h"
+      "img r i i h";
+  }
+
+  .shoping__item-discount-num {
+    margin-left: 2px;
+  }
+
+  .shoping__item_price-box {
+    width: 160px;
+  }
+
+  .shoping__item_price-box {
+    top: 23%;
+    right: 8%;
+  }
+
+  .item_title {
+    width: 55%;
+    font-size: 15px;
+  }
+
+  .item_price {
+    font-size: 15px;
+  }
+
+  .item_delete {
+    width: 40%;
+  }
+
+  .item_quantityBox {
+    display: flex;
+    grid-area: c;
+    margin-top: 23px;
+  }
+
+  .bestsellers__box-item:last-of-type {
+    display: none;
+  }
+
+  .bestsellers__box-item {
+    width: 32.6%;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .container {
+    width: 480px;
+  }
+
+  .header__searchLine-alarm {
+    margin-left: 437px;
+    margin-top: -258px;
+  }
+
+  .shoping__item_price-box {
+    width: 140px;
+  }
+
+  .shoping__item-discount-logo {
+    width: 13px;
+    height: 13px;
+  }
+
+  .shoping__item-discount-num,
+  .shoping__item_withoutDiscount {
+    font-size: 11px;
+  }
+
+  .item_price {
+    font-size: 13px;
+  }
+
+  .totalQuantity__text,
+  .totalQuantity__num,
+  .random4items__header {
+    font-size: 15px;
+  }
+
+  .toBasket__x-svg1,
+  .toBasket__x-svg2 {
+    width: 5px;
+    height: 5px;
+  }
+
+  .totalSumBox {
+    justify-content: start;
+  }
+
+  .wrap_2 {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .container {
+    width: 400px;
+  }
+
+  .header__searchLine-alarm {
+    margin-left: 357px;
+    margin-top: -258px;
+  }
+
+  .shoping__item_price-box {
+    width: 105px;
+    flex-wrap: wrap;
+    align-items: end;
+    position: absolute;
+    justify-content: end;
+    right: 9%;
+    top: 22%;
+  }
+
+  .shoping__item {
+    grid-template-columns: 135px 81px 100px;
+  }
+
+
+  .totalQuantity__text,
+  .totalQuantity__num,
+  .random4items__header {
+    font-size: 13px;
+  }
+
+  .item_title {
+    font-size: 13px;
+  }
+
+  .item_price {
+    font-size: 13px;
+    order: -1;
+    flex-basis: 100%;
+    text-align: end;
+  }
+
+  .item_delete {
+    width: 80%;
+  }
+
+  .shoping__item-discount {
+    justify-content: end;
+  }
+
+  .shoping__item_withoutDiscount {
+    text-align: end;
+    margin-left: 5px;
+  }
+
+  .item_size,
+  .item__size-numBox *,
+  .item_quantityBox * {
+    font-size: 10px;
+  }
+
+  .item_x {
+    margin-top: 11px;
+    width: 5px;
+    height: 5px;
+  }
+
+  .totalSumBox {
+    justify-content: start;
+    align-self: center;
+    width: 71%;
+  }
+
+  .totalSumBox__text {
+    flex-basis: 50%;
+    margin-top: 40px;
+  }
+
+  .totalSumBox__totalSum {
+    margin-left: 0;
+    text-align: end;
+    flex-basis: 50%;
+    margin-top: 40px;
+  }
+
+  .totalSumBox__checkout {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+    width: 206px;
+  }
+
+  .bestsellers__box-item {
+    width: 49%;
+  }
+
+  .bestsellers__box-item:nth-last-child(-n+2) {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:420px) {
+  .container {
+    width: 360px;
+  }
+
+  .header__searchLine-alarm {
+    margin-left: 317px;
+  }
+
+
+  .item_title {
+    width: 90%;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .item_quantityBox {
+    margin-top: 0;
+  }
+
+  .item_quantityText {
+    display: none;
+  }
+
+  .item_price {
+    order: -1;
+    flex-basis: auto;
+    text-align: start;
+  }
+
+  .item_quantity {
+    margin-left: 0;
+    margin-top: 21px;
+    text-align: center;
+    line-height: 18px;
+    border: 1px solid #E6E6E6;
+    width: 27px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+  }
+
+  .item__size-numBox {
+    margin-left: -33px;
+    margin-top: 2px;
+  }
+
+  .item_size {
+    margin-left: 17px;
+    margin-top: 2px;
+  }
+
+  .item_delete {
+    width: 100%;
+  }
+
+  .shoping__item {
+    grid-template-columns: 135px 98px 100px;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas:
+      "img a a h"
+      "img c c h"
+      "r i i h";
+  }
+
+  .shoping__item_price-box {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: start;
+    right: 23%;
+    top: 51%;
+  }
+
+  .shoping__item_price-box * {
+    font-size: 12px;
+  }
+
+  .shoping__item-discount {
+    display: none;
+  }
+
+  .shoping__item_withoutDiscount {
+    text-align: start;
+    margin-left: 5px;
+  }
+
+  .totalSumBox__text {
+    flex-basis: 60%;
+  }
+
+  .totalSumBox__totalSum {
+    flex-basis: 40%;
+  }
+
+}
+
+@media screen and (max-width:380px) {
+  .container {
+    width: 330px;
+  }
+
+  .header__searchLine-alarm {
+    margin-left: 287px;
+  }
+
+  .shoping__item_price-box {
+    right: 17%;
+  }
+
+  .shoping__item {
+    grid-template-columns: 135px 158px 37px;
+    grid-template-areas:
+      "img a h"
+      "img c h"
+      "r i h";
+  }
+}
+
+@media screen and (max-width:340px) {
+  .container {
+    width: 290px;
+  }
+
+  .header__searchLine-alarm {
+    margin-left: 246px;
+  }
+
+  .shoping__img {
+    max-width: 67px;
+    max-height: 50px;
+  }
+
+  .shoping__item {
+    grid-template-columns: 90px 167px 33px;
+  }
+
+
+  .shoping__item_price-box {
+    right: 21%;
+  }
+
+  .item__size-numBox {
+    margin-left: 7px;
+  }
+
+  .totalSumBox {
+    width: 88%;
+  }
+
+  .totalSumBox__text {
+    flex-basis: 68%;
+  }
+
+  .totalSumBox__totalSum {
+    flex-basis: 32%;
+  }
+
+  .toBascet__add {
+    font-size: 11px;
+  }
+
 }

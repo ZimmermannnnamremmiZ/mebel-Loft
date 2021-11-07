@@ -201,58 +201,95 @@
 
 .dropdown {
   display: none;
+  align-content: center;
   flex-direction: column;
   position: absolute;
   font-size: 14px;
   line-height: 16px;
   background-color: #fff;
   z-index: 99;
-  min-width: 139px;
+  min-width: 189px;
   max-width: 200px;
   text-align: start;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
+  padding-top: 1px;
   margin-top: 70px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
 }
 
 .kitchen:hover .dropdown__kitchen {
   display: flex;
+  animation-name: dd_item-up;
+  animation-duration: 0.2s;
 }
 
 .bedroom:hover .dropdown__bedroom {
   display: flex;
+  animation-name: dd_item-up;
+  animation-duration: 0.2s;
 }
 
 .livingroom:hover .dropdown__livingroom {
   display: flex;
+  animation-name: dd_item-up;
+  animation-duration: 0.2s;
 }
 
 .closet:hover .dropdown__closet {
   display: flex;
+  animation-name: dd_item-up;
+  animation-duration: 0.2s;
 }
 
 .office:hover .dropdown__office {
   display: flex;
+  animation-name: dd_item-up;
+  animation-duration: 0.2s;
 }
 
 .menu-stock:hover .dropdown__menu-stock {
   display: flex;
   width: 151px;
-  padding-bottom: 25px;
   align-items: flex-end;
-  margin-left: -105px;
+  margin-left: -93px;
+  animation-name: dd_item-up;
+  animation-duration: 0.2s;
 }
 
 .childrensroom:hover .dropdown__childrensroom {
   display: flex;
+  animation-name: dd_item-up;
+  animation-duration: 0.2s;
 }
 
 .dropdown a {
-  margin-top: 25px;
+  padding: 5px 10px;
   text-decoration: none;
   color: #414141;
+}
+
+.dropdown__linkBox {
+  display: flex;
+  min-height: 41px;
+  width: 100%;
+  align-items: center;
+}
+
+.dropdown__linkBox:hover {
+  background-color: #245462;
+}
+
+.dropdown__linkBox:hover * {
+  color: #fff;
+}
+
+@keyframes dd_item-up {
+  0% {
+    margin-top: 500px;
+  }
+
+  100% {
+    margin-top: 70px;
+  }
 }
 
 @media screen and (max-width:1240px) {
@@ -467,6 +504,11 @@
     padding-left: 20px;
   }
 
+  .childrensroom:hover .dropdown__childrensroom {
+    display: flex;
+    margin-left: -68px;
+  }
+
 }
 
 @media screen and (max-width:740px) {
@@ -478,8 +520,8 @@
 
   .office:hover .dropdown__office {
     display: flex;
-    margin-left: -85px;
-  }
+    margin-left: -34px;
+}
 
   .childrensroom:hover .dropdown__childrensroom {
     display: flex;
@@ -514,7 +556,7 @@
 
   .office:hover .dropdown__office {
     display: flex;
-    margin-left: -61px;
+    margin-left: -10px;
   }
 
   .childrensroom:hover .dropdown__childrensroom {
@@ -620,7 +662,7 @@
   }
 
   .menu-stock:hover .dropdown__menu-stock {
-    margin-left: -151px;
+    margin-left: -139px;
   }
 
   .header__menu-stock-text {
@@ -683,11 +725,11 @@
   }
 
   .childrensroom:hover .dropdown__childrensroom {
-    margin-left: -190%;
+    margin-left: -71px;
   }
 
   .menu-stock:hover .dropdown__menu-stock {
-    margin-left: -190%;
+    margin-left: -58px;
     width: 108px;
   }
 
@@ -707,13 +749,8 @@
   }
 
   .dropdown a {
-    margin-top: 15px;
     text-decoration: none;
     color: #414141;
-  }
-
-  .dropdown {
-    padding-bottom: 15px;
   }
 
 }

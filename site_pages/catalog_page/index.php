@@ -97,112 +97,254 @@
           <div class="header__menu-kitchen-icon carousel_icon"></div>
           <h2 class="header__menu-kitchen-text header__menu-text">Кухни</h2>
           <div class="dropdown__kitchen dropdown">
-            <a href="/site_pages/catalog_page/index.php">Модульные кухни</a>
-            <a href="/site_pages/catalog_page/index.php">Барная зона</a>
-            <a href="/site_pages/catalog_page/index.php">Кухонные уголки</a>
-            <a href="/site_pages/catalog_page/index.php">Обеденная зона</a>
-            <a href="/site_pages/catalog_page/index.php">Столешницы</a>
-            <a href="/site_pages/catalog_page/index.php">Стеновые панели</a>
-            <a href="/site_pages/catalog_page/index.php">Мойки, сушилки,<br>смесители для кухни</a>
-            <a href="/site_pages/catalog_page/index.php">Дополнительная<br>фурнитура</a>
-            <a href="/site_pages/catalog_page/index.php">Бытовыя техника</a>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Модульные кухни</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Барная зона</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Кухонные уголки</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Обеденная зона</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Столешницы</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Стеновые панели</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Мойки, сушилки,<br>смесители для кухни</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Дополнительная<br>фурнитура</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Бытовыя техника</a>
+            </div>
           </div>
         </div>
         <div class="header__menu-cell bedroom slide">
           <div class="header__menu-bedroom-icon carousel_icon"></div>
           <h2 class="header__menu-bedroom-text header__menu-text">Спальни</h2>
           <div class="dropdown__bedroom dropdown">
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+            </div>
           </div>
         </div>
         <div class="header__menu-cell livingroom slide">
           <div class="header__menu-livingroom-icon carousel_icon"></div>
           <h2 class="header__menu-livingroom-text header__menu-text">Гостинные</h2>
           <div class="dropdown__livingroom dropdown">
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
           </div>
         </div>
         <div class="header__menu-cell closet slide">
           <div class="header__menu-closet-icon carousel_icon"></div>
           <h2 class="header__menu-closet-text header__menu-text">Прихожие</h2>
           <div class="dropdown__closet dropdown">
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
           </div>
         </div>
         <div class="header__menu-cell office slide">
           <div class="header__menu-office-icon carousel_icon"></div>
           <h2 class="header__menu-office-text header__menu-text">Офисная мебель</h2>
           <div class="dropdown__office dropdown">
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
           </div>
         </div>
         <div class="header__menu-cell childrensroom slide">
           <div class="header__menu-childrensroom-icon carousel_icon"></div>
           <h2 class="header__menu-childrensroom-text header__menu-text">Детская</h2>
           <div class="dropdown__childrensroom dropdown">
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-            <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+            </div>
           </div>
         </div>
         <div class="header__menu-cell menu-stock slide">
           <h6 class="header__menu-stock-text">Акция</h6>
           <div class="dropdown__menu-stock dropdown">
-            <a href="/site_pages/catalog_page/index.php">Новинки</a>
-            <a href="/site_pages/catalog_page/index.php">Шкафы</a>
-            <a href="/site_pages/catalog_page/index.php">Матрасы</a>
-            <a href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Новинки</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Шкафы</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Матрасы</a>
+            </div>
+            <div class="dropdown__linkBox">
+              <a href="/site_pages/catalog_page/index.php">Мягкая мебель</a>
+            </div>
           </div>
         </div>
       </div>
@@ -219,89 +361,91 @@
     </section>
     <button class="catalog__filterBtn">Фильтр</button>
     <section class="catalog">
-      <div class="catalog__menu">
-        <p class="catalog__header">
-          Раздел
-        </p>
-        <form action="" method="post">
-          <div>
-            <select class="catalog__select mt20" name="select_1" id="select_1">
-              <option class="catalog__select-item" value="0">Выбрать раздел</option>
-              <?php foreach($select_1 as $select_1_item): ?>
-              <option class='catalog__select-item' value='<?=$select_1_item['id_select_1'] ?>'>
-                <?=$select_1_item['title'] ?></option>
-              <?php endforeach; ?>
-            </select>
-            <div id="select_2-box" id="select_2-box">
-              <select class="select_2 cs mt20" name="select_2" id="select_2" disabled></select>
+      <div class="catalog__menu-Container">
+        <div class="catalog__menu">
+          <p class="catalog__header">
+            Раздел
+          </p>
+          <form action="" method="post">
+            <div>
+              <select class="catalog__select mt20" name="select_1" id="select_1">
+                <option class="catalog__select-item" value="0">Выбрать раздел</option>
+                <?php foreach($select_1 as $select_1_item): ?>
+                <option class='catalog__select-item' value='<?=$select_1_item['id_select_1'] ?>'>
+                  <?=$select_1_item['title'] ?></option>
+                <?php endforeach; ?>
+              </select>
+              <div id="select_2-box" id="select_2-box">
+                <select class="select_2 cs mt20" name="select_2" id="select_2" disabled></select>
+              </div>
+              <div id="select_3-box" id="select_3-box">
+                <select class="select_3 cs mt20" name="select_3" id="select_3" disabled></select>
+              </div>
             </div>
-            <div id="select_3-box" id="select_3-box">
-              <select class="select_3 cs mt20" name="select_3" id="select_3" disabled></select>
+          </form>
+          <p class="catalog__header mt20">
+            Цена
+          </p>
+          <div id='id66' class="range">
+            <div id='id66b' class='range__between'></div>
+            <div id='id661' class="range__button_1">
+              <div class="white-circle"></div>
+            </div>
+            <div id='id662' class="range__button_2">
+              <div class="white-circle"></div>
+            </div>
+            <div class="flex">
+              <input id='id66i1' class='range__inpt1 inputright inputcurrency' type='number'>
+              <div class="line"></div>
+              <input id='id66i2' class='range__inpt2 inputright inputcurrency' type='number'>
             </div>
           </div>
-        </form>
-        <p class="catalog__header mt20">
-          Цена
-        </p>
-        <div id='id66' class="range">
-          <div id='id66b' class='range__between'></div>
-          <div id='id661' class="range__button_1">
-            <div class="white-circle"></div>
+          <p class="catalog__header colors">
+            Цвет
+          </p>
+          <div class="color">
+            <input type="checkbox" class="custom-checkbox" id="color1" name="color1" value="yes">
+            <label for="color1"></label>
+            <input type="checkbox" class="custom-checkbox" id="color2" name="color2" value="yes">
+            <label for="color2"></label>
+            <input type="checkbox" class="custom-checkbox" id="color3" name="color3" value="yes">
+            <label for="color3"></label>
+            <input type="checkbox" class="custom-checkbox" id="color4" name="color4" value="yes">
+            <label for="color4"></label>
+            <input type="checkbox" class="custom-checkbox" id="color5" name="color5" value="yes">
+            <label for="color5"></label>
           </div>
-          <div id='id662' class="range__button_2">
-            <div class="white-circle"></div>
+          <p class="catalog__header brands">
+            Бренд
+          </p>
+          <div class="brand">
+            <input type="checkbox" class="custom-checkbox brandItem" id="brand1" name="brand1" value="Динс">
+            <label for="brand1">Динс</label>
+            <input type="checkbox" class="custom-checkbox brandItem" id="brand2" name="brand2" value="Кускен">
+            <label for="brand2">Кускен</label>
+            <input type="checkbox" class="custom-checkbox brandItem" id="brand3" name="brand3" value="Шерона">
+            <label for="brand3">Шерона</label>
+            <input type="checkbox" class="custom-checkbox brandItem" id="brand4" name="brand4" value="Реджио">
+            <label for="brand4">Реджио</label>
+            <input type="checkbox" class="custom-checkbox brandItem" id="brand5" name="brand5" value="Сайле">
+            <label for="brand5">Сайле</label>
+            <div class="moreBrands">
+              <input type="checkbox" class="custom-checkbox brandItem brandItem" id="brand6" name="brand6"
+                value="Равенна">
+              <label for="brand6">Равенна</label>
+              <input type="checkbox" class="custom-checkbox brandItem" id="brand7" name="brand7" value="Кусклер">
+              <label for="brand7">Кусклер</label>
+              <input type="checkbox" class="custom-checkbox brandItem" id="brand8" name="brand8" value="Авиньон">
+              <label for="brand8">Авиньон</label>
+              <input type="checkbox" class="custom-checkbox brandItem" id="brand9" name="brand9" value="Стелла">
+              <label for="brand9">Стелла</label>
+              <input type="checkbox" class="custom-checkbox brandItem" id="brand10" name="brand10" value="Бенфлит">
+              <label for="brand10">Бенфлит</label>
+              <input type="checkbox" class="custom-checkbox brandItem" id="brand11" name="brand11" value="Валенсия">
+              <label for="brand11">Валенсия</label>
+            </div>
+            <button class="showMore">Показать ещё</button>
           </div>
-          <div class="flex">
-            <input id='id66i1' class='range__inpt1 inputright inputcurrency' type='number'>
-            <div class="line"></div>
-            <input id='id66i2' class='range__inpt2 inputright inputcurrency' type='number'>
-          </div>
-        </div>
-        <p class="catalog__header colors">
-          Цвет
-        </p>
-        <div class="color">
-          <input type="checkbox" class="custom-checkbox" id="color1" name="color1" value="yes">
-          <label for="color1"></label>
-          <input type="checkbox" class="custom-checkbox" id="color2" name="color2" value="yes">
-          <label for="color2"></label>
-          <input type="checkbox" class="custom-checkbox" id="color3" name="color3" value="yes">
-          <label for="color3"></label>
-          <input type="checkbox" class="custom-checkbox" id="color4" name="color4" value="yes">
-          <label for="color4"></label>
-          <input type="checkbox" class="custom-checkbox" id="color5" name="color5" value="yes">
-          <label for="color5"></label>
-        </div>
-        <p class="catalog__header brands">
-          Бренд
-        </p>
-        <div class="brand">
-          <input type="checkbox" class="custom-checkbox brandItem" id="brand1" name="brand1" value="Динс">
-          <label for="brand1">Динс</label>
-          <input type="checkbox" class="custom-checkbox brandItem" id="brand2" name="brand2" value="Кускен">
-          <label for="brand2">Кускен</label>
-          <input type="checkbox" class="custom-checkbox brandItem" id="brand3" name="brand3" value="Шерона">
-          <label for="brand3">Шерона</label>
-          <input type="checkbox" class="custom-checkbox brandItem" id="brand4" name="brand4" value="Реджио">
-          <label for="brand4">Реджио</label>
-          <input type="checkbox" class="custom-checkbox brandItem" id="brand5" name="brand5" value="Сайле">
-          <label for="brand5">Сайле</label>
-          <div class="moreBrands">
-            <input type="checkbox" class="custom-checkbox brandItem brandItem" id="brand6" name="brand6"
-              value="Равенна">
-            <label for="brand6">Равенна</label>
-            <input type="checkbox" class="custom-checkbox brandItem" id="brand7" name="brand7" value="Кусклер">
-            <label for="brand7">Кусклер</label>
-            <input type="checkbox" class="custom-checkbox brandItem" id="brand8" name="brand8" value="Авиньон">
-            <label for="brand8">Авиньон</label>
-            <input type="checkbox" class="custom-checkbox brandItem" id="brand9" name="brand9" value="Стелла">
-            <label for="brand9">Стелла</label>
-            <input type="checkbox" class="custom-checkbox brandItem" id="brand10" name="brand10" value="Бенфлит">
-            <label for="brand10">Бенфлит</label>
-            <input type="checkbox" class="custom-checkbox brandItem" id="brand11" name="brand11" value="Валенсия">
-            <label for="brand11">Валенсия</label>
-          </div>
-          <button class="showMore">Показать ещё</button>
         </div>
       </div>
       <div class="hamburger-menu-2">
@@ -333,41 +477,56 @@
 
           while($row = $results->fetch_assoc()){
             echo '
-            <div class="bestsellers__box-item" data-toggle-id="hidde__toBasket'.$row["id"].'">
-              <img class="bestsellers__item-loverIcon" src="/images/title_page/список желаемого.svg" alt="empty">
-              <div class="bestsellers__item-imgBox">
-                <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                <div class="bestsellers__box-item" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                ';
+                if($row["discount"]> 0) {
+                  echo '
+                    <div class="bestsellers__discount">
+                    <img class="bestsellers__discount-logo" src="/images/title_page/Vector.svg" alt="empty">
+                    <div class="bestsellers__discount-num">-'.$row["discount"].'%</div>
+                    </div>
+                  ';
+                }
+                  echo '
+                    <img class="bestsellers__item-loverIcon" src="/images/title_page/список желаемого.svg" alt="empty">
+                    <div class="bestsellers__item-imgBox">
+                      <img class="bestsellers__item-img" src="'.$row["image"].'" alt="empty" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                    </div>
+                    <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                      '.$row["name"].'
+                    </div>
+                    <div class="bestsellers__item-category" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                    '.$row["category"].'
+                    </div>
+                    <div class="bestsellers__item-priceBox">
+                      <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                      '.$row["price"].'₽
+                      </div>
+                      <div class="bestsellers__fullPrice"></div>
+                    </div>
+                    <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
+                      <div class="toBasket__sizesLable">Размеры</div>
+                      <div class="toBasket__sizes">
+                      <div class="toBasket__widthBox">
+                        <div class="toBasket__width-text">ШИРИНА</div>
+                        <div class="toBasket__width-num">'.$row["width"].' СМ</div>
+                      </div>
+                      <img class="toBasket__x-svg1" src="/images/title_page/×.svg" alt="empty">
+                      <div class="toBasket__depthBox">
+                        <div class="toBasket__depth-text">ГЛУБИНА</div>
+                        <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
+                      </div>
+                      <img class="toBasket__x-svg2" src="/images/title_page/×.svg" alt="empty">
+                      <div class="toBasket__heightBox">
+                        <div class="toBasket__height-text">ВЫСОТА</div>
+                        <div class="toBasket__height-num">'.$row["height"].' СМ</div>
+                      </div>
+                    </div>
+                        <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].')">Добавить в корзину</button>
+                    </div>
               </div>
-              <div class="bestsellers__item-name" data-toggle-id="hidde__toBasket'.$row["id"].'">
-                '.$row["name"].'
-              </div>
-              <div class="bestsellers__item-category" data-toggle-id="hidde__toBasket'.$row["id"].'">
-              '.$row["category"].'
-              </div>
-              <div class="bestsellers__item-price" data-toggle-id="hidde__toBasket'.$row["id"].'">
-              '.$row["price"].'
-              </div>
-              <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
-                <div class="toBasket__sizesLable">Размеры</div>
-                  <div class="toBasket__sizes">
-                    <div class="toBasket__width-text">ШИРИНА</div>
-                    <div class="toBasket__depth-text">ГЛУБИНА</div>
-                    <div class="toBasket__height-text">ВЫСОТА</div>
-                  </div>
-                  <div class="toBasket__x">
-                    <img class="toBasket__x-svg1" src="/images/title_page/×.svg" alt="empty">
-                    <img class="toBasket__x-svg2" src="/images/title_page/×.svg" alt="empty">
-                  </div>
-                  <div class="toBasket__num">
-                    <div class="toBasket__width-num">'.$row["width"].' СМ</div>
-                    <div class="toBasket__depth-num">'.$row["depth"].' СМ</div>
-                    <div class="toBasket__height-num">'.$row["height"].' СМ</div>
-                  </div>
-                  <button class="toBascet__add" data-id="'.$row["id"].'" onClick="addToCart('.$row["id"].')">Добавить в корзину</button>
-              </div>
-            </div>
-            ';
-          };
+              ';
+              };
         ?>
       </div>
     </section>

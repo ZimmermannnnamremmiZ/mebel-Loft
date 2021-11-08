@@ -70,7 +70,7 @@
         <a href="/index.php" class=""><img class="header__logo" src="/images/title_page/LOGO.svg" alt="logo"></a>
         <a class="header__sections-main" href="/index.php">Главная</a>
         <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
-        <a class="header__sections-contacts" href="index.php">Контакты</a>
+        <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
         <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
         <img class="header__phone-icon" src="/images/title_page/phone.svg">
         <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
@@ -394,10 +394,16 @@
             <div id='id662' class="range__button_2">
               <div class="white-circle"></div>
             </div>
-            <div class="flex">
-              <input id='id66i1' class='range__inpt1 inputright inputcurrency' type='number'>
+            <div class="catalogMenu__rangeBox">
+              <div class="catalogMenu__currencyBox">
+                <input id='id66i1' class='catalogMenu__inputcurrency range__inpt1' type='number'>
+                <div class="catalog__rubSimbol">₽</div>
+              </div>
               <div class="line"></div>
-              <input id='id66i2' class='range__inpt2 inputright inputcurrency' type='number'>
+              <div class="catalogMenu__currencyBox">
+                <input id='id66i2' class='catalogMenu__inputcurrency range__inpt2' type='number'>
+                <div class="catalog__rubSimbol">₽</div>
+              </div>
             </div>
           </div>
           <p class="catalog__header colors">

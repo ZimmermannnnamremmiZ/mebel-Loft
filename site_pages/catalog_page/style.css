@@ -114,6 +114,36 @@ body {
   padding: 7px 10px;
 }
 
+.catalogMenu__rangeBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalogMenu__currencyBox {
+  display: flex;
+  margin-top: 20px;
+  background: #F8F8F8;
+  border-radius: 3px;
+}
+
+.catalogMenu__currencyBox {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  background: #F8F8F8;
+  border-radius: 3px;
+  width: 90px;
+}
+
+.catalogMenu__inputcurrency {
+  text-align: center;
+}
+
+.catalog__rubSimbol {
+  position: absolute;
+  right: 21%;
+}
+
 .subselect {
   width: 190px;
   height: 29px;
@@ -171,16 +201,6 @@ body {
   margin-left: 10px;
   border: none;
   background-color: #245462;
-}
-
-.range__inpt1,
-.range__inpt2 {
-  text-align: center;
-  margin-top: 20px;
-  width: 90px;
-  height: 30px;
-  background: #F8F8F8;
-  border-radius: 3px;
 }
 
 .line {
@@ -580,20 +600,73 @@ body {
   background-color: #CFD8DC;
 }
 
-.inputright {
-  text-align: center;
-}
-
-.inputcurrency {
-  background: url(/images/catalog_page/Ruble_sign.svg) no-repeat right;
-  background-position: 74% 45%;
-  background-size: 8% auto;
-}
-
 #select_2-box,
 #select_3-box {
   display: none;
 }
+
+@media screen and (max-width:1240px) {
+  .container {
+    width: 1100px;
+  }
+
+  .header__searchLine-alarm1 {
+    margin-left: 1047px;
+  }
+
+  .hamburger-menu-2 {
+    margin-left: 1075px;
+  }
+}
+
+@media screen and (max-width:1180px) {
+  .container {
+    width: 1040px;
+  }
+
+  .header__searchLine-alarm1 {
+    margin-left: 991px;
+  }
+
+  .hamburger-menu-2 {
+    margin-left: 1019px;
+  }
+}
+
+@media screen and (max-width:1120px) {
+  .container {
+    width: 1020px;
+  }
+
+  .header__searchLine-alarm1 {
+    margin-left: 974px;
+  }
+
+  .hamburger-menu-2 {
+    margin-left: 999px;
+  }
+
+}
+
+
+@media screen and (max-width:1080px) {
+  .container {
+    width: 980px;
+  }
+
+  .header__searchLine-alarm1 {
+    margin-left: 926px;
+  }
+
+  .hamburger-menu-2 {
+    margin-left: 959px;
+  }
+
+  .bestsellers__item-img {
+    max-width: 85%;
+  }
+}
+
 
 @media screen and (max-width:1024px) {
 

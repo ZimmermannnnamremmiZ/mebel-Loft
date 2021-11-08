@@ -790,11 +790,7 @@
   }
 
   .childrensroom:hover .dropdown__childrensroom {
-    margin-left: -180%;
-  }
-
-  .menu-stock:hover .dropdown__menu-stock {
-    margin-left: -180%;
+    margin-left: -71px;
   }
 
   .header__menu-stock-text {

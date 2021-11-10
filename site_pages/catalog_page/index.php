@@ -484,6 +484,7 @@
           while($row = $results->fetch_assoc()){
             echo '
                 <div class="bestsellers__box-item" data-toggle-id="hidde__toBasket'.$row["id"].'">
+                <div class=".bestsellers__boxBox">
                 ';
                 if($row["discount"]> 0) {
                   echo '
@@ -509,6 +510,7 @@
                       '.$row["price"].'₽
                       </div>
                       <div class="bestsellers__fullPrice"></div>
+                    </div>
                     </div>
                     <div class="toBasket" id="hidde__toBasket'.$row["id"].'" hidden>
                       <div class="toBasket__sizesLable">Размеры</div>

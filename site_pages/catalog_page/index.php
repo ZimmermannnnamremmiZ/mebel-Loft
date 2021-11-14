@@ -359,7 +359,10 @@
       <p class="navigation__simbol">/</p>
       <p class="navigation__end">lorem 3</p>
     </section>
-    <button class="catalog__filterBtn">Фильтр</button>
+    <div class="catalog__filterBtnBox">
+      <button class="catalog__filterBtn">Фильтр</button>
+      <div class="catalog__filterBtn-x">x</div>
+    </div>
     <section class="catalog">
       <div class="catalog__menu-Container">
         <div class="catalog__menu">

@@ -169,7 +169,7 @@ body {
 }
 
 .catalog__rubSimbol {
-  margin-top: -1px;
+  margin-top: 1px;
 }
 
 .subselect {
@@ -424,7 +424,7 @@ body {
 .bestsellers__box-item {
   position: relative;
   margin-bottom: 50px;
-  max-height: 338px;
+  max-height: 340px;
 }
 
 .bestsellers__item-imgBox {
@@ -876,6 +876,10 @@ body {
     width: 540px;
   }
 
+  .cs {
+    width: 500px;
+  }
+
   .header__searchLine-alarm1 {
     margin-left: 496px;
   }
@@ -886,6 +890,29 @@ body {
 
   .bestsellers__box {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog__menu-Container {
+    height: auto;
+  }
+
+  .catalogMenu__rangeBox {
+    justify-content: space-evenly;
+  }
+
+  .catalogMenu__currencyBox {
+    justify-content: center;
+    align-items: center;
+    width: 143px;
+    height: 40px;
+  }
+
+  .catalogMenu__currencyBox * {
+    font-size: 16px;
+  }
+
+  .catalogMenu__inputcurrency {
+    margin-left: -22px;
   }
 }
 

@@ -22,7 +22,7 @@ $(".catalog__filterBtn").click(function () {
         $(".catalog__menu-Container").css({
             "width": "30%"
         })
-    } else if ($(window).width() > 560) {
+    } else if ($(window).width() > 630) {
         $(".catalog__filterBtn-x").css("display", "none");
         $(".catalog__filterBtn").css("display", "none");
         $(".bestsellers__box").css({
@@ -43,7 +43,7 @@ $(".catalog__filterBtn").click(function () {
         $(".catalog__menu-Container").css({
             "display": "block",
             "position": "absolute",
-            "width": "440px",
+            "width": "500px",
             "background-color": "#fff",
             "z-index": "2",
         });
@@ -52,7 +52,7 @@ $(".catalog__filterBtn").click(function () {
             "background-color": "inherit",
             "margin-top": "30px",
             "z-index": "3",
-            "width": "480px"
+            "width": "540px"
         });
         $(".catalog__filterBtn").css({
             "position": "static",

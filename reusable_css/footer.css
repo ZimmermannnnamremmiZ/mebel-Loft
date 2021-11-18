@@ -194,7 +194,7 @@ footer {
   }
 
   .footer__contacts-logo {
-    padding-top: 24px;
+    padding-top: 15px;
   }
 
   .footer__navigation-leftSide {
@@ -224,6 +224,7 @@ footer {
   .footer__contacts-logo {
     width: 46px;
     height: 32px;
+    padding-top: 24px;
   }
 
   .footer__navigation-title,

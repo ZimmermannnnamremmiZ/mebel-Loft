@@ -598,7 +598,7 @@
   </footer>
   </div>
   <script src="linkShowMore.js"></script>
-  <script src="filterBtn_for_1024px.js"></script>
+  <script src="filterBtn_for_320-1024px.js"></script>
   <script src="selects.js"></script>
   <script src="price-picker.js"></script>
   <script src="filter-products.js"></script>

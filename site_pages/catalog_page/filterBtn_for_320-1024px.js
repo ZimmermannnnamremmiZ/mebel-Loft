@@ -61,7 +61,7 @@ $(".catalog__filterBtn").click(function () {
         });
         $(".catalog__menu").css("margin-top", "40px")
         $(".bestsellers__box").css("margin-top", "30px")
-    } else {
+    } if ($(window).width() > 500)  {
         $(".catalog__filterBtn-x").css({
             "display": "block",
             "padding": "0 10px"
@@ -77,6 +77,58 @@ $(".catalog__filterBtn").click(function () {
             "margin-top": "30px",
             "z-index": "3",
             "width": "480px"
+        });
+        $(".catalog__filterBtn").css({
+            "position": "static",
+            "margin-top": "0",
+            "width": "100%",
+            "background-color": "inherit",
+            "font-size": "14px"
+        });
+        $(".catalog__menu").css("margin-top", "40px")
+        $(".bestsellers__box").css("margin-top", "30px")
+    } else if($(window).width() > 420) {
+        $(".catalog__filterBtn-x").css({
+            "display": "block",
+            "padding": "0 10px"
+        });
+        $(".catalog__menu-Container").css({
+            "display": "block",
+            "width": "360px",
+            "background-color": "#fff",
+            "z-index": "2",
+        });
+        $(".catalog__filterBtnBox").css({
+            "background-color": "inherit",
+            "margin-top": "30px",
+            "z-index": "3",
+            "width": "400px"
+        });
+        $(".catalog__filterBtn").css({
+            "position": "static",
+            "margin-top": "0",
+            "width": "100%",
+            "background-color": "inherit",
+            "font-size": "14px"
+        });
+        $(".catalog__menu").css("margin-top", "40px")
+        $(".bestsellers__box").css("margin-top", "30px")
+    } else {
+        $(".catalog__filterBtn-x").css({
+            "display": "block",
+            "padding": "0 10px"
+        });
+        $(".catalog__menu-Container").css({
+            "display": "block",
+            "width": "320px",
+            "background-color": "#fff",
+            "z-index": "2",
+        });
+        $(".catalog__filterBtnBox").css({
+            "background-color": "inherit",
+            "margin-top": "30px",
+            "z-index": "3",
+            "width": "360px"
         });
         $(".catalog__filterBtn").css({
             "position": "static",

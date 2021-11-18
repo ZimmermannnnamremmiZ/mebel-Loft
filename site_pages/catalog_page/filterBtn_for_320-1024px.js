@@ -35,20 +35,18 @@ $(".catalog__filterBtn").click(function () {
         $(".catalog__menu-Container").css({
             "width": "30%"
         })
-    } else {
+    } else if ($(window).width() > 560) {
         $(".catalog__filterBtn-x").css({
             "display": "block",
             "padding": "0 10px"
         });
         $(".catalog__menu-Container").css({
             "display": "block",
-            "position": "absolute",
             "width": "500px",
             "background-color": "#fff",
             "z-index": "2",
         });
         $(".catalog__filterBtnBox").css({
-            "position": "absolute",
             "background-color": "inherit",
             "margin-top": "30px",
             "z-index": "3",
@@ -62,5 +60,54 @@ $(".catalog__filterBtn").click(function () {
             "font-size": "14px"
         });
         $(".catalog__menu").css("margin-top", "40px")
+        $(".bestsellers__box").css("margin-top", "30px")
+    } else {
+        $(".catalog__filterBtn-x").css({
+            "display": "block",
+            "padding": "0 10px"
+        });
+        $(".catalog__menu-Container").css({
+            "display": "block",
+            "width": "440px",
+            "background-color": "#fff",
+            "z-index": "2",
+        });
+        $(".catalog__filterBtnBox").css({
+            "background-color": "inherit",
+            "margin-top": "30px",
+            "z-index": "3",
+            "width": "480px"
+        });
+        $(".catalog__filterBtn").css({
+            "position": "static",
+            "margin-top": "0",
+            "width": "100%",
+            "background-color": "inherit",
+            "font-size": "14px"
+        });
+        $(".catalog__menu").css("margin-top", "40px")
+        $(".bestsellers__box").css("margin-top", "30px")
     }
+})
+
+$(".catalog__filterBtn-x").click(function () {
+    $(".catalog__menu").css("display", "none");
+    $(".catalog__menu-Container").css({
+        "display": "none",
+    });
+    $(".catalog__filterBtnBox").css({
+        "margin-top": "14px",
+        "width": "auto",
+        "z-index": "0"
+    });
+    $(".catalog__filterBtn").css({
+        "width": "auto",
+        "background-color": "#F9F9F9",
+        "font-size": "12px"
+    })
+    $(".catalog__filterBtn-x").css({
+        "display": "none",
+    })
+    $(".hamburger-menu-2").css("margin-top", "23px")
+    $(".bestsellers__box").css("margin-top", "60px")
 })

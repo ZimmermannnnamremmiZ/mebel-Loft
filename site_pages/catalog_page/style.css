@@ -105,6 +105,7 @@ body {
 
 .catalog__filterBtn-x {
   display: none;
+  padding: 0 10px;
 }
 
 
@@ -177,10 +178,9 @@ body {
 }
 
 .cs {
-  width: 203px;
+  width: 100%;
   height: 29px;
   background: #F8F8F8;
-  ;
   border-radius: 3px;
   font-size: 12px;
   line-height: 14px;
@@ -883,10 +883,6 @@ body {
     width: 540px;
   }
 
-  .cs {
-    width: 500px;
-  }
-
   .header__searchLine-alarm1 {
     margin-left: 496px;
   }
@@ -905,6 +901,10 @@ body {
 
   .catalog__menu-Container {
     height: auto;
+  }
+
+  .catalog__menu {
+    margin-top: 40px;
   }
 
   .catalogMenu__rangeBox {
@@ -944,6 +944,7 @@ body {
   .hamburger-menu-2 {
     margin-left: 460px;
   }
+
 }
 
 @media screen and (max-width:500px) {

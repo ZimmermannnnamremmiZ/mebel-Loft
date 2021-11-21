@@ -71,7 +71,7 @@
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
     transition-duration: .25s;
-    z-index: 5;
+    z-index: 999;
   }
 
   .menu__box a {

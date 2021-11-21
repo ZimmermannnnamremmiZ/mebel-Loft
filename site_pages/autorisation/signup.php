@@ -14,16 +14,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/reusable_css/header.css">
-    <link rel="stylesheet" href="/reusable_css/hamburger_menu.css">
-    <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="/reusable_css/owl_carousel.css">
-    <link rel="stylesheet" href="/reusable_css/footer.css">
+  <link rel="stylesheet" href="/reusable_css/header.css">
+  <link rel="stylesheet" href="/reusable_css/hamburger_menu.css">
+  <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="/reusable_css/owl_carousel.css">
+  <link rel="stylesheet" href="/reusable_css/footer.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
 </head>
 
 <body>
+<div class="wrap_1">
   <div class="container">
     <header class="header">
       <div class="header__sections">
@@ -37,8 +38,7 @@
           <div class="menu__box">
             <div class="menu__closeBtn"></div>
             <div class="menu__h"><strong class="menu__menu">Меню</strong></div>
-            <div class="menu__item"><strong class="menu__home"><a
-                  href="/index.php">Главная</a></strong></div>
+            <div class="menu__item"><strong class="menu__home"><a href="/index.php">Главная</a></strong></div>
             <div class="menu__item menu__about"><a href="/site_pages/about_page/index.php">О нас</a></div>
             <div class="menu__item menu__contacts"><a href="/site_pages/contacts_page/index.php">Контакты</a></div>
             <div class="menu__h menu__category"><strong>Категории</strong></div>
@@ -56,15 +56,14 @@
             <div class="menu__item menu__cupboard"><a href="/site_pages/catalog_page/index.php">Шкафы</a></div>
           </div>
         </div>
-        <a href="/index.php" class=""><img class="header__logo" src="/images/title_page/LOGO.svg"
-            alt="logo"></a>
+        <a href="/index.php" class=""><img class="header__logo" src="/images/title_page/LOGO.svg" alt="logo"></a>
         <a class="header__sections-main" href="/index.php">Главная</a>
         <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
         <a class="header__sections-contacts" href="index.php">Контакты</a>
         <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
         <img class="header__phone-icon" src="/images/title_page/phone.svg">
         <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
-        <img class="header__delivery-icon" src="/images/title_page/delivery-icon-black.svg">
+        <a class="header__delivery-icon" href="#"></a>
         <a class="header__sections-delivery" href="#">Доставка</a>
         <img class="header__searchLine-wishlist" src="/images/title_page/wishlist-icon.svg" alt="search">
         <a class="header__searchLine-bag" href="/site_pages/basket_page/index.php" alt="search"></a>
@@ -369,7 +368,7 @@
             $user->email = $data['email'];
             $user->password = password_hash($data['password'], PASSWORD_DEFAULT);  // шифруем пароль
             R::store($user);
-            echo '<div class="error">
+            echo '<div class="success">
                     <p>Вы успешно зарегестрированы, <a href="/site_pages/autorisation/login.php">войти на сайт</a></p>
                 </div>';
           } else {
@@ -379,28 +378,30 @@
           }
         }
       ?>
-      <div class="formElement mt30">
+      <div class="formElement formElement__margin">
         <p class="formElement__header"><strong>Ваше имя</strong>:</p>
         <input class="formElement__input" type="text" name="name" value="<?php echo @$data['name']; ?>">
       </div>
-      <div class="formElement mt30">
+      <div class="formElement formElement__margin">
         <p class="formElement__header"><strong>Ваш логин</strong>:</p>
         <input class="formElement__input" type="text" name="login" value="<?php echo @$data['login']; ?>">
       </div>
-      <div class="formElement mt30">
+      <div class="formElement formElement__margin">
         <p class="formElement__header"><strong>Ваш Email</strong>:</p>
         <input class="formElement__input" type="email" name="email" value="<?php echo @$data['email']; ?>">
       </div>
-      <div class="formElement mt30">
+      <div class="formElement formElement__margin">
         <p class="formElement__header"><strong>Ваш пароль</strong>:</p>
         <input class="formElement__input" type="password" name="password">
       </div>
-      <div class="formElement mt30">
+      <div class="formElement formElement__margin">
         <p class="formElement__header"><strong>Введите ваш пароль ещё раз</strong>:</p>
         <input class="formElement__input" type="password" name="password_2">
       </div>
       <button class="submit" type="submit" name="do_signup">Зарегистрироваться</button>
     </form>
+      </div>
+      <div class="wrap_2">
     <footer class="footer footer_bottom">
       <div class="footer__content container">
         <div class="footer__navigation-leftSide">
@@ -457,8 +458,8 @@
     </footer>
   </div>
   <script src="../scripts/menu_for_1024px.js"></script>
-    <script src="script.js"></script>
-    <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
+  <script src="script.js"></script>
+  <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
 </body>
 
 </html>

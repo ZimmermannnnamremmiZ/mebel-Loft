@@ -36,7 +36,6 @@ a {
 .navigation {
   display: flex;
   margin-top: 30px;
-  margin-left: 140px;
 }
 .navigation__start {
   font-size: 12px;
@@ -58,7 +57,6 @@ a {
 
 .bonus {
   display: flex;
-  margin-left: 140px;
   margin-top: 40px;
   align-items: center;
 }
@@ -86,7 +84,6 @@ a {
 
 .benefits {
   margin-top: 30px;
-  margin-left: 140px;
   width: 1140px;
   height: 57px;
   display: flex;
@@ -133,7 +130,6 @@ a {
 .userData {
   display: flex;
   margin-bottom: 100px;
-  margin-left: 140px;
   margin-top: 42px;
   width: 1140px;
   height: 406px;
@@ -241,11 +237,6 @@ a {
   font-size: 12px;
   line-height: 147.69%;
   color: #686868;
-}
-
-.userData__head {
-  margin-left: 140px;
-
 }
 
 .userData__header-product {

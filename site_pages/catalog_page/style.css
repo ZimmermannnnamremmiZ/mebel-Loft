@@ -101,6 +101,7 @@ body {
   margin-top: 14px;
   display: flex;
   align-items: center;
+  z-index: 4;
 }
 
 .catalog__filterBtn-x {
@@ -381,7 +382,7 @@ body {
   font-style: normal;
   font-weight: bold;
   color: black;
-  z-index: 999;
+  z-index: 9999;
   opacity: 0.8;
 }
 
@@ -618,7 +619,7 @@ body {
   list-style: none;
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
-  z-index: 3;
+  z-index: 6;
 }
 
 .menu-2__item {
@@ -873,6 +874,10 @@ body {
     margin-top: 30px;
   }
 
+  .bestsellers__item-img {
+    max-height: 60%;
+  }
+
   .hamburger-menu-2 {
     margin-left: 580px;
   }
@@ -904,7 +909,7 @@ body {
   }
 
   .catalog__menu {
-    margin-top: 40px;
+    margin-top: 15px;
   }
 
   .catalogMenu__rangeBox {
@@ -964,6 +969,10 @@ body {
   .hamburger-menu-2 {
     margin-left: 380px;
   }
+
+  .bestsellers__box {
+    grid-gap: 5px;
+  }
 }
 
 
@@ -986,7 +995,11 @@ body {
 
   .catalogMenu__currencyBox {
     width: 100px;
-}
+  }
+
+  .toBascet__add {
+    font-size: 11px;
+  }
 }
 
 @media screen and (max-width:380px) {
@@ -994,13 +1007,24 @@ body {
     width: 330px;
   }
 
+  .hamburger-menu-2 {
+    margin-left: 310px;
+  }
+
   .header__searchLine-alarm1 {
     margin-left: 287px;
   }
 
+
   .bestsellers__item-imgBox {
     margin-top: 30px;
     margin-bottom: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .bestsellers__item-name {
+    margin-top: 10px;
   }
 }
 
@@ -1009,7 +1033,19 @@ body {
     width: 290px;
   }
 
+  .header__searchLine-alarm1 {
+    margin-left: 246px;
+  }
+
+  .hamburger-menu-2 {
+    margin-left: 270px;
+  }
+
   .bestsellers__item-imgBox {
     height: 120px;
   }
+
+  .toBasket__sizes * {
+    font-size: 8px;
+}
 }

@@ -470,10 +470,10 @@
           <li class="menu-2__item">по популярности</a></li>
         </ul>
       </div>
+      <div class="bestsellers__modalWindow-box">
+        Товар был успешно добавлен в корзину
+      </div>
       <div class="bestsellers__box">
-        <div class="bestsellers__modalWindow-box">
-          Товар был успешно добавлен в корзину
-        </div>
         <?php
           $dbUser = 'root';
           $dbName = 'мебель loft';

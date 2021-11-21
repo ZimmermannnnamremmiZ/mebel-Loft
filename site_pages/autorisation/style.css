@@ -1,6 +1,45 @@
-@import url(/site_pages/contacts_page/style.css);
+@font-face {
+  font-family: 'Roboto';
+  src: url("/fonts/Roboto-Regular.ttf") format('truetype'),
+    url("/fonts/RobotoCondensed-Regular.ttf") format('truetype')
+}
 
-.mt30 {
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.wrap_1 {
+  flex: 1 0 auto;
+}
+
+.wrap_2 {
+  flex: 0 0 auto;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.formElement__margin {
   margin-top: 30px;
 }
 
@@ -9,34 +48,34 @@
 }
 
 .form {
+  position: relative;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 15px;
-  position: relative;
-  width: 500px;
-  height: 550px;
+  width: 100%;
+  min-height: 500px;
 }
 
 .form_reg {
-  height: 750px;
+  min-height: 750px;
 }
 
 .error {
-  margin-top: 60px;
+  order: 2;
+  margin-top: 40px;
   width: 100%;
   text-align: center;
   color: brown;
+
 }
 
 .success {
   margin-top: 60px;
-  width: 100%;
-  margin-left: -5px;
   text-align: center;
   color: rgb(29, 94, 33);
+  order: 2;
 }
 
 .login_header {
@@ -44,7 +83,6 @@
 }
 
 .formElement__input {
-  margin-top: 10px;
   background-color: rgb(245, 245, 245);
   width: 200px;
   height: 40px;
@@ -59,10 +97,6 @@
   background-color: rgb(151, 212, 151);
 }
 
-footer {
-  margin-top: 0;
-}
-
 a {
   text-decoration: none;
   color: #414141;
@@ -72,9 +106,145 @@ form a {
   color: #44989e;
 }
 
-.header__logo {
-  margin-top: -5px;
-  margin-left: 140px;
-  height: 26px;
-  width: 112.96px;
+@media screen and (max-width:1240px) {
+  .container {
+    width: 1100px;
+  }
+}
+
+@media screen and (max-width:1180px) {
+  .container {
+    width: 1040px;
+  }
+}
+
+@media screen and (max-width:1120px) {
+  .container {
+    width: 1020px;
+  }
+
+}
+
+
+@media screen and (max-width:1080px) {
+  .container {
+    width: 980px;
+  }
+}
+
+
+@media screen and (max-width:1024px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media screen and (max-width:980px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width:920px) {
+  .container {
+    width: 860px;
+  }
+}
+
+@media screen and (max-width:880px) {
+  .container {
+    width: 820px;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    width: 720px;
+  }
+
+  .form {
+    min-height: 450px;
+  }
+}
+
+@media screen and (max-width:740px) {
+  .container {
+    width: 660px;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .container {
+    width: 480px;
+  }
+
+  .formElement__margin {
+    margin-top: 15px;
+  }
+
+  .form {
+    font-size: 11px;
+  }
+
+  .submit {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .container {
+    width: 400px;
+  }
+
+  .formElement__input {
+    font-size: 10px;
+    width: 135px;
+  }
+
+  .formElement__margin {
+    margin-top: 10px;
+  }
+
+  .submit {
+    margin-top: 35px;
+    width: 157px;
+  }
+
+}
+
+
+@media screen and (max-width:420px) {
+  .container {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .container {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width:340px) {
+  .container {
+    width: 290px;
+  }
 }

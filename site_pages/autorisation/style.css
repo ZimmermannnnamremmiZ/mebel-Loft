@@ -26,6 +26,12 @@ html {
   height: 100%;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .wrap_1 {
   flex: 1 0 auto;
 }

@@ -21,6 +21,20 @@ body {
   line-height: 18.75px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrap_1 {
+  flex: 1 0 auto;
+}
+
+.wrap_2 {
+  flex: 0 0 auto;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;

@@ -21,6 +21,25 @@ body {
   line-height: 18.75px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrap_1 {
+  flex: 1 0 auto;
+}
+
+.wrap_2 {
+  flex: 0 0 auto;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
 .navigation {
   display: flex;
   margin-top: 30px;
@@ -44,15 +63,6 @@ body {
   line-height: 14px;
   color: #969696;
   margin-left: 10px;
-}
-
-.container {
-  width: 1140px;
-  margin: 0 auto;
-}
-
-.display-none {
-  display: none;
 }
 
 .box_withShadow {
@@ -205,7 +215,7 @@ body {
   width: 14px;
   height: 14px;
 
-  cursor: move;
+  cursor: col-resize;
   transform: translateY(-50%);
 
   border: none;

@@ -50,6 +50,10 @@ a {
   color: #414141;
 }
 
+input::placeholder {
+  color: #C4C4C4;
+}
+
 .flex {
   display: flex;
 }
@@ -92,14 +96,13 @@ a {
 .bonus__title {
   font-size: 16px;
   line-height: 19px;
-
+  color: #414141;
 }
 
 .bonus__points {
-  margin-left: 644px;
+  margin-left: auto;
   font-size: 12px;
   line-height: 14px;
-
 }
 
 .bonus__rules {
@@ -121,7 +124,7 @@ a {
 }
 
 .benefits__el1 {
-  margin-left: 133px;
+  margin-left: 11.66666666666667%;
   display: flex;
   align-items: center;
 }
@@ -133,7 +136,7 @@ a {
 
 .benefits__el3 {
   display: flex;
-  margin-right: 133px;
+  margin-right: 11.66666666666667%;
   align-items: center;
 }
 
@@ -154,60 +157,58 @@ a {
   width: 22px;
 }
 
-.benefits__el1-text {
+.benefits__el-text {
+  margin-top: 3px;
   font-size: 14px;
   line-height: 130%;
   margin-left: 15.26px;
 }
 
-.benefits__el2-text {
-  font-size: 14px;
-  line-height: 130%;
-  margin-left: 15px;
-}
-
-.benefits__el3-text {
-  font-size: 14px;
-  line-height: 130%;
-  margin-left: 15px;
-}
-
 .userData {
   display: flex;
-  margin-bottom: 100px;
+  justify-content: space-between;
+  margin-bottom: 80px;
   margin-top: 42px;
   width: 100%;
-  height: 406px;
 }
 
 .userData__info {
-  width: 50%;
+  position: relative;
+  width: 41.519%;
 }
 
 .userData__orders {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .userData__title {
-  flex-basis: 50%;
-  margin-top: 42px;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 19px;
   color: #414141;
 }
 
-.userData__title-myOrders {
-  flex-basis: 50%;
+.userData__rowBox {
+  justify-content: space-between;
 }
 
-.inputHeader-email {
-  margin-left: 192px;
+.inputHeader-left {
+  flex-basis: 42.68%;
+}
+
+.inputHeader-right {
+  flex-basis: 54.68%;
 }
 
 .inputHeader-style {
   font-size: 12px;
   line-height: 14px;
   color: #969696;
+}
+
+.inputHeader-flat {
+  margin-left: 10px;
 }
 
 .input_style {
@@ -220,34 +221,32 @@ a {
 
 .input-1 {
   margin-top: 5px;
-  width: 183px;
+  width: 38%;
   height: 38px;
-  padding: 0 12px
+  padding: 0 12px;
 }
 
 .input-2 {
   margin-top: 5px;
   margin-left: 10px;
-  width: 216px;
+  width: 50%;
   height: 38px;
-  padding: 0 12px
+  padding: 0 12px;
 }
 
-.mt10 {
+
+.userData__inputStack {
   margin-top: 10px;
 }
 
-.inputHeader-number {
-  margin-left: 164px;
+.userData__streetInput {
+  width: 95.322%;
 }
 
-.w433 {
-  width: 433px;
+.inputHeader-house {
+  width: 117px;
 }
 
-.inputHeader-flat {
-  margin-left: 56px;
-}
 
 .input-home {
   width: 93px;
@@ -263,8 +262,9 @@ a {
 }
 
 .change_button {
+  position: absolute;
+  right: 0;
   margin-top: 20px;
-  margin-left: 356px;
   width: 101px;
   height: 40px;
   background-color: #245462;
@@ -288,7 +288,7 @@ a {
 .userData__header-product {
   padding-top: 5px;
   padding-left: 15px;
-  width: 301px;
+  width: 329px;
   border: 1px solid #F3F3F3;
 }
 
@@ -301,20 +301,20 @@ a {
 
 .userData__header-date {
   padding-top: 5px;
-  width: 88px;
+  width: 86px;
   border: 1px solid #F3F3F3;
   text-align: center;
 }
 
 .userData__header-status {
   padding-top: 5px;
-  width: 88px;
+  width: 86px;
   border: 1px solid #F3F3F3;
   text-align: center;
 }
 
 .userData__product {
-  width: 318px;
+  width: 346px;
   height: 90px;
   border: 1px solid #F3F3F3;
   box-sizing: border-box;
@@ -349,7 +349,7 @@ a {
 .userData__date {
   padding-top: 36px;
   text-align: center;
-  width: 90px;
+  width: 88px;
   font-size: 12px;
   line-height: 147.69%;
   color: #686868;
@@ -360,7 +360,7 @@ a {
 .userData__status {
   padding-top: 36px;
   text-align: center;
-  width: 90px;
+  width: 88px;
   font-size: 12px;
   line-height: 147.69%;
   color: #686868;
@@ -371,7 +371,7 @@ a {
 .userData__status2 {
   padding-top: 28px;
   text-align: center;
-  width: 90px;
+  width: 88px;
   font-size: 12px;
   line-height: 147.69%;
   color: #686868;
@@ -390,19 +390,13 @@ a {
   width: 100%;
 }
 
-#main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .change__userData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 300px;
-  height: 50px;
+  height: 55px;
   text-align: center;
-  padding-top: 26px;
   border: 1px solid;
   border-radius: 10px;
   position: absolute;
@@ -412,12 +406,35 @@ a {
   left: 0;
   margin: auto;
   background-color: #245462;
+  opacity: 0.8;
   color: #fff;
+}
+
+@media screen and (max-width:1240px) {
+  .container {
+    width: 1100px;
+  }
 }
 
 @media screen and (max-width:1180px) {
   .container {
     width: 1040px;
+  }
+
+  .benefits__el1 {
+    margin-left: 9%;
+  }
+
+  .benefits__el3 {
+    margin-right: 9%;
+  }
+
+  .userData__header-product {
+    width: 261px;
+  }
+
+  .userData__product {
+    width: 278px;
   }
 }
 
@@ -425,7 +442,6 @@ a {
   .container {
     width: 1020px;
   }
-
 }
 
 
@@ -433,40 +449,39 @@ a {
   .container {
     width: 980px;
   }
+
+  .benefits__el1 {
+    margin-left: 5%;
+  }
+
+  .benefits__el3 {
+    margin-right: 5%;
+  }
 }
 
 @media screen and (max-width:1024px) {
-
-  .navigation,
-  .bonus,
-  .benefits,
-  .userData__head,
-  .userData {
-    margin-left: 0;
+  .container {
+    width: 960px;
   }
-
-  .bonus__points {
-    margin-left: 466px;
-  }
-
-  .userData {
-    width: 959px;
-    margin-bottom: 0;
-  }
-
-  .userData__all {
-    margin-left: 402px;
-  }
-
-  .userData__title-myOrders {
-    margin-left: 360px;
-  }
-
 }
+
 
 @media screen and (max-width:980px) {
   .container {
     width: 900px;
+  }
+
+  .userData__header-product {
+    width: 219px;
+  }
+
+  .userData__product {
+    width: 236px;
+  }
+
+  .benefits__el-text {
+    margin-top: 3px;
+    margin-left: 5px;
   }
 }
 
@@ -474,11 +489,43 @@ a {
   .container {
     width: 860px;
   }
+
+  .benefits__el-text {
+    font-size: 13px;
+  }
+
+  .benefits__el1-img {
+    height: 22px;
+    width: 23.74px;
+  }
+
+  .benefits__el2-img {
+    height: 22px;
+    width: 22px;
+  }
+
+  .benefits__el3-img {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 @media screen and (max-width:880px) {
   .container {
     width: 820px;
+  }
+
+  .userData__info {
+    position: relative;
+    width: 37.519%;
+  }
+
+  .userData__header-product {
+    width: 200px;
+  }
+
+  .userData__product {
+    width: 217px;
   }
 }
 
@@ -497,16 +544,24 @@ a {
     margin-top: 30px;
   }
 
-
-  .bonus__points {
-    margin-left: 226px;
+  .benefits__el1 {
+    margin-left: 5%;
+    width: 33%;
   }
 
-  .benefits__el1-text,
-  .benefits__el2-text,
-  .benefits__el3-text {
+  .benefits__el2 {
+    width: 47%;
+    justify-content: center;
+  }
+
+  .benefits__el3 {
+    margin-right: 5%;
+    width: 33%;
+  }
+
+  .benefits__el-text {
     font-size: 13px;
-    margin-left: 8px;
+    margin-left: 7px;
   }
 
   .benefits__el1-img,
@@ -516,17 +571,10 @@ a {
   }
 
   .userData__title {
-    margin-top: 0px;
-    font-size: 14px;
-  }
-
-  .userData__title-myOrders {
-    position: absolute;
-
+    font-size: 16px;
   }
 
   .userData {
-    width: 720px;
     flex-direction: column;
   }
 
@@ -534,9 +582,17 @@ a {
     width: 100%;
   }
 
+  .userData__title-myOrders {
+    margin-top: 35px;
+  }
+
   .userData__orders {
     width: 100%;
     margin-top: 30px;
+  }
+
+  .inputHeader-left {
+    flex-basis: 57.68%;
   }
 
   .inputHeader-email {
@@ -545,12 +601,9 @@ a {
 
   .input-1,
   .input-2 {
-    width: 326px;
+    width: 301px;
   }
 
-  .inputHeader-number {
-    margin-left: 308px;
-  }
 
   .change_button {
     position: absolute;
@@ -590,21 +643,17 @@ a {
   .userData__status2 {
     width: 102px;
   }
+}
 
-  .userData__all {
-    margin-left: 642px;
+@media screen and (max-width:768px) {
+  .container {
+    width: 720px;
   }
 }
 
 @media screen and (max-width:740px) {
   .container {
     width: 660px;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .container {
-    width: 720px;
   }
 }
 

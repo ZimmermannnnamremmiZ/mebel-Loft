@@ -85,7 +85,7 @@
             <a href="/index.php" class=""><img class="header__logo" src="/images/title_page/LOGO.svg" alt="logo"></a>
             <a class="header__sections-main" href="/index.php">Главная</a>
             <a class="header__sections-about" href="/site_pages/about_page/index.php">О нас</a>
-            <a class="header__sections-contacts" href="/site_pages/contacts_page/index.php">Контакты</a>
+            <a class="header__sections-contacts" href="index.php">Контакты</a>
             <input class="header__searchLine-input" name="search" id="search" placeholder="Поиск">
             <img class="header__phone-icon" src="/images/title_page/phone.svg">
             <a class="header__sections-phone" href="tel:89648999119">8 (964) 89 99 119</a>
@@ -380,72 +380,73 @@
         <section class="benefits">
           <div class="benefits__el1">
             <img class="benefits__el1-img" src="/images/account_page/cashback.svg">
-            <p class="benefits__el1-text">Возвращаем до 7% на бонусный счет</p>
+            <p class="benefits__el-text">Возвращаем до 7% на бонусный счет</p>
           </div>
           <div class="benefits__el2">
             <img class="benefits__el2-img" src="/images/account_page/rub.svg">
-            <p class="benefits__el2-text">1 бонус = 1 рубль</p>
+            <p class="benefits__el-text">1 бонус = 1 рубль</p>
           </div>
           <div class="benefits__el3">
             <img class="benefits__el3-img" src="/images/account_page/box.svg">
-            <p class="benefits__el3-text">Оплачивайте бонусами до 20% от покупки</p>
+            <p class="benefits__el-text">Оплачивайте бонусами до 20% от покупки</p>
           </div>
         </section>
-        <div class="userData__head flex">
-          <p class="userData__title">Личные данные</p>
-          <p class="userData__title userData__title-myOrders">Мои заказы</p>
-        </div>
         <section class="userData">
-          <form class="userData__info" action="/site_pages/account_page/index.php" method="POST">
-            <div class="flex">
-              <p class="inputHeader-style">Имя</p>
-              <p class="inputHeader-email mt30 inputHeader-style">E-mail</p>
-            </div>
-            <div class="flex">
-              <input type="text" class="input-1 input_style" value="<?php echo $_SESSION['logged_user']->name ?>"
-                name="name">
-              <input type="text" class="input-2 input_style" value="<?php echo $_SESSION['logged_user']->email ?>"
-                name="email">
-            </div>
-            <div class="mt10">
-              <div class="flex">
-                <p class="inputHeader-style">Фамилия</p>
-                <p class="inputHeader-number inputHeader-style">Номер телефона</p>
+          <div class="userData__info">
+            <p class="userData__title">Личные данные</p>
+            <form class="userData__form" action="/site_pages/account_page/index.php" method="POST">
+              <div class="userData__rowBox flex">
+                <p class="inputHeader-left inputHeader-style">Имя</p>
+                <p class="inputHeader-right inputHeader-style">E-mail</p>
               </div>
-              <div class="flex">
-                <input type="text" class="input-1 input_style" value="<?php echo $_SESSION['logged_user']->surname ?>"
-                  name="surname">
-                <input type="text" class="input-2 input_style" value="<?php echo $_SESSION['logged_user']->telephone ?>"
-                  name="telephone">
+              <div class="userData__rowBox flex">
+                <input type="text" class="input-1 input_style" value="<?php echo $_SESSION['logged_user']->name ?>"
+                  name="name" placeholder="Name">
+                <input type="email" class="input-2 input_style" value="<?php echo $_SESSION['logged_user']->email ?>"
+                  name="email" placeholder="Email">
               </div>
-            </div>
-            <div class="mt30">
-              <p class="inputHeader-style">Город</p>
-              <input type="text" class="input-1 input_style" value="<?php echo $_SESSION['logged_user']->city ?>"
-                name="city">
-            </div>
-            <div class="mt10">
-              <p class="inputHeader-style">Улица</p>
-              <input type="text" class="input-1 input_style w433" value="<?php echo $_SESSION['logged_user']->street ?>"
-                name="street">
-            </div>
-            <div class="mt10">
-              <div class="flex">
-                <p class="inputHeader-style">Дом/Корпус</p>
-                <p class="inputHeader-flat inputHeader-style">Квартира</p>
+              <div class="userData__inputStack">
+                <div class="userData__rowBox flex">
+                  <p class="inputHeader-left inputHeader-style">Фамилия</p>
+                  <p class="inputHeader-right inputHeader-style">Номер телефона</p>
+                </div>
+                <div class="userData__rowBox flex">
+                  <input type="text" class="input-1 input_style" value="<?php echo $_SESSION['logged_user']->surname ?>"
+                    name="surname">
+                  <input type="tel" class="input-2 input_style"
+                    value="<?php echo $_SESSION['logged_user']->telephone ?>" name="telephone"
+                    placeholder="+x-xxx-xxx-xx-xx">
+                </div>
               </div>
-              <div class="flex">
-                <input type="text" class="input-home input_style" value="<?php echo $_SESSION['logged_user']->house ?>"
-                  name="house">
-                <input type="text" class="input-flat input_style" value="<?php echo $_SESSION['logged_user']->flat ?>"
-                  name="flat">
+              <div class="userData__inputStack">
+                <p class="inputHeader-style">Город</p>
+                <input type="text" class="input-1 input_style" value="<?php echo $_SESSION['logged_user']->city ?>"
+                  name="city">
               </div>
-            </div>
-            <button class="change_button" type="submit" name="change">
-              Изменить
-            </button>
-          </form>
+              <div class="userData__inputStack">
+                <p class="inputHeader-style">Улица</p>
+                <input type="text" class="input-1 input_style userData__streetInput"
+                  value="<?php echo $_SESSION['logged_user']->street ?>" name="street">
+              </div>
+              <div class="userData__inputStack">
+                <div class="userData__inputHeaderBox flex">
+                  <p class="inputHeader-style inputHeader-house">Дом/Корпус</p>
+                  <p class="inputHeader-flat inputHeader-style">Квартира</p>
+                </div>
+                <div class="flex">
+                  <input type="text" class="input-home input_style"
+                    value="<?php echo $_SESSION['logged_user']->house ?>" name="house">
+                  <input type="text" class="input-flat input_style" value="<?php echo $_SESSION['logged_user']->flat ?>"
+                    name="flat">
+                </div>
+              </div>
+              <button class="change_button" type="submit" name="change">
+                Изменить
+              </button>
+            </form>
+          </div>
           <div class="userData__orders">
+            <p class="userData__title userData__title-myOrders">Мои заказы</p>
             <div class="userData__orders-header flex">
               <div class="userData__header-product">Товар</div>
               <div class="userData__header-price">Цена</div>
@@ -494,13 +495,12 @@
           </div>
         </section>
         <?php if ( isset($_POST['change'])) {
-            echo '<a id="main" href="/site_pages/account_page/index.php">
-                    <div class="change__userData">
+            echo '<div id="main" class="change__userData">
                       Данные успешно изменены
                     </div>
-                  </a>';
-          }
-          ?>
+                  ';
+        }
+        ?>
       </div>
     </div>
     <div class="wrap_2">
@@ -560,13 +560,8 @@
       </footer>
     </div>
   </div>
-  <script type="text/javascript">
-    setTimeout(function () {
-      $('#main').fadeOut('fast');
-    }, 2000); //
-  </script>
-  <script src="../scripts/menu_for_1024px.js"></script>
   <script src="script.js"></script>
+  <script src="../scripts/menu_for_1024px.js"></script>
   <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
 </body>
 

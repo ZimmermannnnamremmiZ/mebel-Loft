@@ -592,18 +592,27 @@ input::placeholder {
   }
 
   .inputHeader-left {
-    flex-basis: 57.68%;
+    flex-basis: 46%;
+  }
+
+  .inputHeader-right {
+    flex-basis: 52%;
+  }
+
+  .input-1 {
+    width: 44%;
+    padding: 0px 1%;
+  }
+
+  .input-2 {
+    margin-left: 0;
+    width: 50%;
+    padding: 0 1%;
   }
 
   .inputHeader-email {
     margin-left: 335px;
   }
-
-  .input-1,
-  .input-2 {
-    width: 301px;
-  }
-
 
   .change_button {
     position: absolute;
@@ -661,11 +670,41 @@ input::placeholder {
   .container {
     width: 600px;
   }
+
+  .benefits__el1 {
+    margin-left: 5%;
+    width: 34%;
+  }
+
+  .benefits__el2 {
+    width: 42%;
+  }
+
+  .benefits__el3 {
+    margin-right: 5%;
+    width: 35%;
+  }
+
+  .userData__product {
+    width: 437px;
+  }
 }
 
 @media screen and (max-width:630px) {
   .container {
     width: 540px;
+  }
+
+  .benefits__el1 {
+    margin-left: 3%;
+  }
+
+  .benefits__el2 {
+    width: 35%;
+  }
+
+  .benefits__el3 {
+    margin-right: 3%;
   }
 }
 

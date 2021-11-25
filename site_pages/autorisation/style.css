@@ -82,6 +82,7 @@ html {
   text-align: center;
   color: rgb(29, 94, 33);
   order: 2;
+  line-height: 25px;
 }
 
 .login_header {

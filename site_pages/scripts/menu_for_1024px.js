@@ -2,7 +2,7 @@
 $('.menu__btn').click(function () {
   $('.menu__box').css({
     'visibility': 'visible',
-    'transform': 'translate(2%)',
+    'transform': 'translate(0%)',
     'transition-duration': '0.3s'
   })
 })
@@ -13,7 +13,7 @@ $('.menu__closeBtn').click(function () {
   $('.hamburger__botline').css('transform', 'scaleX(1)');
   $('.menu__box').css({
     'visibility': 'hidden',
-    'transform': 'translate(-230px)',
+    'transform': 'translate(-125%)',
     'transition-duration': '0.9s'
   })
 })

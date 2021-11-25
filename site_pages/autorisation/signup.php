@@ -13,6 +13,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="icon" href="/images/favicon.png" type="images/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="/reusable_css/header.css">
   <link rel="stylesheet" href="/reusable_css/hamburger_menu.css">
@@ -20,6 +21,7 @@
   <link rel="stylesheet" href="/reusable_css/owl_carousel.css">
   <link rel="stylesheet" href="/reusable_css/footer.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="/site_pages/scripts/jQuery_touchErrorFix.js"></script>
   <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
 </head>
 
@@ -469,7 +471,6 @@
     </div>
   </div>
   <script src="../scripts/menu_for_1024px.js"></script>
-  <script src="script.js"></script>
   <script src="../scripts/owl carousel/owl_carousel_init.js"></script>
 </body>
 

@@ -157,6 +157,22 @@ input::placeholder {
   width: 22px;
 }
 
+.benefits__el1-img,
+.benefits__el2-img,
+.benefits__el3-img {
+  animation: img-rotate 5s infinite alternate;
+}
+
+@keyframes img-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .benefits__el-text {
   margin-top: 3px;
   font-size: 14px;
@@ -180,6 +196,7 @@ input::placeholder {
 .userData__orders {
   display: flex;
   flex-direction: column;
+  width: 53%;
 }
 
 .userData__title {
@@ -285,39 +302,45 @@ input::placeholder {
   color: #686868;
 }
 
+.userData__productUnit {
+  position: relative;
+}
+
 .userData__header-product {
   padding-top: 5px;
-  padding-left: 15px;
-  width: 329px;
+  width: 58%;
   border: 1px solid #F3F3F3;
+}
+
+.userData__header-productText {
+  margin-left: 15px;
 }
 
 .userData__header-price {
   padding-top: 5px;
-  width: 66px;
+  width: 13%;
   border: 1px solid #F3F3F3;
   text-align: center;
 }
 
 .userData__header-date {
   padding-top: 5px;
-  width: 86px;
+  width: 15%;
   border: 1px solid #F3F3F3;
   text-align: center;
 }
 
 .userData__header-status {
   padding-top: 5px;
-  width: 86px;
+  width: 14%;
   border: 1px solid #F3F3F3;
   text-align: center;
 }
 
 .userData__product {
-  width: 346px;
+  width: 58%;
   height: 90px;
   border: 1px solid #F3F3F3;
-  box-sizing: border-box;
 }
 
 .product-img {
@@ -338,45 +361,41 @@ input::placeholder {
 .userData__price {
   padding-top: 36px;
   text-align: center;
-  width: 68px;
+  width: 13%;
   font-size: 12px;
   line-height: 147.69%;
   color: #686868;
   border: 1px solid #F3F3F3;
-  box-sizing: border-box;
 }
 
 .userData__date {
   padding-top: 36px;
   text-align: center;
-  width: 88px;
+  width: 15%;
   font-size: 12px;
   line-height: 147.69%;
   color: #686868;
   border: 1px solid #F3F3F3;
-  box-sizing: border-box;
 }
 
 .userData__status {
   padding-top: 36px;
   text-align: center;
-  width: 88px;
+  width: 14%;
   font-size: 12px;
   line-height: 147.69%;
   color: #686868;
   border: 1px solid #F3F3F3;
-  box-sizing: border-box;
 }
 
 .userData__status2 {
   padding-top: 28px;
   text-align: center;
-  width: 88px;
+  width: 14%;
   font-size: 12px;
   line-height: 147.69%;
   color: #686868;
   border: 1px solid #F3F3F3;
-  box-sizing: border-box;
 }
 
 .userData__all {
@@ -428,14 +447,6 @@ input::placeholder {
   .benefits__el3 {
     margin-right: 9%;
   }
-
-  .userData__header-product {
-    width: 261px;
-  }
-
-  .userData__product {
-    width: 278px;
-  }
 }
 
 @media screen and (max-width:1120px) {
@@ -463,20 +474,23 @@ input::placeholder {
   .container {
     width: 960px;
   }
+
+  .userData__header-product,
+  .userData__product {
+    width: 55%;
+  }
+
+  .userData__header-status,
+  .userData__status,
+  .userData__status2 {
+    width: 17%;
+  }
 }
 
 
 @media screen and (max-width:980px) {
   .container {
     width: 900px;
-  }
-
-  .userData__header-product {
-    width: 219px;
-  }
-
-  .userData__product {
-    width: 236px;
   }
 
   .benefits__el-text {
@@ -519,14 +533,6 @@ input::placeholder {
     position: relative;
     width: 37.519%;
   }
-
-  .userData__header-product {
-    width: 200px;
-  }
-
-  .userData__product {
-    width: 217px;
-  }
 }
 
 @media screen and (max-width:840px) {
@@ -550,13 +556,13 @@ input::placeholder {
   }
 
   .benefits__el2 {
-    width: 47%;
+    width: 60%;
     justify-content: center;
   }
 
   .benefits__el3 {
     margin-right: 5%;
-    width: 33%;
+    width: 34%;
   }
 
   .benefits__el-text {
@@ -568,6 +574,7 @@ input::placeholder {
   .benefits__el2-img,
   .benefits__el3-img {
     width: 22px;
+    height: 22px;
   }
 
   .userData__title {
@@ -619,39 +626,6 @@ input::placeholder {
     margin-top: -40px;
     margin-left: 619px;
   }
-
-  .userData__header-product {
-    width: 417px;
-  }
-
-  .userData__header-price {
-    width: 80px;
-  }
-
-  .userData__header-date,
-  .userData__header-status {
-    width: 100px;
-  }
-
-  .userData__product {
-    width: 434px;
-  }
-
-  .userData__price {
-    width: 82px;
-  }
-
-  .userData__date {
-    width: 102px;
-  }
-
-  .userData__status {
-    width: 102px;
-  }
-
-  .userData__status2 {
-    width: 102px;
-  }
 }
 
 @media screen and (max-width:768px) {
@@ -664,6 +638,11 @@ input::placeholder {
   .container {
     width: 660px;
   }
+
+  .benefits__el2 {
+    width: 49%;
+  }
+
 }
 
 @media screen and (max-width:680px) {
@@ -677,16 +656,12 @@ input::placeholder {
   }
 
   .benefits__el2 {
-    width: 42%;
+    width: 41%;
   }
 
   .benefits__el3 {
     margin-right: 5%;
     width: 35%;
-  }
-
-  .userData__product {
-    width: 437px;
   }
 }
 
@@ -696,7 +671,8 @@ input::placeholder {
   }
 
   .benefits__el1 {
-    margin-left: 3%;
+    margin-left: 4%;
+    width: 31%;
   }
 
   .benefits__el2 {
@@ -704,7 +680,7 @@ input::placeholder {
   }
 
   .benefits__el3 {
-    margin-right: 3%;
+    margin-right: 4%;
   }
 }
 
@@ -712,11 +688,137 @@ input::placeholder {
   .container {
     width: 480px;
   }
+
+  .bonus__title {
+    font-size: 16px;
+    flex-basis: 100%;
+    color: #245462;
+  }
+
+  .bonus__points {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .bonus__rules {
+    margin-left: auto;
+    margin-top: 10px;
+    color: #245462;
+  }
+
+  .benefits {
+    margin-top: 40px;
+    flex-direction: column;
+    height: auto;
+    background-color: initial;
+  }
+
+  .benefits__el1 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .benefits__el-text {
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  .benefits__el2 {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: start;
+  }
+
+  .benefits__el3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width:500px) {
   .container {
     width: 400px;
+  }
+
+  .userData__orders-header {
+    display: none;
+  }
+
+  .userData__product,
+  .userData__price,
+  .userData__date,
+  .userData__status,
+  .userData__status2 {
+    border: none;
+  }
+
+  .userData__productUnit {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #F3F3F3;
+  }
+
+
+  .userData__price,
+  .userData__date,
+  .userData__status {
+    background-color: #F3F3F3;
+  }
+
+  .userData__product {
+    flex-basis: 100%;
+    height: 25px;
+    width: 100%;
+  }
+
+  .product-img {
+    padding-top: 10px;
+  }
+
+  .product-name {
+    padding-top: 22px;
+    padding-left: 10px;
+  }
+
+  .userData__price,
+  .userData__date,
+  .userData__status {
+    padding-top: 3px;
+    margin-top: 28px;
+  }
+
+  .userData__status2 br {
+    display: none;
+  }
+
+  .userData__status2 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .userData__price {
+    margin-left: 5px;
+    padding-left: 10px;
+    flex-basis: 25%;
+    font-size: 12px;
+  }
+
+  .userData__price::before {
+    content: "Цена: ";
+  }
+
+  .userData__date::before {
+    content: "Дата: ";
+  }
+
+  .userData__date {
+    width: 95px;
+  }
+
+  .userData__status {
+    margin-right: 5px;
+    flex-basis: 25%;
   }
 }
 

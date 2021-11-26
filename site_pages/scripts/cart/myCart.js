@@ -32,7 +32,7 @@ function showMyCart() {
       alert("Произошла ошибка при добавлении товара");
     },
     success: function (response) {
-      $("#in-check-box").html(response); // добавляем response в контейнер с id in-check-box
+      $("#in-check-box").html(response);
 
       const shopingItems = document.querySelectorAll(".shoping__item");
       if (shopingItems.length > 0) {

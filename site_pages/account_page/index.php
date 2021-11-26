@@ -463,7 +463,7 @@
                 <p class="product-name">Кускен Navy Blue</p>
               </div>
               <div class="userData__price">16990</div>
-              <div class="userData__date">01.05.2020</div>
+              <div class="userData__date">03.08.2021</div>
               <div class="userData__status">Ожидается</div>
             </div>
             <div class="userData__productUnit flex">
@@ -472,8 +472,8 @@
                 <p class="product-name">Стелла Дуб Сонома</p>
               </div>
               <div class="userData__price">28490</div>
-              <div class="userData__date">01.05.2020</div>
-              <div class="userData__status2">Оплачено<br>50%</div>
+              <div class="userData__date">04.06.2021</div>
+              <div class="userData__status2">Оплачено <br>50%</div>
             </div>
             <div class="userData__productUnit flex">
               <div class="userData__product flex">
@@ -481,7 +481,7 @@
                 <p class="product-name">Вилли Pink</p>
               </div>
               <div class="userData__price">21990</div>
-              <div class="userData__date">01.05.2020</div>
+              <div class="userData__date">02.03.2021</div>
               <div class="userData__status">Доставлено</div>
             </div>
             <div class="userData__productUnit flex">
@@ -490,7 +490,7 @@
                 <p class="product-name">Шерона Barhat Grey</p>
               </div>
               <div class="userData__price">21990</div>
-              <div class="userData__date">01.05.2020</div>
+              <div class="userData__date">03.06.2021</div>
               <div class="userData__status">Отменен</div>
             </div>
             <a href="#" class="userData__all">

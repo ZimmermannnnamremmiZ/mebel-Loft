@@ -7,4 +7,4 @@
 Тестировалось через OpenServer
 
 ### Демонстрация сайта
-![](https://i.ibb.co/Xt7Tbsm/ezgif-com-gif-maker.gif)
+

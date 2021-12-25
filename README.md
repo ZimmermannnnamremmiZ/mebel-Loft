@@ -8,5 +8,4 @@
 
 ### Демонстрация сайта
 
-<img src="https://i.ibb.co/gw8zKwf/ezgif-com-gif-maker-1.gif"/>
-<img src="https://i.ibb.co/Xt7Tbsm/ezgif-com-gif-maker.gif"/>
+<img src="https://i.ibb.co/Xt7Tbsm/ezgif-com-gif-maker.gif">

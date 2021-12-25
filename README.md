@@ -7,5 +7,4 @@
 Тестировалось через OpenServer
 
 ### Демонстрация сайта
-
-<img src="https://i.ibb.co/Xt7Tbsm/ezgif-com-gif-maker.gif">
+![](https://i.ibb.co/Xt7Tbsm/ezgif-com-gif-maker.gif)

@@ -105,241 +105,90 @@
               <div class="header__menu-kitchen-icon carousel_icon"></div>
               <h2 class="header__menu-kitchen-text header__menu-text">Кухни</h2>
               <div class="dropdown__kitchen dropdown">
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Модульные кухни</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Барная зона</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Кухонные уголки</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Обеденная зона</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Столешницы</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Стеновые панели</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Мойки, сушилки,<br>смесители для кухни</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Дополнительная<br>фурнитура</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Бытовыя техника</a>
-                </div>
+                <?php
+                  for ($i = 1; $i <= 5; $i++) {
+                    echo '
+                      <div class="dropdown__linkBox">
+                        <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                      </div>
+                    ';
+                  }
+                ?>
               </div>
             </div>
             <div class="header__menu-cell bedroom slide">
               <div class="header__menu-bedroom-icon carousel_icon"></div>
               <h2 class="header__menu-bedroom-text header__menu-text">Спальни</h2>
               <div class="dropdown__bedroom dropdown">
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit!</a>
-                </div>
+                <?php
+                  for ($i = 1; $i <= 3; $i++) {
+                    echo '
+                      <div class="dropdown__linkBox">
+                        <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                      </div>
+                    ';
+                  }
+                ?>
               </div>
             </div>
             <div class="header__menu-cell livingroom slide">
               <div class="header__menu-livingroom-icon carousel_icon"></div>
               <h2 class="header__menu-livingroom-text header__menu-text">Гостинные</h2>
               <div class="dropdown__livingroom dropdown">
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
+                <?php
+                  for ($i = 1; $i <= 10; $i++) {
+                    echo '
+                      <div class="dropdown__linkBox">
+                        <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                      </div>
+                    ';
+                  }
+                ?>
               </div>
             </div>
             <div class="header__menu-cell closet slide">
               <div class="header__menu-closet-icon carousel_icon"></div>
               <h2 class="header__menu-closet-text header__menu-text">Прихожие</h2>
               <div class="dropdown__closet dropdown">
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
+                <?php
+                  for ($i = 1; $i <= 7; $i++) {
+                    echo '
+                      <div class="dropdown__linkBox">
+                        <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                      </div>
+                    ';
+                  }
+                ?>
               </div>
             </div>
             <div class="header__menu-cell office slide">
               <div class="header__menu-office-icon carousel_icon"></div>
               <h2 class="header__menu-office-text header__menu-text">Офисная мебель</h2>
               <div class="dropdown__office dropdown">
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit!</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit!</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit!</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
+                <?php
+                  for ($i = 1; $i <= 12; $i++) {
+                    echo '
+                      <div class="dropdown__linkBox">
+                        <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                      </div>
+                    ';
+                  }
+                ?>
               </div>
             </div>
             <div class="header__menu-cell childrensroom slide">
               <div class="header__menu-childrensroom-icon carousel_icon"></div>
               <h2 class="header__menu-childrensroom-text header__menu-text">Детская</h2>
               <div class="dropdown__childrensroom dropdown">
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
-                <div class="dropdown__linkBox">
-                  <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
-                </div>
+                <?php
+                  for ($i = 1; $i <= 8; $i++) {
+                    echo '
+                      <div class="dropdown__linkBox">
+                        <a href="/site_pages/catalog_page/index.php">Lorem ipsum dolor</a>
+                      </div>
+                    ';
+                  }
+                ?>
               </div>
             </div>
             <div class="header__menu-cell menu-stock slide">

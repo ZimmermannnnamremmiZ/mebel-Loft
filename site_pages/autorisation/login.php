@@ -13,15 +13,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="icon" href="/images/favicon.png" type="images/x-icon">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="/site_pages/scripts/jQuery_touchErrorFix.js"></script>
+  <link rel="stylesheet" href="/site_pages/scripts/owl carousel/owl.carousel.min.css">
+  <script src="/site_pages/scripts/owl carousel/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="/reusable_css/fonts.css">
+  <link rel="stylesheet" href="/reusable_css/lite_reset.css">
+  <link rel="stylesheet" href="/reusable_css/footer_down.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="/reusable_css/header.css">
   <link rel="stylesheet" href="/reusable_css/hamburger_menu.css">
-  <link rel="stylesheet" href="../scripts/owl carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="/reusable_css/owl_carousel.css">
   <link rel="stylesheet" href="/reusable_css/footer.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="/site_pages/scripts/jQuery_touchErrorFix.js"></script>
-  <script src="../scripts/owl carousel/owl.carousel.min.js"></script>
 </head>
 
 <body>

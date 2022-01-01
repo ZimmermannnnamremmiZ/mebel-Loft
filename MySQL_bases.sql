@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 25 2021 г., 03:09
+-- Время создания: Янв 01 2022 г., 12:45
 -- Версия сервера: 8.0.24
 -- Версия PHP: 7.4.21
 
@@ -333,16 +333,16 @@ USE `users`;
 
 CREATE TABLE `users` (
   `id` int UNSIGNED NOT NULL,
-  `login` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `email` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `password` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `name` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `surname` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `telephone` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `city` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `street` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `house` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `flat` varchar(191) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL
+  `login` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `email` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `password` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `surname` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `telephone` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `city` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `street` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `house` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `flat` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -435,6 +435,26 @@ INSERT INTO `products` (`id`, `name`, `category`, `price`, `discount`, `width`, 
 (26, 'Купер черный, хром', 'Барные стулья', 5290, '0', 53, 81, 48, '/images/title_page/kuper.png'),
 (27, 'Beetle экокожа бежевый', 'Барные стулья', 9990, '0', 46, 113, 54, '/images/title_page/beetle-ekokozha.png'),
 (28, 'Лилиан бирюзовый', 'Барные стулья', 8590, '0', 47, 109, 41, '/images/title_page/lilian-biryuzovyy.png');
+
+--
+-- Индексы сохранённых таблиц
+--
+
+--
+-- Индексы таблицы `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT для сохранённых таблиц
+--
+
+--
+-- AUTO_INCREMENT для таблицы `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,11 +3,9 @@
 ![Picture_1](https://i.ibb.co/Xby6DFH/image.png)
 
 
-В PhpMyAdmit необходимо импортировать файл **mebel-Loft.sql** из корневой папки.
+В PhpMyAdmit необходимо импортировать файл **MySQL_bases.sql** из корневой папки.
 
-![Picture_2](https://i.ibb.co/HNrdJYM/php-My-Admit.png)
-
-
+![image](https://user-images.githubusercontent.com/69976961/147848100-4c9b6f33-a56d-4011-ae5d-d7e9e6a4d2fb.png)
 
 
 Тестировалось через OpenServer
